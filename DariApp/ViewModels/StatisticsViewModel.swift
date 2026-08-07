@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct StatisticsSnapshot: Sendable {
+// Hinweis: Kein 'Sendable', weil der Snapshot 'Card'-Objekte (SwiftData @Model,
+// nicht sendbar) enthaelt. Er wird ausschliesslich synchron auf dem MainActor
+// (in StatisticsView) erzeugt und verwendet, also ist Sendable hier nicht noetig.
+struct StatisticsSnapshot {
     var totalCards = 0
     var activeCards = 0
     var inactiveCards = 0
