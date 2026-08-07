@@ -1,0 +1,57 @@
+name: Build unsigned IPA
+
+# Wann der Build laeuft:
+on:
+  push:
+    branches: [ main ]      # bei jedem Push auf main
+  workflow_dispatch:        # oder manuell per Knopfdruck im "Actions"-Tab
+
+jobs:
+  build:
+    # macOS-26-Runner (enthaelt Xcode 26.x, passend fuer iOS 26)
+    runs-on: macos-26
+
+    steps:
+      - name: Code auschecken
+        uses: actions/checkout@v4
+
+      - name: Xcode-Version anzeigen
+        run: xcodebuild -version
+
+      - name: Archivieren (ohne Code-Signierung)
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project DariApp.xcodeproj \
+            -scheme DariApp \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/DariApp.xcarchive" \
+            archive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGN_ENTITLEMENTS="" \
+            DEVELOPMENT_TEAM=""
+
+      - name: Unsignierte IPA verpacken
+        run: |
+          set -euo pipefail
+          APP_PATH="$RUNNER_TEMP/DariApp.xcarchive/Products/Applications/DariApp.app"
+          if [ ! -d "$APP_PATH" ]; then
+            echo "FEHLER: DariApp.app wurde nicht gefunden unter $APP_PATH"
+            exit 1
+          fi
+          mkdir -p "$RUNNER_TEMP/Payload"
+          cp -R "$APP_PATH" "$RUNNER_TEMP/Payload/"
+          ( cd "$RUNNER_TEMP" && zip -r -y "$GITHUB_WORKSPACE/DariApp-unsigned.ipa" Payload >/dev/null )
+          echo "IPA erstellt:"
+          ls -lh "$GITHUB_WORKSPACE/DariApp-unsigned.ipa"
+
+      - name: IPA als Download bereitstellen
+        uses: actions/upload-artifact@v4
+        with:
+          name: DariApp-unsigned-ipa
+          path: DariApp-unsigned.ipa
+          if-no-files-found: error
+          retention-days: 30

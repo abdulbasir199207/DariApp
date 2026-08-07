@@ -1,0 +1,32 @@
+# === Xcode / Swift ===
+
+## Build-Artefakte
+build/
+DerivedData/
+*.xcarchive
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.hmap
+*.ipa
+
+## Benutzerspezifische Xcode-Daten (NICHT das geteilte Scheme!)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.moved-aside
+
+## Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+## macOS / OneDrive
+.DS_Store
+Icon?
+Thumbs.db
+desktop.ini
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
