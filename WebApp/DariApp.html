@@ -43,7 +43,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .field{width:100%;background:var(--surface);border:1px solid var(--sep);border-radius:12px;padding:12px 14px;font-size:16px;color:var(--text);margin-bottom:8px}
 .field:focus{outline:2px solid var(--accent);outline-offset:0}
 label.lbl{font-weight:600;font-size:14px;display:block;margin:16px 2px 8px}
-.tabbar{flex:0 0 auto;display:flex;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom));border-top:1px solid var(--sep);background:color-mix(in srgb,var(--surface) 85%,transparent);backdrop-filter:blur(14px)}
+.tabbar{flex:0 0 auto;display:flex;justify-content:space-around;padding:8px 0 max(8px,env(safe-area-inset-bottom));border-top:1px solid var(--sep);background:color-mix(in srgb,var(--surface) 85%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
 .tab{display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;color:var(--text-2);padding:6px 14px;border-radius:12px}
 .tab.active{color:var(--accent)}
 .tab svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8}
@@ -153,6 +153,7 @@ const AudioStore = {
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
 const now=()=>Date.now();
 const DAY=86400000;
+const APP_VERSION='2.0 · Okt 2026';   // Zum Prüfen, ob die neueste Version geladen ist
 function clamp(v,lo,hi){return Math.min(Math.max(v,lo),hi);}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),1800);}
 function esc(s){return (s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -715,7 +716,8 @@ function viewSettings(){
    <button class="card row" style="width:100%;text-align:left" onclick="openRestore()"><span>⭱ Backup wiederherstellen</span><span class="muted">›</span></button>
    <input type="file" id="importFile" accept="application/json,.json,text/plain" class="hidden" onchange="importData(event)">
    <div class="card"><div class="muted small">DariApp – vollständig offline. Alle Daten bleiben in diesem Browser auf deinem iPhone.
-     <br><br><b>Sicherstes Backup auf dem iPhone:</b> Tippe „Backup sichern" → „Text kopieren" und schicke dir den Text per Mail oder speichere ihn in einer Notiz. Zum Zurückholen: „Backup wiederherstellen" → Text einfügen.</div></div>
+     <br><br><b>Backup:</b> „Backup sichern" → <b>Teilen</b> (in „Dateien"/Mail/Notizen) oder „Als Text kopieren". Zum Zurückholen: „Backup wiederherstellen".
+     <br><br>Version ${APP_VERSION}</div></div>
    <div style="height:20px"></div>`;
 }
 window.setAppearance=v=>{DB.data.settings.appearance=v;DB.save();applyTheme();render();};
@@ -725,84 +727,71 @@ window.setDefDir=v=>{DB.data.settings.defaultDirection=v;DB.save();render();};
 window.goalStep=d=>{DB.data.settings.dailyGoal=clamp(DB.data.settings.dailyGoal+d,5,200);DB.save();render();};
 function backupFileName(){ return 'dariapp-backup-'+new Date().toISOString().slice(0,10)+'.json'; }
 
-// Backup sichern: Text kopieren (zuverlässig auf iOS) + optional als Datei.
+// ---- Backup: teilen (iOS „In Dateien"/Mail/Notizen), kopieren oder anzeigen ----
+function currentBackupJSON(){ return JSON.stringify(DB.data); }
 window.openBackup=function(){
-  const name=backupFileName();
-  const json=JSON.stringify(DB.data);
+  const json=currentBackupJSON();
   const count=DB.data.cards.length;
+  const sizeKB=Math.max(1,Math.round(json.length/1024));
   const root=document.getElementById('dialogRoot');
   root.innerHTML=`<div class="dlg-back" onclick="if(event.target===this)closeDialog()"><div class="dlg" style="max-width:440px">
     <button class="dlg-x" onclick="closeDialog()">✕</button>
     <div class="dlg-ic" style="color:var(--sage)">💾</div>
     <h3>Backup sichern</h3>
-    <p>${count} Karten. Am sichersten: <b>Text kopieren</b> und dir per Mail oder Notiz schicken. (Audio ist nicht enthalten.)</p>
-    <textarea id="backupText" readonly class="field" style="height:100px;font-family:monospace;font-size:11px;margin:0 0 8px">${esc(json)}</textarea>
-    <label class="lbl" style="margin:0 2px 6px">Dateiname</label>
-    <input id="backupName" class="field" style="margin:0 0 8px" value="${esc(name)}" autocapitalize="none" autocorrect="off">
+    <p><b>${count}</b> Karten · ${sizeKB} KB. So gehen deine Wörter nie verloren. (Audio-Aufnahmen sind nicht enthalten.)</p>
     <div class="dlg-actions">
-      <button class="pillbtn" onclick="copyBackup()">Text kopieren</button>
-      <button class="pillbtn secondary" onclick="saveBackupFile()">Als Datei speichern</button>
+      <button class="pillbtn" onclick="shareBackup()">⤴ Teilen / in „Dateien" sichern</button>
+      <button class="pillbtn secondary" onclick="copyBackup()">⧉ Als Text kopieren</button>
+      <button class="pillbtn secondary" onclick="toggleBackupText()">Text anzeigen</button>
     </div>
-    <div class="hint" style="margin-top:10px">„Als Datei speichern" öffnet das Teilen-Menü → <b>In Dateien sichern</b>. Dort kannst du Ordner wählen und den Namen ändern. (Klappt am besten aus der zum Home‑Bildschirm hinzugefügten App.)</div></div></div>`;
+    <textarea id="backupText" readonly class="field hidden" style="height:110px;font-family:monospace;font-size:11px;margin:12px 0 0" onclick="this.select()">${esc(json)}</textarea>
+    <div class="hint" style="margin-top:10px">„Teilen" öffnet das iOS-Menü → <b>In Dateien sichern</b> (legt eine <code>.json</code> an) oder an dich selbst per Mail/Notiz. Zurückholen über „Backup wiederherstellen".</div></div></div>`;
+};
+window.toggleBackupText=function(){
+  const ta=document.getElementById('backupText'); if(!ta)return;
+  ta.classList.toggle('hidden');
+  if(!ta.classList.contains('hidden')){ ta.focus(); try{ta.select();}catch(_){} }
+};
+window.shareBackup=async function(){
+  const json=currentBackupJSON();
+  const name=backupFileName();
+  // 1) Datei teilen – schönste Variante (In Dateien / Mail / Notizen)
+  try{
+    const file=new File([json],name,{type:'application/json'});
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      await navigator.share({files:[file], title:'DariApp Backup'});
+      return;
+    }
+  }catch(e){ if(e && e.name==='AbortError') return; }
+  // 2) Als Text teilen, falls Datei-Teilen nicht unterstützt wird
+  try{
+    if(navigator.share){ await navigator.share({title:'DariApp Backup', text:json}); return; }
+  }catch(e){ if(e && e.name==='AbortError') return; }
+  // 3) Echter Download – nur außerhalb der eingebetteten Vorschau (dort wirkungslos)
+  const embedded=(()=>{ try{ return window.self!==window.top; }catch(_){ return true; } })();
+  if(!embedded){
+    try{
+      const url=URL.createObjectURL(new Blob([json],{type:'application/json'}));
+      const a=document.createElement('a'); a.href=url; a.download=name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(()=>URL.revokeObjectURL(url),1500);
+      toast('Gespeichert als '+name); return;
+    }catch(e){}
+  }
+  // 4) Überall zuverlässig: Text kopieren (und Textfeld zeigen)
+  copyBackup();
 };
 window.copyBackup=async function(){
-  const ta=document.getElementById('backupText');
-  const json=ta?ta.value:JSON.stringify(DB.data);
+  const json=currentBackupJSON();
   try{
     await navigator.clipboard.writeText(json);
     toast('In Zwischenablage kopiert ✓');
   }catch(e){
-    if(ta){ ta.focus(); ta.select(); try{ta.setSelectionRange(0,json.length);}catch(_){} }
+    const ta=document.getElementById('backupText');
+    if(ta){ ta.classList.remove('hidden'); ta.focus(); try{ta.select(); ta.setSelectionRange(0,ta.value.length);}catch(_){} }
     toast('Text ist markiert – jetzt „Kopieren" antippen');
   }
 };
-window.saveBackupFile=async function(){
-  const inp=document.getElementById('backupName');
-  let name=(inp && inp.value.trim()) || backupFileName();
-  if(!/\.json$/i.test(name)) name+='.json';
-  const json=JSON.stringify(DB.data);
-  const file=new File([json],name,{type:'application/json'});
-  const isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent||'') ||
-              (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
-  // 1) iOS-Teilen-Menü -> „In Dateien sichern" (Ordnerwahl + Umbenennen)
-  if(navigator.share){
-    try{
-      await navigator.share({files:[file], title:name});
-      return; // Teilen-Menü hat geöffnet -> Nutzer speichert selbst in „Dateien"
-    }catch(e){
-      if(e && e.name==='AbortError') return; // Nutzer hat abgebrochen
-      // sonst: Teilen ist gesperrt -> unten ehrlich melden
-    }
-  }
-  // 2) Auf dem iPhone ohne funktionierendes Teilen: ehrliche Info statt Phantom-Download
-  if(isIOS){
-    showSaveBlocked();
-    return;
-  }
-  // 3) Desktop/andere Browser: echter Download
-  try{
-    const url=URL.createObjectURL(file);
-    const a=document.createElement('a'); a.href=url; a.download=name;
-    document.body.appendChild(a); a.click(); a.remove();
-    setTimeout(()=>URL.revokeObjectURL(url),1500);
-    toast('Gespeichert als '+name);
-  }catch(e){ showSaveBlocked(); }
-};
-function showSaveBlocked(){
-  const root=document.getElementById('dialogRoot');
-  root.innerHTML=`<div class="dlg-back" onclick="if(event.target===this)closeDialog()"><div class="dlg" style="max-width:440px">
-    <button class="dlg-x" onclick="closeDialog()">✕</button>
-    <div class="dlg-ic">ℹ︎</div>
-    <h3>„In Dateien" ist hier gesperrt</h3>
-    <p>In dieser eingebetteten Ansicht lässt iOS das Speichern in die Dateien‑App nicht zu (dieselbe Sperre wie beim Mikrofon).</p>
-    <p><b>So klappt es sicher:</b></p>
-    <p>1) <b>Text kopieren</b> und dir per Mail/Notiz schicken – funktioniert immer.<br>
-       2) Oder die App zuerst über <b>Teilen → „Zum Home‑Bildschirm"</b> installieren und von dort starten; dann öffnet „Als Datei speichern" das Dateien‑Fenster.</p>
-    <div class="dlg-actions">
-      <button class="pillbtn" onclick="openBackup()">Zurück zu „Text kopieren"</button>
-      <button class="pillbtn secondary" onclick="closeDialog()">Schließen</button>
-    </div></div></div>`;
-}
 
 // Backup wiederherstellen: Text einfügen oder Datei wählen.
 window.openRestore=function(){
@@ -858,8 +847,36 @@ function seedIfEmpty(){
   DB.save();
 }
 
-/* ---------- Start ---------- */
-DB.load(); seedIfEmpty(); applyTheme();
-matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{ if(DB.data.settings.appearance==='system')applyTheme(); });
-render();
+/* ---------- Start (robust: bei Fehlern eine Meldung statt leerem Bildschirm) ---------- */
+window.rescueCopy=async function(btn){
+  const raw=(btn&&btn.getAttribute('data-raw'))||'';
+  try{ await navigator.clipboard.writeText(raw); alert('Backup kopiert – bitte in eine Notiz oder E‑Mail einfügen.'); }
+  catch(e){ const t=document.getElementById('rawBak'); if(t){ t.classList.remove('hidden'); t.focus(); try{t.select();}catch(_){} } }
+};
+function showFatal(err){
+  let raw=''; try{ raw=localStorage.getItem(DB.KEY)||''; }catch(_){}
+  const s=document.getElementById('screen'); if(!s) return;
+  s.className='screen';
+  s.innerHTML=`<div style="padding:34px 8px;text-align:center">
+    <div style="font-size:42px">⚠️</div>
+    <h2 style="margin:12px 0 6px">App konnte nicht starten</h2>
+    <p class="muted" style="font-size:14px">Bitte die App ganz schließen und neu öffnen. Falls das nicht hilft, sichere zuerst deine Daten:</p>
+    ${raw?`<button class="pillbtn" style="margin-top:14px" onclick="rescueCopy(this)" data-raw="${esc(raw)}">⧉ Meine Daten als Backup kopieren</button>
+    <textarea id="rawBak" readonly class="field hidden" style="height:120px;font-family:monospace;font-size:11px;margin-top:10px">${esc(raw)}</textarea>`:'<p class="muted small">Keine gespeicherten Daten gefunden.</p>'}
+    <p class="muted small" style="margin-top:14px;word-break:break-all">${esc((err&&(err.message||String(err)))||'Unbekannter Fehler')}</p>
+  </div>`;
+}
+function watchColorScheme(){
+  try{
+    const mq=matchMedia('(prefers-color-scheme: dark)');
+    const cb=()=>{ if(DB.data.settings.appearance==='system')applyTheme(); };
+    if(mq.addEventListener) mq.addEventListener('change',cb);
+    else if(mq.addListener) mq.addListener(cb); // ältere iOS-Versionen
+  }catch(e){}
+}
+function boot(){
+  try{ DB.load(); seedIfEmpty(); applyTheme(); watchColorScheme(); render(); }
+  catch(e){ try{ showFatal(e); }catch(_){} }
+}
+boot();
 </script>
