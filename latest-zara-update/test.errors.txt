@@ -1,14 +1,8 @@
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.005) seconds
-Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (22.327 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' failed (20.783 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' failed (101.264 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testStatistics]' failed (25.831 seconds).
-	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.142) seconds
-	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.143) seconds
-	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.144) seconds
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (21.081 seconds).
+	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.204) seconds
+	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.211) seconds
+	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.213) seconds
 Failing tests:
 	DariAppUITests.testGrammarFlow()
-	DariAppUITests.testPracticeHubAndMix()
-	DariAppUITests.testSampleCardsAndLearnToday()
-	DariAppUITests.testStatistics()
 ** TEST FAILED **
