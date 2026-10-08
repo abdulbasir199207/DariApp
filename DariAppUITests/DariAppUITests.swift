@@ -51,6 +51,15 @@ final class DariAppUITests: XCTestCase {
         try? app.debugDescription.write(toFile: dir + "/" + name + ".txt", atomically: true, encoding: .utf8)
     }
 
+    /// Scrollt, bis ein Element in der (faul geladenen) Liste vorhanden ist.
+    @MainActor
+    private func reveal(_ app: XCUIApplication, _ identifier: String) -> XCUIElement {
+        let el = element(app, identifier)
+        var tries = 0
+        while !el.exists && tries < 6 { app.swipeUp(); tries += 1 }
+        return el
+    }
+
     @MainActor
     private func loadSampleCards(_ app: XCUIApplication) {
         app.tabBars.buttons["Karten"].tap()
@@ -124,7 +133,7 @@ final class DariAppUITests: XCTestCase {
     func testGrammarFlow() throws {
         let app = launch()
         app.tabBars.buttons["Üben"].tap()
-        let grammar = element(app, "hub.grammar")
+        let grammar = reveal(app, "hub.grammar")
         if !grammar.waitForExistence(timeout: 8) { shot("fehler-hub"); dump(app, "fehler-hub") }
         XCTAssertTrue(grammar.exists)
         grammar.tap()
@@ -134,6 +143,67 @@ final class DariAppUITests: XCTestCase {
         start.tap()
         XCTAssertTrue(app.navigationBars["Grammatik"].waitForExistence(timeout: 8))
         shot("09-grammatik-frage")
+    }
+
+    @MainActor
+    func testGrammarAnswerAndContinue() throws {
+        let app = launch()
+        app.tabBars.buttons["Üben"].tap()
+        let grammar = reveal(app, "hub.grammar")
+        XCTAssertTrue(grammar.waitForExistence(timeout: 8))
+        grammar.tap()
+        let start = element(app, "grammar.start")
+        XCTAssertTrue(start.waitForExistence(timeout: 5))
+        start.tap()
+        let first = element(app, "option.0")
+        XCTAssertTrue(first.waitForExistence(timeout: 8))
+        first.tap()
+        let next = element(app, "practice.next")
+        XCTAssertTrue(next.waitForExistence(timeout: 5), "Nach der Antwort muss „Weiter“ erscheinen")
+        shot("09b-grammatik-antwort")
+        next.tap()
+        XCTAssertTrue(element(app, "option.0").waitForExistence(timeout: 5), "Nächste Frage erwartet")
+    }
+
+    @MainActor
+    func testClozeAnswerAndContinue() throws {
+        let app = launch()
+        app.tabBars.buttons["Üben"].tap()
+        let cloze = element(app, "hub.cloze")
+        XCTAssertTrue(cloze.waitForExistence(timeout: 5))
+        cloze.tap()
+        let first = element(app, "option.0")
+        XCTAssertTrue(first.waitForExistence(timeout: 8))
+        first.tap()
+        let next = element(app, "practice.next")
+        XCTAssertTrue(next.waitForExistence(timeout: 5))
+        shot("10b-lueckentext-antwort")
+        next.tap()
+        XCTAssertTrue(element(app, "option.0").waitForExistence(timeout: 5))
+    }
+
+    @MainActor
+    func testFlipSessionCompletes() throws {
+        let app = launch()
+        loadSampleCards(app)
+        app.tabBars.buttons["Heute"].tap()
+        let hero = app.buttons["today.hero"]
+        XCTAssertTrue(hero.waitForExistence(timeout: 5))
+        hero.tap()
+        var rounds = 0
+        while rounds < 20 && !app.staticTexts["Session abgeschlossen"].exists {
+            let flipHint = app.staticTexts["Zum Umdrehen tippen"]
+            XCTAssertTrue(flipHint.waitForExistence(timeout: 8) || app.staticTexts["Session abgeschlossen"].exists, "Karte erwartet (Runde \(rounds))")
+            if app.staticTexts["Session abgeschlossen"].exists { break }
+            flipHint.tap()
+            let good = app.buttons["Gut"]
+            XCTAssertTrue(good.waitForExistence(timeout: 5))
+            good.tap()
+            rounds += 1
+        }
+        XCTAssertTrue(app.staticTexts["Session abgeschlossen"].waitForExistence(timeout: 8), "Die Lerneinheit muss abgeschlossen werden")
+        shot("04b-lernen-fertig")
+        XCTAssertGreaterThanOrEqual(rounds, 8)
     }
 
     @MainActor

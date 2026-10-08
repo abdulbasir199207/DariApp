@@ -288,6 +288,7 @@ private struct OptionList: View {
                 }
                 .buttonStyle(ChoiceButtonStyle(state: state(pair.offset)))
                 .disabled(selected != nil)
+                .accessibilityIdentifier("option.\(pair.offset)")
             }
         }
     }
@@ -763,6 +764,7 @@ private struct GrammarStepView: View {
                         }
                         .buttonStyle(ChoiceButtonStyle(state: optionState(pair.offset, question: question)))
                         .disabled(answered)
+                        .accessibilityIdentifier("option.\(pair.offset)")
                     }
                 }
                 if answered {
