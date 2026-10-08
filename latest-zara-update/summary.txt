@@ -1,2 +1,2 @@
-Lauf #7  Commit a686fa7c5ba82a84b4aa78fce1116c571a97fa38  Zweig zara-update
+Lauf #8  Commit 75c92b178bd68e57cde3e08b4fa1fab8eec47b7e  Zweig zara-update
 Tests: failure   Archiv: success

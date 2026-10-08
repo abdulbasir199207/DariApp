@@ -12,7 +12,7 @@
       },
       "expectedFailures" : 0,
       "failedTests" : 1,
-      "passedTests" : 73,
+      "passedTests" : 76,
       "skippedTests" : 0,
       "testPlanConfiguration" : {
         "configurationId" : "1",
@@ -23,11 +23,11 @@
   "environmentDescription" : "DariApp · Built with macOS 26.6.2",
   "expectedFailures" : 0,
   "failedTests" : 1,
-  "finishTime" : 1791486481.922,
-  "passedTests" : 73,
+  "finishTime" : 1791487151.802,
+  "passedTests" : 76,
   "result" : "Failed",
   "skippedTests" : 0,
-  "startTime" : 1791485805.484,
+  "startTime" : 1791486723.726,
   "statistics" : [
 
   ],
@@ -35,19 +35,19 @@
     {
       "failureText" : "XCTAssertTrue failed",
       "targetName" : "DariAppUITests",
-      "testIdentifier" : 68,
-      "testIdentifierString" : "DariAppUITests/testGrammarFlow()",
-      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testGrammarFlow",
-      "testName" : "testGrammarFlow()"
+      "testIdentifier" : 69,
+      "testIdentifierString" : "DariAppUITests/testFlipSessionCompletes()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testFlipSessionCompletes",
+      "testName" : "testFlipSessionCompletes()"
     }
   ],
   "title" : "Test - DariApp",
   "topInsights" : [
     {
       "category" : "Longest Test Runs",
-      "impact" : "81% of duration",
-      "text" : "3 longest test runs with outlier durations exceeding 1.17s (three standard deviations)"
+      "impact" : "67% of duration",
+      "text" : "1 longest test run with outlier durations exceeding 4.08s (three standard deviations)"
     }
   ],
-  "totalTestCount" : 74
+  "totalTestCount" : 77
 }

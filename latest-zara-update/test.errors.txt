@@ -1,8 +1,8 @@
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
-Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (21.081 seconds).
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.204) seconds
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.211) seconds
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.213) seconds
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' failed (25.246 seconds).
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.339) seconds
 Failing tests:
-	DariAppUITests.testGrammarFlow()
+	DariAppUITests.testFlipSessionCompletes()
 ** TEST FAILED **

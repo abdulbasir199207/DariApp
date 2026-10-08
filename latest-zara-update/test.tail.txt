@@ -1,205 +1,5 @@
-CoreData: error:   component is writeable
-2026-10-08 19:02:51.765846+0000 DariApp[9343:32516] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1
-2026-10-08 19:02:51.845930+0000 DariApp[9343:32516] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 19:02:51.846255+0000 DariApp[9343:32516] [error] CoreData: error:   Device ID: 		16777228
-CoreData: error:   Device ID: 		16777228
-2026-10-08 19:02:51.846476+0000 DariApp[9343:32516] [error] CoreData: error:   File Size: 		224 bytes
-CoreData: error:   File Size: 		224 bytes
-2026-10-08 19:02:51.846700+0000 DariApp[9343:32516] [error] CoreData: error:   File inode: 		2962666
-CoreData: error:   File inode: 		2962666
-2026-10-08 19:02:51.846770+0000 DariApp[9343:32516] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 19:02:52.631705+0000 DariApp[9343:32516] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 19:02:52.632018+0000 DariApp[9343:32516] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 19:02:52.632193+0000 DariApp[9343:32516] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 19:02:52.632312+0000 DariApp[9343:32516] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 19:02:52.632377+0000 DariApp[9343:32516] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 19:02:52.632524+0000 DariApp[9343:32516] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 19:02:52.632616+0000 DariApp[9343:32516] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 19:02:52.632726+0000 DariApp[9343:32516] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library
-2026-10-08 19:02:52.649086+0000 DariApp[9343:32516] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 19:02:52.649343+0000 DariApp[9343:32516] [error] CoreData: error:   Device ID: 		16777228
-CoreData: error:   Device ID: 		16777228
-2026-10-08 19:02:52.649506+0000 DariApp[9343:32516] [error] CoreData: error:   File Size: 		128 bytes
-CoreData: error:   File Size: 		128 bytes
-2026-10-08 19:02:52.649586+0000 DariApp[9343:32516] [error] CoreData: error:   File inode: 		2962668
-CoreData: error:   File inode: 		2962668
-2026-10-08 19:02:52.649651+0000 DariApp[9343:32516] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 19:02:52.658724+0000 DariApp[9343:32516] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 19:02:52.659067+0000 DariApp[9343:32516] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 19:02:52.659229+0000 DariApp[9343:32516] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 19:02:52.659303+0000 DariApp[9343:32516] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 19:02:52.659379+0000 DariApp[9343:32516] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 19:02:52.659523+0000 DariApp[9343:32516] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 19:02:52.659626+0000 DariApp[9343:32516] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 19:02:52.660261+0000 DariApp[9343:32516] [error] CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application Support', errno 2 / No such file or directory.
-CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application Support', errno 2 / No such file or directory.
-2026-10-08 19:02:52.665498+0000 DariApp[9343:32516] [error] CoreData: error:   Sandbox access to file-write-create denied
-CoreData: error:   Sandbox access to file-write-create denied
-2026-10-08 19:02:52.667703+0000 DariApp[9343:32516] [error] CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (512)
-CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (512)
-2026-10-08 19:02:52.667907+0000 DariApp[9343:32516] [error] CoreData: error: userInfo:
-CoreData: error: userInfo:
-2026-10-08 19:02:52.667994+0000 DariApp[9343:32516] [error] CoreData: error: 	reason : Failed to create file; code = 2
-CoreData: error: 	reason : Failed to create file; code = 2
-2026-10-08 19:02:52.668274+0000 DariApp[9343:32516] [error] CoreData: error: storeType: SQLite
-CoreData: error: storeType: SQLite
-2026-10-08 19:02:52.668422+0000 DariApp[9343:32516] [error] CoreData: error: configuration: default
-CoreData: error: configuration: default
-2026-10-08 19:02:52.668549+0000 DariApp[9343:32516] [error] CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application%20Support/default.store
-CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application%20Support/default.store
-CoreData: annotation: options:
-CoreData: annotation: 	NSMigratePersistentStoresAutomaticallyOption : 1
-CoreData: annotation: 	NSInferMappingModelAutomaticallyOption : 1
-CoreData: annotation: 	NSPersistentStoreRemoteChangeNotificationOptionKey : 1
-CoreData: annotation: 	NSPersistentHistoryTrackingKey : 1
-2026-10-08 19:02:52.674290+0000 DariApp[9343:32516] [error] CoreData: error: <NSPersistentStoreCoordinator: 0x103594000>: Attempting recovery from error encountered during addPersistentStore: 0x103460210 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
-CoreData: error: <NSPersistentStoreCoordinator: 0x103594000>: Attempting recovery from error encountered during addPersistentStore: 0x103460210 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
-2026-10-08 19:02:52.675575+0000 DariApp[9343:32516] [error] CoreData: error: During recovery, parent directory path reported as missing
-CoreData: error: During recovery, parent directory path reported as missing
-2026-10-08 19:02:52.688093+0000 DariApp[9343:32516] [error] CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x103460210> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application%20Support/default.store) was successful!
-CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x103460210> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/31C496B3-1270-4518-8085-4A09BFE0B3E1/Library/Application%20Support/default.store) was successful!
-IOSurfaceClientSetSurfaceNotify failed e00002c7
-2026-10-08 19:02:54.176842+0000 DariApp[9343:32516] fopen failed for data file: errno = 2 (No such file or directory)
-2026-10-08 19:02:54.673379+0000 DariApp[9343:32516] fopen failed for data file: errno = 2 (No such file or directory)
-2026-10-08 19:02:54.705989+0000 DariApp[9343:32516] [error] building pipeline plane_color-ca16feba4 took 0.530217 seconds
-2026-10-08 19:02:54.807380+0000 DariApp[9343:36177] [AXCommon] Potential Structural Swift Concurrency Issue: unsafeForcedSync called from Swift Concurrent context.
-2026-10-08 19:02:57.198256+0000 DariApp[9343:36173] [VoiceDBClient] Error fetching voices: DecodingError.dataCorrupted: Data was corrupted. Debug description: Invalid container metadata for _UnkeyedDecodingContainer, found keyedGraphEncodingNodeID. Using fallback voices.
-2026-10-08 19:02:57.327002+0000 DariApp[9343:36173] [VoiceDBClient] Error fetching voices: DecodingError.dataCorrupted: Data was corrupted. Debug description: Invalid container metadata for _UnkeyedDecodingContainer, found keyedGraphEncodingNodeID. Using fallback voices.
-2026-10-08 19:02:57.332380+0000 DariApp[9343:36174] [VoiceDBClient] Error fetching locales: DecodingError.keyNotFound: Key 'codingKey: CodingKeys(stringValue: "primary", intValue: nil)' not found in keyed decoding container. Debug description: Missing key. Using fallback locales.
-Test Suite 'All tests' started at 2026-10-08 19:03:04.321.
-Test Suite 'All tests' passed at 2026-10-08 19:03:04.325.
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.004) seconds
-◇ Test run started.
-↳ Testing Library Version: 1902
-↳ Target Platform: arm64-apple-ios13.0-simulator
-◇ Suite AnswerCheckerTests started.
-◇ Test "Exakte Uebereinstimmung ist perfekt" started.
-✔ Test "Exakte Uebereinstimmung ist perfekt" passed after 0.002 seconds.
-◇ Test "Gross-/Kleinschreibung und Leerzeichen werden ignoriert" started.
-✔ Test "Gross-/Kleinschreibung und Leerzeichen werden ignoriert" passed after 0.001 seconds.
-◇ Test "Mehrere gueltige Loesungen werden akzeptiert" started.
-✔ Test "Mehrere gueltige Loesungen werden akzeptiert" passed after 0.001 seconds.
-◇ Test "Ein einzelner Tippfehler wird als typo erkannt" started.
-✔ Test "Ein einzelner Tippfehler wird als typo erkannt" passed after 0.001 seconds.
-◇ Test "Voellig falsche Antwort ist wrong" started.
-✔ Test "Voellig falsche Antwort ist wrong" passed after 0.001 seconds.
-◇ Test "Kurze Woerter tolerieren keinen Tippfehler" started.
-✔ Test "Kurze Woerter tolerieren keinen Tippfehler" passed after 0.001 seconds.
-◇ Test "Persische Zeichenvarianten werden normalisiert" started.
-✔ Test "Persische Zeichenvarianten werden normalisiert" passed after 0.001 seconds.
-◇ Test "Leere Eingabe ist wrong" started.
-✔ Test "Leere Eingabe ist wrong" passed after 0.001 seconds.
-◇ Test "Levenshtein-Distanz ist korrekt" started.
-✔ Test "Levenshtein-Distanz ist korrekt" passed after 0.001 seconds.
-✔ Suite AnswerCheckerTests passed after 0.057 seconds.
-◇ Suite BackupTests started.
-◇ Test "Backup der Web-Version wird vollstaendig uebernommen" started.
-✔ Test "Backup der Web-Version wird vollstaendig uebernommen" passed after 0.112 seconds.
-◇ Test "Backup der Web-Version 2.0 (nackte Datenstruktur) wird gelesen" started.
-✔ Test "Backup der Web-Version 2.0 (nackte Datenstruktur) wird gelesen" passed after 0.013 seconds.
-◇ Test "Export → Import ist verlustfrei" started.
-✔ Test "Export → Import ist verlustfrei" passed after 0.044 seconds.
-◇ Test "Zusammenfuehren: nichts geht verloren, neuere Staende gewinnen, zweimal ist harmlos" started.
-✔ Test "Zusammenfuehren: nichts geht verloren, neuere Staende gewinnen, zweimal ist harmlos" passed after 0.013 seconds.
-◇ Test "Ungueltige oder zu neue Backups werden abgelehnt" started.
-✔ Test "Ungueltige oder zu neue Backups werden abgelehnt" passed after 0.001 seconds.
-◇ Test "Aus PWA-IDs entstehen stabile, eindeutige UUIDs; echte UUIDs bleiben erhalten" started.
-✔ Test "Aus PWA-IDs entstehen stabile, eindeutige UUIDs; echte UUIDs bleiben erhalten" passed after 0.001 seconds.
-✔ Suite BackupTests passed after 3.428 seconds.
-◇ Suite StoreSafetyTests started.
-◇ Test "Schnappschuss kopiert alle Store-Dateien und laesst sich zurueckspielen" started.
-✔ Test "Schnappschuss kopiert alle Store-Dateien und laesst sich zurueckspielen" passed after 0.016 seconds.
-◇ Test "Ohne Store wird nichts kopiert" started.
-✔ Test "Ohne Store wird nichts kopiert" passed after 0.001 seconds.
-◇ Test "Aufraeumen: 7 automatische, 5 sonstige – 'replaced' bleibt immer erhalten" started.
-✔ Test "Aufraeumen: 7 automatische, 5 sonstige – 'replaced' bleibt immer erhalten" passed after 0.060 seconds.
-◇ Test "Taegliche JSON-Sicherungen: faellig nach 20 Stunden, begrenzt auf 7" started.
-✔ Test "Taegliche JSON-Sicherungen: faellig nach 20 Stunden, begrenzt auf 7" passed after 0.023 seconds.
-✔ Suite StoreSafetyTests passed after 0.139 seconds.
-◇ Suite ContentTests started.
-◇ Test "Bibliothek ist geladen" started.
-✔ Test "Bibliothek ist geladen" passed after 0.001 seconds.
-◇ Test "Saetze: IDs eindeutig, Wortarten passen zu den Woertern, Luecken sinnvoll" started.
-✔ Test "Saetze: IDs eindeutig, Wortarten passen zu den Woertern, Luecken sinnvoll" passed after 0.001 seconds.
-◇ Test "Grammatik: richtige Antwort zuerst, keine doppelten Optionen, Erklaerungen vorhanden" started.
-✔ Test "Grammatik: richtige Antwort zuerst, keine doppelten Optionen, Erklaerungen vorhanden" passed after 0.001 seconds.
-✔ Suite ContentTests passed after 0.002 seconds.
-◇ Suite ExerciseFactoryTests started.
-◇ Test "Lueckentext: Antwort in den Optionen, genau eine Luecke, keine doppelten Optionen, Gross-/Kleinschreibung verraet nichts" started.
-✔ Test "Lueckentext: Antwort in den Optionen, genau eine Luecke, keine doppelten Optionen, Gross-/Kleinschreibung verraet nichts" passed after 1.751 seconds.
-◇ Test "Satzbildung: Loesung wird akzeptiert, Umkehrung nicht, gemischt ungleich Loesung" started.
-✔ Test "Satzbildung: Loesung wird akzeptiert, Umkehrung nicht, gemischt ungleich Loesung" passed after 0.009 seconds.
-◇ Test "Uebersetzen: die Musterloesung ist perfekt" started.
-✔ Test "Uebersetzen: die Musterloesung ist perfekt" passed after 0.003 seconds.
-◇ Test "Grammatik: richtige Antwort bleibt auffindbar" started.
-✔ Test "Grammatik: richtige Antwort bleibt auffindbar" passed after 0.001 seconds.
-◇ Test "Multiple Choice: richtige Antwort + Ablenker ohne Synonyme, auch bei sehr wenigen Karten" started.
-✔ Test "Multiple Choice: richtige Antwort + Ablenker ohne Synonyme, auch bei sehr wenigen Karten" passed after 0.198 seconds.
-◇ Test "Zuordnung: nur eindeutige Paare, hoechstens 5" started.
-✔ Test "Zuordnung: nur eindeutige Paare, hoechstens 5" passed after 0.008 seconds.
-◇ Test "Luecke aus eigenem Beispielsatz" started.
-✔ Test "Luecke aus eigenem Beispielsatz" passed after 0.011 seconds.
-◇ Test "Plaene: schwierige Woerter, Hoeren nur wenn moeglich, Wiederholung nach Fehler" started.
-✔ Test "Plaene: schwierige Woerter, Hoeren nur wenn moeglich, Wiederholung nach Fehler" passed after 0.009 seconds.
-◇ Test "Mix-Plan enthaelt verschiedene Aufgabentypen" started.
-✔ Test "Mix-Plan enthaelt verschiedene Aufgabentypen" passed after 0.013 seconds.
-✔ Suite ExerciseFactoryTests passed after 2.007 seconds.
-◇ Suite FSRSCorrectionTests started.
-◇ Test "FSRS-4.5: Anfangsschwierigkeit D0 (Nochmal/Schwer/Gut/Leicht)" started.
-✔ Test "FSRS-4.5: Anfangsschwierigkeit D0 (Nochmal/Schwer/Gut/Leicht)" passed after 0.001 seconds.
-◇ Test "Neue Karte mit 'Gut' startet nicht bei Schwierigkeit 1" started.
-✔ Test "Neue Karte mit 'Gut' startet nicht bei Schwierigkeit 1" passed after 0.001 seconds.
-◇ Test "Schwierigkeit bleibt in 1…10; 'Nochmal' erhoeht, 'Leicht' senkt" started.
-✔ Test "Schwierigkeit bleibt in 1…10; 'Nochmal' erhoeht, 'Leicht' senkt" passed after 0.001 seconds.
-◇ Test "replayDifficulty ist deterministisch" started.
-✔ Test "replayDifficulty ist deterministisch" passed after 0.001 seconds.
-✔ Suite FSRSCorrectionTests passed after 0.001 seconds.
-◇ Suite AnswerCheckerExtendedTests started.
-◇ Test "Deutsch: Satzzeichen, Umlaut-Umschrift, ß" started.
-✔ Test "Deutsch: Satzzeichen, Umlaut-Umschrift, ß" passed after 0.001 seconds.
-◇ Test "Fehlender Artikel ist nur ein Tippfehler" started.
-✔ Test "Fehlender Artikel ist nur ein Tippfehler" passed after 0.001 seconds.
-◇ Test "Persisch: Halbleerzeichen, Diakritika und Ziffern werden vereinheitlicht (auf Skalar-Ebene)" started.
-✔ Test "Persisch: Halbleerzeichen, Diakritika und Ziffern werden vereinheitlicht (auf Skalar-Ebene)" passed after 0.001 seconds.
-◇ Test "„اب“ statt „آب“ ist nur ein Tippfehler" started.
-✔ Test "„اب“ statt „آب“ ist nur ein Tippfehler" passed after 0.001 seconds.
-◇ Test "Sätze: Toleranz waechst mit der Laenge" started.
-✔ Test "Sätze: Toleranz waechst mit der Laenge" passed after 0.001 seconds.
-✔ Suite AnswerCheckerExtendedTests passed after 0.127 seconds.
-◇ Suite AdaptiveAndRecordingTests started.
-◇ Test "Schwierige Woerter werden erkannt und sortiert" started.
-✔ Test "Schwierige Woerter werden erkannt und sortiert" passed after 0.001 seconds.
-◇ Test "Punkte: richtig > mit Muehe > falsch; schwierige Woerter mehr; Wiederholung halb" started.
-✔ Test "Punkte: richtig > mit Muehe > falsch; schwierige Woerter mehr; Wiederholung halb" passed after 0.001 seconds.
-◇ Test "Level: ab 50 XP Level 2, ab 200 XP Level 3" started.
-✔ Test "Level: ab 50 XP Level 2, ab 200 XP Level 3" passed after 0.001 seconds.
-◇ Test "Karte verbuchen: FSRS plant neu, Verlauf wird geschrieben" started.
-✔ Test "Karte verbuchen: FSRS plant neu, Verlauf wird geschrieben" passed after 0.006 seconds.
-◇ Test "Uebungswiederholung und reine Spiele aendern den FSRS-Plan nicht" started.
-✔ Test "Uebungswiederholung und reine Spiele aendern den FSRS-Plan nicht" passed after 0.010 seconds.
-◇ Test "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts" started.
-✔ Test "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts" passed after 0.011 seconds.
-✔ Suite AdaptiveAndRecordingTests passed after 0.033 seconds.
+✔ Test "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts" passed after 0.006 seconds.
+✔ Suite AdaptiveAndRecordingTests passed after 0.392 seconds.
 ◇ Suite FSRSTests started.
 ◇ Test "Neue Karte erhaelt positive Stabilitaet und Intervall" started.
 ✔ Test "Neue Karte erhaelt positive Stabilitaet und Intervall" passed after 0.001 seconds.
@@ -213,26 +13,26 @@ Test Suite 'All tests' passed at 2026-10-08 19:03:04.325.
 ✔ Test "Abrufwahrscheinlichkeit faellt mit der Zeit" passed after 0.001 seconds.
 ◇ Test "Intervall respektiert die Obergrenze" started.
 ✔ Test "Intervall respektiert die Obergrenze" passed after 0.001 seconds.
-✔ Suite FSRSTests passed after 0.152 seconds.
+✔ Suite FSRSTests passed after 0.179 seconds.
 ◇ Suite SessionTests started.
 ◇ Test "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern" started.
-✔ Test "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern" passed after 0.069 seconds.
+✔ Test "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern" passed after 0.015 seconds.
 ◇ Test "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht" started.
-✔ Test "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht" passed after 0.017 seconds.
+✔ Test "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht" passed after 0.008 seconds.
 ◇ Test "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben" started.
-✔ Test "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben" passed after 0.035 seconds.
+✔ Test "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben" passed after 0.023 seconds.
 ◇ Test "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)" started.
-✔ Test "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)" passed after 0.010 seconds.
+✔ Test "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)" passed after 0.038 seconds.
 ◇ Test "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht" started.
-✔ Test "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht" passed after 0.010 seconds.
+✔ Test "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht" passed after 0.007 seconds.
 ◇ Test "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht" started.
-✔ Test "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht" passed after 0.008 seconds.
+✔ Test "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht" passed after 0.006 seconds.
 ◇ Test "Grammatik: Antwort wird verbucht und gemerkt" started.
-✔ Test "Grammatik: Antwort wird verbucht und gemerkt" passed after 0.007 seconds.
-✔ Suite SessionTests passed after 0.306 seconds.
+✔ Test "Grammatik: Antwort wird verbucht und gemerkt" passed after 0.005 seconds.
+✔ Suite SessionTests passed after 0.106 seconds.
 ◇ Suite StatisticsTests started.
 ◇ Test "Zaehlt aktive und inaktive Karten korrekt" started.
-✔ Test "Zaehlt aktive und inaktive Karten korrekt" passed after 0.004 seconds.
+✔ Test "Zaehlt aktive und inaktive Karten korrekt" passed after 0.005 seconds.
 ◇ Test "Erfolgsquote basiert auf Nicht-'again'-Antworten" started.
 ✔ Test "Erfolgsquote basiert auf Nicht-'again'-Antworten" passed after 0.001 seconds.
 ◇ Test "Streak zaehlt aufeinanderfolgende Tage" started.
@@ -243,357 +43,557 @@ Test Suite 'All tests' passed at 2026-10-08 19:03:04.325.
 ✔ Test "Tagesziel zaehlt keine Uebungswiederholungen; XP und Level werden aus dem Verlauf berechnet" passed after 0.001 seconds.
 ◇ Test "Wissensstand: neu / lernend / gefestigt" started.
 ✔ Test "Wissensstand: neu / lernend / gefestigt" passed after 0.001 seconds.
-✔ Suite StatisticsTests passed after 0.040 seconds.
-✔ Test run with 65 tests in 11 suites passed after 6.343 seconds.
-2026-10-08 19:03:17.684477+0000 DariAppUITests-Runner[10597:37237] [Default] Running tests...
-objc[10597]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x1085a8310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10848c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+✔ Suite StatisticsTests passed after 0.012 seconds.
+✔ Test run with 65 tests in 11 suites passed after 15.239 seconds.
+2026-10-08 19:15:20.086416+0000 DariAppUITests-Runner[5609:23660] [Default] Running tests...
+objc[5609]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108eb8310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107a18398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
     t =      nans Interface orientation changed to Portrait
-Test Suite 'All tests' started at 2026-10-08 19:03:24.699.
-Test Suite 'DariAppUITests.xctest' started at 2026-10-08 19:03:24.701.
-Test Suite 'DariAppUITests' started at 2026-10-08 19:03:24.702.
+Test Suite 'All tests' started at 2026-10-08 19:15:28.717.
+Test Suite 'DariAppUITests.xctest' started at 2026-10-08 19:15:28.718.
+Test Suite 'DariAppUITests' started at 2026-10-08 19:15:28.718.
+Test Case '-[DariAppUITests.DariAppUITests testClozeAnswerAndContinue]' started.
+    t =     0.00s Start Test at 2026-10-08 19:15:28.719
+    t =     0.99s Set Up
+    t =     1.00s Open com.dari.DariApp
+    t =     1.00s     Launch com.dari.DariApp
+2026-10-08 19:15:31.896 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:15:31.896 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     9.83s         Setting up automation session
+    t =    11.13s         Wait for com.dari.DariApp to idle
+    t =    13.64s Tap "Üben" Button
+    t =    13.64s     Wait for com.dari.DariApp to idle
+    t =    13.64s     Find the "Üben" Button
+    t =    13.86s     Check for interrupting elements affecting "Üben" Button
+    t =    13.96s     Synthesize event
+    t =    14.43s     Wait for com.dari.DariApp to idle
+    t =    16.20s Waiting 5.0s for "hub.cloze" Any to exist
+    t =    17.26s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.cloze" Any`
+    t =    17.26s         Checking existence of `"hub.cloze" Any`
+    t =    17.47s Tap "hub.cloze" Any
+    t =    17.47s     Wait for com.dari.DariApp to idle
+    t =    17.47s     Find the "hub.cloze" Any
+    t =    18.12s     Check for interrupting elements affecting "hub.cloze" Button
+    t =    18.56s     Synthesize event
+    t =    18.59s         Scroll element to visible
+    t =    18.60s         Find the "hub.cloze" Button
+    t =    19.81s         Computed hit point {105.5, 555} after scrolling to visible
+    t =    20.09s     Wait for com.dari.DariApp to idle
+    t =    21.19s Waiting 8.0s for "option.0" Any to exist
+    t =    22.25s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =    22.25s         Checking existence of `"option.0" Any`
+    t =    22.66s Tap "option.0" Any
+    t =    22.66s     Wait for com.dari.DariApp to idle
+    t =    22.67s     Find the "option.0" Any
+    t =    23.33s     Check for interrupting elements affecting "option.0" Button
+    t =    23.57s     Synthesize event
+    t =    23.93s     Wait for com.dari.DariApp to idle
+    t =    23.94s Waiting 5.0s for "practice.next" Any to exist
+    t =    24.99s     Checking `Expect predicate `existsNoRetry == 1` for object "practice.next" Any`
+    t =    24.99s         Checking existence of `"practice.next" Any`
+    t =    25.32s Added attachment named '10b-lueckentext-antwort'
+    t =    25.33s Tap "practice.next" Any
+    t =    25.33s     Wait for com.dari.DariApp to idle
+    t =    25.33s     Find the "practice.next" Any
+    t =    25.48s     Check for interrupting elements affecting "practice.next" Button
+    t =    25.55s     Synthesize event
+    t =    25.57s         Scroll element to visible
+    t =    25.57s         Find the "practice.next" Button
+    t =    25.80s         Computed hit point {201, 734.83333333333337} after scrolling to visible
+    t =    26.10s     Wait for com.dari.DariApp to idle
+    t =    26.38s Waiting 5.0s for "option.0" Any to exist
+    t =    27.44s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =    27.44s         Checking existence of `"option.0" Any`
+    t =    27.62s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testClozeAnswerAndContinue]' passed (28.082 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' started.
-    t =     0.00s Start Test at 2026-10-08 19:03:24.705
-    t =     1.88s Set Up
-    t =     1.89s Open com.dari.DariApp
-    t =     1.89s     Launch com.dari.DariApp
-2026-10-08 19:03:31.009 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:03:31.009 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     8.43s         Setting up automation session
-    t =    10.90s         Wait for com.dari.DariApp to idle
-    t =    13.83s Tap "Üben" Button
-    t =    13.84s     Wait for com.dari.DariApp to idle
-    t =    13.85s     Find the "Üben" Button
-    t =    14.31s     Check for interrupting elements affecting "Üben" Button
-    t =    14.43s     Synthesize event
-    t =    14.88s     Wait for com.dari.DariApp to idle
-    t =    17.03s Waiting 5.0s for "hub.cloze" Any to exist
-    t =    18.08s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.cloze" Any`
-    t =    18.08s         Checking existence of `"hub.cloze" Any`
-    t =    18.46s Tap "hub.cloze" Any
-    t =    18.46s     Wait for com.dari.DariApp to idle
-    t =    18.47s     Find the "hub.cloze" Any
-    t =    18.72s     Check for interrupting elements affecting "hub.cloze" Button
-    t =    18.83s     Synthesize event
-    t =    18.86s         Scroll element to visible
-    t =    18.87s         Find the "hub.cloze" Button
-    t =    19.71s         Computed hit point {105.5, 555} after scrolling to visible
-    t =    20.00s     Wait for com.dari.DariApp to idle
-    t =    20.12s Waiting 8.0s for "Lückentext" NavigationBar to exist
-    t =    21.13s     Checking `Expect predicate `existsNoRetry == 1` for object "Lückentext" NavigationBar`
-    t =    21.14s         Checking existence of `"Lückentext" NavigationBar`
-    t =    21.87s Added attachment named '10-lueckentext'
-    t =    21.88s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' passed (22.768 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:15:56.802
+    t =     0.03s Set Up
+    t =     0.04s Open com.dari.DariApp
+    t =     0.04s     Launch com.dari.DariApp
+    t =     0.04s         Terminate com.dari.DariApp:6214
+2026-10-08 19:15:57.924 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:15:57.924 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.43s         Setting up automation session
+    t =     3.28s         Wait for com.dari.DariApp to idle
+    t =     5.19s Tap "Üben" Button
+    t =     5.19s     Wait for com.dari.DariApp to idle
+    t =     5.20s     Find the "Üben" Button
+    t =     5.58s     Check for interrupting elements affecting "Üben" Button
+    t =     5.68s     Synthesize event
+    t =     6.01s     Wait for com.dari.DariApp to idle
+    t =     7.58s Waiting 5.0s for "hub.cloze" Any to exist
+    t =     8.63s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.cloze" Any`
+    t =     8.63s         Checking existence of `"hub.cloze" Any`
+    t =     8.83s Tap "hub.cloze" Any
+    t =     8.83s     Wait for com.dari.DariApp to idle
+    t =     8.83s     Find the "hub.cloze" Any
+    t =     9.01s     Check for interrupting elements affecting "hub.cloze" Button
+    t =     9.10s     Synthesize event
+    t =     9.12s         Scroll element to visible
+    t =     9.12s         Find the "hub.cloze" Button
+    t =     9.50s         Computed hit point {105.5, 555} after scrolling to visible
+    t =     9.80s     Wait for com.dari.DariApp to idle
+    t =     9.86s Waiting 8.0s for "Lückentext" NavigationBar to exist
+    t =    10.93s     Checking `Expect predicate `existsNoRetry == 1` for object "Lückentext" NavigationBar`
+    t =    10.93s         Checking existence of `"Lückentext" NavigationBar`
+    t =    11.15s Added attachment named '10-lueckentext'
+    t =    11.16s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' passed (11.709 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' started.
-    t =     0.01s Start Test at 2026-10-08 19:03:47.482
-    t =     0.06s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.07s         Terminate com.dari.DariApp:10993
-2026-10-08 19:03:48.579 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:03:48.580 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     3.53s         Setting up automation session
-    t =    11.76s         Wait for com.dari.DariApp to idle
-    t =    31.67s Waiting 8.0s for "today.hero" Button to exist
-    t =    32.69s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
-    t =    32.69s         Checking existence of `"today.hero" Button`
-    t =    33.06s Find the "today.hero" Button
-    t =    33.17s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' passed (33.696 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:16:08.511
+    t =     0.02s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:7152
+2026-10-08 19:16:09.562 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:16:09.562 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.92s         Setting up automation session
+    t =     2.85s         Wait for com.dari.DariApp to idle
+    t =     4.70s Waiting 8.0s for "today.hero" Button to exist
+    t =     5.74s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =     5.74s         Checking existence of `"today.hero" Button`
+    t =     5.89s Find the "today.hero" Button
+    t =     5.93s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' passed (6.956 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' started.
+    t =     0.00s Start Test at 2026-10-08 19:16:15.468
+    t =     0.02s Set Up
+    t =     0.02s Open com.dari.DariApp
+    t =     0.02s     Launch com.dari.DariApp
+    t =     0.02s         Terminate com.dari.DariApp:7656
+2026-10-08 19:16:16.504 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:16:16.504 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.80s         Setting up automation session
+    t =     2.82s         Wait for com.dari.DariApp to idle
+    t =     4.77s Tap "Karten" Button
+    t =     4.77s     Wait for com.dari.DariApp to idle
+    t =     4.78s     Find the "Karten" Button
+    t =     5.02s     Check for interrupting elements affecting "Karten" Button
+    t =     5.08s     Synthesize event
+    t =     5.37s     Wait for com.dari.DariApp to idle
+    t =     7.20s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =     8.27s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =     8.27s         Checking existence of `"Beispielkarten laden" Button`
+    t =     8.34s Tap "Beispielkarten laden" Button
+    t =     8.34s     Wait for com.dari.DariApp to idle
+    t =     8.34s     Find the "Beispielkarten laden" Button
+    t =     8.38s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =     8.42s     Synthesize event
+    t =     8.72s     Wait for com.dari.DariApp to idle
+    t =    12.00s Waiting 8.0s for "card.row" Any to exist
+    t =    13.03s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    13.03s         Checking existence of `"card.row" Any`
+    t =    13.28s Tap "Heute" Button
+    t =    13.28s     Wait for com.dari.DariApp to idle
+    t =    13.29s     Find the "Heute" Button
+    t =    13.36s     Check for interrupting elements affecting "sun.max" Button
+    t =    13.41s     Synthesize event
+    t =    13.72s     Wait for com.dari.DariApp to idle
+    t =    15.12s Waiting 5.0s for "today.hero" Button to exist
+    t =    16.16s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =    16.16s         Checking existence of `"today.hero" Button`
+    t =    16.21s Tap "today.hero" Button
+    t =    16.21s     Wait for com.dari.DariApp to idle
+    t =    16.21s     Find the "today.hero" Button
+    t =    16.28s     Check for interrupting elements affecting "today.hero" Button
+    t =    16.32s     Synthesize event
+    t =    16.68s     Wait for com.dari.DariApp to idle
+    t =    17.52s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    17.84s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    18.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    18.87s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    18.91s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    18.95s Tap "Zum Umdrehen tippen" StaticText
+    t =    18.95s     Wait for com.dari.DariApp to idle
+    t =    18.95s     Find the "Zum Umdrehen tippen" StaticText
+    t =    18.99s     Check for interrupting elements affecting "Zum Umdrehen tippen" StaticText
+    t =    19.05s     Synthesize event
+    t =    19.34s     Wait for com.dari.DariApp to idle
+    t =    19.35s Waiting 5.0s for "Gut" Button to exist
+    t =    20.38s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    20.38s         Checking existence of `"Gut" Button`
+    t =    20.42s         Capturing element debug description
+    t =    21.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    21.35s         Checking existence of `"Gut" Button`
+    t =    21.39s         Capturing element debug description
+    t =    22.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    22.43s         Checking existence of `"Gut" Button`
+    t =    22.46s         Capturing element debug description
+    t =    23.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    23.39s         Checking existence of `"Gut" Button`
+    t =    23.42s         Capturing element debug description
+    t =    24.36s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    24.36s         Checking existence of `"Gut" Button`
+    t =    24.45s         Capturing element debug description
+    t =    24.45s     Checking existence of `"Gut" Button`
+    t =    24.50s Collecting debug information to assist test failure triage
+    t =    24.50s     Requesting snapshot of accessibility hierarchy for app with pid 7783
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:200: error: -[DariAppUITests.DariAppUITests testFlipSessionCompletes] : XCTAssertTrue failed
+    t =    25.01s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' failed (25.246 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testGrammarAnswerAndContinue]' started.
+    t =     0.00s Start Test at 2026-10-08 19:16:40.716
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:7783
+2026-10-08 19:16:41.754 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:16:41.754 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.02s         Setting up automation session
+    t =     3.47s         Wait for com.dari.DariApp to idle
+    t =     5.54s Tap "Üben" Button
+    t =     5.54s     Wait for com.dari.DariApp to idle
+    t =     5.54s     Find the "Üben" Button
+    t =     5.69s     Check for interrupting elements affecting "Üben" Button
+    t =     5.74s     Synthesize event
+    t =     6.15s     Wait for com.dari.DariApp to idle
+    t =     7.65s Checking existence of `"hub.grammar" Any`
+    t =     8.10s Swipe up Target Application 'com.dari.DariApp'
+    t =     8.10s     Wait for com.dari.DariApp to idle
+    t =     8.10s     Find the Target Application 'com.dari.DariApp'
+    t =     8.18s     Check for interrupting elements affecting "ZARA" Application
+    t =     8.23s     Synthesize event
+    t =     8.69s     Wait for com.dari.DariApp to idle
+    t =     9.32s Checking existence of `"hub.grammar" Any`
+    t =     9.99s Waiting 8.0s for "hub.grammar" Any to exist
+    t =    11.01s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
+    t =    11.01s         Checking existence of `"hub.grammar" Any`
+    t =    11.47s Tap "hub.grammar" Any
+    t =    11.47s     Wait for com.dari.DariApp to idle
+    t =    11.49s     Find the "hub.grammar" Any
+    t =    11.81s     Check for interrupting elements affecting "hub.grammar" Button
+    t =    11.92s     Synthesize event
+    t =    12.24s     Wait for com.dari.DariApp to idle
+    t =    13.13s Waiting 5.0s for "grammar.start" Any to exist
+    t =    14.15s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
+    t =    14.15s         Checking existence of `"grammar.start" Any`
+    t =    14.42s Tap "grammar.start" Any
+    t =    14.42s     Wait for com.dari.DariApp to idle
+    t =    14.43s     Find the "grammar.start" Any
+    t =    14.65s     Check for interrupting elements affecting "grammar.start" Button
+    t =    14.75s     Synthesize event
+    t =    15.05s     Wait for com.dari.DariApp to idle
+    t =    16.06s Waiting 8.0s for "option.0" Any to exist
+    t =    17.08s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =    17.09s         Checking existence of `"option.0" Any`
+    t =    17.45s Tap "option.0" Any
+    t =    17.45s     Wait for com.dari.DariApp to idle
+    t =    17.45s     Find the "option.0" Any
+    t =    17.76s     Check for interrupting elements affecting "option.0" Button
+    t =    17.86s     Synthesize event
+    t =    18.17s     Wait for com.dari.DariApp to idle
+    t =    19.15s Waiting 5.0s for "practice.next" Any to exist
+    t =    20.20s     Checking `Expect predicate `existsNoRetry == 1` for object "practice.next" Any`
+    t =    20.20s         Checking existence of `"practice.next" Any`
+    t =    20.52s Added attachment named '09b-grammatik-antwort'
+    t =    20.52s Tap "practice.next" Any
+    t =    20.52s     Wait for com.dari.DariApp to idle
+    t =    20.53s     Find the "practice.next" Any
+    t =    20.69s     Check for interrupting elements affecting "practice.next" Button
+    t =    20.77s     Synthesize event
+    t =    20.81s         Scroll element to visible
+    t =    20.94s         Find the "practice.next" Button
+    t =    21.25s         Computed hit point {201, 734.83333333333337} after scrolling to visible
+    t =    21.55s     Wait for com.dari.DariApp to idle
+    t =    22.46s Waiting 5.0s for "option.0" Any to exist
+    t =    23.53s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =    23.53s         Checking existence of `"option.0" Any`
+    t =    23.67s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testGrammarAnswerAndContinue]' passed (23.918 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' started.
-    t =     0.00s Start Test at 2026-10-08 19:04:21.175
-    t =     0.05s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.06s         Terminate com.dari.DariApp:11357
-2026-10-08 19:04:22.300 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:04:22.301 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.44s         Setting up automation session
-    t =     4.42s         Wait for com.dari.DariApp to idle
-    t =     7.01s Tap "Üben" Button
-    t =     7.01s     Wait for com.dari.DariApp to idle
-    t =     7.02s     Find the "Üben" Button
-    t =     7.48s     Check for interrupting elements affecting "Üben" Button
-    t =     7.58s     Synthesize event
-    t =     8.03s     Wait for com.dari.DariApp to idle
-    t =     9.89s Waiting 8.0s for "hub.grammar" Any to exist
-    t =    10.90s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    10.90s         Checking existence of `"hub.grammar" Any`
-    t =    11.61s         Capturing element debug description
-    t =    11.90s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    11.90s         Checking existence of `"hub.grammar" Any`
-    t =    12.79s         Capturing element debug description
-    t =    12.90s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    12.90s         Checking existence of `"hub.grammar" Any`
-    t =    13.67s         Capturing element debug description
-    t =    13.98s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    13.98s         Checking existence of `"hub.grammar" Any`
-    t =    15.11s         Capturing element debug description
-    t =    15.94s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    15.94s         Checking existence of `"hub.grammar" Any`
-    t =    16.38s         Capturing element debug description
-    t =    16.90s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    16.90s         Checking existence of `"hub.grammar" Any`
-    t =    17.12s         Capturing element debug description
-    t =    17.90s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    17.90s         Checking existence of `"hub.grammar" Any`
-    t =    18.15s         Capturing element debug description
-    t =    18.15s     Checking existence of `"hub.grammar" Any`
-    t =    18.44s Collecting debug information to assist test failure triage
-    t =    18.44s     Requesting snapshot of accessibility hierarchy for app with pid 13260
-    t =    18.85s Added attachment named 'fehler-hub'
-    t =    18.86s Requesting snapshot of accessibility hierarchy for app with pid 13260
-    t =    19.17s Requesting snapshot of accessibility hierarchy for app with pid 13260
-    t =    19.28s Checking existence of `"hub.grammar" Any`
-/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:129: error: -[DariAppUITests.DariAppUITests testGrammarFlow] : XCTAssertTrue failed
-    t =    20.56s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (21.081 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:17:04.634
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:9059
+2026-10-08 19:17:05.723 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:17:05.724 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.12s         Setting up automation session
+    t =     3.53s         Wait for com.dari.DariApp to idle
+    t =     5.54s Tap "Üben" Button
+    t =     5.54s     Wait for com.dari.DariApp to idle
+    t =     5.54s     Find the "Üben" Button
+    t =     5.84s     Check for interrupting elements affecting "Üben" Button
+    t =     5.89s     Synthesize event
+    t =     6.25s     Wait for com.dari.DariApp to idle
+    t =     8.00s Checking existence of `"hub.grammar" Any`
+    t =     8.66s Swipe up Target Application 'com.dari.DariApp'
+    t =     8.66s     Wait for com.dari.DariApp to idle
+    t =     8.67s     Find the Target Application 'com.dari.DariApp'
+    t =     8.74s     Check for interrupting elements affecting "ZARA" Application
+    t =     8.78s     Synthesize event
+    t =     9.22s     Wait for com.dari.DariApp to idle
+    t =     9.84s Checking existence of `"hub.grammar" Any`
+    t =    10.32s Waiting 8.0s for "hub.grammar" Any to exist
+    t =    11.35s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
+    t =    11.35s         Checking existence of `"hub.grammar" Any`
+    t =    11.62s Checking existence of `"hub.grammar" Any`
+    t =    11.79s Tap "hub.grammar" Any
+    t =    11.79s     Wait for com.dari.DariApp to idle
+    t =    11.80s     Find the "hub.grammar" Any
+    t =    11.97s     Check for interrupting elements affecting "hub.grammar" Button
+    t =    12.07s     Synthesize event
+    t =    12.37s     Wait for com.dari.DariApp to idle
+    t =    13.25s Waiting 5.0s for "grammar.start" Any to exist
+    t =    14.28s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
+    t =    14.28s         Checking existence of `"grammar.start" Any`
+    t =    14.61s Added attachment named '08-grammatik-auswahl'
+    t =    14.61s Tap "grammar.start" Any
+    t =    14.61s     Wait for com.dari.DariApp to idle
+    t =    14.61s     Find the "grammar.start" Any
+    t =    14.78s     Check for interrupting elements affecting "grammar.start" Button
+    t =    14.87s     Synthesize event
+    t =    15.18s     Wait for com.dari.DariApp to idle
+    t =    16.14s Waiting 8.0s for "Grammatik" NavigationBar to exist
+    t =    17.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Grammatik" NavigationBar`
+    t =    17.20s         Checking existence of `"Grammatik" NavigationBar`
+    t =    17.38s Added attachment named '09-grammatik-frage'
+    t =    17.38s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' passed (17.633 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' started.
-    t =     0.00s Start Test at 2026-10-08 19:04:42.257
-    t =     0.04s Set Up
-    t =     0.04s Open com.dari.DariApp
-    t =     0.05s     Launch com.dari.DariApp
-    t =     0.05s         Terminate com.dari.DariApp:13260
-2026-10-08 19:04:43.448 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:04:43.449 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.47s         Setting up automation session
-    t =     4.05s         Wait for com.dari.DariApp to idle
-    t =     6.73s Tap "Karten" Button
-    t =     6.73s     Wait for com.dari.DariApp to idle
-    t =     6.74s     Find the "Karten" Button
-    t =     7.10s     Check for interrupting elements affecting "Karten" Button
-    t =     7.18s     Synthesize event
-    t =     7.50s     Wait for com.dari.DariApp to idle
-    t =     9.58s Tap "Karte anlegen" Button
-    t =     9.58s     Wait for com.dari.DariApp to idle
-    t =     9.58s     Find the "Karte anlegen" Button
-    t =     9.72s     Check for interrupting elements affecting "Karte anlegen" Button
-    t =     9.79s     Synthesize event
-    t =    10.08s     Wait for com.dari.DariApp to idle
-    t =    10.81s Waiting 5.0s for "Neue Karte" NavigationBar to exist
-    t =    11.81s     Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
-    t =    11.82s         Checking existence of `"Neue Karte" NavigationBar`
-    t =    12.30s Added attachment named '05-karten-editor'
-    t =    12.30s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (12.579 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:17:22.268
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:10145
+2026-10-08 19:17:23.380 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:17:23.380 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.47s         Setting up automation session
+    t =     2.88s         Wait for com.dari.DariApp to idle
+    t =     5.15s Tap "Karten" Button
+    t =     5.15s     Wait for com.dari.DariApp to idle
+    t =     5.16s     Find the "Karten" Button
+    t =     5.32s     Check for interrupting elements affecting "Karten" Button
+    t =     5.36s     Synthesize event
+    t =     5.68s     Wait for com.dari.DariApp to idle
+    t =     7.57s Tap "Karte anlegen" Button
+    t =     7.57s     Wait for com.dari.DariApp to idle
+    t =     7.57s     Find the "Karte anlegen" Button
+    t =     7.66s     Check for interrupting elements affecting "Karte anlegen" Button
+    t =     7.70s     Synthesize event
+    t =     8.00s     Wait for com.dari.DariApp to idle
+    t =     8.63s Waiting 5.0s for "Neue Karte" NavigationBar to exist
+    t =     9.69s     Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
+    t =     9.69s         Checking existence of `"Neue Karte" NavigationBar`
+    t =    10.20s Added attachment named '05-karten-editor'
+    t =    10.20s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (10.449 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' started.
-    t =     0.00s Start Test at 2026-10-08 19:04:54.837
-    t =     0.04s Set Up
-    t =     0.04s Open com.dari.DariApp
-    t =     0.04s     Launch com.dari.DariApp
-    t =     0.04s         Terminate com.dari.DariApp:14037
-2026-10-08 19:04:55.936 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:04:55.936 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.54s         Setting up automation session
-    t =     6.15s         Wait for com.dari.DariApp to idle
-    t =    15.65s Tap "Karten" Button
-    t =    15.65s     Wait for com.dari.DariApp to idle
-    t =    15.71s     Find the "Karten" Button
-    t =    16.21s     Check for interrupting elements affecting "Karten" Button
-    t =    16.34s     Synthesize event
-    t =    16.78s     Wait for com.dari.DariApp to idle
-    t =    18.91s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    19.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    19.97s         Checking existence of `"Beispielkarten laden" Button`
-    t =    20.15s Tap "Beispielkarten laden" Button
-    t =    20.15s     Wait for com.dari.DariApp to idle
-    t =    20.16s     Find the "Beispielkarten laden" Button
-    t =    20.25s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    20.35s     Synthesize event
-    t =    20.68s     Wait for com.dari.DariApp to idle
-    t =    21.30s Waiting 8.0s for "card.row" Any to exist
-    t =    22.37s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    22.37s         Checking existence of `"card.row" Any`
-    t =    24.46s Tap "Üben" Button
-    t =    24.46s     Wait for com.dari.DariApp to idle
-    t =    24.47s     Find the "Üben" Button
-    t =    24.81s     Check for interrupting elements affecting "brain.head.profile" Button
-    t =    26.60s     Synthesize event
-    t =    28.53s     Wait for com.dari.DariApp to idle
-    t =    30.23s Waiting 5.0s for "Üben" NavigationBar to exist
-    t =    31.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Üben" NavigationBar`
-    t =    31.24s         Checking existence of `"Üben" NavigationBar`
-    t =    33.04s Added attachment named '06-ueben'
-    t =    33.04s Waiting 5.0s for "hub.mix" Any to exist
-    t =    34.10s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.mix" Any`
-    t =    34.10s         Checking existence of `"hub.mix" Any`
-    t =    38.31s         Capturing element debug description
-    t =    38.31s     Checking existence of `"hub.mix" Any`
-    t =    41.68s Tap "hub.mix" Any
-    t =    41.68s     Wait for com.dari.DariApp to idle
-    t =    41.68s     Find the "hub.mix" Any
-    t =    42.35s     Check for interrupting elements affecting "hub.mix" Button
-    t =    43.33s     Synthesize event
-    t =    44.20s     Wait for com.dari.DariApp to idle
-    t =    44.51s Waiting 8.0s for "5-Minuten-Spiel" NavigationBar to exist
-    t =    45.57s     Checking `Expect predicate `existsNoRetry == 1` for object "5-Minuten-Spiel" NavigationBar`
-    t =    45.57s         Checking existence of `"5-Minuten-Spiel" NavigationBar`
-    t =    46.33s Added attachment named '07-mix'
-    t =    46.34s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' passed (46.891 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:17:32.718
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:10811
+2026-10-08 19:17:33.847 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:17:33.847 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.95s         Setting up automation session
+    t =     3.51s         Wait for com.dari.DariApp to idle
+    t =     5.50s Tap "Karten" Button
+    t =     5.50s     Wait for com.dari.DariApp to idle
+    t =     5.50s     Find the "Karten" Button
+    t =     5.74s     Check for interrupting elements affecting "Karten" Button
+    t =     5.79s     Synthesize event
+    t =     6.09s     Wait for com.dari.DariApp to idle
+    t =     7.90s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =     8.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =     8.91s         Checking existence of `"Beispielkarten laden" Button`
+    t =     8.97s Tap "Beispielkarten laden" Button
+    t =     8.97s     Wait for com.dari.DariApp to idle
+    t =     8.98s     Find the "Beispielkarten laden" Button
+    t =     9.02s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =     9.06s     Synthesize event
+    t =     9.34s     Wait for com.dari.DariApp to idle
+    t =     9.45s Waiting 8.0s for "card.row" Any to exist
+    t =    10.47s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    10.47s         Checking existence of `"card.row" Any`
+    t =    10.75s Tap "Üben" Button
+    t =    10.75s     Wait for com.dari.DariApp to idle
+    t =    10.75s     Find the "Üben" Button
+    t =    10.83s     Check for interrupting elements affecting "brain.head.profile" Button
+    t =    10.89s     Synthesize event
+    t =    11.20s     Wait for com.dari.DariApp to idle
+    t =    12.89s Waiting 5.0s for "Üben" NavigationBar to exist
+    t =    13.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Üben" NavigationBar`
+    t =    13.91s         Checking existence of `"Üben" NavigationBar`
+    t =    14.11s Added attachment named '06-ueben'
+    t =    14.12s Waiting 5.0s for "hub.mix" Any to exist
+    t =    15.14s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.mix" Any`
+    t =    15.14s         Checking existence of `"hub.mix" Any`
+    t =    15.29s Tap "hub.mix" Any
+    t =    15.29s     Wait for com.dari.DariApp to idle
+    t =    15.29s     Find the "hub.mix" Any
+    t =    15.45s     Check for interrupting elements affecting "hub.mix" Button
+    t =    15.53s     Synthesize event
+    t =    15.84s     Wait for com.dari.DariApp to idle
+    t =    16.84s Waiting 8.0s for "5-Minuten-Spiel" NavigationBar to exist
+    t =    17.87s     Checking `Expect predicate `existsNoRetry == 1` for object "5-Minuten-Spiel" NavigationBar`
+    t =    17.87s         Checking existence of `"5-Minuten-Spiel" NavigationBar`
+    t =    18.07s Added attachment named '07-mix'
+    t =    18.07s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' passed (18.310 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' started.
-    t =     0.00s Start Test at 2026-10-08 19:05:41.729
-    t =     0.05s Set Up
-    t =     0.05s Open com.dari.DariApp
-    t =     0.05s     Launch com.dari.DariApp
-    t =     0.05s         Terminate com.dari.DariApp:14494
-2026-10-08 19:05:42.864 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:05:42.864 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     5.75s         Setting up automation session
-    t =     7.92s         Wait for com.dari.DariApp to idle
-    t =    10.47s Tap "Karten" Button
-    t =    10.47s     Wait for com.dari.DariApp to idle
-    t =    10.47s     Find the "Karten" Button
-    t =    10.84s     Check for interrupting elements affecting "Karten" Button
-    t =    10.90s     Synthesize event
-    t =    11.23s     Wait for com.dari.DariApp to idle
-    t =    13.33s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    14.39s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    14.40s         Checking existence of `"Beispielkarten laden" Button`
-    t =    14.54s Tap "Beispielkarten laden" Button
-    t =    14.54s     Wait for com.dari.DariApp to idle
-    t =    14.55s     Find the "Beispielkarten laden" Button
-    t =    14.67s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    14.80s     Synthesize event
-    t =    15.11s     Wait for com.dari.DariApp to idle
-    t =    15.34s Waiting 8.0s for "card.row" Any to exist
-    t =    16.39s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    16.39s         Checking existence of `"card.row" Any`
-    t =    17.59s Added attachment named '02-karten'
-    t =    17.59s Tap "Heute" Button
-    t =    17.59s     Wait for com.dari.DariApp to idle
-    t =    17.60s     Find the "Heute" Button
-    t =    17.79s     Check for interrupting elements affecting "sun.max" Button
-    t =    17.91s     Synthesize event
-    t =    18.24s     Wait for com.dari.DariApp to idle
-    t =    19.87s Waiting 5.0s for "today.hero" Button to exist
-    t =    20.88s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
-    t =    20.88s         Checking existence of `"today.hero" Button`
-    t =    20.96s Find the "today.hero" Button
-    t =    21.36s Added attachment named '03-heute-mit-karten'
-    t =    21.37s Tap "today.hero" Button
-    t =    21.37s     Wait for com.dari.DariApp to idle
-    t =    21.38s     Find the "today.hero" Button
-    t =    21.47s     Check for interrupting elements affecting "today.hero" Button
-    t =    21.71s     Synthesize event
-    t =    22.08s     Wait for com.dari.DariApp to idle
-    t =    23.70s Waiting 8.0s for "Lernen" NavigationBar to exist
-    t =    24.77s     Checking `Expect predicate `existsNoRetry == 1` for object "Lernen" NavigationBar`
-    t =    24.77s         Checking existence of `"Lernen" NavigationBar`
-    t =    25.03s Added attachment named '04-lernen-sitzung'
-    t =    25.03s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' passed (25.306 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:17:51.029
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:11128
+2026-10-08 19:17:52.086 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:17:52.086 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.87s         Setting up automation session
+    t =     2.84s         Wait for com.dari.DariApp to idle
+    t =     4.89s Tap "Karten" Button
+    t =     4.89s     Wait for com.dari.DariApp to idle
+    t =     4.90s     Find the "Karten" Button
+    t =     5.08s     Check for interrupting elements affecting "Karten" Button
+    t =     5.13s     Synthesize event
+    t =     5.43s     Wait for com.dari.DariApp to idle
+    t =     7.21s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =     8.23s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =     8.23s         Checking existence of `"Beispielkarten laden" Button`
+    t =     8.28s Tap "Beispielkarten laden" Button
+    t =     8.28s     Wait for com.dari.DariApp to idle
+    t =     8.28s     Find the "Beispielkarten laden" Button
+    t =     8.31s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =     8.35s     Synthesize event
+    t =     8.65s     Wait for com.dari.DariApp to idle
+    t =     8.80s Waiting 8.0s for "card.row" Any to exist
+    t =     9.83s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =     9.83s         Checking existence of `"card.row" Any`
+    t =    10.24s Added attachment named '02-karten'
+    t =    10.24s Tap "Heute" Button
+    t =    10.24s     Wait for com.dari.DariApp to idle
+    t =    10.24s     Find the "Heute" Button
+    t =    10.34s     Check for interrupting elements affecting "sun.max" Button
+    t =    10.39s     Synthesize event
+    t =    10.70s     Wait for com.dari.DariApp to idle
+    t =    12.11s Waiting 5.0s for "today.hero" Button to exist
+    t =    13.14s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =    13.14s         Checking existence of `"today.hero" Button`
+    t =    13.19s Find the "today.hero" Button
+    t =    13.36s Added attachment named '03-heute-mit-karten'
+    t =    13.37s Tap "today.hero" Button
+    t =    13.37s     Wait for com.dari.DariApp to idle
+    t =    13.38s     Find the "today.hero" Button
+    t =    13.42s     Check for interrupting elements affecting "today.hero" Button
+    t =    13.47s     Synthesize event
+    t =    13.83s     Wait for com.dari.DariApp to idle
+    t =    14.64s Waiting 8.0s for "Lernen" NavigationBar to exist
+    t =    15.67s     Checking `Expect predicate `existsNoRetry == 1` for object "Lernen" NavigationBar`
+    t =    15.67s         Checking existence of `"Lernen" NavigationBar`
+    t =    15.84s Added attachment named '04-lernen-sitzung'
+    t =    15.84s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' passed (16.067 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' started.
-    t =     0.00s Start Test at 2026-10-08 19:06:07.035
-    t =     0.05s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.06s         Terminate com.dari.DariApp:15602
-2026-10-08 19:06:08.153 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:06:08.153 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.00s         Setting up automation session
-    t =     4.03s         Wait for com.dari.DariApp to idle
-    t =     7.02s Tap "Mehr" Button
-    t =     7.02s     Wait for com.dari.DariApp to idle
-    t =     7.02s     Find the "Mehr" Button
-    t =     7.65s     Check for interrupting elements affecting "Mehr" Button
-    t =     7.74s     Synthesize event
-    t =     8.09s     Wait for com.dari.DariApp to idle
-    t =    10.43s Waiting 5.0s for "Mehr" NavigationBar to exist
-    t =    11.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Mehr" NavigationBar`
-    t =    11.47s         Checking existence of `"Mehr" NavigationBar`
-    t =    12.11s Added attachment named '11-mehr'
-    t =    12.11s Waiting 5.0s for "settings.backup" Button to exist
-    t =    13.12s     Checking `Expect predicate `existsNoRetry == 1` for object "settings.backup" Button`
-    t =    13.12s         Checking existence of `"settings.backup" Button`
-    t =    13.25s Tap "settings.backup" Button
-    t =    13.25s     Wait for com.dari.DariApp to idle
-    t =    13.26s     Find the "settings.backup" Button
-    t =    13.46s     Check for interrupting elements affecting "settings.backup" Button
-    t =    13.56s     Synthesize event
-    t =    13.88s     Wait for com.dari.DariApp to idle
-    t =    17.19s Waiting 5.0s for "backup.export" Button to exist
-    t =    18.28s     Checking `Expect predicate `existsNoRetry == 1` for object "backup.export" Button`
-    t =    18.28s         Checking existence of `"backup.export" Button`
-    t =    18.78s Checking existence of `"backup.import" Button`
-    t =    19.07s Added attachment named '12-backup'
-    t =    19.07s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' passed (19.320 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:18:07.096
+    t =     0.02s Set Up
+    t =     0.02s Open com.dari.DariApp
+    t =     0.02s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:11851
+2026-10-08 19:18:08.131 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:18:08.131 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.82s         Setting up automation session
+    t =     2.79s         Wait for com.dari.DariApp to idle
+    t =     4.66s Tap "Mehr" Button
+    t =     4.66s     Wait for com.dari.DariApp to idle
+    t =     4.66s     Find the "Mehr" Button
+    t =     4.81s     Check for interrupting elements affecting "Mehr" Button
+    t =     4.86s     Synthesize event
+    t =     5.18s     Wait for com.dari.DariApp to idle
+    t =     7.12s Waiting 5.0s for "Mehr" NavigationBar to exist
+    t =     8.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Mehr" NavigationBar`
+    t =     8.17s         Checking existence of `"Mehr" NavigationBar`
+    t =     8.46s Added attachment named '11-mehr'
+    t =     8.46s Waiting 5.0s for "settings.backup" Button to exist
+    t =     9.46s     Checking `Expect predicate `existsNoRetry == 1` for object "settings.backup" Button`
+    t =     9.46s         Checking existence of `"settings.backup" Button`
+    t =     9.53s Tap "settings.backup" Button
+    t =     9.53s     Wait for com.dari.DariApp to idle
+    t =     9.53s     Find the "settings.backup" Button
+    t =     9.61s     Check for interrupting elements affecting "settings.backup" Button
+    t =     9.66s     Synthesize event
+    t =     9.96s     Wait for com.dari.DariApp to idle
+    t =    10.03s Waiting 5.0s for "backup.export" Button to exist
+    t =    11.08s     Checking `Expect predicate `existsNoRetry == 1` for object "backup.export" Button`
+    t =    11.08s         Checking existence of `"backup.export" Button`
+    t =    11.18s Checking existence of `"backup.import" Button`
+    t =    11.39s Added attachment named '12-backup'
+    t =    11.40s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' passed (11.634 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testStatistics]' started.
-    t =     0.00s Start Test at 2026-10-08 19:06:26.355
-    t =     0.04s Set Up
-    t =     0.04s Open com.dari.DariApp
-    t =     0.04s     Launch com.dari.DariApp
-    t =     0.04s         Terminate com.dari.DariApp:16533
-2026-10-08 19:06:27.431 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:06:27.431 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.57s         Setting up automation session
-    t =     4.12s         Wait for com.dari.DariApp to idle
-    t =     6.80s Tap "Karten" Button
-    t =     6.80s     Wait for com.dari.DariApp to idle
-    t =     6.80s     Find the "Karten" Button
-    t =     7.26s     Check for interrupting elements affecting "Karten" Button
-    t =     7.35s     Synthesize event
-    t =     7.67s     Wait for com.dari.DariApp to idle
-    t =     9.66s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    10.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    10.70s         Checking existence of `"Beispielkarten laden" Button`
-    t =    10.85s Tap "Beispielkarten laden" Button
-    t =    10.85s     Wait for com.dari.DariApp to idle
-    t =    10.86s     Find the "Beispielkarten laden" Button
-    t =    10.97s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    11.06s     Synthesize event
-    t =    11.39s     Wait for com.dari.DariApp to idle
-    t =    11.61s Waiting 8.0s for "card.row" Any to exist
-    t =    12.65s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    12.65s         Checking existence of `"card.row" Any`
-    t =    13.30s Tap "Statistik" Button
-    t =    13.30s     Wait for com.dari.DariApp to idle
-    t =    13.30s     Find the "Statistik" Button
-    t =    13.42s     Check for interrupting elements affecting "chart.bar.xaxis" Button
-    t =    13.51s     Synthesize event
-    t =    13.82s     Wait for com.dari.DariApp to idle
-    t =    15.93s Waiting 5.0s for "Statistik" NavigationBar to exist
-    t =    16.95s     Checking `Expect predicate `existsNoRetry == 1` for object "Statistik" NavigationBar`
-    t =    16.95s         Checking existence of `"Statistik" NavigationBar`
-    t =    17.35s Added attachment named '13-statistik'
-    t =    17.36s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testStatistics]' passed (17.609 seconds).
+    t =     0.00s Start Test at 2026-10-08 19:18:18.731
+    t =     0.02s Set Up
+    t =     0.02s Open com.dari.DariApp
+    t =     0.02s     Launch com.dari.DariApp
+    t =     0.02s         Terminate com.dari.DariApp:12658
+2026-10-08 19:18:19.765 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:18:19.765 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.73s         Setting up automation session
+    t =     2.72s         Wait for com.dari.DariApp to idle
+    t =     6.69s Tap "Karten" Button
+    t =     6.69s     Wait for com.dari.DariApp to idle
+    t =     6.69s     Find the "Karten" Button
+    t =     7.07s     Check for interrupting elements affecting "Karten" Button
+    t =     7.12s     Synthesize event
+    t =     7.45s     Wait for com.dari.DariApp to idle
+    t =     9.27s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    10.32s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    10.33s         Checking existence of `"Beispielkarten laden" Button`
+    t =    10.39s Tap "Beispielkarten laden" Button
+    t =    10.39s     Wait for com.dari.DariApp to idle
+    t =    10.39s     Find the "Beispielkarten laden" Button
+    t =    10.45s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    10.50s     Synthesize event
+    t =    10.81s     Wait for com.dari.DariApp to idle
+    t =    10.95s Waiting 8.0s for "card.row" Any to exist
+    t =    11.96s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    11.97s         Checking existence of `"card.row" Any`
+    t =    12.25s Tap "Statistik" Button
+    t =    12.25s     Wait for com.dari.DariApp to idle
+    t =    12.26s     Find the "Statistik" Button
+    t =    12.33s     Check for interrupting elements affecting "chart.bar.xaxis" Button
+    t =    12.38s     Synthesize event
+    t =    12.67s     Wait for com.dari.DariApp to idle
+    t =    14.62s Waiting 5.0s for "Statistik" NavigationBar to exist
+    t =    15.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Statistik" NavigationBar`
+    t =    15.67s         Checking existence of `"Statistik" NavigationBar`
+    t =    15.91s Added attachment named '13-statistik'
+    t =    15.91s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' passed (16.148 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' started.
-    t =     0.00s Start Test at 2026-10-08 19:06:43.965
-    t =     0.05s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.06s         Terminate com.dari.DariApp:16896
-2026-10-08 19:06:45.034 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:06:45.034 xcodebuild[3510:14357] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.64s         Setting up automation session
-    t =     4.26s         Wait for com.dari.DariApp to idle
-    t =     7.19s Waiting 8.0s for "Heute" Button to exist
-    t =     8.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Heute" Button`
-    t =     8.24s         Checking existence of `"Heute" Button`
-    t =     8.65s Checking existence of `"Üben" Button`
-    t =     8.83s Checking existence of `"Karten" Button`
-    t =     8.98s Checking existence of `"Statistik" Button`
-    t =     9.09s Checking existence of `"Mehr" Button`
-    t =     9.68s Added attachment named '01-heute-leer'
-    t =     9.69s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (9.940 seconds).
-Test Suite 'DariAppUITests' failed at 2026-10-08 19:06:53.906.
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.204) seconds
-Test Suite 'DariAppUITests.xctest' failed at 2026-10-08 19:06:53.912.
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.211) seconds
-Test Suite 'All tests' failed at 2026-10-08 19:06:53.912.
-	 Executed 9 tests, with 1 failure (0 unexpected) in 209.189 (209.213) seconds
-2026-10-08 19:07:59.649 xcodebuild[3510:14357] [MT] IDETestOperationsObserverDebug: 620.522 elapsed -- Testing started completed.
-2026-10-08 19:07:59.655 xcodebuild[3510:14357] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
-2026-10-08 19:07:59.655 xcodebuild[3510:14357] [MT] IDETestOperationsObserverDebug: 620.526 sec, +620.526 sec -- end
+    t =     0.00s Start Test at 2026-10-08 19:18:34.880
+    t =     0.03s Set Up
+    t =     0.03s Open com.dari.DariApp
+    t =     0.03s     Launch com.dari.DariApp
+    t =     0.03s         Terminate com.dari.DariApp:13249
+2026-10-08 19:18:35.999 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 19:18:36.005 xcodebuild[2265:11174] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.35s         Setting up automation session
+    t =     4.14s         Wait for com.dari.DariApp to idle
+    t =     9.49s Waiting 8.0s for "Heute" Button to exist
+    t =    10.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Heute" Button`
+    t =    10.52s         Checking existence of `"Heute" Button`
+    t =    10.64s Checking existence of `"Üben" Button`
+    t =    10.69s Checking existence of `"Karten" Button`
+    t =    10.73s Checking existence of `"Statistik" Button`
+    t =    10.77s Checking existence of `"Mehr" Button`
+    t =    10.94s Added attachment named '01-heute-leer'
+    t =    10.94s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (11.175 seconds).
+Test Suite 'DariAppUITests' failed at 2026-10-08 19:18:46.055.
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
+Test Suite 'DariAppUITests.xctest' failed at 2026-10-08 19:18:46.055.
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
+Test Suite 'All tests' failed at 2026-10-08 19:18:46.056.
+	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.339) seconds
+2026-10-08 19:19:11.625 xcodebuild[2265:11174] [MT] IDETestOperationsObserverDebug: 397.908 elapsed -- Testing started completed.
+2026-10-08 19:19:11.625 xcodebuild[2265:11174] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-08 19:19:11.625 xcodebuild[2265:11174] [MT] IDETestOperationsObserverDebug: 397.908 sec, +397.908 sec -- end
 
 Test session results, code coverage, and logs:
 	/Users/runner/work/_temp/out/tests.xcresult
 
 Failing tests:
-	DariAppUITests.testGrammarFlow()
+	DariAppUITests.testFlipSessionCompletes()
 
 ** TEST FAILED **
 
