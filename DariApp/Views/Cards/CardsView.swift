@@ -57,6 +57,7 @@ struct CardsView: View {
                     CardRow(card: card)
                 }
                 .listRowBackground(Palette.surface)
+                .accessibilityIdentifier("card.row")
                 .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                     Button(role: .destructive) { delete(card) } label: {
                         Label("Loeschen", systemImage: "trash")

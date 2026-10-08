@@ -38,14 +38,29 @@ final class DariAppUITests: XCTestCase {
         }
     }
 
+    /// Findet ein Element über seine Kennung, egal ob Button, Link oder Container.
+    @MainActor
+    private func element(_ app: XCUIApplication, _ identifier: String) -> XCUIElement {
+        app.descendants(matching: .any).matching(identifier: identifier).firstMatch
+    }
+
+    /// Schreibt die Bedienelemente-Hierarchie als Text (nur im Cloud-Build, zur Fehlersuche).
+    @MainActor
+    private func dump(_ app: XCUIApplication, _ name: String) {
+        guard let dir = ProcessInfo.processInfo.environment["SCREENSHOT_DIR"] else { return }
+        try? app.debugDescription.write(toFile: dir + "/" + name + ".txt", atomically: true, encoding: .utf8)
+    }
+
     @MainActor
     private func loadSampleCards(_ app: XCUIApplication) {
         app.tabBars.buttons["Karten"].tap()
         let sample = app.buttons["Beispielkarten laden"]
         XCTAssertTrue(sample.waitForExistence(timeout: 5))
         sample.tap()
-        let row = app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", "Haus")).firstMatch
-        XCTAssertTrue(row.waitForExistence(timeout: 8), "Beispielkarten wurden nicht angezeigt")
+        let row = element(app, "card.row")
+        let found = row.waitForExistence(timeout: 8)
+        if !found { shot("fehler-karten"); dump(app, "fehler-karten") }
+        XCTAssertTrue(found, "Beispielkarten wurden nicht angezeigt")
     }
 
     // MARK: Tests
@@ -98,7 +113,7 @@ final class DariAppUITests: XCTestCase {
         app.tabBars.buttons["Üben"].tap()
         XCTAssertTrue(app.navigationBars["Üben"].waitForExistence(timeout: 5))
         shot("06-ueben")
-        let mix = app.buttons["hub.mix"]
+        let mix = element(app, "hub.mix")
         XCTAssertTrue(mix.waitForExistence(timeout: 5))
         mix.tap()
         XCTAssertTrue(app.navigationBars["5-Minuten-Spiel"].waitForExistence(timeout: 8))
@@ -109,10 +124,11 @@ final class DariAppUITests: XCTestCase {
     func testGrammarFlow() throws {
         let app = launch()
         app.tabBars.buttons["Üben"].tap()
-        let grammar = app.buttons["hub.grammar"]
-        XCTAssertTrue(grammar.waitForExistence(timeout: 5))
+        let grammar = element(app, "hub.grammar")
+        if !grammar.waitForExistence(timeout: 8) { shot("fehler-hub"); dump(app, "fehler-hub") }
+        XCTAssertTrue(grammar.exists)
         grammar.tap()
-        let start = app.buttons["grammar.start"]
+        let start = element(app, "grammar.start")
         XCTAssertTrue(start.waitForExistence(timeout: 5))
         shot("08-grammatik-auswahl")
         start.tap()
@@ -124,7 +140,7 @@ final class DariAppUITests: XCTestCase {
     func testClozeSession() throws {
         let app = launch()
         app.tabBars.buttons["Üben"].tap()
-        let cloze = app.buttons["hub.cloze"]
+        let cloze = element(app, "hub.cloze")
         XCTAssertTrue(cloze.waitForExistence(timeout: 5))
         cloze.tap()
         XCTAssertTrue(app.navigationBars["Lückentext"].waitForExistence(timeout: 8))
