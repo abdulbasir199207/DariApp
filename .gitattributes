@@ -1,0 +1,5 @@
+WebApp/** text eol=lf
+Design/** text eol=lf
+*.swift text eol=lf
+*.yml text eol=lf
+*.json text eol=lf

@@ -3,8 +3,12 @@ name: Build unsigned IPA
 # Wann der Build laeuft:
 on:
   push:
-    branches: [ main ]      # bei jedem Push auf main
-  workflow_dispatch:        # oder manuell per Knopfdruck im "Actions"-Tab
+    branches: [ main, zara-update ]   # bei jedem Push auf main (und den Arbeitszweig)
+  workflow_dispatch:                  # oder manuell per Knopfdruck im "Actions"-Tab
+
+# Schreibrechte nur, um die Ergebnis-Logs auf den Zweig "ci-logs" zu legen.
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -16,9 +20,30 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Xcode-Version anzeigen
-        run: xcodebuild -version
+        run: |
+          xcodebuild -version
+          xcrun simctl list devices available | grep -i iphone | head -8 || true
+
+      - name: Tests im Simulator (Unit- und UI-Tests)
+        id: tests
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          mkdir -p "$RUNNER_TEMP/out/screens"
+          DEVICE=$(xcrun simctl list devices available | grep -E "^\s+iPhone [0-9]+ \(" | head -1 | sed -E 's/^[[:space:]]+//; s/ \([0-9A-F-]{36}\).*$//')
+          if [ -z "$DEVICE" ]; then DEVICE=$(xcrun simctl list devices available | grep -E "^\s+iPhone" | head -1 | sed -E 's/^[[:space:]]+//; s/ \([0-9A-F-]{36}\).*$//'); fi
+          echo "Simulator: $DEVICE"
+          export TEST_RUNNER_SCREENSHOT_DIR="$RUNNER_TEMP/out/screens"
+          xcodebuild test \
+            -project DariApp.xcodeproj \
+            -scheme DariApp \
+            -destination "platform=iOS Simulator,name=$DEVICE" \
+            -resultBundlePath "$RUNNER_TEMP/out/tests.xcresult" \
+            -parallel-testing-enabled NO \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee "$RUNNER_TEMP/out/test.log"
 
       - name: Archivieren (ohne Code-Signierung)
+        id: archive
         run: |
           set -euo pipefail
           xcodebuild \
@@ -32,7 +57,7 @@ jobs:
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGN_ENTITLEMENTS="" \
-            DEVELOPMENT_TEAM=""
+            DEVELOPMENT_TEAM="" 2>&1 | tee "$RUNNER_TEMP/out/archive.log"
 
       - name: Unsignierte IPA verpacken
         run: |
@@ -44,14 +69,50 @@ jobs:
           fi
           mkdir -p "$RUNNER_TEMP/Payload"
           cp -R "$APP_PATH" "$RUNNER_TEMP/Payload/"
-          ( cd "$RUNNER_TEMP" && zip -r -y "$GITHUB_WORKSPACE/DariApp-unsigned.ipa" Payload >/dev/null )
+          ( cd "$RUNNER_TEMP" && zip -r -y "$GITHUB_WORKSPACE/ZARA-unsigned.ipa" Payload >/dev/null )
           echo "IPA erstellt:"
-          ls -lh "$GITHUB_WORKSPACE/DariApp-unsigned.ipa"
+          ls -lh "$GITHUB_WORKSPACE/ZARA-unsigned.ipa"
+          /usr/libexec/PlistBuddy -c "Print :CFBundleDisplayName" "$APP_PATH/Info.plist" || true
 
       - name: IPA als Download bereitstellen
         uses: actions/upload-artifact@v4
         with:
-          name: DariApp-unsigned-ipa
-          path: DariApp-unsigned.ipa
+          name: ZARA-unsigned-ipa
+          path: ZARA-unsigned.ipa
           if-no-files-found: error
           retention-days: 30
+
+      - name: Ergebnis-Logs veroeffentlichen (Zweig ci-logs)
+        if: always()
+        continue-on-error: true
+        run: |
+          set +e
+          OUT="$RUNNER_TEMP/out"; mkdir -p "$OUT"
+          {
+            echo "Lauf #$GITHUB_RUN_NUMBER  Commit $GITHUB_SHA  Zweig $GITHUB_REF_NAME"
+            echo "Tests: ${{ steps.tests.outcome }}   Archiv: ${{ steps.archive.outcome }}"
+          } > "$OUT/summary.txt"
+          for f in test.log archive.log; do
+            [ -f "$OUT/$f" ] || continue
+            grep -E "error:|\*\* (TEST|BUILD|ARCHIVE) (FAILED|SUCCEEDED)|Test Case .* (failed|passed)|✘|✔|Executed [0-9]+ tests|Testing failed|with [0-9]+ (error|issue)" "$OUT/$f" | sed -E 's#/Users/runner/work/[^/]+/[^/]+/##' | head -400 > "$OUT/${f%.log}.errors.txt"
+            tail -n 600 "$OUT/$f" > "$OUT/${f%.log}.tail.txt"
+            rm -f "$OUT/$f"
+          done
+          xcrun xcresulttool get test-results summary --path "$OUT/tests.xcresult" > "$OUT/tests.summary.json" 2>/dev/null
+          xcrun xcresulttool get test-results tests --path "$OUT/tests.xcresult" > "$OUT/tests.details.json" 2>/dev/null
+          rm -rf "$OUT/tests.xcresult"
+          WORK="$RUNNER_TEMP/cilogs"; rm -rf "$WORK"; mkdir -p "$WORK"; cd "$WORK"
+          git init -q && git checkout -q -b ci-logs
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git fetch -q --depth 1 origin ci-logs && git reset -q --hard FETCH_HEAD
+          rm -rf "latest-$GITHUB_REF_NAME"; mkdir -p "latest-$GITHUB_REF_NAME"
+          cp -R "$OUT"/. "latest-$GITHUB_REF_NAME"/
+          git config user.name "ci"; git config user.email "ci@users.noreply.github.com"
+          git add -A && git commit -q -m "CI-Ergebnis Lauf #$GITHUB_RUN_NUMBER ($GITHUB_REF_NAME)"
+          for i in 1 2 3; do git push -q origin ci-logs && break; git fetch -q --depth 1 origin ci-logs && git rebase -q FETCH_HEAD; done
+
+      - name: Fehlschlag melden, wenn Tests nicht bestanden
+        if: steps.tests.outcome == 'failure'
+        run: |
+          echo "Die Tests sind fehlgeschlagen – Details im Zweig ci-logs (latest-$GITHUB_REF_NAME/test.errors.txt)."
+          exit 1
