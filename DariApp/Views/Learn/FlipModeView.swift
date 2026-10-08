@@ -50,6 +50,7 @@ struct FlipModeView: View {
         }
         .accessibilityAddTraits(.isButton)
         .accessibilityHint("Zum Umdrehen doppeltippen")
+        .accessibilityIdentifier("flip.card")
     }
 
     private func face(text: String, isPersian: Bool, showExtras: Bool) -> some View {

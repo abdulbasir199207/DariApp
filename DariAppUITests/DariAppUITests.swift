@@ -195,7 +195,7 @@ final class DariAppUITests: XCTestCase {
             let flipHint = app.staticTexts["Zum Umdrehen tippen"]
             XCTAssertTrue(flipHint.waitForExistence(timeout: 8) || app.staticTexts["Session abgeschlossen"].exists, "Karte erwartet (Runde \(rounds))")
             if app.staticTexts["Session abgeschlossen"].exists { break }
-            flipHint.tap()
+            element(app, "flip.card").tap()
             let good = app.buttons["Gut"]
             XCTAssertTrue(good.waitForExistence(timeout: 5))
             good.tap()
