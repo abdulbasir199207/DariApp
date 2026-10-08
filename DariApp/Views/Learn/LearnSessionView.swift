@@ -29,6 +29,8 @@ struct LearnSessionView: View {
                     SessionSummaryView(
                         answered: viewModel.answeredCount,
                         correct: viewModel.correctCount,
+                        xp: viewModel.xpGained,
+                        weakFixed: viewModel.weakFixed,
                         onFinish: { dismiss() }
                     )
                     .transition(.opacity)
@@ -65,6 +67,12 @@ struct LearnSessionView: View {
                 .tint(Palette.sage)
                 .padding(.horizontal, Spacing.md)
 
+            if vm.isRetry {
+                Label("Noch einmal üben", systemImage: "arrow.counterclockwise")
+                    .font(DariFont.caption)
+                    .foregroundStyle(Palette.textSecondary)
+            }
+
             Spacer(minLength: 0)
 
             switch vm.config.mode {
@@ -88,6 +96,8 @@ struct LearnSessionView: View {
 private struct SessionSummaryView: View {
     let answered: Int
     let correct: Int
+    let xp: Int
+    let weakFixed: Int
     let onFinish: () -> Void
 
     private var rate: Int {
@@ -103,9 +113,14 @@ private struct SessionSummaryView: View {
                 .font(DariFont.title)
                 .foregroundStyle(Palette.textPrimary)
             VStack(spacing: Spacing.xs) {
-                Text("\(answered) Karten gelernt")
-                Text("\(correct) richtig · \(rate)% Quote")
+                Text("\(answered) Antworten")
+                Text("\(correct) richtig · \(rate)% Quote · +\(xp) XP")
                     .foregroundStyle(Palette.textSecondary)
+                if weakFixed > 0 {
+                    Text("\(weakFixed) schwierige\(weakFixed == 1 ? "s Wort" : " Wörter") richtig beantwortet – stark!")
+                        .font(DariFont.caption)
+                        .foregroundStyle(Palette.sage)
+                }
             }
             .font(DariFont.body)
             Button("Fertig", action: onFinish)

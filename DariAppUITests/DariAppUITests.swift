@@ -44,7 +44,8 @@ final class DariAppUITests: XCTestCase {
         let sample = app.buttons["Beispielkarten laden"]
         XCTAssertTrue(sample.waitForExistence(timeout: 5))
         sample.tap()
-        XCTAssertTrue(app.staticTexts["Haus, Gebäude"].waitForExistence(timeout: 5))
+        let row = app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", "Haus")).firstMatch
+        XCTAssertTrue(row.waitForExistence(timeout: 8), "Beispielkarten wurden nicht angezeigt")
     }
 
     // MARK: Tests

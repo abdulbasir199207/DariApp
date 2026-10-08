@@ -1775,7 +1775,11 @@ const Recorder = {
   },
   errorMessage(e) {
     const n = e && e.name;
-    if (n === 'NotAllowedError' || n === 'SecurityError') return 'Mikrofon nicht erlaubt – bitte in den iPhone-Einstellungen freigeben.';
+    if (n === 'NotAllowedError' || n === 'SecurityError') {
+      let embedded = false; try { embedded = window.self !== window.top; } catch (_) { embedded = true; }
+      return embedded ? 'In der eingebetteten Vorschau ist das Mikrofon gesperrt – öffne ZARA vom Home-Bildschirm.'
+                      : 'Mikrofon nicht erlaubt – bitte in den iPhone-Einstellungen freigeben.';
+    }
     if (n === 'NotFoundError') return 'Kein Mikrofon gefunden.';
     return 'Aufnahme nicht möglich.';
   }

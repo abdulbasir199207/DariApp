@@ -173,11 +173,13 @@ struct BackupService {
                            bytes[8], bytes[9], bytes[10], bytes[11], bytes[12], bytes[13], bytes[14], bytes[15]))
     }
 
-    /// Wendet ein geprueftes Backup an. Bei einem Fehler bleibt alles unveraendert.
+    /// Wendet ein geprueftes Backup an. Bei einem Fehler wird der vorherige Stand wiederhergestellt:
+    /// Vor dem Ersetzen wird der aktuelle Bestand im Speicher gesichert und im Fehlerfall zurueckgespielt.
     @discardableResult
-    func apply(_ parsed: ParsedBackup, mode: RestoreMode) throws -> RestoreSummary {
+    func apply(_ parsed: ParsedBackup, mode: RestoreMode, allowRescue: Bool = true) throws -> RestoreSummary {
         var summary = RestoreSummary()
         var writtenAudio: [URL] = []
+        let rescue: Data? = (mode == .replace && allowRescue) ? (try? makeBackup(includeAudio: true)) : nil
         do {
             if mode == .replace {
                 for log in try context.fetch(FetchDescriptor<ReviewLog>()) { context.delete(log) }
@@ -320,6 +322,10 @@ struct BackupService {
         } catch {
             context.rollback()
             for url in writtenAudio { try? FileManager.default.removeItem(at: url) }
+            // Der Bestand wurde ggf. schon geleert: alten Stand aus der Sicherung im Speicher zurueckspielen.
+            if let rescue, case .success(let old) = Self.parse(rescue) {
+                _ = try? apply(old, mode: .replace, allowRescue: false)
+            }
             throw error
         }
 

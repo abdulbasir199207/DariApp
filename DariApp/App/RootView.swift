@@ -39,7 +39,10 @@ struct RootView: View {
                 NavigationStack { SettingsView() }
             }
         }
-        .task { runDailyBackup() }
+        .task {
+            SpeechService.shared.prepare()
+            runDailyBackup()
+        }
     }
 
     /// Taegliche, automatische JSON-Sicherung (nur, wenn es Daten gibt).

@@ -7,30 +7,55 @@
 //  persische Stimme, blendet die Oberflaeche die entsprechenden Aufgaben aus
 //  bzw. nutzt die eigenen Aufnahmen der Karten.
 //
+//  Die Stimmenliste des Systems zu laden ist langsam (kann Sekunden dauern).
+//  Deshalb passiert das einmal im Hintergrund (`prepare()`); die Oberflaeche
+//  fragt nur noch zwischengespeicherte Werte ab.
+//
 
 import Foundation
 import AVFoundation
+import Observation
 
 @MainActor
+@Observable
 final class SpeechService {
 
     static let shared = SpeechService()
 
-    private let synthesizer = AVSpeechSynthesizer()
+    /// Kennungen der gefundenen Stimmen (nil = keine vorhanden bzw. noch nicht geladen).
+    private(set) var persianVoiceID: String?
+    private(set) var germanVoiceID: String?
+    private(set) var isReady = false
 
-    private func voice(for language: ExerciseLanguage) -> AVSpeechSynthesisVoice? {
-        AVSpeechSynthesisVoice.speechVoices().first { voice in
-            switch language {
-            case .persian: return voice.language.hasPrefix("fa") || voice.language.hasPrefix("prs")
-            case .german: return voice.language.hasPrefix("de")
+    @ObservationIgnored private let synthesizer = AVSpeechSynthesizer()
+    @ObservationIgnored private var started = false
+
+    /// Sucht die Stimmen einmalig im Hintergrund.
+    func prepare() {
+        guard !started else { return }
+        started = true
+        Task.detached(priority: .utility) { [weak self] in
+            let voices = AVSpeechSynthesisVoice.speechVoices()
+            let persian = voices.first { $0.language.hasPrefix("fa") || $0.language.hasPrefix("prs") }?.identifier
+            let german = voices.first { $0.language.hasPrefix("de") }?.identifier
+            await MainActor.run {
+                self?.persianVoiceID = persian
+                self?.germanVoiceID = german
+                self?.isReady = true
             }
         }
     }
 
-    func canSpeak(_ language: ExerciseLanguage) -> Bool { voice(for: language) != nil }
+    func canSpeak(_ language: ExerciseLanguage) -> Bool {
+        switch language {
+        case .persian: return persianVoiceID != nil
+        case .german: return germanVoiceID != nil
+        }
+    }
 
     func speak(_ text: String, language: ExerciseLanguage) {
-        guard !text.isEmpty, let voice = voice(for: language) else { return }
+        let id = language == .persian ? persianVoiceID : germanVoiceID
+        guard !text.isEmpty, let id, let voice = AVSpeechSynthesisVoice(identifier: id) else { return }
         synthesizer.stopSpeaking(at: .immediate)
         let utterance = AVSpeechUtterance(string: text)
         utterance.voice = voice
