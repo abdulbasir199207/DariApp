@@ -1,0 +1,11 @@
+{
+  "name": "zara-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node build.mjs --check",
+    "test": "node --test tests/storage.test.mjs tests/logic.test.mjs",
+    "fixture": "node tests/make-v2-fixture.mjs"
+  }
+}
