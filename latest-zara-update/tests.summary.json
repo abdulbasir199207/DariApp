@@ -11,8 +11,8 @@
         "platform" : "iOS Simulator"
       },
       "expectedFailures" : 0,
-      "failedTests" : 5,
-      "passedTests" : 69,
+      "failedTests" : 4,
+      "passedTests" : 70,
       "skippedTests" : 0,
       "testPlanConfiguration" : {
         "configurationId" : "1",
@@ -22,24 +22,16 @@
   ],
   "environmentDescription" : "DariApp · Built with macOS 26.6.2",
   "expectedFailures" : 0,
-  "failedTests" : 5,
-  "finishTime" : 1791484706.187,
-  "passedTests" : 69,
+  "failedTests" : 4,
+  "finishTime" : 1791485556.465,
+  "passedTests" : 70,
   "result" : "Failed",
   "skippedTests" : 0,
-  "startTime" : 1791483874.164,
+  "startTime" : 1791484956.545,
   "statistics" : [
 
   ],
   "testFailures" : [
-    {
-      "failureText" : "Failed to get matching snapshots: Timed out while evaluating UI query.",
-      "targetName" : "DariAppUITests",
-      "testIdentifier" : 66,
-      "testIdentifierString" : "DariAppUITests/testClozeSession()",
-      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testClozeSession",
-      "testName" : "testClozeSession()"
-    },
     {
       "failureText" : "XCTAssertTrue failed",
       "targetName" : "DariAppUITests",
@@ -49,7 +41,7 @@
       "testName" : "testGrammarFlow()"
     },
     {
-      "failureText" : "XCTAssertTrue failed",
+      "failureText" : "XCTAssertTrue failed - Beispielkarten wurden nicht angezeigt",
       "targetName" : "DariAppUITests",
       "testIdentifier" : 70,
       "testIdentifierString" : "DariAppUITests/testPracticeHubAndMix()",
@@ -57,7 +49,7 @@
       "testName" : "testPracticeHubAndMix()"
     },
     {
-      "failureText" : "XCTAssertTrue failed",
+      "failureText" : "XCTAssertTrue failed - Beispielkarten wurden nicht angezeigt",
       "targetName" : "DariAppUITests",
       "testIdentifier" : 71,
       "testIdentifierString" : "DariAppUITests/testSampleCardsAndLearnToday()",
@@ -65,7 +57,7 @@
       "testName" : "testSampleCardsAndLearnToday()"
     },
     {
-      "failureText" : "XCTAssertTrue failed",
+      "failureText" : "XCTAssertTrue failed - Beispielkarten wurden nicht angezeigt",
       "targetName" : "DariAppUITests",
       "testIdentifier" : 73,
       "testIdentifierString" : "DariAppUITests/testStatistics()",
@@ -76,9 +68,14 @@
   "title" : "Test - DariApp",
   "topInsights" : [
     {
+      "category" : "Common Failures",
+      "impact" : "75% of failures",
+      "text" : "3 runs of 3 tests failed with XCTAssertTrue failed - Beispielkarten wurden nicht angezeigt"
+    },
+    {
       "category" : "Longest Test Runs",
-      "impact" : "56% of duration",
-      "text" : "2 longest test runs with outlier durations exceeding 1.51s (three standard deviations)"
+      "impact" : "64% of duration",
+      "text" : "1 longest test run with outlier durations exceeding 1.41s (three standard deviations)"
     }
   ],
   "totalTestCount" : 74

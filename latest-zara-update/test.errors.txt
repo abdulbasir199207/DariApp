@@ -1,14 +1,12 @@
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
-Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' failed (228.282 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (51.840 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' failed (17.006 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' failed (28.290 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testStatistics]' failed (16.965 seconds).
-	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.452) seconds
-	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.453) seconds
-	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.454) seconds
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.005) seconds
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (22.327 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' failed (20.783 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' failed (101.264 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' failed (25.831 seconds).
+	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.142) seconds
+	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.143) seconds
+	 Executed 9 tests, with 4 failures (0 unexpected) in 262.133 (262.144) seconds
 Failing tests:
-	DariAppUITests.testClozeSession()
 	DariAppUITests.testGrammarFlow()
 	DariAppUITests.testPracticeHubAndMix()
 	DariAppUITests.testSampleCardsAndLearnToday()
