@@ -1,1 +1,400 @@
-xcodebuild: error: Scheme DariApp is not currently configured for the test action.
+2026-10-08 18:12:12.308335+0000 DariApp[3618:17046] [error] CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support/default.store', errno 2 / No such file or directory.
+CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support/default.store', errno 2 / No such file or directory.
+2026-10-08 18:12:12.308525+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.308610+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create denied
+CoreData: error:   Sandbox access to file-write-create denied
+2026-10-08 18:12:12.308684+0000 DariApp[3618:17046] [error] CoreData: error: Failed to statfs file; errno 2 / No such file or directory.
+CoreData: error: Failed to statfs file; errno 2 / No such file or directory.
+2026-10-08 18:12:12.400293+0000 DariApp[3618:17046] [error] CoreData: error: Information for file system
+CoreData: error: Information for file system
+2026-10-08 18:12:12.400387+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.400456+0000 DariApp[3618:17046] [error] CoreData: error:   File system type: 		0
+CoreData: error:   File system type: 		0
+2026-10-08 18:12:12.400541+0000 DariApp[3618:17046] [error] CoreData: error:   File system flags: 		0
+CoreData: error:   File system flags: 		0
+2026-10-08 18:12:12.400614+0000 DariApp[3618:17046] [error] CoreData: error:   Total data blocks: 		0
+CoreData: error:   Total data blocks: 		0
+2026-10-08 18:12:12.400670+0000 DariApp[3618:17046] [error] CoreData: error:   Free data blocks: 		0
+CoreData: error:   Free data blocks: 		0
+2026-10-08 18:12:12.400790+0000 DariApp[3618:17046] [error] CoreData: error:   Free blocks for nonsuperuser:	0
+CoreData: error:   Free blocks for nonsuperuser:	0
+2026-10-08 18:12:12.562000+0000 DariApp[3618:17046] [error] CoreData: error:   Total i-nodes: 			0
+CoreData: error:   Total i-nodes: 			0
+2026-10-08 18:12:12.562119+0000 DariApp[3618:17046] [error] CoreData: error:   File system ID: 		0, 0
+CoreData: error:   File system ID: 		0, 0
+2026-10-08 18:12:12.562197+0000 DariApp[3618:17046] [error] CoreData: error:   Free i-nodes: 			0
+CoreData: error:   Free i-nodes: 			0
+2026-10-08 18:12:12.562275+0000 DariApp[3618:17046] [error] CoreData: error:   Owner UID: 			0
+CoreData: error:   Owner UID: 			0
+2026-10-08 18:12:12.562344+0000 DariApp[3618:17046] [error] CoreData: error:   Filesystem type name:
+CoreData: error:   Filesystem type name: 		
+2026-10-08 18:12:12.562412+0000 DariApp[3618:17046] [error] CoreData: error:   Mount on name:
+CoreData: error:   Mount on name: 			
+2026-10-08 18:12:12.562493+0000 DariApp[3618:17046] [error] CoreData: error:   Mount from name: 		\M-D\M-|\^C\M^@\^A
+CoreData: error:   Mount from name: 		ƒ¸Ä
+2026-10-08 18:12:12.563936+0000 DariApp[3618:17046] [error] CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support', errno 2 / No such file or directory.
+CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support', errno 2 / No such file or directory.
+2026-10-08 18:12:12.564092+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.564228+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create denied
+CoreData: error:   Sandbox access to file-write-create denied
+2026-10-08 18:12:12.564818+0000 DariApp[3618:17046] [error] CoreData: error: Failed to statfs file; errno 2 / No such file or directory.
+CoreData: error: Failed to statfs file; errno 2 / No such file or directory.
+2026-10-08 18:12:12.564956+0000 DariApp[3618:17046] [error] CoreData: error: Information for file system
+CoreData: error: Information for file system
+2026-10-08 18:12:12.565045+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.565124+0000 DariApp[3618:17046] [error] CoreData: error:   File system type: 		0
+CoreData: error:   File system type: 		0
+2026-10-08 18:12:12.565203+0000 DariApp[3618:17046] [error] CoreData: error:   File system flags: 		0
+CoreData: error:   File system flags: 		0
+2026-10-08 18:12:12.565291+0000 DariApp[3618:17046] [error] CoreData: error:   Total data blocks: 		0
+CoreData: error:   Total data blocks: 		0
+2026-10-08 18:12:12.565369+0000 DariApp[3618:17046] [error] CoreData: error:   Free data blocks: 		0
+CoreData: error:   Free data blocks: 		0
+2026-10-08 18:12:12.670939+0000 DariApp[3618:17046] [error] CoreData: error:   Free blocks for nonsuperuser:	0
+CoreData: error:   Free blocks for nonsuperuser:	0
+2026-10-08 18:12:12.671058+0000 DariApp[3618:17046] [error] CoreData: error:   Total i-nodes: 			0
+CoreData: error:   Total i-nodes: 			0
+2026-10-08 18:12:12.671126+0000 DariApp[3618:17046] [error] CoreData: error:   File system ID: 		0, 0
+CoreData: error:   File system ID: 		0, 0
+2026-10-08 18:12:12.671260+0000 DariApp[3618:17046] [error] CoreData: error:   Free i-nodes: 			0
+CoreData: error:   Free i-nodes: 			0
+2026-10-08 18:12:12.671320+0000 DariApp[3618:17046] [error] CoreData: error:   Owner UID: 			0
+CoreData: error:   Owner UID: 			0
+2026-10-08 18:12:12.671376+0000 DariApp[3618:17046] [error] CoreData: error:   Filesystem type name:
+CoreData: error:   Filesystem type name: 		
+2026-10-08 18:12:12.671428+0000 DariApp[3618:17046] [error] CoreData: error:   Mount on name:
+CoreData: error:   Mount on name: 			
+2026-10-08 18:12:12.674349+0000 DariApp[3618:17046] [error] CoreData: error:   Mount from name: 		\M-D\M-|\^C\M^@\^A
+CoreData: error:   Mount from name: 		ƒ¸Ä
+2026-10-08 18:12:12.674551+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.674626+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library
+2026-10-08 18:12:12.674687+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.674736+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.678965+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.679166+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		128 bytes
+CoreData: error:   File Size: 		128 bytes
+2026-10-08 18:12:12.679258+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2962806
+CoreData: error:   File inode: 		2962806
+2026-10-08 18:12:12.679323+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.679377+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.679427+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.679502+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.680218+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.680284+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.680416+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.680485+0000 DariApp[3618:17046] [error] CoreData: error: Information for file system
+CoreData: error: Information for file system
+2026-10-08 18:12:12.680558+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.680619+0000 DariApp[3618:17046] [error] CoreData: error:   File system type: 		0x1a
+CoreData: error:   File system type: 		0x1a
+2026-10-08 18:12:12.680676+0000 DariApp[3618:17046] [error] CoreData: error:   File system flags: 		0x4909000
+CoreData: error:   File system flags: 		0x4909000
+2026-10-08 18:12:12.681208+0000 DariApp[3618:17046] [error] CoreData: error:   MNT_JOURNALED
+CoreData: error:   MNT_JOURNALED
+2026-10-08 18:12:12.681269+0000 DariApp[3618:17046] [error] CoreData: error:   Total data blocks: 		83758080
+CoreData: error:   Total data blocks: 		83758080
+2026-10-08 18:12:12.681336+0000 DariApp[3618:17046] [error] CoreData: error:   Free data blocks: 		24641716
+CoreData: error:   Free data blocks: 		24641716
+2026-10-08 18:12:12.681392+0000 DariApp[3618:17046] [error] CoreData: error:   Free blocks for nonsuperuser:	24641716
+CoreData: error:   Free blocks for nonsuperuser:	24641716
+2026-10-08 18:12:12.681447+0000 DariApp[3618:17046] [error] CoreData: error:   Total i-nodes: 			987560379
+CoreData: error:   Total i-nodes: 			987560379
+2026-10-08 18:12:12.681498+0000 DariApp[3618:17046] [error] CoreData: error:   File system ID: 		0x100000b, 0x1a
+CoreData: error:   File system ID: 		0x100000b, 0x1a
+2026-10-08 18:12:12.681555+0000 DariApp[3618:17046] [error] CoreData: error:   Free i-nodes: 			985668640
+CoreData: error:   Free i-nodes: 			985668640
+2026-10-08 18:12:12.681970+0000 DariApp[3618:17046] [error] CoreData: error:   Owner UID: 			0
+CoreData: error:   Owner UID: 			0
+2026-10-08 18:12:12.682024+0000 DariApp[3618:17046] [error] CoreData: error:   Filesystem type name: 		apfs
+CoreData: error:   Filesystem type name: 		apfs
+2026-10-08 18:12:12.682080+0000 DariApp[3618:17046] [error] CoreData: error:   Mount on name: 			/System/Volumes/Data
+CoreData: error:   Mount on name: 			/System/Volumes/Data
+2026-10-08 18:12:12.682133+0000 DariApp[3618:17046] [error] CoreData: error:   Mount from name: 		/dev/disk2s5
+CoreData: error:   Mount from name: 		/dev/disk2s5
+2026-10-08 18:12:12.682235+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.682296+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60
+2026-10-08 18:12:12.682599+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.682663+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.682717+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.682768+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		224 bytes
+CoreData: error:   File Size: 		224 bytes
+2026-10-08 18:12:12.682820+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2962804
+CoreData: error:   File inode: 		2962804
+2026-10-08 18:12:12.683884+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.684002+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.684072+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.684137+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.684191+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.684259+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.684387+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.684493+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.685094+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application
+2026-10-08 18:12:12.685162+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.685211+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.685260+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.685306+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		4768 bytes
+CoreData: error:   File Size: 		4768 bytes
+2026-10-08 18:12:12.686271+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951715
+CoreData: error:   File inode: 		2951715
+2026-10-08 18:12:12.686365+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.686420+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.686474+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.686700+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.686869+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.687201+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.687331+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.688322+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.688405+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data
+2026-10-08 18:12:12.688466+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.688517+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.688572+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.689070+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		192 bytes
+CoreData: error:   File Size: 		192 bytes
+2026-10-08 18:12:12.689139+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951550
+CoreData: error:   File inode: 		2951550
+2026-10-08 18:12:12.689408+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.689489+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.689547+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.689595+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.689653+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.689707+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.690106+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.690202+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.690255+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers
+2026-10-08 18:12:12.690377+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.690564+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.690646+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.691333+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		224 bytes
+CoreData: error:   File Size: 		224 bytes
+2026-10-08 18:12:12.691395+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951530
+CoreData: error:   File inode: 		2951530
+2026-10-08 18:12:12.691448+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.691573+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.691643+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.691691+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.691739+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.692236+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.692359+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.692446+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.692567+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data
+2026-10-08 18:12:12.692631+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.692676+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.693065+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.693131+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		384 bytes
+CoreData: error:   File Size: 		384 bytes
+2026-10-08 18:12:12.693231+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2285042
+CoreData: error:   File inode: 		2285042
+2026-10-08 18:12:12.693288+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.693334+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.693388+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.693560+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.694207+0000 DariApp[3618:17046] [error] CoreData: error:   775
+CoreData: error:   775
+2026-10-08 18:12:12.694282+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.694455+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.694543+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.694598+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384
+2026-10-08 18:12:12.694658+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.695070+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.695135+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.695183+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		128 bytes
+CoreData: error:   File Size: 		128 bytes
+2026-10-08 18:12:12.695228+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2285041
+CoreData: error:   File inode: 		2285041
+2026-10-08 18:12:12.695275+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.695470+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.695552+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.695601+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.696126+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.696363+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.696550+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.696646+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.696705+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices
+2026-10-08 18:12:12.696761+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.697192+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.697240+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.697302+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		2016 bytes
+CoreData: error:   File Size: 		2016 bytes
+2026-10-08 18:12:12.697353+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2263005
+CoreData: error:   File inode: 		2263005
+2026-10-08 18:12:12.697397+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.697444+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.697491+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.697946+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.698282+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.698441+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.698553+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.698623+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.698696+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator
+2026-10-08 18:12:12.698798+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.699528+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.699593+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.699654+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
+CoreData: error:   File Size: 		160 bytes
+2026-10-08 18:12:12.699730+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2262957
+CoreData: error:   File inode: 		2262957
+2026-10-08 18:12:12.699793+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.699842+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.699888+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.700427+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.700502+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.700549+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.700659+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.700737+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.700787+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer
+CoreData: error: Information for /Users/runner/Library/Developer
+2026-10-08 18:12:12.700837+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.701356+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.701441+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.701488+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
+CoreData: error:   File Size: 		160 bytes
+2026-10-08 18:12:12.701533+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2262946
+CoreData: error:   File inode: 		2262946
+2026-10-08 18:12:12.701581+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.701625+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
+2026-10-08 18:12:12.701672+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+CoreData: error:   File Permissions: 	
+2026-10-08 18:12:12.701712+0000 DariApp[3618:17046] [error] CoreData: error: d
+CoreData: error: d
+2026-10-08 18:12:12.702353+0000 DariApp[3618:17046] [error] CoreData: error:   755
+CoreData: error:   755
+2026-10-08 18:12:12.702419+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
+CoreData: error:   file is not a symbolic link
+2026-10-08 18:12:12.702535+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
+CoreData: error:   Sandbox access to file-write-create allowed
+2026-10-08 18:12:12.702646+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
+CoreData: error: Executing as effective user 501
+2026-10-08 18:12:12.702704+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library
+CoreData: error: Information for /Users/runner/Library
+2026-10-08 18:12:12.702756+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
+CoreData: error: ---------------------------
+2026-10-08 18:12:12.702803+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+CoreData: error:   File Device ID: 	0
+2026-10-08 18:12:12.704993+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
+CoreData: error:   Device ID: 		16777227
+2026-10-08 18:12:12.705778+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		2656 bytes
+CoreData: error:   File Size: 		2656 bytes
+2026-10-08 18:12:12.705938+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		35809
+CoreData: error:   File inode: 		35809
+2026-10-08 18:12:12.706005+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+CoreData: error:   File user ID: 		501
+2026-10-08 18:12:12.706052+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+CoreData: error:   File group ID: 		20
