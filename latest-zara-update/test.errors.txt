@@ -1,8 +1,5 @@
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
-Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' failed (25.246 seconds).
-	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
-	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.337) seconds
-	 Executed 12 tests, with 1 failure (0 unexpected) in 197.329 (197.339) seconds
-Failing tests:
-	DariAppUITests.testFlipSessionCompletes()
-** TEST FAILED **
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.003) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 365.173 (365.187) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 365.173 (365.189) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 365.173 (365.190) seconds
+** TEST SUCCEEDED **

@@ -11,8 +11,8 @@
         "platform" : "iOS Simulator"
       },
       "expectedFailures" : 0,
-      "failedTests" : 1,
-      "passedTests" : 76,
+      "failedTests" : 0,
+      "passedTests" : 77,
       "skippedTests" : 0,
       "testPlanConfiguration" : {
         "configurationId" : "1",
@@ -22,31 +22,24 @@
   ],
   "environmentDescription" : "DariApp · Built with macOS 26.6.2",
   "expectedFailures" : 0,
-  "failedTests" : 1,
-  "finishTime" : 1791487151.802,
-  "passedTests" : 76,
-  "result" : "Failed",
+  "failedTests" : 0,
+  "finishTime" : 1791487486.418,
+  "passedTests" : 77,
+  "result" : "Passed",
   "skippedTests" : 0,
-  "startTime" : 1791486723.726,
+  "startTime" : 1791486755.638,
   "statistics" : [
 
   ],
   "testFailures" : [
-    {
-      "failureText" : "XCTAssertTrue failed",
-      "targetName" : "DariAppUITests",
-      "testIdentifier" : 69,
-      "testIdentifierString" : "DariAppUITests/testFlipSessionCompletes()",
-      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testFlipSessionCompletes",
-      "testName" : "testFlipSessionCompletes()"
-    }
+
   ],
   "title" : "Test - DariApp",
   "topInsights" : [
     {
       "category" : "Longest Test Runs",
-      "impact" : "67% of duration",
-      "text" : "1 longest test run with outlier durations exceeding 4.08s (three standard deviations)"
+      "impact" : "91% of duration",
+      "text" : "2 longest test runs with outlier durations exceeding 13.35s (three standard deviations)"
     }
   ],
   "totalTestCount" : 77
