@@ -12,6 +12,10 @@ import SwiftUI
 struct AudioControl: View {
     let audio: AudioRecorder
     @Binding var fileName: String?
+    /// Wird aufgerufen, wenn eine bestehende Aufnahme ersetzt oder entfernt wurde (Loeschen erst beim Speichern).
+    var onObsolete: (String) -> Void = { _ in }
+    /// Wird aufgerufen, wenn eine neue Aufnahme entstanden ist.
+    var onRecorded: (String) -> Void = { _ in }
 
     var body: some View {
         HStack(spacing: Spacing.md) {
@@ -64,18 +68,17 @@ struct AudioControl: View {
     }
 
     private func record() async {
-        // Vorherige Aufnahme entfernen, wenn neu aufgenommen wird.
-        if let old = fileName {
-            audio.deleteRecording(fileName: old)
-        }
+        // Die alte Aufnahme bleibt erhalten, bis die neue wirklich laeuft und die Karte gespeichert wird.
         let created = await audio.startRecording()
         if let created {
+            if let old = fileName { onObsolete(old) }
             fileName = created
+            onRecorded(created)
         }
     }
 
     private func delete(_ name: String) {
-        audio.deleteRecording(fileName: name)
+        onObsolete(name)
         fileName = nil
     }
 }

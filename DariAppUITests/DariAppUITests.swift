@@ -2,7 +2,10 @@
 //  DariAppUITests.swift
 //  DariAppUITests
 //
-//  Grundlegende UI-Tests fuer die Kern-Navigationsfluesse.
+//  Oberflaechen-Tests der Kernfluesse (Navigation, Karten, Lernen, Uebungen,
+//  Backup). Die App startet mit einer fluechtigen Datenbank (-zaraInMemory), damit
+//  jeder Test sauber beginnt. Bildschirmfotos werden – falls SCREENSHOT_DIR gesetzt
+//  ist – als PNG abgelegt (Cloud-Build).
 //
 
 import XCTest
@@ -13,36 +16,140 @@ final class DariAppUITests: XCTestCase {
         continueAfterFailure = false
     }
 
-    @MainActor
-    func testTabBarShowsAllTabs() throws {
-        let app = XCUIApplication()
-        app.launch()
+    // MARK: Hilfen
 
-        XCTAssertTrue(app.tabBars.buttons["Lernen"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.tabBars.buttons["Karten"].exists)
-        XCTAssertTrue(app.tabBars.buttons["Statistik"].exists)
-        XCTAssertTrue(app.tabBars.buttons["Einstellungen"].exists)
+    @MainActor
+    private func launch() -> XCUIApplication {
+        let app = XCUIApplication()
+        app.launchArguments += ["-zaraInMemory"]
+        app.launch()
+        return app
     }
 
     @MainActor
-    func testNavigateToCards() throws {
-        let app = XCUIApplication()
-        app.launch()
+    private func shot(_ name: String) {
+        let screenshot = XCUIScreen.main.screenshot()
+        let attachment = XCTAttachment(screenshot: screenshot)
+        attachment.name = name
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        if let dir = ProcessInfo.processInfo.environment["SCREENSHOT_DIR"] {
+            try? screenshot.pngRepresentation.write(to: URL(fileURLWithPath: dir).appendingPathComponent("\(name).png"))
+        }
+    }
 
+    @MainActor
+    private func loadSampleCards(_ app: XCUIApplication) {
         app.tabBars.buttons["Karten"].tap()
-        XCTAssertTrue(app.navigationBars["Karten"].waitForExistence(timeout: 5))
+        let sample = app.buttons["Beispielkarten laden"]
+        XCTAssertTrue(sample.waitForExistence(timeout: 5))
+        sample.tap()
+        XCTAssertTrue(app.staticTexts["Haus, Gebäude"].waitForExistence(timeout: 5))
+    }
+
+    // MARK: Tests
+
+    @MainActor
+    func testTabBarShowsAllTabs() throws {
+        let app = launch()
+        XCTAssertTrue(app.tabBars.buttons["Heute"].waitForExistence(timeout: 8))
+        for name in ["Üben", "Karten", "Statistik", "Mehr"] {
+            XCTAssertTrue(app.tabBars.buttons[name].exists, "Tab \(name) fehlt")
+        }
+        shot("01-heute-leer")
+    }
+
+    @MainActor
+    func testEmptyStateOffersFirstCard() throws {
+        let app = launch()
+        XCTAssertTrue(app.buttons["today.hero"].waitForExistence(timeout: 8))
+        XCTAssertTrue(app.buttons["today.hero"].label.contains("Erste Karte anlegen"))
+    }
+
+    @MainActor
+    func testSampleCardsAndLearnToday() throws {
+        let app = launch()
+        loadSampleCards(app)
+        shot("02-karten")
+        app.tabBars.buttons["Heute"].tap()
+        let hero = app.buttons["today.hero"]
+        XCTAssertTrue(hero.waitForExistence(timeout: 5))
+        XCTAssertTrue(hero.label.contains("Heute lernen"), "Hero: \(hero.label)")
+        shot("03-heute-mit-karten")
+        hero.tap()
+        XCTAssertTrue(app.navigationBars["Lernen"].waitForExistence(timeout: 8))
+        shot("04-lernen-sitzung")
     }
 
     @MainActor
     func testOpenCardEditor() throws {
-        let app = XCUIApplication()
-        app.launch()
-
+        let app = launch()
         app.tabBars.buttons["Karten"].tap()
-        // Der Plus-Button in der Toolbar oeffnet den Editor.
-        app.navigationBars.buttons.element(boundBy: 0).tap()
-        // Editor-Titel erscheint (neu oder leer je nach Datenlage).
-        XCTAssertTrue(app.navigationBars["Neue Karte"].waitForExistence(timeout: 5)
-                      || app.navigationBars.element.waitForExistence(timeout: 5))
+        app.buttons["Karte anlegen"].tap()
+        XCTAssertTrue(app.navigationBars["Neue Karte"].waitForExistence(timeout: 5))
+        shot("05-karten-editor")
+    }
+
+    @MainActor
+    func testPracticeHubAndMix() throws {
+        let app = launch()
+        loadSampleCards(app)
+        app.tabBars.buttons["Üben"].tap()
+        XCTAssertTrue(app.navigationBars["Üben"].waitForExistence(timeout: 5))
+        shot("06-ueben")
+        let mix = app.buttons["hub.mix"]
+        XCTAssertTrue(mix.waitForExistence(timeout: 5))
+        mix.tap()
+        XCTAssertTrue(app.navigationBars["5-Minuten-Spiel"].waitForExistence(timeout: 8))
+        shot("07-mix")
+    }
+
+    @MainActor
+    func testGrammarFlow() throws {
+        let app = launch()
+        app.tabBars.buttons["Üben"].tap()
+        let grammar = app.buttons["hub.grammar"]
+        XCTAssertTrue(grammar.waitForExistence(timeout: 5))
+        grammar.tap()
+        let start = app.buttons["grammar.start"]
+        XCTAssertTrue(start.waitForExistence(timeout: 5))
+        shot("08-grammatik-auswahl")
+        start.tap()
+        XCTAssertTrue(app.navigationBars["Grammatik"].waitForExistence(timeout: 8))
+        shot("09-grammatik-frage")
+    }
+
+    @MainActor
+    func testClozeSession() throws {
+        let app = launch()
+        app.tabBars.buttons["Üben"].tap()
+        let cloze = app.buttons["hub.cloze"]
+        XCTAssertTrue(cloze.waitForExistence(timeout: 5))
+        cloze.tap()
+        XCTAssertTrue(app.navigationBars["Lückentext"].waitForExistence(timeout: 8))
+        shot("10-lueckentext")
+    }
+
+    @MainActor
+    func testSettingsAndBackupScreen() throws {
+        let app = launch()
+        app.tabBars.buttons["Mehr"].tap()
+        XCTAssertTrue(app.navigationBars["Mehr"].waitForExistence(timeout: 5))
+        shot("11-mehr")
+        let backup = app.buttons["settings.backup"]
+        XCTAssertTrue(backup.waitForExistence(timeout: 5))
+        backup.tap()
+        XCTAssertTrue(app.buttons["backup.export"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["backup.import"].exists)
+        shot("12-backup")
+    }
+
+    @MainActor
+    func testStatistics() throws {
+        let app = launch()
+        loadSampleCards(app)
+        app.tabBars.buttons["Statistik"].tap()
+        XCTAssertTrue(app.navigationBars["Statistik"].waitForExistence(timeout: 5))
+        shot("13-statistik")
     }
 }

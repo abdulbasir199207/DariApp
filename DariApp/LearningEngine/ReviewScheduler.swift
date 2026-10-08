@@ -76,15 +76,12 @@ struct ReviewScheduler: Sendable {
             overdue = 2.0 // neue Karte
         }
 
-        // Schwierigkeit normiert (1...10 -> 0...1).
-        let difficultyFactor = (card.difficulty.clamped(to: 1...10) - 1) / 9
-
         // Zufallsrauschen fuer Abwechslung.
         let noise = Double.random(in: 0...1, using: &generator)
 
-        // Gewichtung: Faelligkeit dominiert, Schwierigkeit erhoeht Frequenz,
-        // Rauschen verhindert immer gleiche Reihenfolge.
-        return overdue * 2.0 + difficultyFactor * 1.5 + noise
+        // Gewichtung: Faelligkeit dominiert, Schwaeche (Fehlerquote, Schwierigkeit,
+        // Rueckfaelle) erhoeht die Frequenz, Rauschen verhindert immer gleiche Reihenfolge.
+        return overdue * 2.0 + Adaptive.weakScore(card, now: date, fsrs: fsrs) * 0.8 + noise
     }
 
     // MARK: - Tag-Interleaving

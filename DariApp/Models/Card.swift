@@ -80,6 +80,16 @@ final class Card {
     /// Aktueller FSRS-Zustand.
     var state: CardState = CardState.new
 
+    // MARK: Zusatzdaten (ZARA)
+
+    /// Fehler in Spielen und Uebungswiederholungen. Fliesst in die Schwaeche-Bewertung ein,
+    /// aendert aber nicht den FSRS-Termin.
+    var miss: Int = 0
+
+    /// Optionaler Beispielsatz (fuer Lueckentexte aus eigenen Woertern).
+    var exampleGerman: String = ""
+    var examplePersian: String = ""
+
     // MARK: Init
 
     init(

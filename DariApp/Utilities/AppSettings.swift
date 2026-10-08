@@ -63,6 +63,11 @@ final class AppSettings {
         didSet { defaults.set(animationsEnabled, forKey: Keys.animationsEnabled) }
     }
 
+    /// Haptisches Feedback (Vibration) bei Antworten.
+    var hapticsEnabled: Bool {
+        didSet { defaults.set(hapticsEnabled, forKey: Keys.haptics) }
+    }
+
     // MARK: Init
 
     private let defaults: UserDefaults
@@ -74,13 +79,16 @@ final class AppSettings {
         self.defaultDirection = QueryDirection(rawValue: defaults.integer(forKey: Keys.defaultDirection)) ?? .mixed
         self.dailyGoal = defaults.object(forKey: Keys.dailyGoal) as? Int ?? 20
         self.animationsEnabled = defaults.object(forKey: Keys.animationsEnabled) as? Bool ?? true
+        self.hapticsEnabled = defaults.object(forKey: Keys.haptics) as? Bool ?? true
     }
 
-    private enum Keys {
+    /// Schluessel in UserDefaults (auch von Haptics gelesen).
+    enum Keys {
         static let appearance = "settings.appearance"
         static let defaultMode = "settings.defaultMode"
         static let defaultDirection = "settings.defaultDirection"
         static let dailyGoal = "settings.dailyGoal"
         static let animationsEnabled = "settings.animationsEnabled"
+        static let haptics = "settings.haptics"
     }
 }

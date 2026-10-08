@@ -11,6 +11,8 @@ import SwiftUI
 
 struct FlowLayout: Layout {
     var spacing: CGFloat = Spacing.xs
+    /// Rechts-nach-links anordnen (persische Saetze): erstes Element rechts, Zeilen beginnen am rechten Rand.
+    var rtl = false
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout Void) -> CGSize {
         let maxWidth = proposal.width ?? .infinity
@@ -24,14 +26,16 @@ struct FlowLayout: Layout {
         let rows = computeRows(maxWidth: bounds.width, subviews: subviews)
         var y = bounds.minY
         for row in rows {
-            var x = bounds.minX
+            var x = rtl ? bounds.maxX : bounds.minX
             for item in row.items {
                 let size = subviews[item].sizeThatFits(.unspecified)
-                subviews[item].place(
-                    at: CGPoint(x: x, y: y),
-                    proposal: ProposedViewSize(size)
-                )
-                x += size.width + spacing
+                if rtl {
+                    subviews[item].place(at: CGPoint(x: x - size.width, y: y), proposal: ProposedViewSize(size))
+                    x -= size.width + spacing
+                } else {
+                    subviews[item].place(at: CGPoint(x: x, y: y), proposal: ProposedViewSize(size))
+                    x += size.width + spacing
+                }
             }
             y += row.height + spacing
         }

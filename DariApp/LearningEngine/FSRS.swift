@@ -137,19 +137,26 @@ struct FSRS: Sendable {
 
     // MARK: - Schwierigkeit
 
-    private func initialDifficulty(_ rating: FSRSRating) -> Double {
+    /// D0(G) = w4 − (G − 3)·w5 (FSRS 4.5).
+    /// KORREKTUR: Frueher wurde hier die FSRS-5-Formel mit den 4.5-Gewichten kombiniert;
+    /// dadurch bekam „Gut“/„Leicht“ bei der ersten Antwort Schwierigkeit 1,0 statt ~5,2 bzw. ~3,9.
+    func initialDifficulty(_ rating: FSRSRating) -> Double {
         let w = parameters.weights
-        let d = w[4] - exp(w[5] * Double(rating.rawValue - 1)) + 1
-        return d.clamped(to: 1...10)
+        return (w[4] - Double(rating.rawValue - 3) * w[5]).clamped(to: 1...10)
     }
 
-    private func nextDifficulty(_ difficulty: Double, rating: FSRSRating) -> Double {
+    /// D' = D − w6·(G − 3), danach Mittelwert-Rueckkehr zu w4 (FSRS 4.5).
+    func nextDifficulty(_ difficulty: Double, rating: FSRSRating) -> Double {
         let w = parameters.weights
-        // Lineare Daempfung Richtung Extremwerte + Mittelwert-Rueckkehr zu D0(easy).
-        let delta = -w[6] * Double(rating.rawValue - 3)
-        let damped = difficulty + delta * (10 - difficulty) / 9
-        let meanReverted = w[7] * initialDifficulty(.easy) + (1 - w[7]) * damped
-        return meanReverted.clamped(to: 1...10)
+        let next = difficulty - w[6] * Double(rating.rawValue - 3)
+        let reverted = w[7] * w[4] + (1 - w[7]) * next
+        return reverted.clamped(to: 1...10)
+    }
+
+    /// Leitet die Schwierigkeit aus einer Bewertungsfolge neu her (Datenmigration, Tests).
+    func replayDifficulty(_ ratings: [FSRSRating]) -> Double? {
+        guard let first = ratings.first else { return nil }
+        return ratings.dropFirst().reduce(initialDifficulty(first)) { nextDifficulty($0, rating: $1) }
     }
 
     // MARK: - Stabilitaet

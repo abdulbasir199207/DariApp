@@ -25,17 +25,45 @@ final class ReviewLog {
     /// In welchem Modus wurde geantwortet.
     var mode: LearningMode = LearningMode.flip
 
+    /// Uebungstyp ausserhalb der drei Vokabel-Modi ("match", "listen", "cloze",
+    /// "build", "translate", "grammar", "speak"); leer bei Umdrehen/Auswahl/Schreiben.
+    var exercise: String = ""
+
+    /// Kennung von Satz- oder Grammatikaufgaben (statt einer Karte).
+    var itemID: String?
+
+    /// Uebungswiederholung nach einem Fehler: zaehlt nicht fuers Tagesziel,
+    /// aendert den FSRS-Termin nicht und gibt nur halbe Punkte.
+    var isPractice: Bool = false
+
+    /// Das Wort galt vor dieser Antwort als schwierig.
+    var wasWeak: Bool = false
+
     /// Referenz auf die Karte (optional, damit das Loeschen einer Karte
     /// die Historie nicht zwingend mitreisst – Nullify-Verhalten).
     @Relationship(deleteRule: .nullify)
     var card: Card?
 
-    init(card: Card?, rating: FSRSRating, answerTime: TimeInterval, mode: LearningMode) {
+    init(
+        card: Card?,
+        rating: FSRSRating,
+        answerTime: TimeInterval,
+        mode: LearningMode,
+        exercise: String = "",
+        itemID: String? = nil,
+        isPractice: Bool = false,
+        wasWeak: Bool = false,
+        date: Date = Date()
+    ) {
         self.id = UUID()
-        self.date = Date()
+        self.date = date
         self.card = card
         self.rating = rating
         self.answerTime = answerTime
         self.mode = mode
+        self.exercise = exercise
+        self.itemID = itemID
+        self.isPractice = isPractice
+        self.wasWeak = wasWeak
     }
 }

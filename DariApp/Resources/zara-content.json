@@ -1,0 +1,2298 @@
+{
+ "version": 1,
+ "blankPos": "NVAD",
+ "sentences": [
+  {
+   "id": "s01",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "bin",
+    "müde"
+   ],
+   "persianTokens": [
+    "من",
+    "خسته‌ام"
+   ],
+   "german": "Ich bin müde.",
+   "persian": "من خسته‌ام.",
+   "transliteration": "man khaste-am",
+   "germanPos": "PXA",
+   "persianPos": "PA",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s02",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Das",
+    "ist",
+    "ein",
+    "Buch"
+   ],
+   "persianTokens": [
+    "این",
+    "یک",
+    "کتاب",
+    "است"
+   ],
+   "german": "Das ist ein Buch.",
+   "persian": "این یک کتاب است.",
+   "transliteration": "in yek ketâb ast",
+   "germanPos": "PXXN",
+   "persianPos": "PXNX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s03",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Das",
+    "Wasser",
+    "ist",
+    "kalt"
+   ],
+   "persianTokens": [
+    "آب",
+    "سرد",
+    "است"
+   ],
+   "german": "Das Wasser ist kalt.",
+   "persian": "آب سرد است.",
+   "transliteration": "âb sard ast",
+   "germanPos": "XNXA",
+   "persianPos": "NAX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s04",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "habe",
+    "ein",
+    "Buch"
+   ],
+   "persianTokens": [
+    "من",
+    "یک",
+    "کتاب",
+    "دارم"
+   ],
+   "german": "Ich habe ein Buch.",
+   "persian": "من یک کتاب دارم.",
+   "transliteration": "man yek ketâb dâram",
+   "germanPos": "PVXN",
+   "persianPos": "PXNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s05",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "gehen",
+    "nach",
+    "Hause"
+   ],
+   "persianTokens": [
+    "ما",
+    "به",
+    "خانه",
+    "می‌رویم"
+   ],
+   "german": "Wir gehen nach Hause.",
+   "persian": "ما به خانه می‌رویم.",
+   "transliteration": "mâ be khâne mi-ravim",
+   "germanPos": "PVRN",
+   "persianPos": "PRNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s06",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Du",
+    "trinkst",
+    "Tee"
+   ],
+   "persianTokens": [
+    "تو",
+    "چای",
+    "می‌نوشی"
+   ],
+   "german": "Du trinkst Tee.",
+   "persian": "تو چای می‌نوشی.",
+   "transliteration": "to châi mi-nushi",
+   "germanPos": "PVN",
+   "persianPos": "PNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s07",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Er",
+    "isst",
+    "Brot"
+   ],
+   "persianTokens": [
+    "او",
+    "نان",
+    "می‌خورد"
+   ],
+   "german": "Er isst Brot.",
+   "persian": "او نان می‌خورد.",
+   "transliteration": "u nân mi-khorad",
+   "germanPos": "PVN",
+   "persianPos": "PNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s08",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Sie",
+    "liest",
+    "ein",
+    "Buch"
+   ],
+   "persianTokens": [
+    "او",
+    "یک",
+    "کتاب",
+    "می‌خواند"
+   ],
+   "german": "Sie liest ein Buch.",
+   "persian": "او یک کتاب می‌خواند.",
+   "transliteration": "u yek ketâb mi-khânad",
+   "germanPos": "PVXN",
+   "persianPos": "PXNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s09",
+   "category": "Familie",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Die",
+    "Mutter",
+    "kocht",
+    "das",
+    "Essen"
+   ],
+   "persianTokens": [
+    "مادر",
+    "غذا",
+    "می‌پزد"
+   ],
+   "german": "Die Mutter kocht das Essen.",
+   "persian": "مادر غذا می‌پزد.",
+   "transliteration": "mâdar ghazâ mi-pazad",
+   "germanPos": "XNVXN",
+   "persianPos": "NNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s10",
+   "category": "Familie",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Mein",
+    "Vater",
+    "arbeitet"
+   ],
+   "persianTokens": [
+    "پدرم",
+    "کار",
+    "می‌کند"
+   ],
+   "german": "Mein Vater arbeitet.",
+   "persian": "پدرم کار می‌کند.",
+   "transliteration": "pedaram kâr mi-konad",
+   "germanPos": "XNV",
+   "persianPos": "NNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s11",
+   "category": "Familie",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "liebe",
+    "meine",
+    "Familie"
+   ],
+   "persianTokens": [
+    "من",
+    "خانواده‌ام",
+    "را",
+    "دوست",
+    "دارم"
+   ],
+   "german": "Ich liebe meine Familie.",
+   "persian": "من خانواده‌ام را دوست دارم.",
+   "transliteration": "man khânevâde-am râ dust dâram",
+   "germanPos": "PVXN",
+   "persianPos": "PNRNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s12",
+   "category": "Fragen",
+   "level": 1,
+   "isQuestion": true,
+   "germanTokens": [
+    "Wo",
+    "ist",
+    "das",
+    "Haus"
+   ],
+   "persianTokens": [
+    "خانه",
+    "کجاست"
+   ],
+   "german": "Wo ist das Haus?",
+   "persian": "خانه کجاست؟",
+   "transliteration": "khâne kojâst",
+   "germanPos": "DXXN",
+   "persianPos": "ND",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s13",
+   "category": "Fragen",
+   "level": 1,
+   "isQuestion": true,
+   "germanTokens": [
+    "Wie",
+    "heißt",
+    "du"
+   ],
+   "persianTokens": [
+    "نام",
+    "تو",
+    "چیست"
+   ],
+   "german": "Wie heißt du?",
+   "persian": "نام تو چیست؟",
+   "transliteration": "nâm-e to chist",
+   "germanPos": "DVP",
+   "persianPos": "NPX",
+   "germanBlanks": [
+    0
+   ],
+   "persianBlanks": [
+    0
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s14",
+   "category": "Vorstellen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Mein",
+    "Name",
+    "ist",
+    "Ali"
+   ],
+   "persianTokens": [
+    "نام",
+    "من",
+    "علی",
+    "است"
+   ],
+   "german": "Mein Name ist Ali.",
+   "persian": "نام من علی است.",
+   "transliteration": "nâm-e man Ali ast",
+   "germanPos": "XNXN",
+   "persianPos": "NPNX",
+   "germanBlanks": null,
+   "persianBlanks": [
+    0
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s15",
+   "category": "Vorstellen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "komme",
+    "aus",
+    "Deutschland"
+   ],
+   "persianTokens": [
+    "من",
+    "از",
+    "آلمان",
+    "می‌آیم"
+   ],
+   "german": "Ich komme aus Deutschland.",
+   "persian": "من از آلمان می‌آیم.",
+   "transliteration": "man az âlmân mi-âyam",
+   "germanPos": "PVRN",
+   "persianPos": "PRNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s16",
+   "category": "Vorstellen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "lerne",
+    "Persisch"
+   ],
+   "persianTokens": [
+    "من",
+    "فارسی",
+    "یاد",
+    "می‌گیرم"
+   ],
+   "german": "Ich lerne Persisch.",
+   "persian": "من فارسی یاد می‌گیرم.",
+   "transliteration": "man fârsi yâd mi-giram",
+   "germanPos": "PVN",
+   "persianPos": "PNNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1,
+    3
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s17",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Das",
+    "Kind",
+    "spielt",
+    "im",
+    "Garten"
+   ],
+   "persianTokens": [
+    "کودک",
+    "در",
+    "باغ",
+    "بازی",
+    "می‌کند"
+   ],
+   "german": "Das Kind spielt im Garten.",
+   "persian": "کودک در باغ بازی می‌کند.",
+   "transliteration": "kudak dar bâgh bâzi mi-konad",
+   "germanPos": "XNVRN",
+   "persianPos": "NRNNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    0,
+    2
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s18",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "trinken",
+    "zusammen",
+    "Tee"
+   ],
+   "persianTokens": [
+    "ما",
+    "با",
+    "هم",
+    "چای",
+    "می‌نوشیم"
+   ],
+   "german": "Wir trinken zusammen Tee.",
+   "persian": "ما با هم چای می‌نوشیم.",
+   "transliteration": "mâ bâ ham châi mi-nushim",
+   "germanPos": "PVDN",
+   "persianPos": "PRPNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    3,
+    4
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s19",
+   "category": "Alltag",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "sehe",
+    "einen",
+    "Freund"
+   ],
+   "persianTokens": [
+    "من",
+    "یک",
+    "دوست",
+    "را",
+    "می‌بینم"
+   ],
+   "german": "Ich sehe einen Freund.",
+   "persian": "من یک دوست را می‌بینم.",
+   "transliteration": "man yek dust râ mi-binam",
+   "germanPos": "PVXN",
+   "persianPos": "PXNRV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s20",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Das",
+    "Essen",
+    "ist",
+    "gut"
+   ],
+   "persianTokens": [
+    "غذا",
+    "خوب",
+    "است"
+   ],
+   "german": "Das Essen ist gut.",
+   "persian": "غذا خوب است.",
+   "transliteration": "ghazâ khub ast",
+   "germanPos": "XNXA",
+   "persianPos": "NAX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s21",
+   "category": "Wetter",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Heute",
+    "ist",
+    "es",
+    "heiß"
+   ],
+   "persianTokens": [
+    "امروز",
+    "هوا",
+    "گرم",
+    "است"
+   ],
+   "german": "Heute ist es heiß.",
+   "persian": "امروز هوا گرم است.",
+   "transliteration": "emruz havâ garm ast",
+   "germanPos": "DXXA",
+   "persianPos": "DNAX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s22",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "wohnen",
+    "in",
+    "einer",
+    "Stadt"
+   ],
+   "persianTokens": [
+    "ما",
+    "در",
+    "یک",
+    "شهر",
+    "زندگی",
+    "می‌کنیم"
+   ],
+   "german": "Wir wohnen in einer Stadt.",
+   "persian": "ما در یک شهر زندگی می‌کنیم.",
+   "transliteration": "mâ dar yek shahr zendegi mi-konim",
+   "germanPos": "PVRXN",
+   "persianPos": "PRXNNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    3,
+    4
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s23",
+   "category": "Essen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "möchte",
+    "Wasser"
+   ],
+   "persianTokens": [
+    "من",
+    "آب",
+    "می‌خواهم"
+   ],
+   "german": "Ich möchte Wasser.",
+   "persian": "من آب می‌خواهم.",
+   "transliteration": "man âb mi-khâham",
+   "germanPos": "PVN",
+   "persianPos": "PNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s24",
+   "category": "Fragen",
+   "level": 1,
+   "isQuestion": true,
+   "germanTokens": [
+    "Hast",
+    "du",
+    "Hunger"
+   ],
+   "persianTokens": [
+    "تو",
+    "گرسنه‌ای"
+   ],
+   "german": "Hast du Hunger?",
+   "persian": "تو گرسنه‌ای؟",
+   "transliteration": "to gorosne-i",
+   "germanPos": "VPN",
+   "persianPos": "PA",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s25",
+   "category": "Schule",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Die",
+    "Schule",
+    "ist",
+    "groß"
+   ],
+   "persianTokens": [
+    "مدرسه",
+    "بزرگ",
+    "است"
+   ],
+   "german": "Die Schule ist groß.",
+   "persian": "مدرسه بزرگ است.",
+   "transliteration": "madrese bozorg ast",
+   "germanPos": "XNXA",
+   "persianPos": "NAX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s26",
+   "category": "Schule",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Er",
+    "geht",
+    "zur",
+    "Schule"
+   ],
+   "persianTokens": [
+    "او",
+    "به",
+    "مدرسه",
+    "می‌رود"
+   ],
+   "german": "Er geht zur Schule.",
+   "persian": "او به مدرسه می‌رود.",
+   "transliteration": "u be madrese mi-ravad",
+   "germanPos": "PVRN",
+   "persianPos": "PRNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s27",
+   "category": "Zeit",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "habe",
+    "gestern",
+    "ein",
+    "Buch",
+    "gelesen"
+   ],
+   "persianTokens": [
+    "من",
+    "دیروز",
+    "یک",
+    "کتاب",
+    "خواندم"
+   ],
+   "german": "Ich habe gestern ein Buch gelesen.",
+   "persian": "من دیروز یک کتاب خواندم.",
+   "transliteration": "man diruz yek ketâb khândam",
+   "germanPos": "PVDXNV",
+   "persianPos": "PDXNV",
+   "germanBlanks": [
+    2,
+    4,
+    5
+   ],
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s28",
+   "category": "Zeit",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "sind",
+    "gestern",
+    "nach",
+    "Hause",
+    "gegangen"
+   ],
+   "persianTokens": [
+    "ما",
+    "دیروز",
+    "به",
+    "خانه",
+    "رفتیم"
+   ],
+   "german": "Wir sind gestern nach Hause gegangen.",
+   "persian": "ما دیروز به خانه رفتیم.",
+   "transliteration": "mâ diruz be khâne raftim",
+   "germanPos": "PVDRNV",
+   "persianPos": "PDRNV",
+   "germanBlanks": [
+    2,
+    4,
+    5
+   ],
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s29",
+   "category": "Essen",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Er",
+    "hat",
+    "Brot",
+    "gegessen"
+   ],
+   "persianTokens": [
+    "او",
+    "نان",
+    "خورد"
+   ],
+   "german": "Er hat Brot gegessen.",
+   "persian": "او نان خورد.",
+   "transliteration": "u nân khord",
+   "germanPos": "PVNV",
+   "persianPos": "PNV",
+   "germanBlanks": [
+    2,
+    3
+   ],
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s30",
+   "category": "Zeit",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "werde",
+    "morgen",
+    "kommen"
+   ],
+   "persianTokens": [
+    "من",
+    "فردا",
+    "خواهم",
+    "آمد"
+   ],
+   "german": "Ich werde morgen kommen.",
+   "persian": "من فردا خواهم آمد.",
+   "transliteration": "man fardâ khâham âmad",
+   "germanPos": "PVDV",
+   "persianPos": "PDVV",
+   "germanBlanks": [
+    2,
+    3
+   ],
+   "persianBlanks": [
+    1,
+    3
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s31",
+   "category": "Essen",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "esse",
+    "kein",
+    "Fleisch"
+   ],
+   "persianTokens": [
+    "من",
+    "گوشت",
+    "نمی‌خورم"
+   ],
+   "german": "Ich esse kein Fleisch.",
+   "persian": "من گوشت نمی‌خورم.",
+   "transliteration": "man gusht nemi-khoram",
+   "germanPos": "PVXN",
+   "persianPos": "PNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s32",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Das",
+    "ist",
+    "kein",
+    "Haus"
+   ],
+   "persianTokens": [
+    "این",
+    "خانه",
+    "نیست"
+   ],
+   "german": "Das ist kein Haus.",
+   "persian": "این خانه نیست.",
+   "transliteration": "in khâne nist",
+   "germanPos": "PXXN",
+   "persianPos": "PNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s33",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Die",
+    "Bücher",
+    "sind",
+    "auf",
+    "dem",
+    "Tisch"
+   ],
+   "persianTokens": [
+    "کتاب‌ها",
+    "روی",
+    "میز",
+    "هستند"
+   ],
+   "german": "Die Bücher sind auf dem Tisch.",
+   "persian": "کتاب‌ها روی میز هستند.",
+   "transliteration": "ketâb-hâ ruye miz hastand",
+   "germanPos": "XNVRXN",
+   "persianPos": "NRNV",
+   "germanBlanks": [
+    1,
+    5
+   ],
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s34",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Der",
+    "Mann",
+    "liest",
+    "die",
+    "Zeitung"
+   ],
+   "persianTokens": [
+    "مرد",
+    "روزنامه",
+    "را",
+    "می‌خواند"
+   ],
+   "german": "Der Mann liest die Zeitung.",
+   "persian": "مرد روزنامه را می‌خواند.",
+   "transliteration": "mard ruznâme râ mi-khânad",
+   "germanPos": "XNVXN",
+   "persianPos": "NNRV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s35",
+   "category": "Familie",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Sie",
+    "sind",
+    "meine",
+    "Freunde"
+   ],
+   "persianTokens": [
+    "آن‌ها",
+    "دوستان",
+    "من",
+    "هستند"
+   ],
+   "german": "Sie sind meine Freunde.",
+   "persian": "آن‌ها دوستان من هستند.",
+   "transliteration": "ânhâ dustân-e man hastand",
+   "germanPos": "PVXN",
+   "persianPos": "PNPV",
+   "germanBlanks": [
+    3
+   ],
+   "persianBlanks": [
+    1
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s36",
+   "category": "Familie",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "habe",
+    "zwei",
+    "Brüder"
+   ],
+   "persianTokens": [
+    "من",
+    "دو",
+    "برادر",
+    "دارم"
+   ],
+   "german": "Ich habe zwei Brüder.",
+   "persian": "من دو برادر دارم.",
+   "transliteration": "man do barâdar dâram",
+   "germanPos": "PVXN",
+   "persianPos": "PXNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s37",
+   "category": "Fragen",
+   "level": 2,
+   "isQuestion": true,
+   "germanTokens": [
+    "Wo",
+    "wohnst",
+    "du"
+   ],
+   "persianTokens": [
+    "تو",
+    "کجا",
+    "زندگی",
+    "می‌کنی"
+   ],
+   "german": "Wo wohnst du?",
+   "persian": "تو کجا زندگی می‌کنی؟",
+   "transliteration": "to kojâ zendegi mi-koni",
+   "germanPos": "DVP",
+   "persianPos": "PDNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1,
+    2
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s38",
+   "category": "Fragen",
+   "level": 2,
+   "isQuestion": true,
+   "germanTokens": [
+    "Was",
+    "machst",
+    "du"
+   ],
+   "persianTokens": [
+    "تو",
+    "چه",
+    "کار",
+    "می‌کنی"
+   ],
+   "german": "Was machst du?",
+   "persian": "تو چه کار می‌کنی؟",
+   "transliteration": "to che kâr mi-koni",
+   "germanPos": "DVP",
+   "persianPos": "PDNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1,
+    2
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s39",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "verstehe",
+    "dich",
+    "nicht"
+   ],
+   "persianTokens": [
+    "من",
+    "تو",
+    "را",
+    "نمی‌فهمم"
+   ],
+   "german": "Ich verstehe dich nicht.",
+   "persian": "من تو را نمی‌فهمم.",
+   "transliteration": "man to râ nemi-fahmam",
+   "germanPos": "PVPX",
+   "persianPos": "PPRV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s40",
+   "category": "Alltag",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Sie",
+    "hat",
+    "ein",
+    "schönes",
+    "Haus"
+   ],
+   "persianTokens": [
+    "او",
+    "خانه‌ای",
+    "زیبا",
+    "دارد"
+   ],
+   "german": "Sie hat ein schönes Haus.",
+   "persian": "او خانه‌ای زیبا دارد.",
+   "transliteration": "u khâne-i zibâ dârad",
+   "germanPos": "PVXAN",
+   "persianPos": "PNAV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s41",
+   "category": "Zeit",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Morgen",
+    "gehe",
+    "ich",
+    "zur",
+    "Arbeit"
+   ],
+   "persianTokens": [
+    "فردا",
+    "من",
+    "به",
+    "سر",
+    "کار",
+    "می‌روم"
+   ],
+   "german": "Morgen gehe ich zur Arbeit.",
+   "persian": "فردا من به سر کار می‌روم.",
+   "transliteration": "fardâ man be sar-e kâr mi-ravam",
+   "germanPos": "DVPRN",
+   "persianPos": "DPRNNV",
+   "germanBlanks": [
+    0,
+    4
+   ],
+   "persianBlanks": [
+    0,
+    4,
+    5
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s42",
+   "category": "Schule",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Der",
+    "Lehrer",
+    "spricht",
+    "Persisch"
+   ],
+   "persianTokens": [
+    "معلم",
+    "فارسی",
+    "صحبت",
+    "می‌کند"
+   ],
+   "german": "Der Lehrer spricht Persisch.",
+   "persian": "معلم فارسی صحبت می‌کند.",
+   "transliteration": "mo'allem fârsi sohbat mi-konad",
+   "germanPos": "XNVN",
+   "persianPos": "NNNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    0,
+    1
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s43",
+   "category": "Familie",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Meine",
+    "Schwester",
+    "trinkt",
+    "Milch"
+   ],
+   "persianTokens": [
+    "خواهرم",
+    "شیر",
+    "می‌نوشد"
+   ],
+   "german": "Meine Schwester trinkt Milch.",
+   "persian": "خواهرم شیر می‌نوشد.",
+   "transliteration": "khâharam shir mi-nushad",
+   "germanPos": "XNVN",
+   "persianPos": "NNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s44",
+   "category": "Schule",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "lernen",
+    "zusammen"
+   ],
+   "persianTokens": [
+    "ما",
+    "با",
+    "هم",
+    "درس",
+    "می‌خوانیم"
+   ],
+   "german": "Wir lernen zusammen.",
+   "persian": "ما با هم درس می‌خوانیم.",
+   "transliteration": "mâ bâ ham dars mi-khânim",
+   "germanPos": "PVD",
+   "persianPos": "PRPNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    3,
+    4
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s45",
+   "category": "Vorstellen",
+   "level": 1,
+   "isQuestion": false,
+   "germanTokens": [
+    "Ich",
+    "bin",
+    "Student"
+   ],
+   "persianTokens": [
+    "من",
+    "دانشجو",
+    "هستم"
+   ],
+   "german": "Ich bin Student.",
+   "persian": "من دانشجو هستم.",
+   "transliteration": "man dâneshju hastam",
+   "germanPos": "PXN",
+   "persianPos": "PNX",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s46",
+   "category": "Fragen",
+   "level": 2,
+   "isQuestion": true,
+   "germanTokens": [
+    "Wie",
+    "alt",
+    "bist",
+    "du"
+   ],
+   "persianTokens": [
+    "تو",
+    "چند",
+    "ساله‌ای"
+   ],
+   "german": "Wie alt bist du?",
+   "persian": "تو چند ساله‌ای؟",
+   "transliteration": "to chand sâle-i",
+   "germanPos": "DAXP",
+   "persianPos": "PDA",
+   "germanBlanks": [
+    1
+   ],
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s47",
+   "category": "Wetter",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Heute",
+    "regnet",
+    "es"
+   ],
+   "persianTokens": [
+    "امروز",
+    "باران",
+    "می‌بارد"
+   ],
+   "german": "Heute regnet es.",
+   "persian": "امروز باران می‌بارد.",
+   "transliteration": "emruz bârân mi-bârad",
+   "germanPos": "DVX",
+   "persianPos": "DNV",
+   "germanBlanks": null,
+   "persianBlanks": [
+    1,
+    2
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s48",
+   "category": "Wetter",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Im",
+    "Winter",
+    "ist",
+    "es",
+    "kalt"
+   ],
+   "persianTokens": [
+    "در",
+    "زمستان",
+    "هوا",
+    "سرد",
+    "است"
+   ],
+   "german": "Im Winter ist es kalt.",
+   "persian": "در زمستان هوا سرد است.",
+   "transliteration": "dar zemestân havâ sard ast",
+   "germanPos": "RNXXA",
+   "persianPos": "RNNAX",
+   "germanBlanks": [
+    1,
+    4
+   ],
+   "persianBlanks": [
+    1,
+    3
+   ],
+   "persianAlternatives": []
+  },
+  {
+   "id": "s49",
+   "category": "Reisen",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Wir",
+    "fahren",
+    "mit",
+    "dem",
+    "Bus"
+   ],
+   "persianTokens": [
+    "ما",
+    "با",
+    "اتوبوس",
+    "می‌رویم"
+   ],
+   "german": "Wir fahren mit dem Bus.",
+   "persian": "ما با اتوبوس می‌رویم.",
+   "transliteration": "mâ bâ otobus mi-ravim",
+   "germanPos": "PVRXN",
+   "persianPos": "PRNV",
+   "germanBlanks": null,
+   "persianBlanks": null,
+   "persianAlternatives": []
+  },
+  {
+   "id": "s50",
+   "category": "Reisen",
+   "level": 2,
+   "isQuestion": false,
+   "germanTokens": [
+    "Der",
+    "Zug",
+    "kommt",
+    "um",
+    "acht",
+    "Uhr"
+   ],
+   "persianTokens": [
+    "قطار",
+    "ساعت",
+    "هشت",
+    "می‌آید"
+   ],
+   "german": "Der Zug kommt um acht Uhr.",
+   "persian": "قطار ساعت هشت می‌آید.",
+   "transliteration": "ghatâr sâ'at-e hasht mi-âyad",
+   "germanPos": "XNVRXN",
+   "persianPos": "NNXV",
+   "germanBlanks": [
+    1,
+    2
+   ],
+   "persianBlanks": [
+    0,
+    3
+   ],
+   "persianAlternatives": []
+  }
+ ],
+ "grammar": [
+  {
+   "id": "g01",
+   "language": "fa",
+   "topic": "Pronomen",
+   "question": "Welches persische Wort bedeutet „wir\"?",
+   "answers": [
+    "ما",
+    "شما",
+    "آن‌ها",
+    "من"
+   ],
+   "explanation": "Singular: من (ich), تو (du), او (er/sie/es). Plural: ما (wir), شما (ihr/Sie), آن‌ها (sie).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g02",
+   "language": "fa",
+   "topic": "Pronomen",
+   "question": "Wie heißt „ihr / Sie (höflich)\" auf Persisch?",
+   "answers": [
+    "شما",
+    "ما",
+    "تو",
+    "او"
+   ],
+   "explanation": "شما ist die Plural- und zugleich die Höflichkeitsform. تو benutzt man nur unter Vertrauten.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g03",
+   "language": "fa",
+   "topic": "Pronomen",
+   "question": "___ دانشجو هستم. (Ich bin Student.)",
+   "answers": [
+    "من",
+    "تو",
+    "او",
+    "ما"
+   ],
+   "explanation": "Das Verb هستم (-am) gehört zu من (ich).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g04",
+   "language": "fa",
+   "topic": "Pronomen",
+   "question": "Was bedeutet das Pronomen او?",
+   "answers": [
+    "er, sie oder es",
+    "nur „er\"",
+    "nur „sie\"",
+    "wir"
+   ],
+   "explanation": "Persisch kennt kein grammatisches Geschlecht: او steht für er und sie.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g05",
+   "language": "fa",
+   "topic": "Verb „sein\"",
+   "question": "من دانشجو ___ . (Ich bin Student.)",
+   "answers": [
+    "هستم",
+    "هستی",
+    "است",
+    "هستند"
+   ],
+   "explanation": "هستم, هستی, است, هستیم, هستید, هستند – die Endung zeigt die Person.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g06",
+   "language": "fa",
+   "topic": "Verb „sein\"",
+   "question": "او خسته ___ . (Er ist müde.)",
+   "answers": [
+    "است",
+    "هستم",
+    "هستیم",
+    "هستید"
+   ],
+   "explanation": "Für er/sie/es steht است (Schrift: خسته است).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g07",
+   "language": "fa",
+   "topic": "Verb „sein\"",
+   "question": "آن‌ها دوست ___ . (Sie sind Freunde.)",
+   "answers": [
+    "هستند",
+    "هستم",
+    "است",
+    "هستی"
+   ],
+   "explanation": "Die 3. Person Plural endet auf -ند: هستند.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g08",
+   "language": "fa",
+   "topic": "Verb „sein\"",
+   "question": "ما خوشحال ___ . (Wir sind froh.)",
+   "answers": [
+    "هستیم",
+    "هستم",
+    "هستند",
+    "است"
+   ],
+   "explanation": "Die 1. Person Plural endet auf -یم: هستیم.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g09",
+   "language": "fa",
+   "topic": "Gegenwart",
+   "question": "Wie bildet man die Gegenwart im Persischen?",
+   "answers": [
+    "می‌ + Verbstamm + Personalendung",
+    "Hilfsverb + Infinitiv",
+    "Infinitiv + هستم",
+    "Nur den Verbstamm"
+   ],
+   "explanation": "Beispiel: می‌ + رو + م = می‌روم (ich gehe). Das Präfix می‌ markiert die Dauer/Gegenwart.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g10",
+   "language": "fa",
+   "topic": "Gegenwart",
+   "question": "من آب ___ . (trinken)",
+   "answers": [
+    "می‌نوشم",
+    "می‌نوشی",
+    "می‌نوشد",
+    "می‌نوشیم"
+   ],
+   "explanation": "Endungen in der Gegenwart: -م, -ی, -د, -یم, -ید, -ند.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g11",
+   "language": "fa",
+   "topic": "Gegenwart",
+   "question": "او نان ___ . (essen)",
+   "answers": [
+    "می‌خورد",
+    "می‌خورم",
+    "می‌خوری",
+    "می‌خورند"
+   ],
+   "explanation": "او (3. Person Singular) bekommt die Endung -د.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g12",
+   "language": "fa",
+   "topic": "Gegenwart",
+   "question": "ما به مدرسه ___ . (gehen)",
+   "answers": [
+    "می‌رویم",
+    "می‌روم",
+    "می‌رود",
+    "می‌روند"
+   ],
+   "explanation": "ما (wir) verlangt die Endung -یم.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g13",
+   "language": "fa",
+   "topic": "Gegenwart",
+   "question": "تو کتاب ___ . (lesen)",
+   "answers": [
+    "می‌خوانی",
+    "می‌خوانم",
+    "می‌خواند",
+    "می‌خوانید"
+   ],
+   "explanation": "تو (du) verlangt die Endung -ی.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g14",
+   "language": "fa",
+   "topic": "Vergangenheit",
+   "question": "Wie bildet man die einfache Vergangenheit?",
+   "answers": [
+    "Vergangenheitsstamm + Personalendung",
+    "می‌ + Verbstamm",
+    "خواهـ + Stamm",
+    "Stamm + ـی"
+   ],
+   "explanation": "Beispiel: رفت + م = رفتم (ich ging). In der 3. Person Singular steht nur der Stamm: رفت.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g15",
+   "language": "fa",
+   "topic": "Vergangenheit",
+   "question": "دیروز من نان ___ . (aß)",
+   "answers": [
+    "خوردم",
+    "می‌خورم",
+    "خوردی",
+    "خورد"
+   ],
+   "explanation": "Vergangenheitsstamm خورد + م (ich).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g16",
+   "language": "fa",
+   "topic": "Vergangenheit",
+   "question": "او دیروز به خانه ___ . (ging)",
+   "answers": [
+    "رفت",
+    "رفتم",
+    "می‌رود",
+    "رفتند"
+   ],
+   "explanation": "Die 3. Person Singular hat keine Endung: رفت.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g17",
+   "language": "fa",
+   "topic": "Vergangenheit",
+   "question": "ما کتاب ___ . (lasen)",
+   "answers": [
+    "خواندیم",
+    "خواندم",
+    "می‌خوانیم",
+    "خواند"
+   ],
+   "explanation": "Vergangenheitsstamm خواند + یم (wir).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g18",
+   "language": "fa",
+   "topic": "Verneinung",
+   "question": "Wie verneint man ein Verb?",
+   "answers": [
+    "Mit der Vorsilbe ن direkt vor dem Verb (می‌ → نمی‌)",
+    "Mit dem Wort نه am Satzende",
+    "Mit بدون vor dem Verb",
+    "Gar nicht – nur durch die Betonung"
+   ],
+   "explanation": "Beispiel: می‌خورم → نمی‌خورم (ich esse nicht). In der Vergangenheit: خوردم → نخوردم.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g19",
+   "language": "fa",
+   "topic": "Verneinung",
+   "question": "من گوشت ___ . (Ich esse kein Fleisch.)",
+   "answers": [
+    "نمی‌خورم",
+    "می‌خورم",
+    "خوردم",
+    "نمی‌خوری"
+   ],
+   "explanation": "ن + می‌خورم = نمی‌خورم.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g20",
+   "language": "fa",
+   "topic": "Verneinung",
+   "question": "Was bedeutet او نمی‌آید?",
+   "answers": [
+    "Er/sie kommt nicht",
+    "Er/sie kam",
+    "Er/sie kommt",
+    "Wir kommen nicht"
+   ],
+   "explanation": "نمی‌آید = Verneinung von می‌آید (er/sie kommt).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g21",
+   "language": "fa",
+   "topic": "Wortstellung",
+   "question": "Wie lautet die normale Satzstellung im Persischen?",
+   "answers": [
+    "Subjekt – Objekt – Verb",
+    "Subjekt – Verb – Objekt",
+    "Verb – Subjekt – Objekt",
+    "Objekt – Verb – Subjekt"
+   ],
+   "explanation": "Das Verb steht normalerweise am Satzende: من چای می‌نوشم (ich Tee trinke).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g22",
+   "language": "fa",
+   "topic": "Wortstellung",
+   "question": "Welcher Satz ist richtig? „Ich trinke Tee.\"",
+   "answers": [
+    "من چای می‌نوشم",
+    "من می‌نوشم چای",
+    "می‌نوشم چای من",
+    "می‌نوشم من چای"
+   ],
+   "explanation": "Subjekt – Objekt – Verb.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g23",
+   "language": "fa",
+   "topic": "Wortstellung",
+   "question": "Welcher Satz ist richtig? „Er geht zur Schule.\"",
+   "answers": [
+    "او به مدرسه می‌رود",
+    "می‌رود به مدرسه او",
+    "مدرسه به می‌رود او",
+    "به او مدرسه می‌رود"
+   ],
+   "explanation": "Das Verb می‌رود steht am Ende.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g24",
+   "language": "fa",
+   "topic": "Plural",
+   "question": "Wie lautet der Plural von کتاب (Buch)?",
+   "answers": [
+    "کتاب‌ها",
+    "کتابان",
+    "کتابات",
+    "کتابین"
+   ],
+   "explanation": "Standard-Pluralendung ist ‌ها (mit Halbleerzeichen). Bei Lebewesen auch ـان: دوستان.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g25",
+   "language": "fa",
+   "topic": "Plural",
+   "question": "Wie steht das Nomen nach einer Zahl? „zwei Bücher\"",
+   "answers": [
+    "im Singular: دو کتاب",
+    "im Plural: دو کتاب‌ها",
+    "mit ـان: دو کتابان",
+    "mit را: دو کتاب را"
+   ],
+   "explanation": "Nach Zahlwörtern bleibt das Nomen im Singular: دو کتاب, سه برادر.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g26",
+   "language": "fa",
+   "topic": "Unbestimmt & را",
+   "question": "Was drückt das angehängte ـی in خانه‌ای aus?",
+   "answers": [
+    "unbestimmt: „ein Haus\"",
+    "Plural",
+    "Vergangenheit",
+    "eine Frage"
+   ],
+   "explanation": "Das Suffix ـی macht ein Nomen unbestimmt: خانه‌ای (ein Haus), کتابی (ein Buch).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g27",
+   "language": "fa",
+   "topic": "Unbestimmt & را",
+   "question": "Wozu dient را?",
+   "answers": [
+    "Es markiert das bestimmte direkte Objekt",
+    "Es bedeutet „und\"",
+    "Es ist die Verneinung",
+    "Es bildet den Plural"
+   ],
+   "explanation": "Beispiel: مرد را می‌بینم (Ich sehe den Mann). را steht direkt hinter dem Objekt.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g28",
+   "language": "fa",
+   "topic": "Unbestimmt & را",
+   "question": "Welcher Satz ist richtig? „Ich sehe den Mann.\"",
+   "answers": [
+    "من مرد را می‌بینم",
+    "من را مرد می‌بینم",
+    "من مرد می‌بینم را",
+    "را من مرد می‌بینم"
+   ],
+   "explanation": "را folgt dem bestimmten Objekt, das Verb steht am Ende.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g29",
+   "language": "fa",
+   "topic": "Fragewörter",
+   "question": "Was bedeutet کجا?",
+   "answers": [
+    "wo / wohin",
+    "wann",
+    "warum",
+    "wer"
+   ],
+   "explanation": "کجا = wo/wohin, کی = wann, چرا = warum, چه کسی = wer, چه = was.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g30",
+   "language": "fa",
+   "topic": "Fragewörter",
+   "question": "Wie heißt „wann?\" auf Persisch?",
+   "answers": [
+    "کی",
+    "کجا",
+    "چرا",
+    "چه"
+   ],
+   "explanation": "کی = wann.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g31",
+   "language": "fa",
+   "topic": "Fragewörter",
+   "question": "Wie heißt „warum?\" auf Persisch?",
+   "answers": [
+    "چرا",
+    "کی",
+    "کجا",
+    "چند"
+   ],
+   "explanation": "چرا = warum. چند = wie viele.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g32",
+   "language": "fa",
+   "topic": "Fragewörter",
+   "question": "Was bedeutet چه کسی?",
+   "answers": [
+    "wer",
+    "was",
+    "wo",
+    "wie viel"
+   ],
+   "explanation": "چه کسی = wer. چه = was.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g33",
+   "language": "fa",
+   "topic": "Besitz",
+   "question": "Was bedeutet کتابم?",
+   "answers": [
+    "mein Buch",
+    "dein Buch",
+    "sein Buch",
+    "unser Buch"
+   ],
+   "explanation": "Besitz-Suffixe: ‌م (mein), ‌ت (dein), ‌ش (sein/ihr), ‌مان (unser), ‌تان (euer), ‌شان (ihr).",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g34",
+   "language": "fa",
+   "topic": "Besitz",
+   "question": "Wie sagt man „dein Haus\"?",
+   "answers": [
+    "خانه‌ات",
+    "خانه‌ام",
+    "خانه‌اش",
+    "خانه‌مان"
+   ],
+   "explanation": "Das Suffix für „dein\" ist ‌ت – nach Vokalen mit ا: خانه‌ات.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g35",
+   "language": "fa",
+   "topic": "Besitz",
+   "question": "Was bedeutet پدرش?",
+   "answers": [
+    "sein/ihr Vater",
+    "mein Vater",
+    "dein Vater",
+    "unser Vater"
+   ],
+   "explanation": "Das Suffix ‌ش steht für „sein/ihr\".",
+   "explanationPersian": ""
+  },
+  {
+   "id": "g36",
+   "language": "fa",
+   "topic": "Ezafe",
+   "question": "Wofür steht das Ezafe (-e), z. B. in ketâb-e bozorg?",
+   "answers": [
+    "Es verbindet ein Nomen mit Adjektiv oder Besitzer; man schreibt es meist nicht",
+    "Es verbindet zwei Sätze und wird immer geschrieben",
+    "Es verbindet Verb und Objekt",
+    "Es drückt die Verneinung aus"
+   ],
+   "explanation": "Beispiele: کتابِ بزرگ (großes Buch), کتابِ علی (Alis Buch). Gesprochen -e, geschrieben meist gar nicht.",
+   "explanationPersian": ""
+  },
+  {
+   "id": "d01",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Haus",
+   "answers": [
+    "das",
+    "der",
+    "die"
+   ],
+   "explanation": "Das Haus – sächlich (خنثی).",
+   "explanationPersian": "اسم‌های خنثی «das» می‌گیرند: das Haus."
+  },
+  {
+   "id": "d02",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Mutter",
+   "answers": [
+    "die",
+    "der",
+    "das"
+   ],
+   "explanation": "Die Mutter – weiblich (مؤنث).",
+   "explanationPersian": "اسم‌های مؤنث «die» می‌گیرند: die Mutter."
+  },
+  {
+   "id": "d03",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Vater",
+   "answers": [
+    "der",
+    "die",
+    "das"
+   ],
+   "explanation": "Der Vater – männlich (مذکر).",
+   "explanationPersian": "اسم‌های مذکر «der» می‌گیرند: der Vater."
+  },
+  {
+   "id": "d04",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Wasser",
+   "answers": [
+    "das",
+    "der",
+    "die"
+   ],
+   "explanation": "Das Wasser – sächlich.",
+   "explanationPersian": "das Wasser = آب."
+  },
+  {
+   "id": "d05",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Brot",
+   "answers": [
+    "das",
+    "der",
+    "die"
+   ],
+   "explanation": "Das Brot – sächlich.",
+   "explanationPersian": "das Brot = نان."
+  },
+  {
+   "id": "d06",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Tisch",
+   "answers": [
+    "der",
+    "die",
+    "das"
+   ],
+   "explanation": "Der Tisch – männlich.",
+   "explanationPersian": "der Tisch = میز."
+  },
+  {
+   "id": "d07",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Kind",
+   "answers": [
+    "das",
+    "der",
+    "die"
+   ],
+   "explanation": "Das Kind – sächlich.",
+   "explanationPersian": "das Kind = کودک."
+  },
+  {
+   "id": "d08",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Straße",
+   "answers": [
+    "die",
+    "der",
+    "das"
+   ],
+   "explanation": "Die Straße – weiblich.",
+   "explanationPersian": "die Straße = خیابان."
+  },
+  {
+   "id": "d09",
+   "language": "de",
+   "topic": "Artikel",
+   "question": "___ Auto",
+   "answers": [
+    "das",
+    "der",
+    "die"
+   ],
+   "explanation": "Das Auto – sächlich.",
+   "explanationPersian": "das Auto = ماشین."
+  },
+  {
+   "id": "d10",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Ich ___ nach Hause. (gehen)",
+   "answers": [
+    "gehe",
+    "gehst",
+    "geht",
+    "gehen"
+   ],
+   "explanation": "ich → -e: ich gehe.",
+   "explanationPersian": "برای «ich» پسوند -e می‌آید."
+  },
+  {
+   "id": "d11",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Du ___ Tee. (trinken)",
+   "answers": [
+    "trinkst",
+    "trinke",
+    "trinkt",
+    "trinken"
+   ],
+   "explanation": "du → -st: du trinkst.",
+   "explanationPersian": "برای «du» پسوند -st می‌آید."
+  },
+  {
+   "id": "d12",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Er ___ Brot. (essen)",
+   "answers": [
+    "isst",
+    "esse",
+    "esst",
+    "essen"
+   ],
+   "explanation": "essen ist unregelmäßig: ich esse, du isst, er isst.",
+   "explanationPersian": "فعل essen بی‌قاعده است: er isst."
+  },
+  {
+   "id": "d13",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Wir ___ Persisch. (lernen)",
+   "answers": [
+    "lernen",
+    "lerne",
+    "lernst",
+    "lernt"
+   ],
+   "explanation": "wir → -en: wir lernen.",
+   "explanationPersian": "برای «wir» پسوند -en می‌آید."
+  },
+  {
+   "id": "d14",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Ihr ___ gut. (arbeiten)",
+   "answers": [
+    "arbeitet",
+    "arbeite",
+    "arbeitest",
+    "arbeiten"
+   ],
+   "explanation": "ihr → -t: ihr arbeitet.",
+   "explanationPersian": "برای «ihr» پسوند -t می‌آید."
+  },
+  {
+   "id": "d15",
+   "language": "de",
+   "topic": "Verb-Endungen",
+   "question": "Sie ___ ein Buch. (lesen – sie, eine Frau)",
+   "answers": [
+    "liest",
+    "lese",
+    "lies",
+    "lest"
+   ],
+   "explanation": "lesen ändert den Vokal: er/sie liest.",
+   "explanationPersian": "فعل lesen تغییر مصوت دارد: sie liest."
+  },
+  {
+   "id": "d16",
+   "language": "de",
+   "topic": "sein & haben",
+   "question": "Ich ___ müde. (sein)",
+   "answers": [
+    "bin",
+    "bist",
+    "ist",
+    "sind"
+   ],
+   "explanation": "sein: ich bin, du bist, er ist, wir sind, ihr seid, sie sind.",
+   "explanationPersian": "فعل sein: ich bin."
+  },
+  {
+   "id": "d17",
+   "language": "de",
+   "topic": "sein & haben",
+   "question": "Wir ___ Freunde. (sein)",
+   "answers": [
+    "sind",
+    "seid",
+    "ist",
+    "bin"
+   ],
+   "explanation": "wir sind.",
+   "explanationPersian": "برای «wir» می‌گوییم: wir sind."
+  },
+  {
+   "id": "d18",
+   "language": "de",
+   "topic": "sein & haben",
+   "question": "Ich ___ ein Buch. (haben)",
+   "answers": [
+    "habe",
+    "hast",
+    "hat",
+    "haben"
+   ],
+   "explanation": "haben: ich habe, du hast, er hat, wir haben.",
+   "explanationPersian": "فعل haben: ich habe."
+  },
+  {
+   "id": "d19",
+   "language": "de",
+   "topic": "Wortstellung",
+   "question": "Welcher Satz ist richtig?",
+   "answers": [
+    "Heute trinke ich Tee.",
+    "Heute ich trinke Tee.",
+    "Ich Tee trinke heute.",
+    "Trinke Tee ich heute."
+   ],
+   "explanation": "Das konjugierte Verb steht im Aussagesatz immer an zweiter Stelle.",
+   "explanationPersian": "در جملهٔ خبری فعل صرف‌شده همیشه در جایگاه دوم می‌آید."
+  },
+  {
+   "id": "d20",
+   "language": "de",
+   "topic": "Wortstellung",
+   "question": "An welcher Stelle steht das konjugierte Verb im Aussagesatz?",
+   "answers": [
+    "an zweiter Stelle",
+    "am Satzende",
+    "am Satzanfang",
+    "an dritter Stelle"
+   ],
+   "explanation": "Position 2: Ich | trinke | Tee. / Heute | trinke | ich Tee.",
+   "explanationPersian": "فعل در جایگاه دوم است (برخلاف فارسی که فعل آخر می‌آید)."
+  },
+  {
+   "id": "d21",
+   "language": "de",
+   "topic": "Perfekt",
+   "question": "Gestern habe ich ein Buch ___. (lesen)",
+   "answers": [
+    "gelesen",
+    "gelest",
+    "lesen",
+    "geliest"
+   ],
+   "explanation": "Perfekt: haben + Partizip II. lesen → gelesen.",
+   "explanationPersian": "گذشتهٔ نقلی: haben + اسم مفعول (gelesen)."
+  },
+  {
+   "id": "d22",
+   "language": "de",
+   "topic": "Perfekt",
+   "question": "Wir sind nach Hause ___. (gehen)",
+   "answers": [
+    "gegangen",
+    "gegeht",
+    "gehen",
+    "gegehen"
+   ],
+   "explanation": "Bewegungsverben bilden das Perfekt mit sein: wir sind gegangen.",
+   "explanationPersian": "افعال حرکتی با sein ساخته می‌شوند: wir sind gegangen."
+  },
+  {
+   "id": "d23",
+   "language": "de",
+   "topic": "Perfekt",
+   "question": "Er hat Brot ___. (essen)",
+   "answers": [
+    "gegessen",
+    "geessen",
+    "gegesst",
+    "essen"
+   ],
+   "explanation": "essen → gegessen (unregelmäßig).",
+   "explanationPersian": "essen → gegessen."
+  },
+  {
+   "id": "d24",
+   "language": "de",
+   "topic": "Verneinung",
+   "question": "Ich habe ___ Auto.",
+   "answers": [
+    "kein",
+    "nicht",
+    "keine",
+    "nichts"
+   ],
+   "explanation": "„kein\" verneint Nomen mit unbestimmtem Artikel: ein Auto → kein Auto.",
+   "explanationPersian": "برای نفی اسم با ein از kein استفاده می‌کنیم."
+  },
+  {
+   "id": "d25",
+   "language": "de",
+   "topic": "Verneinung",
+   "question": "Ich komme ___.",
+   "answers": [
+    "nicht",
+    "kein",
+    "keine",
+    "nie"
+   ],
+   "explanation": "„nicht\" verneint Verben und Adjektive.",
+   "explanationPersian": "برای نفی فعل از nicht استفاده می‌کنیم."
+  },
+  {
+   "id": "d26",
+   "language": "de",
+   "topic": "Plural",
+   "question": "Plural von „das Buch\":",
+   "answers": [
+    "die Bücher",
+    "die Buchs",
+    "die Buchen",
+    "die Büchers"
+   ],
+   "explanation": "das Buch → die Bücher (Umlaut + -er).",
+   "explanationPersian": "جمع: die Bücher."
+  },
+  {
+   "id": "d27",
+   "language": "de",
+   "topic": "Plural",
+   "question": "Plural von „der Tisch\":",
+   "answers": [
+    "die Tische",
+    "die Tischer",
+    "die Tischen",
+    "die Tischs"
+   ],
+   "explanation": "der Tisch → die Tische.",
+   "explanationPersian": "جمع: die Tische."
+  },
+  {
+   "id": "d28",
+   "language": "de",
+   "topic": "Plural",
+   "question": "Plural von „die Frau\":",
+   "answers": [
+    "die Frauen",
+    "die Fraue",
+    "die Fräuer",
+    "die Fraus"
+   ],
+   "explanation": "die Frau → die Frauen.",
+   "explanationPersian": "جمع: die Frauen."
+  },
+  {
+   "id": "d29",
+   "language": "de",
+   "topic": "Akkusativ",
+   "question": "Ich sehe ___ Mann.",
+   "answers": [
+    "den",
+    "der",
+    "dem",
+    "des"
+   ],
+   "explanation": "Der Akkusativ verändert nur „der\": der Mann → den Mann.",
+   "explanationPersian": "در حالت مفعولی فقط der به den تبدیل می‌شود."
+  },
+  {
+   "id": "d30",
+   "language": "de",
+   "topic": "Akkusativ",
+   "question": "Ich habe ___ Hund.",
+   "answers": [
+    "einen",
+    "ein",
+    "einem",
+    "eine"
+   ],
+   "explanation": "ein Hund → (Akkusativ) einen Hund.",
+   "explanationPersian": "در حالت مفعولی: einen Hund."
+  }
+ ]
+}

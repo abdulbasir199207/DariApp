@@ -32,6 +32,7 @@ struct CardEditorView: View {
             germanSection
             persianSection
             transliterationSection
+            exampleSection
             tagsSection
             audioSection
             statusSection
@@ -46,7 +47,7 @@ struct CardEditorView: View {
                     .disabled(!viewModel.canSave)
             }
             ToolbarItem(placement: .cancellationAction) {
-                Button("Abbrechen") { dismiss() }
+                Button("Abbrechen") { viewModel.discardChanges(); dismiss() }
             }
         }
         .alert("Aehnliche Karten gefunden", isPresented: $showDuplicateAlert) {
@@ -87,6 +88,20 @@ struct CardEditorView: View {
         }
     }
 
+    private var exampleSection: some View {
+        Section {
+            TextField("جملهٔ نمونه", text: $viewModel.examplePersian)
+                .environment(\.layoutDirection, .rightToLeft)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.never)
+            TextField("Deutsche Übersetzung", text: $viewModel.exampleGerman)
+        } header: {
+            Text("Beispielsatz (optional)")
+        } footer: {
+            Text("Für Lückentexte aus deinen eigenen Wörtern – das persische Wort muss im Satz vorkommen.")
+        }
+    }
+
     private var tagsSection: some View {
         Section("Tags") {
             if !viewModel.tagNames.isEmpty {
@@ -121,7 +136,10 @@ struct CardEditorView: View {
 
     private var audioSection: some View {
         Section("Audio (Persisch)") {
-            AudioControl(audio: audio, fileName: $viewModel.audioFileName)
+            AudioControl(
+                audio: audio, fileName: $viewModel.audioFileName,
+                onObsolete: { viewModel.audioReplaced(old: $0) },
+                onRecorded: { viewModel.audioRecorded($0) })
         }
     }
 

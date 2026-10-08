@@ -85,9 +85,13 @@ struct CardsView: View {
         } description: {
             Text("Lege deine erste Karte an, um mit dem Lernen zu beginnen.")
         } actions: {
-            Button("Karte anlegen") { editorTarget = .new }
-                .buttonStyle(.dariPrimary)
-                .frame(maxWidth: 240)
+            VStack(spacing: Spacing.sm) {
+                Button("Karte anlegen") { editorTarget = .new }
+                    .buttonStyle(.dariPrimary)
+                Button("Beispielkarten laden") { SampleCards.insert(into: context) }
+                    .buttonStyle(.dariSecondary)
+            }
+            .frame(maxWidth: 260)
         }
     }
 
@@ -118,18 +122,18 @@ struct CardsView: View {
             AudioFileStore().delete(name)
         }
         context.delete(card)
-        try? context.save()
+        context.saveReporting()
     }
 
     private func toggleActive(_ card: Card) {
         card.isActive.toggle()
         card.updatedAt = Date()
-        try? context.save()
+        context.saveReporting()
     }
 
     private func toggleFavorite(_ card: Card) {
         card.isFavorite.toggle()
-        try? context.save()
+        context.saveReporting()
     }
 }
 

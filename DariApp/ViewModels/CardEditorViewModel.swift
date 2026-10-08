@@ -24,6 +24,14 @@ final class CardEditorViewModel {
     var audioFileName: String?
     var isActive: Bool
     var isFavorite: Bool
+    var exampleGerman: String
+    var examplePersian: String
+
+    /// Aufnahmen, die beim Speichern geloescht werden (ersetzt/entfernt) – nie vorher, damit
+    /// „Abbrechen" keine bestehende Aufnahme zerstoert.
+    private var obsoleteAudio: [String] = []
+    /// In dieser Sitzung neu aufgenommen (werden bei „Abbrechen" verworfen).
+    private var newAudio: [String] = []
 
     /// Falls beim Speichern moegliche Duplikate gefunden werden.
     var duplicateWarning: [Card] = []
@@ -45,6 +53,21 @@ final class CardEditorViewModel {
         self.audioFileName = card?.audioFileName
         self.isActive = card?.isActive ?? true
         self.isFavorite = card?.isFavorite ?? false
+        self.exampleGerman = card?.exampleGerman ?? ""
+        self.examplePersian = card?.examplePersian ?? ""
+    }
+
+    // MARK: Audio-Verwaltung
+
+    func audioReplaced(old: String) { obsoleteAudio.append(old) }
+    func audioRecorded(_ name: String) { newAudio.append(name) }
+
+    /// „Abbrechen": neue Aufnahmen verwerfen, Bestehendes bleibt unberuehrt.
+    func discardChanges() {
+        let store = AudioFileStore()
+        for name in newAudio where name != existingCard?.audioFileName { store.delete(name) }
+        newAudio = []
+        obsoleteAudio = []
     }
 
     // MARK: Validierung
@@ -98,12 +121,18 @@ final class CardEditorViewModel {
         card.audioFileName = audioFileName
         card.isActive = isActive
         card.isFavorite = isFavorite
+        card.exampleGerman = exampleGerman.trimmingCharacters(in: .whitespacesAndNewlines)
+        card.examplePersian = examplePersian.trimmingCharacters(in: .whitespacesAndNewlines)
         card.updatedAt = Date()
 
         if existingCard == nil {
             context.insert(card)
         }
-        try? context.save()
+        if context.saveReporting() {
+            let store = AudioFileStore()
+            for name in obsoleteAudio where name != audioFileName { store.delete(name) }
+            obsoleteAudio = []; newAudio = []
+        }
     }
 
     /// Wandelt eingegebene Tag-Namen in `Tag`-Entities um; bestehende werden

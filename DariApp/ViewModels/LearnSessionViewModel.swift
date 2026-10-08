@@ -6,6 +6,9 @@
 //  aufgeloeste Abfragerichtung, Antwortbewertung, FSRS-Planung und das
 //  Schreiben der Historie. Vollstaendig UI-unabhaengig und damit testbar.
 //
+//  Neu: Eine falsch beantwortete Karte kommt einige Positionen spaeter noch
+//  einmal als Uebung dran (ohne den FSRS-Plan erneut zu aendern).
+//
 
 import Foundation
 import SwiftData
@@ -23,14 +26,21 @@ final class LearnSessionViewModel {
         var limit: Int?
     }
 
+    private struct Item {
+        let card: Card
+        let isRetry: Bool
+    }
+
     // MARK: Zustand
 
-    private(set) var queue: [Card] = []
+    private var items: [Item] = []
     private(set) var index = 0
     private(set) var isFlipped = false
     private(set) var answeredCount = 0
     private(set) var correctCount = 0
     private(set) var isFinished = false
+    private(set) var xpGained = 0
+    private(set) var weakFixed = 0
 
     /// Aufgeloeste Richtung der aktuellen Karte (bei "gemischt" pro Karte).
     private(set) var currentDirection: ResolvedDirection = .germanToPersian
@@ -49,10 +59,12 @@ final class LearnSessionViewModel {
 
     private let context: ModelContext
     private let fsrs: FSRS
+    private let recorder: AnswerRecorder
     private let scheduler: ReviewScheduler
     private let allCards: [Card]
     private var questionStart = Date()
-    private var rng = SystemRandomNumberGenerator()
+    @ObservationIgnored private var rng = SystemRandomNumberGenerator()
+    @ObservationIgnored private var factory = ExerciseFactory(rng: SystemRandomNumberGenerator())
 
     // MARK: Init
 
@@ -66,15 +78,17 @@ final class LearnSessionViewModel {
         self.config = config
         self.context = context
         self.fsrs = fsrs
+        self.recorder = AnswerRecorder(context: context, fsrs: fsrs)
         self.scheduler = ReviewScheduler(fsrs: fsrs)
         self.allCards = allCards
 
-        self.queue = scheduler.buildQueue(
+        let queue = scheduler.buildQueue(
             from: candidates,
             limit: config.limit,
             generator: &rng
         )
-        if queue.isEmpty {
+        self.items = queue.map { Item(card: $0, isRetry: false) }
+        if items.isEmpty {
             isFinished = true
         } else {
             prepareCurrent()
@@ -84,8 +98,14 @@ final class LearnSessionViewModel {
     // MARK: Aktuelle Karte
 
     var currentCard: Card? {
-        guard index < queue.count else { return nil }
-        return queue[index]
+        guard index < items.count else { return nil }
+        return items[index].card
+    }
+
+    /// Ist die aktuelle Karte eine Wiederholung nach einem Fehler?
+    var isRetry: Bool {
+        guard index < items.count else { return false }
+        return items[index].isRetry
     }
 
     /// Text der abgefragten (Vorder-)Seite.
@@ -106,8 +126,10 @@ final class LearnSessionViewModel {
     var answerIsPersian: Bool { currentDirection == .germanToPersian }
 
     var progress: Double {
-        queue.isEmpty ? 0 : Double(index) / Double(queue.count)
+        items.isEmpty ? 0 : Double(index) / Double(items.count)
     }
+
+    var totalCount: Int { items.count }
 
     // MARK: Interaktion – Modus 1 (Umdrehen)
 
@@ -161,37 +183,27 @@ final class LearnSessionViewModel {
 
     /// Wendet die FSRS-Planung an, aktualisiert Karte und schreibt Historie.
     private func applyRating(_ rating: FSRSRating) {
-        guard let card = currentCard else { return }
-        let now = Date()
-        let time = elapsed()
-
-        let result = fsrs.schedule(card: card, rating: rating, reviewDate: now)
-        card.stability = result.stability
-        card.difficulty = result.difficulty
-        card.state = result.state
-        card.interval = result.intervalDays
-        card.lastReview = now
-        card.nextReview = result.due
-        card.lastAnswerTime = time
-        card.reps += 1
-        if rating == .again {
-            card.wrongCount += 1
-            if card.state == .relearning { card.lapses += 1 }
-        } else {
-            card.correctCount += 1
-            correctCount += 1
-        }
-
-        let log = ReviewLog(card: card, rating: rating, answerTime: time, mode: config.mode)
-        context.insert(log)
-        try? context.save()
+        guard index < items.count else { return }
+        let item = items[index]
+        let log = recorder.recordCard(
+            item.card, rating: rating, time: elapsed(), mode: config.mode, practice: item.isRetry)
+        context.saveReporting()
 
         answeredCount += 1
+        if rating != .again { correctCount += 1 }
+        xpGained += Gamification.xp(for: log)
+        if log.wasWeak && rating.rawValue >= FSRSRating.good.rawValue { weakFixed += 1 }
+
+        // Falsch beantwortet: einige Karten spaeter noch einmal uebungshalber.
+        if rating == .again && !item.isRetry {
+            let at = min(index + 1 + 3, items.count)
+            items.insert(Item(card: item.card, isRetry: true), at: at)
+        }
     }
 
     private func advance() {
         index += 1
-        if index >= queue.count {
+        if index >= items.count {
             isFinished = true
         } else {
             prepareCurrent()
@@ -204,40 +216,12 @@ final class LearnSessionViewModel {
 
     // MARK: - Multiple-Choice-Distraktoren
 
-    /// Baut vier plausible Optionen: eine korrekte plus drei Ablenker,
+    /// Baut bis zu vier plausible Optionen: eine korrekte plus Ablenker,
     /// bevorzugt aus Karten mit gemeinsamen Tags (aehnlicheres Vokabular).
     private func buildChoices(for card: Card) {
-        let correct = answerIsPersian ? card.primaryPersian : card.primaryGerman
-
-        let tagNames = Set(card.tags.map(\.name))
-        let others = allCards.filter { $0.id != card.id }
-
-        func answer(of c: Card) -> String {
-            answerIsPersian ? c.primaryPersian : c.primaryGerman
-        }
-
-        // Bevorzugt gleiche Tags, dann alle uebrigen; Duplikate/Leere raus.
-        let sameTag = others.filter { !tagNames.isDisjoint(with: Set($0.tags.map(\.name))) }
-        let rest = others.filter { tagNames.isDisjoint(with: Set($0.tags.map(\.name))) }
-
-        var pool = (sameTag.shuffled(using: &rng) + rest.shuffled(using: &rng))
-            .map(answer)
-            .filter { !$0.isEmpty && $0 != correct }
-
-        var distractors: [String] = []
-        for candidate in pool where distractors.count < 3 {
-            if !distractors.contains(candidate) { distractors.append(candidate) }
-        }
-        pool.removeAll()
-
-        var options = ([correct] + distractors).shuffled(using: &rng)
-        // Falls zu wenig Karten existieren, mit dem korrekten Wert auffuellen
-        // wird vermieden; stattdessen kleinere Auswahl zulassen.
-        options = Array(Set(options))
-        if !options.contains(correct) { options.append(correct) }
-        options.shuffle(using: &rng)
-
-        choices = options
-        correctChoiceIndex = options.firstIndex(of: correct) ?? 0
+        let set = factory.makeCardChoices(
+            card: card, answerLanguage: answerIsPersian ? .persian : .german, cards: allCards)
+        choices = set.options
+        correctChoiceIndex = set.correctIndex
     }
 }

@@ -2,8 +2,8 @@
 //  SettingsView.swift
 //  DariApp
 //
-//  Einstellungen: Erscheinungsbild, Standard-Lernmodus, Standard-Richtung,
-//  taegliches Lernziel, Animationen. Bindet direkt an `AppSettings`.
+//  „Mehr": Erscheinungsbild, Standard-Modus/-Richtung, taegliches Lernziel,
+//  Animationen, Vibration und der Bereich Daten & Backup.
 //
 
 import SwiftUI
@@ -11,6 +11,7 @@ import SwiftUI
 struct SettingsView: View {
 
     @Environment(AppSettings.self) private var settings
+    @AppStorage("zara.lastExternalBackup") private var lastBackup: Double = 0
 
     var body: some View {
         @Bindable var settings = settings
@@ -23,6 +24,7 @@ struct SettingsView: View {
                     }
                 }
                 Toggle("Animationen", isOn: $settings.animationsEnabled)
+                Toggle("Vibration", isOn: $settings.hapticsEnabled)
             }
 
             Section("Lernen") {
@@ -38,7 +40,7 @@ struct SettingsView: View {
                 }
                 Stepper(value: $settings.dailyGoal, in: 5...200, step: 5) {
                     HStack {
-                        Text("Taegliches Ziel")
+                        Text("Tägliches Ziel")
                         Spacer()
                         Text("\(settings.dailyGoal) Karten")
                             .foregroundStyle(Palette.textSecondary)
@@ -47,20 +49,34 @@ struct SettingsView: View {
             }
 
             Section {
+                NavigationLink {
+                    BackupView()
+                } label: {
+                    HStack {
+                        Label("Daten & Backup", systemImage: "externaldrive")
+                        Spacer()
+                        Text(lastBackup == 0 ? "noch kein Backup" : Date(timeIntervalSince1970: lastBackup).formatted(date: .abbreviated, time: .omitted))
+                            .font(DariFont.caption)
+                            .foregroundStyle(Palette.textSecondary)
+                    }
+                }
+                .accessibilityIdentifier("settings.backup")
+            } footer: {
+                Text("ZARA arbeitet vollständig offline. Alle Daten bleiben auf diesem Gerät – sichere sie regelmäßig als Backup.")
+            }
+
+            Section {
                 LabeledContent("Version", value: appVersion)
             } footer: {
-                Text("DariApp – vollstaendig offline. Alle Daten bleiben auf diesem Geraet.")
+                Text("ZARA – Persisch und Deutsch lernen.")
             }
         }
         .scrollContentBackground(.hidden)
         .background(Palette.background)
-        .navigationTitle("Einstellungen")
+        .navigationTitle("Mehr")
     }
 
-    private var appVersion: String {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "1.0"
-        return version
-    }
+    private var appVersion: String { BackupService.appVersionString }
 }
 
 #Preview {
