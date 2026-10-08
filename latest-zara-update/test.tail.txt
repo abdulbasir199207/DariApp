@@ -1,455 +1,121 @@
-CoreData: error: Executing as effective user 501
-2026-10-08 18:12:12.709561+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users
-CoreData: error: Information for /Users
-2026-10-08 18:12:12.709628+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
-CoreData: error: ---------------------------
-2026-10-08 18:12:12.709676+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.709718+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.709766+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
-CoreData: error:   File Size: 		160 bytes
-2026-10-08 18:12:12.710155+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		18483
-CoreData: error:   File inode: 		18483
-2026-10-08 18:12:12.710355+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		0
-CoreData: error:   File user ID: 		0
-2026-10-08 18:12:12.710486+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		80
-CoreData: error:   File group ID: 		80
-2026-10-08 18:12:12.710548+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.710594+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.710640+0000 DariApp[3618:17046] [error] CoreData: error:   755
+2026-10-08 18:28:41.695232+0000 DariApp[4374:19577] [error] CoreData: error:   755
 CoreData: error:   755
-2026-10-08 18:12:12.711018+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
-CoreData: error:   file is not a symbolic link
-2026-10-08 18:12:12.711243+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
-CoreData: error:   Sandbox access to file-write-create allowed
-2026-10-08 18:12:12.711542+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
-CoreData: error: Executing as effective user 501
-2026-10-08 18:12:12.711596+0000 DariApp[3618:17046] [error] CoreData: error: Information for /
-CoreData: error: Information for /
-2026-10-08 18:12:12.711657+0000 DariApp[3618:17046] [error] CoreData: error: ---------------------------
-CoreData: error: ---------------------------
-2026-10-08 18:12:12.711715+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.711761+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.711806+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		704 bytes
-CoreData: error:   File Size: 		704 bytes
-2026-10-08 18:12:12.711858+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2
-CoreData: error:   File inode: 		2
-2026-10-08 18:12:12.713087+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		0
-CoreData: error:   File user ID: 		0
-2026-10-08 18:12:12.713146+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		0
-CoreData: error:   File group ID: 		0
-2026-10-08 18:12:12.713195+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.713251+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.713315+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.713375+0000 DariApp[3618:17046] [error] CoreData: error:   file is not a symbolic link
-CoreData: error:   file is not a symbolic link
-2026-10-08 18:12:12.713488+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create allowed
-CoreData: error:   Sandbox access to file-write-create allowed
-2026-10-08 18:12:12.713607+0000 DariApp[3618:17046] [error] CoreData: error: Logging status information for directory path: /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support
-CoreData: error: Logging status information for directory path: /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support
-2026-10-08 18:12:12.713950+0000 DariApp[3618:17046] [error] CoreData: error: Executing as effective user 501
-CoreData: error: Executing as effective user 501
-2026-10-08 18:12:12.714024+0000 DariApp[3618:17046] [error] CoreData: error: Information for /
-CoreData: error: Information for /
-2026-10-08 18:12:12.714071+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.714115+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.715207+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		704 bytes
-CoreData: error:   File Size: 		704 bytes
-2026-10-08 18:12:12.715286+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2
-CoreData: error:   File inode: 		2
-2026-10-08 18:12:12.715339+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		0
-CoreData: error:   File user ID: 		0
-2026-10-08 18:12:12.715383+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		0
-CoreData: error:   File group ID: 		0
-2026-10-08 18:12:12.715442+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.715490+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.715540+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.715592+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
+2026-10-08 18:28:41.695283+0000 DariApp[4374:19577] [error] CoreData: error:   component is not a symbolic link
 CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.716790+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
+2026-10-08 18:28:41.695361+0000 DariApp[4374:19577] [error] CoreData: error:   component is readable
 CoreData: error:   component is readable
-2026-10-08 18:12:12.716898+0000 DariApp[3618:17046] [error] CoreData: error:   component is not writeable with errno 30
-CoreData: error:   component is not writeable with errno 30
-2026-10-08 18:12:12.716977+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users
-CoreData: error: Information for /Users
-2026-10-08 18:12:12.717026+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.717073+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.717119+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
-CoreData: error:   File Size: 		160 bytes
-2026-10-08 18:12:12.717166+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		18483
-CoreData: error:   File inode: 		18483
-2026-10-08 18:12:12.718939+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		0
-CoreData: error:   File user ID: 		0
-2026-10-08 18:12:12.719151+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		80
-CoreData: error:   File group ID: 		80
-2026-10-08 18:12:12.719256+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.719310+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.719362+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.719437+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.719570+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.719652+0000 DariApp[3618:17046] [error] CoreData: error:   component is not writeable with errno 13
-CoreData: error:   component is not writeable with errno 13
-2026-10-08 18:12:12.719789+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner
-CoreData: error: Information for /Users/runner
-2026-10-08 18:12:12.719839+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.719886+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.719936+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		1312 bytes
-CoreData: error:   File Size: 		1312 bytes
-2026-10-08 18:12:12.719985+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		35800
-CoreData: error:   File inode: 		35800
-2026-10-08 18:12:12.720032+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.720079+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.720700+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.720758+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.720814+0000 DariApp[3618:17046] [error] CoreData: error:   750
-CoreData: error:   750
-2026-10-08 18:12:12.720870+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.720957+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.721017+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
+2026-10-08 18:28:41.695426+0000 DariApp[4374:19577] [error] CoreData: error:   component is writeable
 CoreData: error:   component is writeable
-2026-10-08 18:12:12.721077+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library
-CoreData: error: Information for /Users/runner/Library
-2026-10-08 18:12:12.721388+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.721451+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.721509+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		2656 bytes
-CoreData: error:   File Size: 		2656 bytes
-2026-10-08 18:12:12.721559+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		35809
-CoreData: error:   File inode: 		35809
-2026-10-08 18:12:12.721668+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.721724+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.721776+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.721819+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.722102+0000 DariApp[3618:17046] [error] CoreData: error:   700
-CoreData: error:   700
-2026-10-08 18:12:12.722149+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.722226+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.722288+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.722346+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer
-CoreData: error: Information for /Users/runner/Library/Developer
-2026-10-08 18:12:12.722543+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.722629+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.723057+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
-CoreData: error:   File Size: 		160 bytes
-2026-10-08 18:12:12.723162+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2262946
-CoreData: error:   File inode: 		2262946
-2026-10-08 18:12:12.723209+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.723268+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.723359+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.723512+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.723607+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.723664+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.724014+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.724080+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.725582+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator
-2026-10-08 18:12:12.725662+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.725710+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.725768+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		160 bytes
-CoreData: error:   File Size: 		160 bytes
-2026-10-08 18:12:12.725838+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2262957
-CoreData: error:   File inode: 		2262957
-2026-10-08 18:12:12.725889+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.726208+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.726269+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.726332+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.726385+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.726443+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.726527+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.726598+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.726684+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices
-2026-10-08 18:12:12.726918+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.726975+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.727037+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		2016 bytes
-CoreData: error:   File Size: 		2016 bytes
-2026-10-08 18:12:12.727090+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2263005
-CoreData: error:   File inode: 		2263005
-2026-10-08 18:12:12.727139+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.727187+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.727233+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.727436+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.727496+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.727546+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.727620+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.727680+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.727741+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384
-2026-10-08 18:12:12.727896+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.727957+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.728021+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		128 bytes
-CoreData: error:   File Size: 		128 bytes
-2026-10-08 18:12:12.728084+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2285041
-CoreData: error:   File inode: 		2285041
-2026-10-08 18:12:12.728129+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.728177+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.728228+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.728389+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.728459+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.728526+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.728619+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.728696+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.728761+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data
-2026-10-08 18:12:12.728817+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.728997+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.729047+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		384 bytes
-CoreData: error:   File Size: 		384 bytes
-2026-10-08 18:12:12.729095+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2285042
-CoreData: error:   File inode: 		2285042
-2026-10-08 18:12:12.729142+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.729188+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.729230+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.729288+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.729439+0000 DariApp[3618:17046] [error] CoreData: error:   775
-CoreData: error:   775
-2026-10-08 18:12:12.729499+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.729561+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.729621+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.729686+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers
-2026-10-08 18:12:12.729741+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.729907+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.729955+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		224 bytes
-CoreData: error:   File Size: 		224 bytes
-2026-10-08 18:12:12.729998+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951530
-CoreData: error:   File inode: 		2951530
-2026-10-08 18:12:12.730042+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.730087+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.730139+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.730184+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.730229+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.730388+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.730467+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.730545+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.730612+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data
-2026-10-08 18:12:12.730664+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
-CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.730725+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.730863+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		192 bytes
-CoreData: error:   File Size: 		192 bytes
-2026-10-08 18:12:12.730909+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951550
-CoreData: error:   File inode: 		2951550
-2026-10-08 18:12:12.730962+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
-CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.731013+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
-CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.731060+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
-CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.731103+0000 DariApp[3618:17046] [error] CoreData: error: d
-CoreData: error: d
-2026-10-08 18:12:12.731147+0000 DariApp[3618:17046] [error] CoreData: error:   755
-CoreData: error:   755
-2026-10-08 18:12:12.731206+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
-CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.731399+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
-CoreData: error:   component is readable
-2026-10-08 18:12:12.731461+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
-CoreData: error:   component is writeable
-2026-10-08 18:12:12.731529+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application
+2026-10-08 18:28:41.695486+0000 DariApp[4374:19577] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application
 CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application
-2026-10-08 18:12:12.731577+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+2026-10-08 18:28:41.701163+0000 DariApp[4374:19577] [error] CoreData: error:   File Device ID: 	0
 CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.731624+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.731779+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		4768 bytes
+2026-10-08 18:28:41.701260+0000 DariApp[4374:19577] [error] CoreData: error:   Device ID: 		16777230
+CoreData: error:   Device ID: 		16777230
+2026-10-08 18:28:41.701331+0000 DariApp[4374:19577] [error] CoreData: error:   File Size: 		4768 bytes
 CoreData: error:   File Size: 		4768 bytes
-2026-10-08 18:12:12.731844+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2951715
-CoreData: error:   File inode: 		2951715
-2026-10-08 18:12:12.731896+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+2026-10-08 18:28:41.701386+0000 DariApp[4374:19577] [error] CoreData: error:   File inode: 		2952785
+CoreData: error:   File inode: 		2952785
+2026-10-08 18:28:41.701434+0000 DariApp[4374:19577] [error] CoreData: error:   File user ID: 		501
 CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.731953+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+2026-10-08 18:28:41.701893+0000 DariApp[4374:19577] [error] CoreData: error:   File group ID: 		20
 CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.732008+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+2026-10-08 18:28:41.701967+0000 DariApp[4374:19577] [error] CoreData: error:   File Permissions:
 CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.732058+0000 DariApp[3618:17046] [error] CoreData: error: d
+2026-10-08 18:28:41.702014+0000 DariApp[4374:19577] [error] CoreData: error: d
 CoreData: error: d
-2026-10-08 18:12:12.732105+0000 DariApp[3618:17046] [error] CoreData: error:   755
+2026-10-08 18:28:41.702072+0000 DariApp[4374:19577] [error] CoreData: error:   755
 CoreData: error:   755
-2026-10-08 18:12:12.732151+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
+2026-10-08 18:28:41.702123+0000 DariApp[4374:19577] [error] CoreData: error:   component is not a symbolic link
 CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.732363+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
+2026-10-08 18:28:41.702198+0000 DariApp[4374:19577] [error] CoreData: error:   component is readable
 CoreData: error:   component is readable
-2026-10-08 18:12:12.732441+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
+2026-10-08 18:28:41.702261+0000 DariApp[4374:19577] [error] CoreData: error:   component is writeable
 CoreData: error:   component is writeable
-2026-10-08 18:12:12.732499+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60
-2026-10-08 18:12:12.732554+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+2026-10-08 18:28:41.702325+0000 DariApp[4374:19577] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9
+2026-10-08 18:28:41.704413+0000 DariApp[4374:19577] [error] CoreData: error:   File Device ID: 	0
 CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.732602+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.732787+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		224 bytes
+2026-10-08 18:28:41.704513+0000 DariApp[4374:19577] [error] CoreData: error:   Device ID: 		16777230
+CoreData: error:   Device ID: 		16777230
+2026-10-08 18:28:41.704565+0000 DariApp[4374:19577] [error] CoreData: error:   File Size: 		224 bytes
 CoreData: error:   File Size: 		224 bytes
-2026-10-08 18:12:12.732854+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2962804
-CoreData: error:   File inode: 		2962804
-2026-10-08 18:12:12.732915+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+2026-10-08 18:28:41.704614+0000 DariApp[4374:19577] [error] CoreData: error:   File inode: 		2962933
+CoreData: error:   File inode: 		2962933
+2026-10-08 18:28:41.704660+0000 DariApp[4374:19577] [error] CoreData: error:   File user ID: 		501
 CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.732980+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+2026-10-08 18:28:41.705182+0000 DariApp[4374:19577] [error] CoreData: error:   File group ID: 		20
 CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.733027+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+2026-10-08 18:28:41.705240+0000 DariApp[4374:19577] [error] CoreData: error:   File Permissions:
 CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.733083+0000 DariApp[3618:17046] [error] CoreData: error: d
+2026-10-08 18:28:41.705286+0000 DariApp[4374:19577] [error] CoreData: error: d
 CoreData: error: d
-2026-10-08 18:12:12.733133+0000 DariApp[3618:17046] [error] CoreData: error:   755
+2026-10-08 18:28:41.705332+0000 DariApp[4374:19577] [error] CoreData: error:   755
 CoreData: error:   755
-2026-10-08 18:12:12.733184+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
+2026-10-08 18:28:41.705377+0000 DariApp[4374:19577] [error] CoreData: error:   component is not a symbolic link
 CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.733440+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
+2026-10-08 18:28:41.705461+0000 DariApp[4374:19577] [error] CoreData: error:   component is readable
 CoreData: error:   component is readable
-2026-10-08 18:12:12.733521+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
+2026-10-08 18:28:41.705523+0000 DariApp[4374:19577] [error] CoreData: error:   component is writeable
 CoreData: error:   component is writeable
-2026-10-08 18:12:12.733589+0000 DariApp[3618:17046] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library
-CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library
-2026-10-08 18:12:12.733643+0000 DariApp[3618:17046] [error] CoreData: error:   File Device ID: 	0
+2026-10-08 18:28:41.705587+0000 DariApp[4374:19577] [error] CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library
+CoreData: error: Information for /Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library
+2026-10-08 18:28:41.706094+0000 DariApp[4374:19577] [error] CoreData: error:   File Device ID: 	0
 CoreData: error:   File Device ID: 	0
-2026-10-08 18:12:12.733689+0000 DariApp[3618:17046] [error] CoreData: error:   Device ID: 		16777227
-CoreData: error:   Device ID: 		16777227
-2026-10-08 18:12:12.733846+0000 DariApp[3618:17046] [error] CoreData: error:   File Size: 		128 bytes
+2026-10-08 18:28:41.706155+0000 DariApp[4374:19577] [error] CoreData: error:   Device ID: 		16777230
+CoreData: error:   Device ID: 		16777230
+2026-10-08 18:28:41.706208+0000 DariApp[4374:19577] [error] CoreData: error:   File Size: 		128 bytes
 CoreData: error:   File Size: 		128 bytes
-2026-10-08 18:12:12.733895+0000 DariApp[3618:17046] [error] CoreData: error:   File inode: 		2962806
-CoreData: error:   File inode: 		2962806
-2026-10-08 18:12:12.733942+0000 DariApp[3618:17046] [error] CoreData: error:   File user ID: 		501
+2026-10-08 18:28:41.706258+0000 DariApp[4374:19577] [error] CoreData: error:   File inode: 		2962935
+CoreData: error:   File inode: 		2962935
+2026-10-08 18:28:41.706305+0000 DariApp[4374:19577] [error] CoreData: error:   File user ID: 		501
 CoreData: error:   File user ID: 		501
-2026-10-08 18:12:12.733984+0000 DariApp[3618:17046] [error] CoreData: error:   File group ID: 		20
+2026-10-08 18:28:41.722972+0000 DariApp[4374:19577] [error] CoreData: error:   File group ID: 		20
 CoreData: error:   File group ID: 		20
-2026-10-08 18:12:12.734037+0000 DariApp[3618:17046] [error] CoreData: error:   File Permissions:
+2026-10-08 18:28:41.723064+0000 DariApp[4374:19577] [error] CoreData: error:   File Permissions:
 CoreData: error:   File Permissions: 	
-2026-10-08 18:12:12.734087+0000 DariApp[3618:17046] [error] CoreData: error: d
+2026-10-08 18:28:41.723124+0000 DariApp[4374:19577] [error] CoreData: error: d
 CoreData: error: d
-2026-10-08 18:12:12.734143+0000 DariApp[3618:17046] [error] CoreData: error:   755
+2026-10-08 18:28:41.723181+0000 DariApp[4374:19577] [error] CoreData: error:   755
 CoreData: error:   755
-2026-10-08 18:12:12.734324+0000 DariApp[3618:17046] [error] CoreData: error:   component is not a symbolic link
+2026-10-08 18:28:41.723229+0000 DariApp[4374:19577] [error] CoreData: error:   component is not a symbolic link
 CoreData: error:   component is not a symbolic link
-2026-10-08 18:12:12.734404+0000 DariApp[3618:17046] [error] CoreData: error:   component is readable
+2026-10-08 18:28:41.723336+0000 DariApp[4374:19577] [error] CoreData: error:   component is readable
 CoreData: error:   component is readable
-2026-10-08 18:12:12.734469+0000 DariApp[3618:17046] [error] CoreData: error:   component is writeable
+2026-10-08 18:28:41.723411+0000 DariApp[4374:19577] [error] CoreData: error:   component is writeable
 CoreData: error:   component is writeable
-2026-10-08 18:12:12.734531+0000 DariApp[3618:17046] [error] CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support', errno 2 / No such file or directory.
-CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application Support', errno 2 / No such file or directory.
-2026-10-08 18:12:12.734703+0000 DariApp[3618:17046] [error] CoreData: error:   Sandbox access to file-write-create denied
+2026-10-08 18:28:41.723491+0000 DariApp[4374:19577] [error] CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application Support', errno 2 / No such file or directory.
+CoreData: error: Failed to stat path '/Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application Support', errno 2 / No such file or directory.
+2026-10-08 18:28:41.726021+0000 DariApp[4374:19577] [error] CoreData: error:   Sandbox access to file-write-create denied
 CoreData: error:   Sandbox access to file-write-create denied
-2026-10-08 18:12:12.735100+0000 DariApp[3618:17046] [error] CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (512)
+2026-10-08 18:28:41.726601+0000 DariApp[4374:19577] [error] CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (512)
 CoreData: error: addPersistentStoreWithType:configuration:URL:options:error: returned error NSCocoaErrorDomain (512)
-2026-10-08 18:12:12.735200+0000 DariApp[3618:17046] [error] CoreData: error: userInfo:
+2026-10-08 18:28:41.727071+0000 DariApp[4374:19577] [error] CoreData: error: userInfo:
 CoreData: error: userInfo:
-2026-10-08 18:12:12.735261+0000 DariApp[3618:17046] [error] CoreData: error: 	reason : Failed to create file; code = 2
+2026-10-08 18:28:41.727162+0000 DariApp[4374:19577] [error] CoreData: error: 	reason : Failed to create file; code = 2
 CoreData: error: 	reason : Failed to create file; code = 2
-2026-10-08 18:12:12.735329+0000 DariApp[3618:17046] [error] CoreData: error: storeType: SQLite
+2026-10-08 18:28:41.727234+0000 DariApp[4374:19577] [error] CoreData: error: storeType: SQLite
 CoreData: error: storeType: SQLite
-2026-10-08 18:12:12.735388+0000 DariApp[3618:17046] [error] CoreData: error: configuration: default
+2026-10-08 18:28:41.727304+0000 DariApp[4374:19577] [error] CoreData: error: configuration: default
 CoreData: error: configuration: default
-2026-10-08 18:12:12.735460+0000 DariApp[3618:17046] [error] CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application%20Support/default.store
-CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application%20Support/default.store
+2026-10-08 18:28:41.727402+0000 DariApp[4374:19577] [error] CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application%20Support/default.store
+CoreData: error: URL: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application%20Support/default.store
 CoreData: annotation: options:
 CoreData: annotation: 	NSMigratePersistentStoresAutomaticallyOption : 1
 CoreData: annotation: 	NSInferMappingModelAutomaticallyOption : 1
 CoreData: annotation: 	NSPersistentStoreRemoteChangeNotificationOptionKey : 1
 CoreData: annotation: 	NSPersistentHistoryTrackingKey : 1
-2026-10-08 18:12:13.354180+0000 DariApp[3618:17046] [error] CoreData: error: <NSPersistentStoreCoordinator: 0x1029a8280>: Attempting recovery from error encountered during addPersistentStore: 0x1028603c0 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
-CoreData: error: <NSPersistentStoreCoordinator: 0x1029a8280>: Attempting recovery from error encountered during addPersistentStore: 0x1028603c0 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
-2026-10-08 18:12:13.355006+0000 DariApp[3618:17046] [error] CoreData: error: During recovery, parent directory path reported as missing
+2026-10-08 18:28:41.736524+0000 DariApp[4374:19577] [error] CoreData: error: <NSPersistentStoreCoordinator: 0x105cddd80>: Attempting recovery from error encountered during addPersistentStore: 0x105c60210 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
+CoreData: error: <NSPersistentStoreCoordinator: 0x105cddd80>: Attempting recovery from error encountered during addPersistentStore: 0x105c60210 Error Domain=NSCocoaErrorDomain Code=512 "Die Datei konnte nicht gesichert werden." UserInfo={reason=Failed to create file; code = 2}
+2026-10-08 18:28:41.737073+0000 DariApp[4374:19577] [error] CoreData: error: During recovery, parent directory path reported as missing
 CoreData: error: During recovery, parent directory path reported as missing
-2026-10-08 18:12:13.410195+0000 DariApp[3618:17046] [error] CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x1028603c0> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application%20Support/default.store) was successful!
-CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x1028603c0> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/59091DF3-BA82-4E7C-A8F9-5524A238AB60/Library/Application%20Support/default.store) was successful!
-Test Suite 'All tests' started at 2026-10-08 18:12:21.250.
-Test Suite 'All tests' passed at 2026-10-08 18:12:21.251.
+2026-10-08 18:28:41.751497+0000 DariApp[4374:19577] [error] CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x105c60210> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application%20Support/default.store) was successful!
+CoreData: error: Recovery attempt while adding <NSPersistentStoreDescription: 0x105c60210> (type: SQLite, url: file:///Users/runner/Library/Developer/CoreSimulator/Devices/88931AEA-62E6-447F-8697-DCE00A671384/data/Containers/Data/Application/3DA17025-FBB7-4F9F-9C8A-65A75433FFD9/Library/Application%20Support/default.store) was successful!
+IOSurfaceClientSetSurfaceNotify failed e00002c7
+2026-10-08 18:28:43.214506+0000 DariApp[4374:19577] fopen failed for data file: errno = 2 (No such file or directory)
+2026-10-08 18:28:43.513181+0000 DariApp[4374:19577] fopen failed for data file: errno = 2 (No such file or directory)
+Test Suite 'All tests' started at 2026-10-08 18:28:46.601.
+Test Suite 'All tests' passed at 2026-10-08 18:28:46.602.
 	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
 ◇ Test run started.
 ↳ Testing Library Version: 1902
@@ -462,7 +128,7 @@ Test Suite 'All tests' passed at 2026-10-08 18:12:21.251.
 ◇ Test "Mehrere gueltige Loesungen werden akzeptiert" started.
 ✔ Test "Mehrere gueltige Loesungen werden akzeptiert" passed after 0.001 seconds.
 ◇ Test "Ein einzelner Tippfehler wird als typo erkannt" started.
-✔ Test "Ein einzelner Tippfehler wird als typo erkannt" passed after 0.184 seconds.
+✔ Test "Ein einzelner Tippfehler wird als typo erkannt" passed after 0.040 seconds.
 ◇ Test "Voellig falsche Antwort ist wrong" started.
 ✔ Test "Voellig falsche Antwort ist wrong" passed after 0.001 seconds.
 ◇ Test "Kurze Woerter tolerieren keinen Tippfehler" started.
@@ -473,7 +139,95 @@ Test Suite 'All tests' passed at 2026-10-08 18:12:21.251.
 ✔ Test "Leere Eingabe ist wrong" passed after 0.001 seconds.
 ◇ Test "Levenshtein-Distanz ist korrekt" started.
 ✔ Test "Levenshtein-Distanz ist korrekt" passed after 0.001 seconds.
-✔ Suite AnswerCheckerTests passed after 0.187 seconds.
+✔ Suite AnswerCheckerTests passed after 0.045 seconds.
+◇ Suite BackupTests started.
+◇ Test "Backup der Web-Version wird vollstaendig uebernommen" started.
+✔ Test "Backup der Web-Version wird vollstaendig uebernommen" passed after 0.076 seconds.
+◇ Test "Backup der Web-Version 2.0 (nackte Datenstruktur) wird gelesen" started.
+✔ Test "Backup der Web-Version 2.0 (nackte Datenstruktur) wird gelesen" passed after 0.009 seconds.
+◇ Test "Export → Import ist verlustfrei" started.
+✔ Test "Export → Import ist verlustfrei" passed after 0.054 seconds.
+◇ Test "Zusammenfuehren: nichts geht verloren, neuere Staende gewinnen, zweimal ist harmlos" started.
+✔ Test "Zusammenfuehren: nichts geht verloren, neuere Staende gewinnen, zweimal ist harmlos" passed after 0.019 seconds.
+◇ Test "Ungueltige oder zu neue Backups werden abgelehnt" started.
+✔ Test "Ungueltige oder zu neue Backups werden abgelehnt" passed after 0.001 seconds.
+◇ Test "Aus PWA-IDs entstehen stabile, eindeutige UUIDs; echte UUIDs bleiben erhalten" started.
+✔ Test "Aus PWA-IDs entstehen stabile, eindeutige UUIDs; echte UUIDs bleiben erhalten" passed after 0.001 seconds.
+✔ Suite BackupTests passed after 2.565 seconds.
+◇ Suite StoreSafetyTests started.
+◇ Test "Schnappschuss kopiert alle Store-Dateien und laesst sich zurueckspielen" started.
+✔ Test "Schnappschuss kopiert alle Store-Dateien und laesst sich zurueckspielen" passed after 0.015 seconds.
+◇ Test "Ohne Store wird nichts kopiert" started.
+✔ Test "Ohne Store wird nichts kopiert" passed after 0.001 seconds.
+◇ Test "Aufraeumen: 7 automatische, 5 sonstige – 'replaced' bleibt immer erhalten" started.
+✔ Test "Aufraeumen: 7 automatische, 5 sonstige – 'replaced' bleibt immer erhalten" passed after 0.058 seconds.
+◇ Test "Taegliche JSON-Sicherungen: faellig nach 20 Stunden, begrenzt auf 7" started.
+✔ Test "Taegliche JSON-Sicherungen: faellig nach 20 Stunden, begrenzt auf 7" passed after 0.018 seconds.
+✔ Suite StoreSafetyTests passed after 2.629 seconds.
+◇ Suite ContentTests started.
+◇ Test "Bibliothek ist geladen" started.
+✔ Test "Bibliothek ist geladen" passed after 0.001 seconds.
+◇ Test "Saetze: IDs eindeutig, Wortarten passen zu den Woertern, Luecken sinnvoll" started.
+✔ Test "Saetze: IDs eindeutig, Wortarten passen zu den Woertern, Luecken sinnvoll" passed after 0.001 seconds.
+◇ Test "Grammatik: richtige Antwort zuerst, keine doppelten Optionen, Erklaerungen vorhanden" started.
+✔ Test "Grammatik: richtige Antwort zuerst, keine doppelten Optionen, Erklaerungen vorhanden" passed after 0.001 seconds.
+✔ Suite ContentTests passed after 0.042 seconds.
+◇ Suite ExerciseFactoryTests started.
+◇ Test "Lueckentext: Antwort in den Optionen, genau eine Luecke, keine doppelten Optionen, Gross-/Kleinschreibung verraet nichts" started.
+✔ Test "Lueckentext: Antwort in den Optionen, genau eine Luecke, keine doppelten Optionen, Gross-/Kleinschreibung verraet nichts" passed after 0.055 seconds.
+◇ Test "Satzbildung: Loesung wird akzeptiert, Umkehrung nicht, gemischt ungleich Loesung" started.
+✔ Test "Satzbildung: Loesung wird akzeptiert, Umkehrung nicht, gemischt ungleich Loesung" passed after 0.005 seconds.
+◇ Test "Uebersetzen: die Musterloesung ist perfekt" started.
+✔ Test "Uebersetzen: die Musterloesung ist perfekt" passed after 0.002 seconds.
+◇ Test "Grammatik: richtige Antwort bleibt auffindbar" started.
+✔ Test "Grammatik: richtige Antwort bleibt auffindbar" passed after 0.537 seconds.
+◇ Test "Multiple Choice: richtige Antwort + Ablenker ohne Synonyme, auch bei sehr wenigen Karten" started.
+✔ Test "Multiple Choice: richtige Antwort + Ablenker ohne Synonyme, auch bei sehr wenigen Karten" passed after 0.043 seconds.
+◇ Test "Zuordnung: nur eindeutige Paare, hoechstens 5" started.
+✔ Test "Zuordnung: nur eindeutige Paare, hoechstens 5" passed after 0.008 seconds.
+◇ Test "Luecke aus eigenem Beispielsatz" started.
+✔ Test "Luecke aus eigenem Beispielsatz" passed after 0.005 seconds.
+◇ Test "Plaene: schwierige Woerter, Hoeren nur wenn moeglich, Wiederholung nach Fehler" started.
+✔ Test "Plaene: schwierige Woerter, Hoeren nur wenn moeglich, Wiederholung nach Fehler" passed after 0.006 seconds.
+◇ Test "Mix-Plan enthaelt verschiedene Aufgabentypen" started.
+✔ Test "Mix-Plan enthaelt verschiedene Aufgabentypen" passed after 0.011 seconds.
+✔ Suite ExerciseFactoryTests passed after 1.287 seconds.
+◇ Suite FSRSCorrectionTests started.
+◇ Test "FSRS-4.5: Anfangsschwierigkeit D0 (Nochmal/Schwer/Gut/Leicht)" started.
+✔ Test "FSRS-4.5: Anfangsschwierigkeit D0 (Nochmal/Schwer/Gut/Leicht)" passed after 0.001 seconds.
+◇ Test "Neue Karte mit 'Gut' startet nicht bei Schwierigkeit 1" started.
+✔ Test "Neue Karte mit 'Gut' startet nicht bei Schwierigkeit 1" passed after 0.001 seconds.
+◇ Test "Schwierigkeit bleibt in 1…10; 'Nochmal' erhoeht, 'Leicht' senkt" started.
+✔ Test "Schwierigkeit bleibt in 1…10; 'Nochmal' erhoeht, 'Leicht' senkt" passed after 0.001 seconds.
+◇ Test "replayDifficulty ist deterministisch" started.
+✔ Test "replayDifficulty ist deterministisch" passed after 0.825 seconds.
+✔ Suite FSRSCorrectionTests passed after 0.825 seconds.
+◇ Suite AnswerCheckerExtendedTests started.
+◇ Test "Deutsch: Satzzeichen, Umlaut-Umschrift, ß" started.
+✔ Test "Deutsch: Satzzeichen, Umlaut-Umschrift, ß" passed after 0.001 seconds.
+◇ Test "Fehlender Artikel ist nur ein Tippfehler" started.
+✔ Test "Fehlender Artikel ist nur ein Tippfehler" passed after 0.001 seconds.
+◇ Test "Persisch: Halbleerzeichen, Diakritika und Ziffern werden vereinheitlicht (auf Skalar-Ebene)" started.
+✔ Test "Persisch: Halbleerzeichen, Diakritika und Ziffern werden vereinheitlicht (auf Skalar-Ebene)" passed after 0.001 seconds.
+◇ Test "„اب“ statt „آب“ ist nur ein Tippfehler" started.
+✔ Test "„اب“ statt „آب“ ist nur ein Tippfehler" passed after 0.897 seconds.
+◇ Test "Sätze: Toleranz waechst mit der Laenge" started.
+✔ Test "Sätze: Toleranz waechst mit der Laenge" passed after 0.001 seconds.
+✔ Suite AnswerCheckerExtendedTests passed after 0.899 seconds.
+◇ Suite AdaptiveAndRecordingTests started.
+◇ Test "Schwierige Woerter werden erkannt und sortiert" started.
+✔ Test "Schwierige Woerter werden erkannt und sortiert" passed after 0.001 seconds.
+◇ Test "Punkte: richtig > mit Muehe > falsch; schwierige Woerter mehr; Wiederholung halb" started.
+✔ Test "Punkte: richtig > mit Muehe > falsch; schwierige Woerter mehr; Wiederholung halb" passed after 0.001 seconds.
+◇ Test "Level: ab 50 XP Level 2, ab 200 XP Level 3" started.
+✔ Test "Level: ab 50 XP Level 2, ab 200 XP Level 3" passed after 0.001 seconds.
+◇ Test "Karte verbuchen: FSRS plant neu, Verlauf wird geschrieben" started.
+✔ Test "Karte verbuchen: FSRS plant neu, Verlauf wird geschrieben" passed after 0.015 seconds.
+◇ Test "Uebungswiederholung und reine Spiele aendern den FSRS-Plan nicht" started.
+✔ Test "Uebungswiederholung und reine Spiele aendern den FSRS-Plan nicht" passed after 0.009 seconds.
+◇ Test "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts" started.
+✔ Test "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts" passed after 0.009 seconds.
+✔ Suite AdaptiveAndRecordingTests passed after 0.163 seconds.
 ◇ Suite FSRSTests started.
 ◇ Test "Neue Karte erhaelt positive Stabilitaet und Intervall" started.
 ✔ Test "Neue Karte erhaelt positive Stabilitaet und Intervall" passed after 0.001 seconds.
@@ -487,113 +241,359 @@ Test Suite 'All tests' passed at 2026-10-08 18:12:21.251.
 ✔ Test "Abrufwahrscheinlichkeit faellt mit der Zeit" passed after 0.001 seconds.
 ◇ Test "Intervall respektiert die Obergrenze" started.
 ✔ Test "Intervall respektiert die Obergrenze" passed after 0.001 seconds.
-✔ Suite FSRSTests passed after 0.122 seconds.
+✔ Suite FSRSTests passed after 0.066 seconds.
+◇ Suite SessionTests started.
+◇ Test "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern" started.
+✔ Test "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern" passed after 0.017 seconds.
+◇ Test "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht" started.
+✔ Test "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht" passed after 0.009 seconds.
+◇ Test "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben" started.
+✔ Test "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben" passed after 0.064 seconds.
+◇ Test "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)" started.
+✔ Test "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)" passed after 0.019 seconds.
+◇ Test "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht" started.
+✔ Test "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht" passed after 0.008 seconds.
+◇ Test "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht" started.
+✔ Test "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht" passed after 0.008 seconds.
+◇ Test "Grammatik: Antwort wird verbucht und gemerkt" started.
+✔ Test "Grammatik: Antwort wird verbucht und gemerkt" passed after 0.005 seconds.
+✔ Suite SessionTests passed after 0.271 seconds.
 ◇ Suite StatisticsTests started.
 ◇ Test "Zaehlt aktive und inaktive Karten korrekt" started.
-2026-10-08 18:12:57.311657+0000 DariApp[4784:21089] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
-2026-10-08 18:12:57.455248+0000 DariApp[4784:21095] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
-
-Restarting after unexpected exit, crash, or test timeout; summary will include totals from previous launches.
-
-Test Suite 'Selected tests' started at 2026-10-08 18:12:58.432.
-Test Suite 'Selected tests' passed at 2026-10-08 18:12:58.434.
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
-◇ Test run started.
-↳ Testing Library Version: 1902
-↳ Target Platform: arm64-apple-ios13.0-simulator
-◇ Suite StatisticsTests started.
+✔ Test "Zaehlt aktive und inaktive Karten korrekt" passed after 0.004 seconds.
 ◇ Test "Erfolgsquote basiert auf Nicht-'again'-Antworten" started.
-✔ Test "Erfolgsquote basiert auf Nicht-'again'-Antworten" passed after 0.015 seconds.
+✔ Test "Erfolgsquote basiert auf Nicht-'again'-Antworten" passed after 0.001 seconds.
 ◇ Test "Streak zaehlt aufeinanderfolgende Tage" started.
 ✔ Test "Streak zaehlt aufeinanderfolgende Tage" passed after 0.001 seconds.
-✔ Suite StatisticsTests passed after 0.018 seconds.
-✔ Test run with 2 tests in 1 suite passed after 0.018 seconds.
-2026-10-08 18:13:07.110443+0000 DariAppUITests-Runner[4985:21627] [Default] Running tests...
-objc[4985]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x106608310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x1066b0398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+◇ Test "Streak: eine Luecke beendet die Serie, gestern zaehlt noch" started.
+✔ Test "Streak: eine Luecke beendet die Serie, gestern zaehlt noch" passed after 0.001 seconds.
+◇ Test "Tagesziel zaehlt keine Uebungswiederholungen; XP und Level werden aus dem Verlauf berechnet" started.
+✔ Test "Tagesziel zaehlt keine Uebungswiederholungen; XP und Level werden aus dem Verlauf berechnet" passed after 0.001 seconds.
+◇ Test "Wissensstand: neu / lernend / gefestigt" started.
+✔ Test "Wissensstand: neu / lernend / gefestigt" passed after 0.001 seconds.
+✔ Suite StatisticsTests passed after 0.068 seconds.
+✔ Test run with 65 tests in 11 suites passed after 8.880 seconds.
+2026-10-08 18:29:01.936452+0000 DariAppUITests-Runner[5388:22952] [Default] Running tests...
+objc[5388]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a548310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10ada8398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
     t =      nans Interface orientation changed to Portrait
-Test Suite 'All tests' started at 2026-10-08 18:13:16.866.
-Test Suite 'DariAppUITests.xctest' started at 2026-10-08 18:13:16.874.
-Test Suite 'DariAppUITests' started at 2026-10-08 18:13:16.875.
-Test Case '-[DariAppUITests.DariAppUITests testNavigateToCards]' started.
-    t =     0.00s Start Test at 2026-10-08 18:13:16.879
-    t =     2.24s Set Up
-    t =     2.31s Open com.dari.DariApp
-    t =     2.31s     Launch com.dari.DariApp
-2026-10-08 18:13:30.472 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 18:13:30.472 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =    23.66s         Setting up automation session
-    t =    44.74s         Wait for com.dari.DariApp to idle
-    t =    47.97s Tap "Karten" Button
-    t =    47.97s     Wait for com.dari.DariApp to idle
-    t =    47.98s     Find the "Karten" Button
-    t =    48.82s     Check for interrupting elements affecting "Karten" Button
-    t =    49.02s     Synthesize event
-    t =    49.52s     Wait for com.dari.DariApp to idle
-    t =    50.84s Waiting 5.0s for "Karten" NavigationBar to exist
-    t =    51.89s     Checking `Expect predicate `existsNoRetry == 1` for object "Karten" NavigationBar`
-    t =    51.89s         Checking existence of `"Karten" NavigationBar`
-    t =    52.23s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testNavigateToCards]' passed (53.295 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' started.
-    t =     0.00s Start Test at 2026-10-08 18:14:10.178
-    t =     0.15s Set Up
-    t =     0.15s Open com.dari.DariApp
-    t =     0.15s     Launch com.dari.DariApp
-    t =     0.15s         Terminate com.dari.DariApp:5587
-2026-10-08 18:14:11.409 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 18:14:11.410 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     3.01s         Setting up automation session
-    t =     5.55s         Wait for com.dari.DariApp to idle
-    t =     7.86s Tap "Karten" Button
-    t =     7.86s     Wait for com.dari.DariApp to idle
-    t =     7.86s     Find the "Karten" Button
-    t =     8.48s     Check for interrupting elements affecting "Karten" Button
-    t =     8.58s     Synthesize event
-    t =     8.90s     Wait for com.dari.DariApp to idle
-    t =    10.89s Tap Button (Element at index 0)
-    t =    10.89s     Wait for com.dari.DariApp to idle
-    t =    10.90s     Find the Button (Element at index 0)
-    t =    11.01s     Check for interrupting elements affecting "plus" Button
-    t =    11.09s     Synthesize event
-    t =    11.42s     Wait for com.dari.DariApp to idle
-    t =    12.36s Waiting 5.0s for "Neue Karte" NavigationBar to exist
-    t =    13.42s     Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
-    t =    13.42s         Checking existence of `"Neue Karte" NavigationBar`
-    t =    13.84s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (14.763 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' started.
-    t =     0.00s Start Test at 2026-10-08 18:14:24.940
+Test Suite 'All tests' started at 2026-10-08 18:29:10.085.
+Test Suite 'DariAppUITests.xctest' started at 2026-10-08 18:29:10.086.
+Test Suite 'DariAppUITests' started at 2026-10-08 18:29:10.086.
+Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' started.
+    t =     0.00s Start Test at 2026-10-08 18:29:10.087
+    t =     1.10s Set Up
+    t =     1.12s Open com.dari.DariApp
+    t =     1.12s     Launch com.dari.DariApp
+2026-10-08 18:29:14.945 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:29:14.946 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     6.71s         Setting up automation session
+    t =     7.78s         Wait for com.dari.DariApp to idle
+    t =    10.14s Tap "Üben" Button
+    t =    10.14s     Wait for com.dari.DariApp to idle
+    t =    10.15s     Find the "Üben" Button
+    t =    10.38s     Check for interrupting elements affecting "Üben" Button
+    t =    10.44s     Synthesize event
+    t =    10.86s     Wait for com.dari.DariApp to idle
+    t =    70.90s         App event loop idle notification not received, will attempt to continue.
+    t =    70.91s App animations complete notification not received, will attempt to continue.
+    t =    70.92s Waiting 5.0s for "hub.cloze" Button to exist
+    t =    71.97s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.cloze" Button`
+    t =    71.97s         Checking existence of `"hub.cloze" Button`
+    t =    76.19s         Capturing element debug description
+    t =    76.19s     Checking existence of `"hub.cloze" Button`
+    t =   107.24s     Checking existence of `"hub.cloze" Button` (retry 1)
+    t =   138.28s     Checking existence of `"hub.cloze" Button` (retry 2)
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:127: error: -[DariAppUITests.DariAppUITests testClozeSession] : Failed to get matching snapshots: Timed out while evaluating UI query.
+    t =   224.16s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' failed (228.282 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' started.
+    t =     0.00s Start Test at 2026-10-08 18:32:58.378
+    t =    11.90s Set Up
+    t =    11.91s     Open com.dari.DariApp
+    t =    11.91s         Launch com.dari.DariApp
+    t =    11.91s             Terminate com.dari.DariApp:5683
+    t =    12.04s Unable to monitor animations
+    t =    12.05s Unable to monitor event loop
+2026-10-08 18:33:11.705 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:33:11.707 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    16.10s             Setting up automation session
+    t =    29.88s             Wait for com.dari.DariApp to idle
+    t =    33.41s     Waiting 8.0s for "today.hero" Button to exist
+    t =    34.44s         Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =    34.45s             Checking existence of `"today.hero" Button`
+    t =    36.30s     Find the "today.hero" Button
+    t =    36.53s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' passed (36.851 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' started.
+    t =     0.00s Start Test at 2026-10-08 18:33:35.229
     t =     0.04s Set Up
-    t =     0.04s Open com.dari.DariApp
-    t =     0.04s     Launch com.dari.DariApp
-    t =     0.04s         Terminate com.dari.DariApp:6531
-2026-10-08 18:14:26.175 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 18:14:26.176 xcodebuild[1978:10144] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.82s         Setting up automation session
-    t =     4.99s         Wait for com.dari.DariApp to idle
-    t =     7.37s Waiting 5.0s for "Lernen" Button to exist
-    t =     8.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Lernen" Button`
-    t =     8.43s         Checking existence of `"Lernen" Button`
-    t =     8.65s Checking existence of `"Karten" Button`
-    t =     8.73s Checking existence of `"Statistik" Button`
-    t =     8.82s Checking existence of `"Einstellungen" Button`
-    t =     8.91s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (14.503 seconds).
-Test Suite 'DariAppUITests' passed at 2026-10-08 18:14:39.443.
-	 Executed 3 tests, with 0 failures (0 unexpected) in 82.561 (82.568) seconds
-Test Suite 'DariAppUITests.xctest' passed at 2026-10-08 18:14:39.443.
-	 Executed 3 tests, with 0 failures (0 unexpected) in 82.561 (82.569) seconds
-Test Suite 'All tests' passed at 2026-10-08 18:14:39.444.
-	 Executed 3 tests, with 0 failures (0 unexpected) in 82.561 (82.578) seconds
-2026-10-08 18:15:57.292 xcodebuild[1978:10144] [MT] IDETestOperationsObserverDebug: 358.089 elapsed -- Testing started completed.
-2026-10-08 18:15:57.292 xcodebuild[1978:10144] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
-2026-10-08 18:15:57.292 xcodebuild[1978:10144] [MT] IDETestOperationsObserverDebug: 358.089 sec, +358.089 sec -- end
+    t =     0.04s     Open com.dari.DariApp
+    t =     0.04s         Launch com.dari.DariApp
+    t =     0.04s             Terminate com.dari.DariApp:10320
+2026-10-08 18:33:37.327 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:33:37.327 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     7.46s             Setting up automation session
+    t =    16.40s             Wait for com.dari.DariApp to idle
+    t =    22.84s     Tap "Üben" Button
+    t =    22.84s         Wait for com.dari.DariApp to idle
+    t =    22.84s         Find the "Üben" Button
+    t =    27.79s         Check for interrupting elements affecting "Üben" Button
+    t =    30.84s         Synthesize event
+    t =    31.73s         Wait for com.dari.DariApp to idle
+    t =    36.48s     Waiting 5.0s for "hub.grammar" Button to exist
+    t =    37.54s         Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Button`
+    t =    37.58s             Checking existence of `"hub.grammar" Button`
+    t =    39.50s             Capturing element debug description
+    t =    40.57s         Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Button`
+    t =    40.57s             Checking existence of `"hub.grammar" Button`
+    t =    41.78s             Capturing element debug description
+    t =    41.79s         Checking existence of `"hub.grammar" Button`
+    t =    43.68s     Collecting debug information to assist test failure triage
+    t =    43.68s         Requesting snapshot of accessibility hierarchy for app with pid 10565
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:112: error: -[DariAppUITests.DariAppUITests testGrammarFlow] : XCTAssertTrue failed
+    t =    43.88s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' failed (51.840 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' started.
+    t =     0.00s Start Test at 2026-10-08 18:34:27.079
+    t =     0.97s Set Up
+    t =     0.98s     Open com.dari.DariApp
+    t =     0.98s         Launch com.dari.DariApp
+    t =     0.98s             Terminate com.dari.DariApp:10565
+2026-10-08 18:34:50.247 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:34:50.247 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    33.23s             Setting up automation session
+    t =    35.47s             Wait for com.dari.DariApp to idle
+    t =    38.52s     Tap "Karten" Button
+    t =    38.52s         Wait for com.dari.DariApp to idle
+    t =    38.52s         Find the "Karten" Button
+    t =    39.51s         Check for interrupting elements affecting "Karten" Button
+    t =    39.63s         Synthesize event
+    t =    39.99s         Wait for com.dari.DariApp to idle
+    t =    42.01s     Tap "Karte anlegen" Button
+    t =    42.02s         Wait for com.dari.DariApp to idle
+    t =    42.02s         Find the "Karte anlegen" Button
+    t =    42.07s         Check for interrupting elements affecting "Karte anlegen" Button
+    t =    42.14s         Synthesize event
+    t =    42.55s         Wait for com.dari.DariApp to idle
+    t =    42.94s     Waiting 5.0s for "Neue Karte" NavigationBar to exist
+    t =    43.99s         Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
+    t =    44.00s             Checking existence of `"Neue Karte" NavigationBar`
+    t =    44.59s Added attachment named '05-karten-editor'
+    t =    44.60s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (47.727 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' started.
+    t =     0.00s Start Test at 2026-10-08 18:35:14.805
+    t =     0.10s Set Up
+    t =     0.10s     Open com.dari.DariApp
+    t =     0.10s         Launch com.dari.DariApp
+    t =     0.10s             Terminate com.dari.DariApp:11954
+2026-10-08 18:35:16.046 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:35:16.046 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.52s             Setting up automation session
+    t =     4.20s             Wait for com.dari.DariApp to idle
+    t =     6.50s     Tap "Karten" Button
+    t =     6.50s         Wait for com.dari.DariApp to idle
+    t =     6.51s         Find the "Karten" Button
+    t =     7.15s         Check for interrupting elements affecting "Karten" Button
+    t =     7.28s         Synthesize event
+    t =     7.61s         Wait for com.dari.DariApp to idle
+    t =     9.41s     Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    10.47s         Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    10.47s             Checking existence of `"Beispielkarten laden" Button`
+    t =    10.56s     Tap "Beispielkarten laden" Button
+    t =    10.56s         Wait for com.dari.DariApp to idle
+    t =    10.56s         Find the "Beispielkarten laden" Button
+    t =    10.60s         Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    10.66s         Synthesize event
+    t =    10.97s         Wait for com.dari.DariApp to idle
+    t =    11.27s     Waiting 5.0s for "Haus, Gebäude" StaticText to exist
+    t =    12.30s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    12.30s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    12.53s             Capturing element debug description
+    t =    13.36s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    13.36s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    13.44s             Capturing element debug description
+    t =    14.29s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    14.29s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    14.38s             Capturing element debug description
+    t =    15.29s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    15.29s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    15.37s             Capturing element debug description
+    t =    16.29s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    16.29s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    16.38s             Capturing element debug description
+    t =    16.39s         Checking existence of `"Haus, Gebäude" StaticText`
+    t =    16.51s     Collecting debug information to assist test failure triage
+    t =    16.51s         Requesting snapshot of accessibility hierarchy for app with pid 12396
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:47: error: -[DariAppUITests.DariAppUITests testPracticeHubAndMix] : XCTAssertTrue failed
+    t =    16.76s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' failed (17.006 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' started.
+    t =     0.00s Start Test at 2026-10-08 18:35:31.812
+    t =     0.04s Set Up
+    t =     0.04s     Open com.dari.DariApp
+    t =     0.04s         Launch com.dari.DariApp
+    t =     0.04s             Terminate com.dari.DariApp:12396
+2026-10-08 18:35:32.881 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:35:32.882 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     6.63s             Setting up automation session
+    t =     9.76s             Wait for com.dari.DariApp to idle
+    t =    12.54s     Tap "Karten" Button
+    t =    12.54s         Wait for com.dari.DariApp to idle
+    t =    12.55s         Find the "Karten" Button
+    t =    14.22s         Check for interrupting elements affecting "Karten" Button
+    t =    14.75s         Synthesize event
+    t =    15.21s         Wait for com.dari.DariApp to idle
+    t =    17.08s     Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    18.11s         Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    18.11s             Checking existence of `"Beispielkarten laden" Button`
+    t =    18.83s     Tap "Beispielkarten laden" Button
+    t =    18.83s         Wait for com.dari.DariApp to idle
+    t =    18.83s         Find the "Beispielkarten laden" Button
+    t =    19.06s         Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    19.88s         Synthesize event
+    t =    20.23s         Wait for com.dari.DariApp to idle
+    t =    20.59s     Waiting 5.0s for "Haus, Gebäude" StaticText to exist
+    t =    21.63s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    21.63s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    22.32s             Capturing element debug description
+    t =    22.61s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    22.61s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    23.24s             Capturing element debug description
+    t =    23.65s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    23.65s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    24.92s             Capturing element debug description
+    t =    25.60s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    25.60s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    25.91s             Capturing element debug description
+    t =    25.91s         Checking existence of `"Haus, Gebäude" StaticText`
+    t =    27.21s     Collecting debug information to assist test failure triage
+    t =    27.21s         Requesting snapshot of accessibility hierarchy for app with pid 12804
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:47: error: -[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday] : XCTAssertTrue failed
+    t =    27.38s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' failed (28.290 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' started.
+    t =     0.00s Start Test at 2026-10-08 18:36:00.105
+    t =     0.16s Set Up
+    t =     0.16s     Open com.dari.DariApp
+    t =     0.16s         Launch com.dari.DariApp
+    t =     0.16s             Terminate com.dari.DariApp:12804
+2026-10-08 18:36:03.340 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:36:03.340 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     6.52s             Setting up automation session
+    t =     6.58s             Wait for com.dari.DariApp to idle
+    t =     8.46s     Tap "Mehr" Button
+    t =     8.46s         Wait for com.dari.DariApp to idle
+    t =     8.46s         Find the "Mehr" Button
+    t =     8.88s         Check for interrupting elements affecting "Mehr" Button
+    t =     8.98s         Synthesize event
+    t =     9.29s         Wait for com.dari.DariApp to idle
+    t =    11.49s     Waiting 5.0s for "Mehr" NavigationBar to exist
+    t =    12.54s         Checking `Expect predicate `existsNoRetry == 1` for object "Mehr" NavigationBar`
+    t =    12.54s             Checking existence of `"Mehr" NavigationBar`
+    t =    12.90s Added attachment named '11-mehr'
+    t =    12.90s     Waiting 5.0s for "settings.backup" Button to exist
+    t =    13.95s         Checking `Expect predicate `existsNoRetry == 1` for object "settings.backup" Button`
+    t =    13.95s             Checking existence of `"settings.backup" Button`
+    t =    14.16s     Tap "settings.backup" Button
+    t =    14.16s         Wait for com.dari.DariApp to idle
+    t =    14.16s         Find the "settings.backup" Button
+    t =    14.46s         Check for interrupting elements affecting "settings.backup" Button
+    t =    14.61s         Synthesize event
+    t =    14.95s         Wait for com.dari.DariApp to idle
+    t =    15.20s     Waiting 5.0s for "backup.export" Button to exist
+    t =    16.27s         Checking `Expect predicate `existsNoRetry == 1` for object "backup.export" Button`
+    t =    16.27s             Checking existence of `"backup.export" Button`
+    t =    16.69s     Checking existence of `"backup.import" Button`
+    t =    17.09s Added attachment named '12-backup'
+    t =    17.09s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' passed (17.771 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' started.
+    t =     0.00s Start Test at 2026-10-08 18:36:17.876
+    t =     0.06s Set Up
+    t =     0.06s     Open com.dari.DariApp
+    t =     0.06s         Launch com.dari.DariApp
+    t =     0.07s             Terminate com.dari.DariApp:12985
+2026-10-08 18:36:18.974 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:36:18.974 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.77s             Setting up automation session
+    t =     3.82s             Wait for com.dari.DariApp to idle
+    t =     6.10s     Tap "Karten" Button
+    t =     6.10s         Wait for com.dari.DariApp to idle
+    t =     6.10s         Find the "Karten" Button
+    t =     6.61s         Check for interrupting elements affecting "Karten" Button
+    t =     6.73s         Synthesize event
+    t =     7.05s         Wait for com.dari.DariApp to idle
+    t =     8.94s     Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =     9.98s         Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =     9.98s             Checking existence of `"Beispielkarten laden" Button`
+    t =    10.09s     Tap "Beispielkarten laden" Button
+    t =    10.09s         Wait for com.dari.DariApp to idle
+    t =    10.09s         Find the "Beispielkarten laden" Button
+    t =    10.16s         Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    10.23s         Synthesize event
+    t =    10.53s         Wait for com.dari.DariApp to idle
+    t =    10.75s     Waiting 5.0s for "Haus, Gebäude" StaticText to exist
+    t =    11.76s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    11.76s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    12.01s             Capturing element debug description
+    t =    12.76s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    12.76s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    12.89s             Capturing element debug description
+    t =    13.83s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    13.83s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    14.04s             Capturing element debug description
+    t =    14.76s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    14.76s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    14.87s             Capturing element debug description
+    t =    15.76s         Checking `Expect predicate `existsNoRetry == 1` for object "Haus, Gebäude" StaticText`
+    t =    15.76s             Checking existence of `"Haus, Gebäude" StaticText`
+    t =    15.88s             Capturing element debug description
+    t =    15.88s         Checking existence of `"Haus, Gebäude" StaticText`
+    t =    16.09s     Collecting debug information to assist test failure triage
+    t =    16.09s         Requesting snapshot of accessibility hierarchy for app with pid 13402
+/Users/runner/work/DariApp/DariApp/DariAppUITests/DariAppUITests.swift:47: error: -[DariAppUITests.DariAppUITests testStatistics] : XCTAssertTrue failed
+    t =    16.28s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' failed (16.965 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' started.
+    t =     0.00s Start Test at 2026-10-08 18:36:34.842
+    t =     0.06s Set Up
+    t =     0.07s     Open com.dari.DariApp
+    t =     0.07s         Launch com.dari.DariApp
+    t =     0.07s             Terminate com.dari.DariApp:13402
+2026-10-08 18:36:36.004 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-08 18:36:36.004 xcodebuild[1880:9885] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.36s             Setting up automation session
+    t =     4.32s             Wait for com.dari.DariApp to idle
+    t =     6.81s     Waiting 8.0s for "Heute" Button to exist
+    t =     7.87s         Checking `Expect predicate `existsNoRetry == 1` for object "Heute" Button`
+    t =     7.87s             Checking existence of `"Heute" Button`
+    t =     8.24s     Checking existence of `"Üben" Button`
+    t =     8.54s     Checking existence of `"Karten" Button`
+    t =     8.86s     Checking existence of `"Statistik" Button`
+    t =     9.06s     Checking existence of `"Mehr" Button`
+    t =     9.47s Added attachment named '01-heute-leer'
+    t =     9.47s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (9.696 seconds).
+Test Suite 'DariAppUITests' failed at 2026-10-08 18:36:44.538.
+	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.452) seconds
+Test Suite 'DariAppUITests.xctest' failed at 2026-10-08 18:36:44.539.
+	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.453) seconds
+Test Suite 'All tests' failed at 2026-10-08 18:36:44.539.
+	 Executed 9 tests, with 5 failures (0 unexpected) in 454.428 (454.454) seconds
+2026-10-08 18:38:25.666 xcodebuild[1880:9885] [MT] IDETestOperationsObserverDebug: 779.541 elapsed -- Testing started completed.
+2026-10-08 18:38:25.668 xcodebuild[1880:9885] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-08 18:38:25.670 xcodebuild[1880:9885] [MT] IDETestOperationsObserverDebug: 779.541 sec, +779.541 sec -- end
 
 Test session results, code coverage, and logs:
 	/Users/runner/work/_temp/out/tests.xcresult
 
 Failing tests:
-	StatisticsTests.cardCounts()
+	DariAppUITests.testClozeSession()
+	DariAppUITests.testGrammarFlow()
+	DariAppUITests.testPracticeHubAndMix()
+	DariAppUITests.testSampleCardsAndLearnToday()
+	DariAppUITests.testStatistics()
 
 ** TEST FAILED **
 

@@ -11,8 +11,8 @@
         "platform" : "iOS Simulator"
       },
       "expectedFailures" : 0,
-      "failedTests" : 1,
-      "passedTests" : 20,
+      "failedTests" : 5,
+      "passedTests" : 69,
       "skippedTests" : 0,
       "testPlanConfiguration" : {
         "configurationId" : "1",
@@ -22,23 +22,55 @@
   ],
   "environmentDescription" : "DariApp · Built with macOS 26.6.2",
   "expectedFailures" : 0,
-  "failedTests" : 1,
-  "finishTime" : 1791483357.489,
-  "passedTests" : 20,
+  "failedTests" : 5,
+  "finishTime" : 1791484706.187,
+  "passedTests" : 69,
   "result" : "Failed",
   "skippedTests" : 0,
-  "startTime" : 1791482965.423,
+  "startTime" : 1791483874.164,
   "statistics" : [
 
   ],
   "testFailures" : [
     {
-      "failureText" : "Test crashed with signal trap.",
-      "targetName" : "DariAppTests",
-      "testIdentifier" : 16,
-      "testIdentifierString" : "StatisticsTests/cardCounts()",
-      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/cardCounts()",
-      "testName" : "Zaehlt aktive und inaktive Karten korrekt"
+      "failureText" : "Failed to get matching snapshots: Timed out while evaluating UI query.",
+      "targetName" : "DariAppUITests",
+      "testIdentifier" : 66,
+      "testIdentifierString" : "DariAppUITests/testClozeSession()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testClozeSession",
+      "testName" : "testClozeSession()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "DariAppUITests",
+      "testIdentifier" : 68,
+      "testIdentifierString" : "DariAppUITests/testGrammarFlow()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testGrammarFlow",
+      "testName" : "testGrammarFlow()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "DariAppUITests",
+      "testIdentifier" : 70,
+      "testIdentifierString" : "DariAppUITests/testPracticeHubAndMix()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testPracticeHubAndMix",
+      "testName" : "testPracticeHubAndMix()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "DariAppUITests",
+      "testIdentifier" : 71,
+      "testIdentifierString" : "DariAppUITests/testSampleCardsAndLearnToday()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testSampleCardsAndLearnToday",
+      "testName" : "testSampleCardsAndLearnToday()"
+    },
+    {
+      "failureText" : "XCTAssertTrue failed",
+      "targetName" : "DariAppUITests",
+      "testIdentifier" : 73,
+      "testIdentifierString" : "DariAppUITests/testStatistics()",
+      "testIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testStatistics",
+      "testName" : "testStatistics()"
     }
   ],
   "title" : "Test - DariApp",
@@ -46,8 +78,8 @@
     {
       "category" : "Longest Test Runs",
       "impact" : "56% of duration",
-      "text" : "1 longest test run with outlier durations exceeding 0.16s (three standard deviations)"
+      "text" : "2 longest test runs with outlier durations exceeding 1.51s (three standard deviations)"
     }
   ],
-  "totalTestCount" : 21
+  "totalTestCount" : 74
 }
