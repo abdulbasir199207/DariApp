@@ -1,0 +1,8 @@
+Command line invocation:
+    /Applications/Xcode_26.6.app/Contents/Developer/usr/bin/xcodebuild test -project DariApp.xcodeproj -scheme DariApp -destination "platform=iOS Simulator,name=iPhone 17" -resultBundlePath /Users/runner/work/_temp/out/tests.xcresult -parallel-testing-enabled NO CODE_SIGNING_ALLOWED=NO
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+xcodebuild: error: Scheme DariApp is not currently configured for the test action.
+

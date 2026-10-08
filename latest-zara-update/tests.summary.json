@@ -1,0 +1,24 @@
+{
+  "devicesAndConfigurations" : [
+
+  ],
+  "environmentDescription" : "DariApp",
+  "expectedFailures" : 0,
+  "failedTests" : 0,
+  "finishTime" : 1791482793.507,
+  "passedTests" : 0,
+  "result" : "unknown",
+  "skippedTests" : 0,
+  "startTime" : 1791482793.507,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+
+  ],
+  "title" : "Test - DariApp",
+  "topInsights" : [
+
+  ],
+  "totalTestCount" : 0
+}

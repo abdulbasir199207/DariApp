@@ -1,0 +1,1 @@
+xcodebuild: error: Scheme DariApp is not currently configured for the test action.
