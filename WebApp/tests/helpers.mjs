@@ -32,7 +32,7 @@ export class MemSnaps {
 
 const NAMES = ['APP_VERSION', 'DAY', 'now', 'uid', 'clamp', 'esc', 'shuffle', 'startOfDay', 'dayKey', 'checksum', 'clone', 'sample',
   'FSRS', 'Answer', 'ratingFromQuality', 'SENTENCES', 'GRAMMAR', 'GRAMMAR_TOPICS', 'BLANK_POS', 'SCHEMA', 'Schema', 'Store', 'DB', 'emptyData',
-  'DEFAULT_SETTINGS', 'Backup', 'AudioStore', 'xpForLog', 'isDue', 'weakScore', 'isWeak', 'weakCards', 'buildQueue', 'sentUpdate', 'pickItems',
+  'DEFAULT_SETTINGS', 'Backup', 'Sync', 'AudioStore', 'xpForLog', 'isDue', 'weakScore', 'isWeak', 'weakCards', 'buildQueue', 'sentUpdate', 'pickItems',
   'Engine', 'levelInfo', 'shiftDay', 'computeStats', 'ACHIEVEMENTS', 'makeChoices', 'makeCardChoices', 'makeMatchRound', 'makeCloze', 'makeBuild',
   'checkBuild', 'makeTranslate', 'makeGrammar', 'makeListen', 'planVocab', 'planWeak', 'planMatch', 'planListen', 'planSentences',
   'planGrammar', 'planSpeak', 'planMix', 'requeueStep', 'gameCandidates', 'resolveDir', 'libraryWords', 'isFaText', 'matchCase'];

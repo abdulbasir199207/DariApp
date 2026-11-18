@@ -52,6 +52,11 @@ async function boot() {
     let ls = null;
     try { ls = window.localStorage; ls.getItem('x'); } catch (e) { throw new Error('Der Speicher dieses Browsers ist nicht verfügbar.'); }
     Store.attach(ls);
+    try {
+      if (Sync.setup({ ls, http: window.fetch ? window.fetch.bind(window) : null, origin: location.origin, search: location.search })) {
+        history.replaceState(null, '', location.pathname);      // Schlüssel nicht in der Adresszeile lassen
+      }
+    } catch (e) {}
     Store.onSaveError = () => { toast('Speichern fehlgeschlagen – bitte Backup sichern', 4000); };
     Speech.init();
     const info = Store.load();
@@ -75,6 +80,10 @@ async function boot() {
     Store.rotatePrev();
     if (Store.compactLogs()) Store.save();
     render();
+    // Abgleich mit dem eigenen Server (NUC): Stand holen und zusammenführen, beim Verlassen sofort senden.
+    const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); }).catch(() => {});
+    syncPull();
+    document.addEventListener('visibilitychange', () => { if (document.hidden) Sync.flush(); else syncPull(); });
     // Im Hintergrund: tägliche Sicherung, Aufräumen, dauerhaften Speicher anfragen.
     DB.autoSnapshot().then(() => DB.purgeOrphans()).then(() => DB.requestPersistence()).then(() => DB.save()).catch(() => {});
   } catch (e) { try { showFatal(e); } catch (_) {} }

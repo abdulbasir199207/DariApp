@@ -19,7 +19,9 @@ struct RootView: View {
 
     @Environment(\.modelContext) private var context
     @Environment(AppSettings.self) private var settings
+    @Environment(\.scenePhase) private var scenePhase
     @State private var selection: AppTab = .today
+    private let sync = SyncService.shared
 
     var body: some View {
         TabView(selection: $selection) {
@@ -42,6 +44,20 @@ struct RootView: View {
         .task {
             SpeechService.shared.prepare()
             runDailyBackup()
+            await sync.pull(context: context, settings: settings)
+        }
+        .task {
+            // Jede gespeicherte Änderung (neues Wort, Lernfortschritt) wird an den Server geschickt.
+            for await _ in NotificationCenter.default.notifications(named: ModelContext.didSave) {
+                sync.schedulePush(context: context, settings: settings)
+            }
+        }
+        .onChange(of: scenePhase) { _, phase in
+            switch phase {
+            case .background: Task { await sync.flush() }
+            case .active: Task { await sync.pull(context: context, settings: settings) }
+            default: break
+            }
         }
     }
 

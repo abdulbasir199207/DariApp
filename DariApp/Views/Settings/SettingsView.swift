@@ -61,8 +61,20 @@ struct SettingsView: View {
                     }
                 }
                 .accessibilityIdentifier("settings.backup")
+                NavigationLink {
+                    SyncSettingsView()
+                } label: {
+                    HStack {
+                        Label("Abgleich mit Server (NUC)", systemImage: "arrow.triangle.2.circlepath.icloud")
+                        Spacer()
+                        Text(SyncService.shared.isReady ? "an" : "aus")
+                            .font(DariFont.caption)
+                            .foregroundStyle(Palette.textSecondary)
+                    }
+                }
+                .accessibilityIdentifier("settings.sync")
             } footer: {
-                Text("ZARA arbeitet vollständig offline. Alle Daten bleiben auf diesem Gerät – sichere sie regelmäßig als Backup.")
+                Text("ZARA arbeitet auch offline. Mit dem Server-Abgleich wird jede Änderung zusätzlich auf deinem eigenen Server gespeichert – sichere trotzdem regelmäßig ein Backup.")
             }
 
             Section {

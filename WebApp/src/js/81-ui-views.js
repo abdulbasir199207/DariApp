@@ -273,11 +273,12 @@ Views.more = () => {
    <button class="card row" style="width:100%;text-align:left" data-a="openBackup"><span>⭳ Backup sichern</span><span class="muted">›</span></button>
    <button class="card row" style="width:100%;text-align:left" data-a="openRestore"><span>⭱ Backup wiederherstellen</span><span class="muted">›</span></button>
    <button class="card row" style="width:100%;text-align:left" data-a="openSnapshots"><span>◷ Automatische Sicherungen</span><span class="muted">›</span></button>
+   ${syncCardHTML()}
    <input type="file" id="importFile" accept="application/json,.json,text/plain" class="hidden" data-c="importFile">
    <div class="card"><div class="muted small">
      ${last ? 'Letztes Backup: <b>' + esc(fmtDate(last)) + '</b>' : '<b>Noch kein Backup.</b>'}<br>
      Speicher: ${m.persisted ? 'dauerhaft geschützt' : 'Standard'} · ${DB.data.cards.length} Karten · ${DB.data.logs.length} Verlaufseinträge<br><br>
-     <b>ZARA</b> arbeitet vollständig offline. Alle Daten bleiben in diesem Browser auf deinem iPhone. Vor jedem Update und jeder Wiederherstellung legt ZARA automatisch eine Sicherungskopie an. Zusätzlich solltest du regelmäßig ein Backup in „Dateien" sichern.
+     <b>ZARA</b> arbeitet auch offline. Ohne Server-Abgleich bleiben alle Daten in diesem Browser auf deinem iPhone. Vor jedem Update und jeder Wiederherstellung legt ZARA automatisch eine Sicherungskopie an. Zusätzlich solltest du regelmäßig ein Backup in „Dateien" sichern.
      <br><br>Version ${APP_VERSION}</div></div>
    <div style="height:20px"></div>`;
 };
@@ -287,3 +288,26 @@ A.toggleHaptics = () => { DB.data.settings.haptics = !DB.data.settings.haptics; 
 A.setDefMode = v => { DB.data.settings.defaultMode = v; DB.save(); render(); };
 A.setDefDir = v => { DB.data.settings.defaultDirection = v; DB.save(); render(); };
 A.goalStep = v => { DB.data.settings.dailyGoal = clamp(DB.data.settings.dailyGoal + Number(v), 5, 200); DB.save(); render(); };
+
+/* ---------- Abgleich mit dem eigenen Server (NUC) ---------- */
+function syncCardHTML() {
+  const c = Sync.cfg();
+  const on = Sync.ready();
+  const status = !on ? 'aus'
+    : Sync.lastError ? 'Fehler: ' + esc(Sync.lastError)
+    : c.lastOkAt ? 'zuletzt abgeglichen ' + esc(fmtDate(c.lastOkAt)) : 'eingerichtet';
+  return `<div class="card"><div class="row"><span>☁ Abgleich mit Server (NUC)</span><span class="muted small">${status}</span></div>
+    ${on ? `<div class="muted small" style="margin-top:6px;word-break:break-all">${esc(c.url)}</div>
+      <div style="display:flex;gap:8px;margin-top:10px"><button class="pillbtn" data-a="syncNow">Jetzt abgleichen</button><button class="pillbtn" data-a="syncOff">Ausschalten</button></div>`
+    : `<input id="syncUrl" class="field" style="margin-top:10px" placeholder="Server, z. B. http://10.0.0.201:8090" value="${esc(c.url || '')}">
+      <input id="syncKey" class="field" style="margin-top:8px" placeholder="Schlüssel" autocomplete="off">
+      <button class="pillbtn" style="margin-top:10px" data-a="syncOn">Einschalten</button>`}</div>`;
+}
+A.syncOn = async () => {
+  const url = ($('syncUrl') || {}).value, key = ($('syncKey') || {}).value;
+  if (!Sync.configure(url, key)) { toast('Bitte Server und Schlüssel eintragen', 2500); return; }
+  const r = await Sync.pull(); render();
+  toast(r.ok ? 'Abgleich eingerichtet ✓' : 'Server nicht erreichbar: ' + (r.error || ''), 3000);
+};
+A.syncNow = async () => { const r = await Sync.pull(); if (r.ok && !r.merged) await Sync.push(); render(); toast(r.ok ? 'Abgeglichen ✓' : 'Fehler: ' + (r.error || ''), 2500); };
+A.syncOff = () => { Sync.disable(); render(); toast('Abgleich ausgeschaltet', 2000); };
