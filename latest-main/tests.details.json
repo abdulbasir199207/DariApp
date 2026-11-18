@@ -2,7 +2,7 @@
   "devices" : [
     {
       "architecture" : "arm64",
-      "deviceId" : "88931AEA-62E6-447F-8697-DCE00A671384",
+      "deviceId" : "F5450765-59B9-4D0C-9B64-845B8C9EE51F",
       "deviceName" : "iPhone 17",
       "modelName" : "iPhone 17",
       "osBuildNumber" : "23F77",
@@ -18,8 +18,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.0015s",
-                  "durationInSeconds" : 0.0015208721160888672,
+                  "duration" : "0.0017s",
+                  "durationInSeconds" : 0.0016720294952392578,
                   "name" : "Exakte Uebereinstimmung ist perfekt",
                   "nodeIdentifier" : "AnswerCheckerTests/exactMatch()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/exactMatch()",
@@ -27,8 +27,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00015s",
-                  "durationInSeconds" : 0.00015091896057128906,
+                  "duration" : "0.00011s",
+                  "durationInSeconds" : 0.00011301040649414062,
                   "name" : "Gross-/Kleinschreibung und Leerzeichen werden ignoriert",
                   "nodeIdentifier" : "AnswerCheckerTests/caseAndWhitespaceIgnored()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/caseAndWhitespaceIgnored()",
@@ -36,8 +36,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0013s",
-                  "durationInSeconds" : 0.001313924789428711,
+                  "duration" : "0.0011s",
+                  "durationInSeconds" : 0.0010559558868408203,
                   "name" : "Mehrere gueltige Loesungen werden akzeptiert",
                   "nodeIdentifier" : "AnswerCheckerTests/multipleSolutions()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/multipleSolutions()",
@@ -45,8 +45,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00033s",
-                  "durationInSeconds" : 0.0003337860107421875,
+                  "duration" : "0.0016s",
+                  "durationInSeconds" : 0.001583099365234375,
                   "name" : "Ein einzelner Tippfehler wird als typo erkannt",
                   "nodeIdentifier" : "AnswerCheckerTests/singleTypo()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/singleTypo()",
@@ -54,8 +54,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.13s",
-                  "durationInSeconds" : 0.12874293327331543,
+                  "duration" : "0.00026s",
+                  "durationInSeconds" : 0.00026488304138183594,
                   "name" : "Voellig falsche Antwort ist wrong",
                   "nodeIdentifier" : "AnswerCheckerTests/completelyWrong()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/completelyWrong()",
@@ -63,8 +63,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00025s",
-                  "durationInSeconds" : 0.00024509429931640625,
+                  "duration" : "0.00044s",
+                  "durationInSeconds" : 0.0004360675811767578,
                   "name" : "Kurze Woerter tolerieren keinen Tippfehler",
                   "nodeIdentifier" : "AnswerCheckerTests/shortWordsStrict()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/shortWordsStrict()",
@@ -72,8 +72,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00019s",
-                  "durationInSeconds" : 0.00019407272338867188,
+                  "duration" : "0.00031s",
+                  "durationInSeconds" : 0.0003120899200439453,
                   "name" : "Persische Zeichenvarianten werden normalisiert",
                   "nodeIdentifier" : "AnswerCheckerTests/persianNormalization()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/persianNormalization()",
@@ -81,8 +81,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00012s",
-                  "durationInSeconds" : 0.00011610984802246094,
+                  "duration" : "0.0002s",
+                  "durationInSeconds" : 0.00020003318786621094,
                   "name" : "Leere Eingabe ist wrong",
                   "nodeIdentifier" : "AnswerCheckerTests/emptyInput()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/emptyInput()",
@@ -90,8 +90,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00017s",
-                  "durationInSeconds" : 0.00017404556274414062,
+                  "duration" : "0.0002s",
+                  "durationInSeconds" : 0.0002040863037109375,
                   "name" : "Levenshtein-Distanz ist korrekt",
                   "nodeIdentifier" : "AnswerCheckerTests/levenshtein()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerTests/levenshtein()",
@@ -107,8 +107,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.12s",
-                  "durationInSeconds" : 0.11768412590026855,
+                  "duration" : "0.065s",
+                  "durationInSeconds" : 0.06543898582458496,
                   "name" : "Backup der Web-Version wird vollstaendig uebernommen",
                   "nodeIdentifier" : "BackupTests/importWebBackup()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/importWebBackup()",
@@ -116,8 +116,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.018s",
-                  "durationInSeconds" : 0.01783919334411621,
+                  "duration" : "0.0089s",
+                  "durationInSeconds" : 0.008934974670410156,
                   "name" : "Backup der Web-Version 2.0 (nackte Datenstruktur) wird gelesen",
                   "nodeIdentifier" : "BackupTests/importLegacy()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/importLegacy()",
@@ -125,8 +125,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.041s",
-                  "durationInSeconds" : 0.041471004486083984,
+                  "duration" : "0.032s",
+                  "durationInSeconds" : 0.03244495391845703,
                   "name" : "Export → Import ist verlustfrei",
                   "nodeIdentifier" : "BackupTests/roundTrip()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/roundTrip()",
@@ -134,8 +134,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.02s",
-                  "durationInSeconds" : 0.019791841506958008,
+                  "duration" : "0.019s",
+                  "durationInSeconds" : 0.019364118576049805,
                   "name" : "Zusammenfuehren: nichts geht verloren, neuere Staende gewinnen, zweimal ist harmlos",
                   "nodeIdentifier" : "BackupTests/merge()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/merge()",
@@ -143,8 +143,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0045s",
-                  "durationInSeconds" : 0.004524946212768555,
+                  "duration" : "0.0013s",
+                  "durationInSeconds" : 0.00127410888671875,
                   "name" : "Ungueltige oder zu neue Backups werden abgelehnt",
                   "nodeIdentifier" : "BackupTests/invalid()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/invalid()",
@@ -152,8 +152,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.31s",
-                  "durationInSeconds" : 0.31205201148986816,
+                  "duration" : "0.00024s",
+                  "durationInSeconds" : 0.00024199485778808594,
                   "name" : "Aus PWA-IDs entstehen stabile, eindeutige UUIDs; echte UUIDs bleiben erhalten",
                   "nodeIdentifier" : "BackupTests/stableIDs()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/BackupTests/stableIDs()",
@@ -169,8 +169,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.018s",
-                  "durationInSeconds" : 0.018078088760375977,
+                  "duration" : "0.13s",
+                  "durationInSeconds" : 0.1320948600769043,
                   "name" : "Schnappschuss kopiert alle Store-Dateien und laesst sich zurueckspielen",
                   "nodeIdentifier" : "StoreSafetyTests/snapshotAndRestore()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StoreSafetyTests/snapshotAndRestore()",
@@ -178,8 +178,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00097s",
-                  "durationInSeconds" : 0.0009720325469970703,
+                  "duration" : "0.00044s",
+                  "durationInSeconds" : 0.0004439353942871094,
                   "name" : "Ohne Store wird nichts kopiert",
                   "nodeIdentifier" : "StoreSafetyTests/noStore()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StoreSafetyTests/noStore()",
@@ -187,8 +187,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.064s",
-                  "durationInSeconds" : 0.0641179084777832,
+                  "duration" : "0.049s",
+                  "durationInSeconds" : 0.04854989051818848,
                   "name" : "Aufraeumen: 7 automatische, 5 sonstige – 'replaced' bleibt immer erhalten",
                   "nodeIdentifier" : "StoreSafetyTests/pruning()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StoreSafetyTests/pruning()",
@@ -196,8 +196,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.034s",
-                  "durationInSeconds" : 0.03361916542053223,
+                  "duration" : "0.017s",
+                  "durationInSeconds" : 0.017418861389160156,
                   "name" : "Taegliche JSON-Sicherungen: faellig nach 20 Stunden, begrenzt auf 7",
                   "nodeIdentifier" : "StoreSafetyTests/jsonBackups()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StoreSafetyTests/jsonBackups()",
@@ -213,8 +213,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.00012s",
-                  "durationInSeconds" : 0.00011515617370605469,
+                  "duration" : "0.071s",
+                  "durationInSeconds" : 0.07071900367736816,
                   "name" : "Bibliothek ist geladen",
                   "nodeIdentifier" : "ContentTests/loaded()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ContentTests/loaded()",
@@ -222,8 +222,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0019s",
-                  "durationInSeconds" : 0.0019409656524658203,
+                  "duration" : "0.0015s",
+                  "durationInSeconds" : 0.001505136489868164,
                   "name" : "Saetze: IDs eindeutig, Wortarten passen zu den Woertern, Luecken sinnvoll",
                   "nodeIdentifier" : "ContentTests/sentences()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ContentTests/sentences()",
@@ -231,8 +231,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.087s",
-                  "durationInSeconds" : 0.08727288246154785,
+                  "duration" : "0.0035s",
+                  "durationInSeconds" : 0.003509044647216797,
                   "name" : "Grammatik: richtige Antwort zuerst, keine doppelten Optionen, Erklaerungen vorhanden",
                   "nodeIdentifier" : "ContentTests/grammar()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ContentTests/grammar()",
@@ -248,8 +248,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.098s",
-                  "durationInSeconds" : 0.0980830192565918,
+                  "duration" : "0.063s",
+                  "durationInSeconds" : 0.06261706352233887,
                   "name" : "Lueckentext: Antwort in den Optionen, genau eine Luecke, keine doppelten Optionen, Gross-/Kleinschreibung verraet nichts",
                   "nodeIdentifier" : "ExerciseFactoryTests/cloze()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/cloze()",
@@ -257,8 +257,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.012s",
-                  "durationInSeconds" : 0.012223005294799805,
+                  "duration" : "0.08s",
+                  "durationInSeconds" : 0.07956504821777344,
                   "name" : "Satzbildung: Loesung wird akzeptiert, Umkehrung nicht, gemischt ungleich Loesung",
                   "nodeIdentifier" : "ExerciseFactoryTests/build()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/build()",
@@ -266,8 +266,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0071s",
-                  "durationInSeconds" : 0.00709986686706543,
+                  "duration" : "0.0024s",
+                  "durationInSeconds" : 0.0024499893188476562,
                   "name" : "Uebersetzen: die Musterloesung ist perfekt",
                   "nodeIdentifier" : "ExerciseFactoryTests/translate()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/translate()",
@@ -275,8 +275,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00081s",
-                  "durationInSeconds" : 0.0008139610290527344,
+                  "duration" : "0.00033s",
+                  "durationInSeconds" : 0.00032901763916015625,
                   "name" : "Grammatik: richtige Antwort bleibt auffindbar",
                   "nodeIdentifier" : "ExerciseFactoryTests/grammar()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/grammar()",
@@ -284,8 +284,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.056s",
-                  "durationInSeconds" : 0.056466102600097656,
+                  "duration" : "0.037s",
+                  "durationInSeconds" : 0.036900997161865234,
                   "name" : "Multiple Choice: richtige Antwort + Ablenker ohne Synonyme, auch bei sehr wenigen Karten",
                   "nodeIdentifier" : "ExerciseFactoryTests/choices()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/choices()",
@@ -293,8 +293,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0086s",
-                  "durationInSeconds" : 0.008563041687011719,
+                  "duration" : "0.005s",
+                  "durationInSeconds" : 0.004959821701049805,
                   "name" : "Zuordnung: nur eindeutige Paare, hoechstens 5",
                   "nodeIdentifier" : "ExerciseFactoryTests/match()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/match()",
@@ -302,8 +302,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.013s",
-                  "durationInSeconds" : 0.012763023376464844,
+                  "duration" : "0.0081s",
+                  "durationInSeconds" : 0.008085966110229492,
                   "name" : "Luecke aus eigenem Beispielsatz",
                   "nodeIdentifier" : "ExerciseFactoryTests/cardCloze()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/cardCloze()",
@@ -311,8 +311,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0089s",
-                  "durationInSeconds" : 0.00892186164855957,
+                  "duration" : "0.0068s",
+                  "durationInSeconds" : 0.0067598819732666016,
                   "name" : "Plaene: schwierige Woerter, Hoeren nur wenn moeglich, Wiederholung nach Fehler",
                   "nodeIdentifier" : "ExerciseFactoryTests/plans()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/plans()",
@@ -320,8 +320,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.01s",
-                  "durationInSeconds" : 0.010274171829223633,
+                  "duration" : "0.008s",
+                  "durationInSeconds" : 0.008000850677490234,
                   "name" : "Mix-Plan enthaelt verschiedene Aufgabentypen",
                   "nodeIdentifier" : "ExerciseFactoryTests/mix()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/ExerciseFactoryTests/mix()",
@@ -338,7 +338,7 @@
               "children" : [
                 {
                   "duration" : "0.00017s",
-                  "durationInSeconds" : 0.0001709461212158203,
+                  "durationInSeconds" : 0.00016999244689941406,
                   "name" : "FSRS-4.5: Anfangsschwierigkeit D0 (Nochmal/Schwer/Gut/Leicht)",
                   "nodeIdentifier" : "FSRSCorrectionTests/initialDifficulty()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSCorrectionTests/initialDifficulty()",
@@ -346,8 +346,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00023s",
-                  "durationInSeconds" : 0.00023412704467773438,
+                  "duration" : "0.0001s",
+                  "durationInSeconds" : 9.989738464355469e-05,
                   "name" : "Neue Karte mit 'Gut' startet nicht bei Schwierigkeit 1",
                   "nodeIdentifier" : "FSRSCorrectionTests/goodIsNotEasiest()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSCorrectionTests/goodIsNotEasiest()",
@@ -356,7 +356,7 @@
                 },
                 {
                   "duration" : "0.0001s",
-                  "durationInSeconds" : 9.989738464355469e-05,
+                  "durationInSeconds" : 0.00010180473327636719,
                   "name" : "Schwierigkeit bleibt in 1…10; 'Nochmal' erhoeht, 'Leicht' senkt",
                   "nodeIdentifier" : "FSRSCorrectionTests/difficultyBounds()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSCorrectionTests/difficultyBounds()",
@@ -364,8 +364,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.031s",
-                  "durationInSeconds" : 0.030740022659301758,
+                  "duration" : "0.00013s",
+                  "durationInSeconds" : 0.00013494491577148438,
                   "name" : "replayDifficulty ist deterministisch",
                   "nodeIdentifier" : "FSRSCorrectionTests/replay()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSCorrectionTests/replay()",
@@ -381,8 +381,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.0003s",
-                  "durationInSeconds" : 0.0002989768981933594,
+                  "duration" : "0.13s",
+                  "durationInSeconds" : 0.12948298454284668,
                   "name" : "Deutsch: Satzzeichen, Umlaut-Umschrift, ß",
                   "nodeIdentifier" : "AnswerCheckerExtendedTests/german()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerExtendedTests/german()",
@@ -390,8 +390,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00025s",
-                  "durationInSeconds" : 0.0002498626708984375,
+                  "duration" : "0.00013s",
+                  "durationInSeconds" : 0.0001289844512939453,
                   "name" : "Fehlender Artikel ist nur ein Tippfehler",
                   "nodeIdentifier" : "AnswerCheckerExtendedTests/article()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerExtendedTests/article()",
@@ -399,8 +399,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00021s",
-                  "durationInSeconds" : 0.0002071857452392578,
+                  "duration" : "0.00018s",
+                  "durationInSeconds" : 0.00018215179443359375,
                   "name" : "Persisch: Halbleerzeichen, Diakritika und Ziffern werden vereinheitlicht (auf Skalar-Ebene)",
                   "nodeIdentifier" : "AnswerCheckerExtendedTests/persianNormalization()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerExtendedTests/persianNormalization()",
@@ -408,8 +408,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.03s",
-                  "durationInSeconds" : 0.02968001365661621,
+                  "duration" : "0.00013s",
+                  "durationInSeconds" : 0.0001270771026611328,
                   "name" : "„اب“ statt „آب“ ist nur ein Tippfehler",
                   "nodeIdentifier" : "AnswerCheckerExtendedTests/madda()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerExtendedTests/madda()",
@@ -417,8 +417,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0009s",
-                  "durationInSeconds" : 0.0009019374847412109,
+                  "duration" : "0.00041s",
+                  "durationInSeconds" : 0.0004069805145263672,
                   "name" : "Sätze: Toleranz waechst mit der Laenge",
                   "nodeIdentifier" : "AnswerCheckerExtendedTests/sentences()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AnswerCheckerExtendedTests/sentences()",
@@ -434,8 +434,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.00073s",
-                  "durationInSeconds" : 0.0007309913635253906,
+                  "duration" : "0.00046s",
+                  "durationInSeconds" : 0.0004611015319824219,
                   "name" : "Schwierige Woerter werden erkannt und sortiert",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/weakWords()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/weakWords()",
@@ -443,8 +443,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00025s",
-                  "durationInSeconds" : 0.0002541542053222656,
+                  "duration" : "0.00024s",
+                  "durationInSeconds" : 0.0002448558807373047,
                   "name" : "Punkte: richtig > mit Muehe > falsch; schwierige Woerter mehr; Wiederholung halb",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/xp()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/xp()",
@@ -452,8 +452,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00025s",
-                  "durationInSeconds" : 0.0002529621124267578,
+                  "duration" : "0.00024s",
+                  "durationInSeconds" : 0.00023603439331054688,
                   "name" : "Level: ab 50 XP Level 2, ab 200 XP Level 3",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/levels()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/levels()",
@@ -461,8 +461,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0097s",
-                  "durationInSeconds" : 0.009704828262329102,
+                  "duration" : "0.0042s",
+                  "durationInSeconds" : 0.004248142242431641,
                   "name" : "Karte verbuchen: FSRS plant neu, Verlauf wird geschrieben",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/recordCard()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/recordCard()",
@@ -470,8 +470,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0073s",
-                  "durationInSeconds" : 0.007255077362060547,
+                  "duration" : "0.026s",
+                  "durationInSeconds" : 0.02640080451965332,
                   "name" : "Uebungswiederholung und reine Spiele aendern den FSRS-Plan nicht",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/practiceDoesNotReschedule()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/practiceDoesNotReschedule()",
@@ -479,8 +479,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0087s",
-                  "durationInSeconds" : 0.008749008178710938,
+                  "duration" : "0.0045s",
+                  "durationInSeconds" : 0.004456996917724609,
                   "name" : "Leitner: richtig steigt, falsch faellt zurueck; Wiederholung aendert nichts",
                   "nodeIdentifier" : "AdaptiveAndRecordingTests/leitner()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/AdaptiveAndRecordingTests/leitner()",
@@ -496,8 +496,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.00014s",
-                  "durationInSeconds" : 0.0001380443572998047,
+                  "duration" : "0.00011s",
+                  "durationInSeconds" : 0.00010704994201660156,
                   "name" : "Neue Karte erhaelt positive Stabilitaet und Intervall",
                   "nodeIdentifier" : "FSRSTests/newCardScheduling()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/newCardScheduling()",
@@ -505,8 +505,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.026s",
-                  "durationInSeconds" : 0.02620387077331543,
+                  "duration" : "0.00013s",
+                  "durationInSeconds" : 0.0001270771026611328,
                   "name" : "Neue Karte mit 'Nochmal' geht in den Lernzustand",
                   "nodeIdentifier" : "FSRSTests/newCardAgain()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/newCardAgain()",
@@ -514,8 +514,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00019s",
-                  "durationInSeconds" : 0.00018596649169921875,
+                  "duration" : "0.0037s",
+                  "durationInSeconds" : 0.0036668777465820312,
                   "name" : "'Leicht' erzeugt laengeres Intervall als 'Gut'",
                   "nodeIdentifier" : "FSRSTests/easyBeatsGood()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/easyBeatsGood()",
@@ -523,8 +523,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00012s",
-                  "durationInSeconds" : 0.00011801719665527344,
+                  "duration" : "0.000091s",
+                  "durationInSeconds" : 9.083747863769531e-05,
                   "name" : "'Nochmal' im Review fuehrt zu Relearning und kleinerer Stabilitaet",
                   "nodeIdentifier" : "FSRSTests/forgettingReducesStability()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/forgettingReducesStability()",
@@ -533,7 +533,7 @@
                 },
                 {
                   "duration" : "0.00009s",
-                  "durationInSeconds" : 8.988380432128906e-05,
+                  "durationInSeconds" : 9.012222290039062e-05,
                   "name" : "Abrufwahrscheinlichkeit faellt mit der Zeit",
                   "nodeIdentifier" : "FSRSTests/retrievabilityDecreases()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/retrievabilityDecreases()",
@@ -541,8 +541,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00011s",
-                  "durationInSeconds" : 0.00011086463928222656,
+                  "duration" : "0.000091s",
+                  "durationInSeconds" : 9.083747863769531e-05,
                   "name" : "Intervall respektiert die Obergrenze",
                   "nodeIdentifier" : "FSRSTests/intervalRespectsMaximum()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/FSRSTests/intervalRespectsMaximum()",
@@ -558,8 +558,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.018s",
-                  "durationInSeconds" : 0.018446922302246094,
+                  "duration" : "0.28s",
+                  "durationInSeconds" : 0.28487706184387207,
                   "name" : "Vokabel-Lektion: falsche Karte kommt als Uebung noch einmal, ohne den Plan zu aendern",
                   "nodeIdentifier" : "SessionTests/learnSessionRetry()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/learnSessionRetry()",
@@ -567,8 +567,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.013s",
-                  "durationInSeconds" : 0.013154983520507812,
+                  "duration" : "0.0084s",
+                  "durationInSeconds" : 0.008440971374511719,
                   "name" : "Multiple Choice: Optionen enthalten die richtige Antwort; Auswahl wird verbucht",
                   "nodeIdentifier" : "SessionTests/multipleChoice()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/multipleChoice()",
@@ -576,8 +576,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.029s",
-                  "durationInSeconds" : 0.028684139251708984,
+                  "duration" : "0.019s",
+                  "durationInSeconds" : 0.01904582977294922,
                   "name" : "Uebungseinheit: falsche Auswahl plant eine Wiederholung nach drei Aufgaben",
                   "nodeIdentifier" : "SessionTests/practiceChoiceRetry()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/practiceChoiceRetry()",
@@ -585,8 +585,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.096s",
-                  "durationInSeconds" : 0.0964651107788086,
+                  "duration" : "0.0095s",
+                  "durationInSeconds" : 0.009490966796875,
                   "name" : "Zuordnung: Fehlversuche werden gezaehlt, am Ende wird verbucht (ohne FSRS)",
                   "nodeIdentifier" : "SessionTests/matching()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/matching()",
@@ -594,8 +594,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.017s",
-                  "durationInSeconds" : 0.0169370174407959,
+                  "duration" : "0.011s",
+                  "durationInSeconds" : 0.010920047760009766,
                   "name" : "Satzbildung: richtige Reihenfolge wird erkannt und im Leitner-Kasten verbucht",
                   "nodeIdentifier" : "SessionTests/building()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/building()",
@@ -603,8 +603,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.014s",
-                  "durationInSeconds" : 0.013785839080810547,
+                  "duration" : "0.0091s",
+                  "durationInSeconds" : 0.009080886840820312,
                   "name" : "Schreiben: Tippfehler wird erkannt (hard), Antwort verbucht",
                   "nodeIdentifier" : "SessionTests/writing()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/writing()",
@@ -612,8 +612,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0084s",
-                  "durationInSeconds" : 0.008393049240112305,
+                  "duration" : "0.0068s",
+                  "durationInSeconds" : 0.0067501068115234375,
                   "name" : "Grammatik: Antwort wird verbucht und gemerkt",
                   "nodeIdentifier" : "SessionTests/grammar()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/SessionTests/grammar()",
@@ -629,8 +629,8 @@
             {
               "children" : [
                 {
-                  "duration" : "0.0079s",
-                  "durationInSeconds" : 0.007896900177001953,
+                  "duration" : "0.0044s",
+                  "durationInSeconds" : 0.004359006881713867,
                   "name" : "Zaehlt aktive und inaktive Karten korrekt",
                   "nodeIdentifier" : "StatisticsTests/cardCounts()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/cardCounts()",
@@ -638,8 +638,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00056s",
-                  "durationInSeconds" : 0.0005609989166259766,
+                  "duration" : "0.00042s",
+                  "durationInSeconds" : 0.00041604042053222656,
                   "name" : "Erfolgsquote basiert auf Nicht-'again'-Antworten",
                   "nodeIdentifier" : "StatisticsTests/successRate()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/successRate()",
@@ -647,8 +647,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00042s",
-                  "durationInSeconds" : 0.0004210472106933594,
+                  "duration" : "0.00034s",
+                  "durationInSeconds" : 0.00034499168395996094,
                   "name" : "Streak zaehlt aufeinanderfolgende Tage",
                   "nodeIdentifier" : "StatisticsTests/streak()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/streak()",
@@ -656,8 +656,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.0007s",
-                  "durationInSeconds" : 0.0007009506225585938,
+                  "duration" : "0.00044s",
+                  "durationInSeconds" : 0.0004448890686035156,
                   "name" : "Streak: eine Luecke beendet die Serie, gestern zaehlt noch",
                   "nodeIdentifier" : "StatisticsTests/streakGap()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/streakGap()",
@@ -665,8 +665,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00089s",
-                  "durationInSeconds" : 0.0008921623229980469,
+                  "duration" : "0.00035s",
+                  "durationInSeconds" : 0.0003490447998046875,
                   "name" : "Tagesziel zaehlt keine Uebungswiederholungen; XP und Level werden aus dem Verlauf berechnet",
                   "nodeIdentifier" : "StatisticsTests/goalAndXP()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/goalAndXP()",
@@ -674,8 +674,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "0.00068s",
-                  "durationInSeconds" : 0.0006771087646484375,
+                  "duration" : "0.012s",
+                  "durationInSeconds" : 0.011713027954101562,
                   "name" : "Wissensstand: neu / lernend / gefestigt",
                   "nodeIdentifier" : "StatisticsTests/knowledge()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppTests/StatisticsTests/knowledge()",
@@ -699,8 +699,8 @@
             {
               "children" : [
                 {
-                  "duration" : "1m 36s",
-                  "durationInSeconds" : 96.81968009471893,
+                  "duration" : "32s",
+                  "durationInSeconds" : 32.132259011268616,
                   "name" : "testClozeAnswerAndContinue()",
                   "nodeIdentifier" : "DariAppUITests/testClozeAnswerAndContinue()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testClozeAnswerAndContinue",
@@ -708,8 +708,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "25s",
-                  "durationInSeconds" : 25.777971982955933,
+                  "duration" : "17s",
+                  "durationInSeconds" : 17.620660066604614,
                   "name" : "testClozeSession()",
                   "nodeIdentifier" : "DariAppUITests/testClozeSession()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testClozeSession",
@@ -717,8 +717,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "8s",
-                  "durationInSeconds" : 8.978454947471619,
+                  "duration" : "7s",
+                  "durationInSeconds" : 7.822108030319214,
                   "name" : "testEmptyStateOffersFirstCard()",
                   "nodeIdentifier" : "DariAppUITests/testEmptyStateOffersFirstCard()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testEmptyStateOffersFirstCard",
@@ -726,8 +726,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "1m 17s",
-                  "durationInSeconds" : 77.00850701332092,
+                  "duration" : "1m 46s",
+                  "durationInSeconds" : 106.02874600887299,
                   "name" : "testFlipSessionCompletes()",
                   "nodeIdentifier" : "DariAppUITests/testFlipSessionCompletes()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testFlipSessionCompletes",
@@ -735,8 +735,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "44s",
-                  "durationInSeconds" : 44.02963209152222,
+                  "duration" : "2m 6s",
+                  "durationInSeconds" : 126.39874005317688,
                   "name" : "testGrammarAnswerAndContinue()",
                   "nodeIdentifier" : "DariAppUITests/testGrammarAnswerAndContinue()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testGrammarAnswerAndContinue",
@@ -744,8 +744,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "29s",
-                  "durationInSeconds" : 29.74421799182892,
+                  "duration" : "23s",
+                  "durationInSeconds" : 23.583289980888367,
                   "name" : "testGrammarFlow()",
                   "nodeIdentifier" : "DariAppUITests/testGrammarFlow()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testGrammarFlow",
@@ -753,8 +753,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "22s",
-                  "durationInSeconds" : 22.823078989982605,
+                  "duration" : "13s",
+                  "durationInSeconds" : 13.103495955467224,
                   "name" : "testOpenCardEditor()",
                   "nodeIdentifier" : "DariAppUITests/testOpenCardEditor()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testOpenCardEditor",
@@ -762,8 +762,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "24s",
-                  "durationInSeconds" : 24.52228808403015,
+                  "duration" : "21s",
+                  "durationInSeconds" : 21.215598106384277,
                   "name" : "testPracticeHubAndMix()",
                   "nodeIdentifier" : "DariAppUITests/testPracticeHubAndMix()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testPracticeHubAndMix",
@@ -772,7 +772,7 @@
                 },
                 {
                   "duration" : "20s",
-                  "durationInSeconds" : 20.689108967781067,
+                  "durationInSeconds" : 20.93577802181244,
                   "name" : "testSampleCardsAndLearnToday()",
                   "nodeIdentifier" : "DariAppUITests/testSampleCardsAndLearnToday()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testSampleCardsAndLearnToday",
@@ -780,8 +780,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "14s",
-                  "durationInSeconds" : 14.513978958129883,
+                  "duration" : "15s",
+                  "durationInSeconds" : 15.913079023361206,
                   "name" : "testSettingsAndBackupScreen()",
                   "nodeIdentifier" : "DariAppUITests/testSettingsAndBackupScreen()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testSettingsAndBackupScreen",
@@ -789,8 +789,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "19s",
-                  "durationInSeconds" : 19.266178011894226,
+                  "duration" : "17s",
+                  "durationInSeconds" : 17.998667001724243,
                   "name" : "testStatistics()",
                   "nodeIdentifier" : "DariAppUITests/testStatistics()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testStatistics",
@@ -798,8 +798,8 @@
                   "result" : "Passed"
                 },
                 {
-                  "duration" : "11s",
-                  "durationInSeconds" : 11.517202019691467,
+                  "duration" : "8s",
+                  "durationInSeconds" : 8.255988001823425,
                   "name" : "testTabBarShowsAllTabs()",
                   "nodeIdentifier" : "DariAppUITests/testTabBarShowsAllTabs()",
                   "nodeIdentifierURL" : "test://com.apple.xcode/DariApp/DariAppUITests/DariAppUITests/testTabBarShowsAllTabs",

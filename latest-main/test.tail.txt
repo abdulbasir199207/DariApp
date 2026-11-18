@@ -1,596 +1,596 @@
-    t =    14.26s         Scroll element to visible
-    t =    14.27s         Find the "hub.cloze" Button
-    t =    14.92s         Computed hit point {105.5, 555} after scrolling to visible
-    t =    15.23s     Wait for com.dari.DariApp to idle
-    t =    15.37s Waiting 8.0s for "Lückentext" NavigationBar to exist
-    t =    16.45s     Checking `Expect predicate `existsNoRetry == 1` for object "Lückentext" NavigationBar`
-    t =    16.45s         Checking existence of `"Lückentext" NavigationBar`
-    t =    16.84s Added attachment named '10-lueckentext'
-    t =    16.84s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' passed (25.778 seconds).
+    t =    13.25s     Find the "hub.cloze" Any
+    t =    13.56s     Check for interrupting elements affecting "hub.cloze" Button
+    t =    13.71s     Synthesize event
+    t =    13.73s         Scroll element to visible
+    t =    13.73s         Find the "hub.cloze" Button
+    t =    14.79s         Computed hit point {105.5, 555} after scrolling to visible
+    t =    15.08s     Wait for com.dari.DariApp to idle
+    t =    16.07s Waiting 8.0s for "Lückentext" NavigationBar to exist
+    t =    17.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Lückentext" NavigationBar`
+    t =    17.11s         Checking existence of `"Lückentext" NavigationBar`
+    t =    17.29s Added attachment named '10-lueckentext'
+    t =    17.29s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testClozeSession]' passed (17.621 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' started.
-    t =     0.00s Start Test at 2026-10-08 19:33:20.401
-    t =     0.03s Set Up
-    t =     0.03s Open com.dari.DariApp
+    t =     0.00s Start Test at 2026-11-18 16:11:39.198
+    t =     0.02s Set Up
+    t =     0.02s Open com.dari.DariApp
     t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:7603
-2026-10-08 19:33:21.491 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:33:21.491 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     3.27s         Setting up automation session
-    t =     3.55s         Wait for com.dari.DariApp to idle
-    t =     5.91s Waiting 8.0s for "today.hero" Button to exist
-    t =     6.94s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
-    t =     6.94s         Checking existence of `"today.hero" Button`
-    t =     7.08s Find the "today.hero" Button
-    t =     7.13s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' passed (8.978 seconds).
+    t =     0.03s         Terminate com.dari.DariApp:4035
+2026-11-18 16:11:40.312 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:11:40.312 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.00s         Setting up automation session
+    t =     3.02s         Wait for com.dari.DariApp to idle
+    t =     4.93s Waiting 8.0s for "today.hero" Button to exist
+    t =     6.07s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =     6.08s         Checking existence of `"today.hero" Button`
+    t =     6.73s Find the "today.hero" Button
+    t =     6.94s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testEmptyStateOffersFirstCard]' passed (7.822 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' started.
-    t =     0.00s Start Test at 2026-10-08 19:33:29.379
+    t =     0.00s Start Test at 2026-11-18 16:11:47.021
     t =     0.03s Set Up
     t =     0.03s Open com.dari.DariApp
     t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:8266
-2026-10-08 19:33:30.509 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:33:30.509 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.33s         Setting up automation session
-    t =     3.41s         Wait for com.dari.DariApp to idle
-    t =     5.60s Tap "Karten" Button
-    t =     5.60s     Wait for com.dari.DariApp to idle
-    t =     5.60s     Find the "Karten" Button
-    t =     5.93s     Check for interrupting elements affecting "Karten" Button
-    t =     6.09s     Synthesize event
-    t =     6.48s     Wait for com.dari.DariApp to idle
-    t =     8.53s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =     9.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =     9.57s         Checking existence of `"Beispielkarten laden" Button`
-    t =     9.67s Tap "Beispielkarten laden" Button
-    t =     9.67s     Wait for com.dari.DariApp to idle
-    t =     9.67s     Find the "Beispielkarten laden" Button
-    t =     9.76s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =     9.86s     Synthesize event
-    t =    10.22s     Wait for com.dari.DariApp to idle
-    t =    10.47s Waiting 8.0s for "card.row" Any to exist
-    t =    11.53s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    11.53s         Checking existence of `"card.row" Any`
-    t =    13.46s Tap "Heute" Button
-    t =    13.46s     Wait for com.dari.DariApp to idle
-    t =    13.47s     Find the "Heute" Button
-    t =    13.65s     Check for interrupting elements affecting "sun.max" Button
-    t =    13.86s     Synthesize event
-    t =    14.24s     Wait for com.dari.DariApp to idle
-    t =    15.66s Waiting 5.0s for "today.hero" Button to exist
-    t =    16.69s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
-    t =    16.69s         Checking existence of `"today.hero" Button`
-    t =    16.78s Tap "today.hero" Button
-    t =    16.78s     Wait for com.dari.DariApp to idle
-    t =    16.78s     Find the "today.hero" Button
-    t =    16.90s     Check for interrupting elements affecting "today.hero" Button
-    t =    16.99s     Synthesize event
-    t =    17.52s     Wait for com.dari.DariApp to idle
-    t =    18.27s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    18.43s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    19.49s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    19.49s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    19.55s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    19.61s Tap "flip.card" Any
-    t =    19.61s     Wait for com.dari.DariApp to idle
-    t =    19.61s     Find the "flip.card" Any
-    t =    20.61s     Check for interrupting elements affecting "flip.card" Button
-    t =    21.16s     Synthesize event
-    t =    21.58s     Wait for com.dari.DariApp to idle
-    t =    21.62s Waiting 5.0s for "Gut" Button to exist
-    t =    22.66s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    22.66s         Checking existence of `"Gut" Button`
-    t =    22.73s Tap "Gut" Button
-    t =    22.73s     Wait for com.dari.DariApp to idle
-    t =    22.73s     Find the "Gut" Button
-    t =    22.81s     Check for interrupting elements affecting "Gut" Button
-    t =    22.87s     Synthesize event
-    t =    23.18s     Wait for com.dari.DariApp to idle
-    t =    23.30s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    23.66s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    24.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    24.70s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    24.79s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    24.86s Tap "flip.card" Any
-    t =    24.86s     Wait for com.dari.DariApp to idle
-    t =    24.86s     Find the "flip.card" Any
-    t =    25.62s     Check for interrupting elements affecting "flip.card" Button
-    t =    25.97s     Synthesize event
-    t =    26.33s     Wait for com.dari.DariApp to idle
-    t =    26.34s Waiting 5.0s for "Gut" Button to exist
-    t =    27.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    27.37s         Checking existence of `"Gut" Button`
-    t =    27.43s Tap "Gut" Button
-    t =    27.43s     Wait for com.dari.DariApp to idle
-    t =    27.44s     Find the "Gut" Button
-    t =    27.50s     Check for interrupting elements affecting "Gut" Button
-    t =    27.55s     Synthesize event
-    t =    27.86s     Wait for com.dari.DariApp to idle
-    t =    27.87s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    28.13s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    29.17s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    29.17s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    29.26s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    29.33s Tap "flip.card" Any
-    t =    29.33s     Wait for com.dari.DariApp to idle
-    t =    29.34s     Find the "flip.card" Any
-    t =    29.62s     Check for interrupting elements affecting "flip.card" Button
-    t =    29.75s     Synthesize event
-    t =    30.17s     Wait for com.dari.DariApp to idle
-    t =    30.18s Waiting 5.0s for "Gut" Button to exist
-    t =    31.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    31.24s         Checking existence of `"Gut" Button`
-    t =    31.28s Tap "Gut" Button
-    t =    31.28s     Wait for com.dari.DariApp to idle
-    t =    31.28s     Find the "Gut" Button
-    t =    31.35s     Check for interrupting elements affecting "Gut" Button
-    t =    31.39s     Synthesize event
-    t =    31.72s     Wait for com.dari.DariApp to idle
-    t =    31.76s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    32.01s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    33.09s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    33.09s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    33.17s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    33.22s Tap "flip.card" Any
-    t =    33.22s     Wait for com.dari.DariApp to idle
-    t =    33.22s     Find the "flip.card" Any
-    t =    33.58s     Check for interrupting elements affecting "flip.card" Button
-    t =    33.69s     Synthesize event
-    t =    34.04s     Wait for com.dari.DariApp to idle
-    t =    34.08s Waiting 5.0s for "Gut" Button to exist
-    t =    35.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    35.12s         Checking existence of `"Gut" Button`
-    t =    35.16s Tap "Gut" Button
-    t =    35.16s     Wait for com.dari.DariApp to idle
-    t =    35.17s     Find the "Gut" Button
-    t =    35.20s     Check for interrupting elements affecting "Gut" Button
-    t =    35.26s     Synthesize event
-    t =    35.56s     Wait for com.dari.DariApp to idle
-    t =    35.57s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    35.68s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    36.70s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    36.70s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    36.77s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    36.81s Tap "flip.card" Any
-    t =    36.81s     Wait for com.dari.DariApp to idle
-    t =    36.81s     Find the "flip.card" Any
-    t =    37.09s     Check for interrupting elements affecting "flip.card" Button
-    t =    37.20s     Synthesize event
-    t =    37.52s     Wait for com.dari.DariApp to idle
-    t =    37.56s Waiting 5.0s for "Gut" Button to exist
-    t =    38.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    38.62s         Checking existence of `"Gut" Button`
-    t =    38.78s Tap "Gut" Button
-    t =    38.78s     Wait for com.dari.DariApp to idle
-    t =    38.78s     Find the "Gut" Button
-    t =    38.89s     Check for interrupting elements affecting "Gut" Button
-    t =    38.98s     Synthesize event
-    t =    39.31s     Wait for com.dari.DariApp to idle
-    t =    39.32s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    39.45s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    40.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    40.47s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    40.54s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    40.60s Tap "flip.card" Any
-    t =    40.60s     Wait for com.dari.DariApp to idle
-    t =    40.60s     Find the "flip.card" Any
-    t =    40.82s     Check for interrupting elements affecting "flip.card" Button
-    t =    41.03s     Synthesize event
-    t =    41.48s     Wait for com.dari.DariApp to idle
-    t =    41.49s Waiting 5.0s for "Gut" Button to exist
-    t =    42.54s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    42.54s         Checking existence of `"Gut" Button`
-    t =    42.59s Tap "Gut" Button
-    t =    42.59s     Wait for com.dari.DariApp to idle
-    t =    42.59s     Find the "Gut" Button
-    t =    42.64s     Check for interrupting elements affecting "Gut" Button
-    t =    42.70s     Synthesize event
-    t =    43.03s     Wait for com.dari.DariApp to idle
-    t =    43.07s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    43.20s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    44.24s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    44.24s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    44.28s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    44.33s Tap "flip.card" Any
-    t =    44.33s     Wait for com.dari.DariApp to idle
-    t =    44.33s     Find the "flip.card" Any
-    t =    45.08s     Check for interrupting elements affecting "flip.card" Button
-    t =    45.33s     Synthesize event
-    t =    45.65s     Wait for com.dari.DariApp to idle
-    t =    45.67s Waiting 5.0s for "Gut" Button to exist
-    t =    46.74s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    46.74s         Checking existence of `"Gut" Button`
-    t =    46.79s Tap "Gut" Button
-    t =    46.79s     Wait for com.dari.DariApp to idle
-    t =    46.79s     Find the "Gut" Button
-    t =    46.86s     Check for interrupting elements affecting "Gut" Button
-    t =    46.92s     Synthesize event
-    t =    47.22s     Wait for com.dari.DariApp to idle
-    t =    47.23s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    47.42s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
-    t =    48.47s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
-    t =    48.47s         Checking existence of `"Zum Umdrehen tippen" StaticText`
-    t =    48.53s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    48.58s Tap "flip.card" Any
-    t =    48.58s     Wait for com.dari.DariApp to idle
-    t =    48.58s     Find the "flip.card" Any
-    t =    48.84s     Check for interrupting elements affecting "flip.card" Button
-    t =    49.00s     Synthesize event
-    t =    49.31s     Wait for com.dari.DariApp to idle
-    t =    49.32s Waiting 5.0s for "Gut" Button to exist
-    t =    50.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
-    t =    50.37s         Checking existence of `"Gut" Button`
-    t =    50.51s Tap "Gut" Button
-    t =    50.51s     Wait for com.dari.DariApp to idle
-    t =    50.51s     Find the "Gut" Button
-    t =    50.62s     Check for interrupting elements affecting "Gut" Button
-    t =    50.74s     Synthesize event
-    t =    51.08s     Wait for com.dari.DariApp to idle
-    t =    64.51s Checking existence of `"Session abgeschlossen" StaticText`
-    t =    64.56s Waiting 8.0s for "Session abgeschlossen" StaticText to exist
-    t =    65.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Session abgeschlossen" StaticText`
-    t =    65.62s         Checking existence of `"Session abgeschlossen" StaticText`
-    t =    76.66s Added attachment named '04b-lernen-fertig'
-    t =    76.67s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' passed (77.009 seconds).
+    t =     0.03s         Terminate com.dari.DariApp:4540
+2026-11-18 16:11:48.104 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:11:48.104 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     3.41s         Setting up automation session
+    t =     3.48s         Wait for com.dari.DariApp to idle
+    t =     4.78s Tap "Karten" Button
+    t =     4.78s     Wait for com.dari.DariApp to idle
+    t =     4.78s     Find the "Karten" Button
+    t =     5.12s     Check for interrupting elements affecting "Karten" Button
+    t =     5.19s     Synthesize event
+    t =     5.52s     Wait for com.dari.DariApp to idle
+    t =     7.52s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =     8.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =     8.53s         Checking existence of `"Beispielkarten laden" Button`
+    t =     8.58s Tap "Beispielkarten laden" Button
+    t =     8.58s     Wait for com.dari.DariApp to idle
+    t =     8.59s     Find the "Beispielkarten laden" Button
+    t =     8.63s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =     8.66s     Synthesize event
+    t =     8.96s     Wait for com.dari.DariApp to idle
+    t =     9.05s Waiting 8.0s for "card.row" Any to exist
+    t =    10.07s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    10.07s         Checking existence of `"card.row" Any`
+    t =    11.70s Tap "Heute" Button
+    t =    11.70s     Wait for com.dari.DariApp to idle
+    t =    11.70s     Find the "Heute" Button
+    t =    11.84s     Check for interrupting elements affecting "sun.max" Button
+    t =    11.98s     Synthesize event
+    t =    12.31s     Wait for com.dari.DariApp to idle
+    t =    13.74s Waiting 5.0s for "today.hero" Button to exist
+    t =    14.77s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =    14.77s         Checking existence of `"today.hero" Button`
+    t =    14.83s Tap "today.hero" Button
+    t =    14.83s     Wait for com.dari.DariApp to idle
+    t =    14.83s     Find the "today.hero" Button
+    t =    14.88s     Check for interrupting elements affecting "today.hero" Button
+    t =    14.92s     Synthesize event
+    t =    15.22s     Wait for com.dari.DariApp to idle
+    t =    55.88s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    56.08s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    57.12s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    57.12s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    57.16s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    57.21s Tap "flip.card" Any
+    t =    57.21s     Wait for com.dari.DariApp to idle
+    t =    57.21s     Find the "flip.card" Any
+    t =    57.45s     Check for interrupting elements affecting "flip.card" Button
+    t =    57.59s     Synthesize event
+    t =    57.90s     Wait for com.dari.DariApp to idle
+    t =    57.91s Waiting 5.0s for "Gut" Button to exist
+    t =    58.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    58.96s         Checking existence of `"Gut" Button`
+    t =    59.04s Tap "Gut" Button
+    t =    59.04s     Wait for com.dari.DariApp to idle
+    t =    59.05s     Find the "Gut" Button
+    t =    59.14s     Check for interrupting elements affecting "Gut" Button
+    t =    59.20s     Synthesize event
+    t =    59.50s     Wait for com.dari.DariApp to idle
+    t =    59.63s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    59.82s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    60.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    60.87s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    60.93s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    60.98s Tap "flip.card" Any
+    t =    60.98s     Wait for com.dari.DariApp to idle
+    t =    60.98s     Find the "flip.card" Any
+    t =    61.31s     Check for interrupting elements affecting "flip.card" Button
+    t =    61.82s     Synthesize event
+    t =    62.20s     Wait for com.dari.DariApp to idle
+    t =    62.21s Waiting 5.0s for "Gut" Button to exist
+    t =    63.26s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    63.26s         Checking existence of `"Gut" Button`
+    t =    63.39s Tap "Gut" Button
+    t =    63.39s     Wait for com.dari.DariApp to idle
+    t =    63.40s     Find the "Gut" Button
+    t =    63.69s     Check for interrupting elements affecting "Gut" Button
+    t =    63.80s     Synthesize event
+    t =    64.17s     Wait for com.dari.DariApp to idle
+    t =    64.21s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    64.47s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    65.52s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    65.53s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    65.65s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    65.74s Tap "flip.card" Any
+    t =    65.74s     Wait for com.dari.DariApp to idle
+    t =    65.75s     Find the "flip.card" Any
+    t =    67.52s     Check for interrupting elements affecting "flip.card" Button
+    t =    67.78s     Synthesize event
+    t =    68.12s     Wait for com.dari.DariApp to idle
+    t =    68.16s Waiting 5.0s for "Gut" Button to exist
+    t =    69.22s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    69.22s         Checking existence of `"Gut" Button`
+    t =    69.30s Tap "Gut" Button
+    t =    69.30s     Wait for com.dari.DariApp to idle
+    t =    69.31s     Find the "Gut" Button
+    t =    69.37s     Check for interrupting elements affecting "Gut" Button
+    t =    69.45s     Synthesize event
+    t =    69.77s     Wait for com.dari.DariApp to idle
+    t =    69.79s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    70.08s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    71.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    71.15s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    71.22s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    71.27s Tap "flip.card" Any
+    t =    71.27s     Wait for com.dari.DariApp to idle
+    t =    71.28s     Find the "flip.card" Any
+    t =    71.50s     Check for interrupting elements affecting "flip.card" Button
+    t =    71.64s     Synthesize event
+    t =    71.98s     Wait for com.dari.DariApp to idle
+    t =    71.99s Waiting 5.0s for "Gut" Button to exist
+    t =    73.03s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    73.06s         Checking existence of `"Gut" Button`
+    t =    73.29s Tap "Gut" Button
+    t =    73.29s     Wait for com.dari.DariApp to idle
+    t =    73.30s     Find the "Gut" Button
+    t =    73.46s     Check for interrupting elements affecting "Gut" Button
+    t =    73.55s     Synthesize event
+    t =    73.92s     Wait for com.dari.DariApp to idle
+    t =    73.96s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    74.23s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    75.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    75.30s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    75.41s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    75.52s Tap "flip.card" Any
+    t =    75.53s     Wait for com.dari.DariApp to idle
+    t =    75.53s     Find the "flip.card" Any
+    t =    75.81s     Check for interrupting elements affecting "flip.card" Button
+    t =    75.98s     Synthesize event
+    t =    76.33s     Wait for com.dari.DariApp to idle
+    t =    76.34s Waiting 5.0s for "Gut" Button to exist
+    t =    77.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    77.42s         Checking existence of `"Gut" Button`
+    t =    77.56s Tap "Gut" Button
+    t =    77.56s     Wait for com.dari.DariApp to idle
+    t =    77.57s     Find the "Gut" Button
+    t =    77.73s     Check for interrupting elements affecting "Gut" Button
+    t =    77.82s     Synthesize event
+    t =    78.14s     Wait for com.dari.DariApp to idle
+    t =    78.16s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    78.23s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    79.30s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    79.30s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    79.39s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    79.49s Tap "flip.card" Any
+    t =    79.49s     Wait for com.dari.DariApp to idle
+    t =    79.49s     Find the "flip.card" Any
+    t =    80.21s     Check for interrupting elements affecting "flip.card" Button
+    t =    80.57s     Synthesize event
+    t =    80.95s     Wait for com.dari.DariApp to idle
+    t =    80.96s Waiting 5.0s for "Gut" Button to exist
+    t =    82.00s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    82.00s         Checking existence of `"Gut" Button`
+    t =    82.13s Tap "Gut" Button
+    t =    82.13s     Wait for com.dari.DariApp to idle
+    t =    82.13s     Find the "Gut" Button
+    t =    82.24s     Check for interrupting elements affecting "Gut" Button
+    t =    82.46s     Synthesize event
+    t =    82.79s     Wait for com.dari.DariApp to idle
+    t =    82.80s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    83.09s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    84.15s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    84.15s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    84.29s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    84.37s Tap "flip.card" Any
+    t =    84.37s     Wait for com.dari.DariApp to idle
+    t =    84.38s     Find the "flip.card" Any
+    t =    85.23s     Check for interrupting elements affecting "flip.card" Button
+    t =    85.47s     Synthesize event
+    t =    85.79s     Wait for com.dari.DariApp to idle
+    t =    85.83s Waiting 5.0s for "Gut" Button to exist
+    t =    86.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    86.87s         Checking existence of `"Gut" Button`
+    t =    87.01s Tap "Gut" Button
+    t =    87.01s     Wait for com.dari.DariApp to idle
+    t =    87.02s     Find the "Gut" Button
+    t =    87.17s     Check for interrupting elements affecting "Gut" Button
+    t =    87.37s     Synthesize event
+    t =    87.75s     Wait for com.dari.DariApp to idle
+    t =    87.76s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    88.06s Waiting 8.0s for "Zum Umdrehen tippen" StaticText to exist
+    t =    89.07s     Checking `Expect predicate `existsNoRetry == 1` for object "Zum Umdrehen tippen" StaticText`
+    t =    89.08s         Checking existence of `"Zum Umdrehen tippen" StaticText`
+    t =    89.23s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    89.50s Tap "flip.card" Any
+    t =    89.50s     Wait for com.dari.DariApp to idle
+    t =    89.51s     Find the "flip.card" Any
+    t =    92.41s     Check for interrupting elements affecting "flip.card" Button
+    t =    93.01s     Synthesize event
+    t =    93.48s     Wait for com.dari.DariApp to idle
+    t =    93.52s Waiting 5.0s for "Gut" Button to exist
+    t =    94.55s     Checking `Expect predicate `existsNoRetry == 1` for object "Gut" Button`
+    t =    94.55s         Checking existence of `"Gut" Button`
+    t =    94.73s Tap "Gut" Button
+    t =    94.73s     Wait for com.dari.DariApp to idle
+    t =    94.74s     Find the "Gut" Button
+    t =    94.88s     Check for interrupting elements affecting "Gut" Button
+    t =    95.28s     Synthesize event
+    t =    95.63s     Wait for com.dari.DariApp to idle
+    t =    95.64s Checking existence of `"Session abgeschlossen" StaticText`
+    t =    95.88s Waiting 8.0s for "Session abgeschlossen" StaticText to exist
+    t =    96.94s     Checking `Expect predicate `existsNoRetry == 1` for object "Session abgeschlossen" StaticText`
+    t =    96.94s         Checking existence of `"Session abgeschlossen" StaticText`
+    t =    97.38s Added attachment named '04b-lernen-fertig'
+    t =    97.38s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testFlipSessionCompletes]' passed (106.029 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testGrammarAnswerAndContinue]' started.
-    t =     0.00s Start Test at 2026-10-08 19:34:46.391
-    t =     3.68s Set Up
-    t =     3.68s Open com.dari.DariApp
-    t =     3.68s     Launch com.dari.DariApp
-    t =     3.68s         Terminate com.dari.DariApp:8528
-2026-10-08 19:34:54.132 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:34:54.132 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =    19.26s         Setting up automation session
-    t =    22.65s         Wait for com.dari.DariApp to idle
-    t =    25.73s Tap "Üben" Button
-    t =    25.73s     Wait for com.dari.DariApp to idle
-    t =    25.75s     Find the "Üben" Button
-    t =    26.44s     Check for interrupting elements affecting "Üben" Button
-    t =    26.58s     Synthesize event
-    t =    26.93s     Wait for com.dari.DariApp to idle
-    t =    28.73s Checking existence of `"hub.grammar" Any`
-    t =    29.87s Swipe up Target Application 'com.dari.DariApp'
-    t =    29.87s     Wait for com.dari.DariApp to idle
-    t =    29.88s     Find the Target Application 'com.dari.DariApp'
-    t =    29.97s     Check for interrupting elements affecting "ZARA" Application
-    t =    30.10s     Synthesize event
-    t =    30.57s     Wait for com.dari.DariApp to idle
-    t =    31.30s Checking existence of `"hub.grammar" Any`
-    t =    31.76s Waiting 8.0s for "hub.grammar" Any to exist
-    t =    32.81s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    32.81s         Checking existence of `"hub.grammar" Any`
-    t =    33.03s Tap "hub.grammar" Any
-    t =    33.03s     Wait for com.dari.DariApp to idle
-    t =    33.04s     Find the "hub.grammar" Any
-    t =    33.34s     Check for interrupting elements affecting "hub.grammar" Button
-    t =    33.44s     Synthesize event
-    t =    33.74s     Wait for com.dari.DariApp to idle
-    t =    34.22s Waiting 5.0s for "grammar.start" Any to exist
-    t =    35.28s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
-    t =    35.28s         Checking existence of `"grammar.start" Any`
-    t =    35.65s Tap "grammar.start" Any
-    t =    35.65s     Wait for com.dari.DariApp to idle
-    t =    35.65s     Find the "grammar.start" Any
-    t =    35.84s     Check for interrupting elements affecting "grammar.start" Button
-    t =    36.11s     Synthesize event
-    t =    36.41s     Wait for com.dari.DariApp to idle
-    t =    36.51s Waiting 8.0s for "option.0" Any to exist
-    t =    37.55s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
-    t =    37.55s         Checking existence of `"option.0" Any`
-    t =    38.13s Tap "option.0" Any
-    t =    38.13s     Wait for com.dari.DariApp to idle
-    t =    38.34s     Find the "option.0" Any
-    t =    38.68s     Check for interrupting elements affecting "option.0" Button
-    t =    38.78s     Synthesize event
-    t =    39.09s     Wait for com.dari.DariApp to idle
-    t =    39.15s Waiting 5.0s for "practice.next" Any to exist
-    t =    40.19s     Checking `Expect predicate `existsNoRetry == 1` for object "practice.next" Any`
-    t =    40.19s         Checking existence of `"practice.next" Any`
-    t =    40.61s Added attachment named '09b-grammatik-antwort'
-    t =    40.62s Tap "practice.next" Any
-    t =    40.62s     Wait for com.dari.DariApp to idle
-    t =    40.62s     Find the "practice.next" Any
-    t =    40.90s     Check for interrupting elements affecting "practice.next" Button
-    t =    40.99s     Synthesize event
-    t =    41.02s         Scroll element to visible
-    t =    41.03s         Find the "practice.next" Button
-    t =    41.24s         Computed hit point {201, 734.83333333333337} after scrolling to visible
-    t =    41.53s     Wait for com.dari.DariApp to idle
-    t =    42.15s Waiting 5.0s for "option.0" Any to exist
-    t =    43.19s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
-    t =    43.19s         Checking existence of `"option.0" Any`
-    t =    43.66s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testGrammarAnswerAndContinue]' passed (44.030 seconds).
+    t =     0.00s Start Test at 2026-11-18 16:13:33.059
+    t =     0.19s Set Up
+    t =     0.19s Open com.dari.DariApp
+    t =     0.19s     Launch com.dari.DariApp
+    t =     0.19s         Terminate com.dari.DariApp:4684
+2026-11-18 16:13:43.823 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:13:43.824 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    91.34s         Setting up automation session
+    t =    95.21s         Wait for com.dari.DariApp to idle
+    t =   100.03s Tap "Üben" Button
+    t =   100.03s     Wait for com.dari.DariApp to idle
+    t =   100.04s     Find the "Üben" Button
+    t =   100.74s     Check for interrupting elements affecting "Üben" Button
+    t =   100.88s     Synthesize event
+    t =   101.36s     Wait for com.dari.DariApp to idle
+    t =   103.45s Checking existence of `"hub.grammar" Any`
+    t =   104.53s Swipe up Target Application 'com.dari.DariApp'
+    t =   104.53s     Wait for com.dari.DariApp to idle
+    t =   104.54s     Find the Target Application 'com.dari.DariApp'
+    t =   104.62s     Check for interrupting elements affecting "ZARA" Application
+    t =   104.69s     Synthesize event
+    t =   105.19s     Wait for com.dari.DariApp to idle
+    t =   105.85s Checking existence of `"hub.grammar" Any`
+    t =   107.07s Waiting 8.0s for "hub.grammar" Any to exist
+    t =   108.11s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
+    t =   108.12s         Checking existence of `"hub.grammar" Any`
+    t =   108.47s Tap "hub.grammar" Any
+    t =   108.47s     Wait for com.dari.DariApp to idle
+    t =   108.47s     Find the "hub.grammar" Any
+    t =   108.79s     Check for interrupting elements affecting "hub.grammar" Button
+    t =   109.01s     Synthesize event
+    t =   109.36s     Wait for com.dari.DariApp to idle
+    t =   109.58s Waiting 5.0s for "grammar.start" Any to exist
+    t =   110.64s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
+    t =   110.64s         Checking existence of `"grammar.start" Any`
+    t =   111.04s Tap "grammar.start" Any
+    t =   111.04s     Wait for com.dari.DariApp to idle
+    t =   111.05s     Find the "grammar.start" Any
+    t =   111.37s     Check for interrupting elements affecting "grammar.start" Button
+    t =   111.51s     Synthesize event
+    t =   111.82s     Wait for com.dari.DariApp to idle
+    t =   111.94s Waiting 8.0s for "option.0" Any to exist
+    t =   113.00s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =   113.00s         Checking existence of `"option.0" Any`
+    t =   113.69s Tap "option.0" Any
+    t =   113.69s     Wait for com.dari.DariApp to idle
+    t =   113.89s     Find the "option.0" Any
+    t =   114.15s     Check for interrupting elements affecting "option.0" Button
+    t =   114.27s     Synthesize event
+    t =   114.59s     Wait for com.dari.DariApp to idle
+    t =   121.30s Waiting 5.0s for "practice.next" Any to exist
+    t =   122.34s     Checking `Expect predicate `existsNoRetry == 1` for object "practice.next" Any`
+    t =   122.35s         Checking existence of `"practice.next" Any`
+    t =   123.03s Added attachment named '09b-grammatik-antwort'
+    t =   123.03s Tap "practice.next" Any
+    t =   123.03s     Wait for com.dari.DariApp to idle
+    t =   123.04s     Find the "practice.next" Any
+    t =   123.51s     Check for interrupting elements affecting "practice.next" Button
+    t =   123.73s     Synthesize event
+    t =   124.17s     Wait for com.dari.DariApp to idle
+    t =   124.71s Waiting 5.0s for "option.0" Any to exist
+    t =   125.75s     Checking `Expect predicate `existsNoRetry == 1` for object "option.0" Any`
+    t =   125.75s         Checking existence of `"option.0" Any`
+    t =   126.08s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testGrammarAnswerAndContinue]' passed (126.399 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' started.
-    t =     0.00s Start Test at 2026-10-08 19:35:30.421
-    t =     0.06s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.06s         Terminate com.dari.DariApp:11671
-2026-10-08 19:35:31.556 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:35:31.556 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.76s         Setting up automation session
-    t =     3.70s         Wait for com.dari.DariApp to idle
-    t =     5.93s Tap "Üben" Button
-    t =     5.93s     Wait for com.dari.DariApp to idle
-    t =     5.94s     Find the "Üben" Button
-    t =     6.34s     Check for interrupting elements affecting "Üben" Button
-    t =     6.41s     Synthesize event
-    t =     6.77s     Wait for com.dari.DariApp to idle
-    t =     8.44s Checking existence of `"hub.grammar" Any`
-    t =     8.75s Swipe up Target Application 'com.dari.DariApp'
-    t =     8.75s     Wait for com.dari.DariApp to idle
-    t =     8.75s     Find the Target Application 'com.dari.DariApp'
-    t =     8.79s     Check for interrupting elements affecting "ZARA" Application
-    t =     8.83s     Synthesize event
-    t =     9.26s     Wait for com.dari.DariApp to idle
-    t =     9.89s Checking existence of `"hub.grammar" Any`
-    t =    10.17s Waiting 8.0s for "hub.grammar" Any to exist
-    t =    11.19s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
-    t =    11.19s         Checking existence of `"hub.grammar" Any`
-    t =    11.37s Checking existence of `"hub.grammar" Any`
-    t =    11.57s Tap "hub.grammar" Any
-    t =    11.57s     Wait for com.dari.DariApp to idle
-    t =    11.57s     Find the "hub.grammar" Any
-    t =    11.74s     Check for interrupting elements affecting "hub.grammar" Button
-    t =    11.84s     Synthesize event
-    t =    12.15s     Wait for com.dari.DariApp to idle
-    t =    16.55s Waiting 5.0s for "grammar.start" Any to exist
-    t =    17.56s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
-    t =    17.57s         Checking existence of `"grammar.start" Any`
-    t =    18.62s Added attachment named '08-grammatik-auswahl'
-    t =    18.63s Tap "grammar.start" Any
-    t =    18.63s     Wait for com.dari.DariApp to idle
-    t =    18.63s     Find the "grammar.start" Any
-    t =    18.84s     Check for interrupting elements affecting "grammar.start" Button
-    t =    18.99s     Synthesize event
-    t =    19.33s     Wait for com.dari.DariApp to idle
-    t =    28.04s Waiting 8.0s for "Grammatik" NavigationBar to exist
-    t =    29.10s     Checking `Expect predicate `existsNoRetry == 1` for object "Grammatik" NavigationBar`
-    t =    29.10s         Checking existence of `"Grammatik" NavigationBar`
-    t =    29.47s Added attachment named '09-grammatik-frage'
-    t =    29.47s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' passed (29.744 seconds).
+    t =     0.00s Start Test at 2026-11-18 16:15:39.459
+    t =     0.07s Set Up
+    t =     0.07s Open com.dari.DariApp
+    t =     0.08s     Launch com.dari.DariApp
+    t =     0.08s         Terminate com.dari.DariApp:11247
+2026-11-18 16:15:41.329 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:15:41.330 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.93s         Setting up automation session
+    t =     6.94s         Wait for com.dari.DariApp to idle
+    t =     9.55s Tap "Üben" Button
+    t =     9.55s     Wait for com.dari.DariApp to idle
+    t =     9.56s     Find the "Üben" Button
+    t =     9.91s     Check for interrupting elements affecting "Üben" Button
+    t =    10.01s     Synthesize event
+    t =    10.35s     Wait for com.dari.DariApp to idle
+    t =    12.10s Checking existence of `"hub.grammar" Any`
+    t =    12.82s Swipe up Target Application 'com.dari.DariApp'
+    t =    12.82s     Wait for com.dari.DariApp to idle
+    t =    12.82s     Find the Target Application 'com.dari.DariApp'
+    t =    12.88s     Check for interrupting elements affecting "ZARA" Application
+    t =    12.93s     Synthesize event
+    t =    13.35s     Wait for com.dari.DariApp to idle
+    t =    13.99s Checking existence of `"hub.grammar" Any`
+    t =    15.04s Waiting 8.0s for "hub.grammar" Any to exist
+    t =    16.06s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.grammar" Any`
+    t =    16.06s         Checking existence of `"hub.grammar" Any`
+    t =    16.25s Checking existence of `"hub.grammar" Any`
+    t =    16.41s Tap "hub.grammar" Any
+    t =    16.41s     Wait for com.dari.DariApp to idle
+    t =    16.42s     Find the "hub.grammar" Any
+    t =    16.60s     Check for interrupting elements affecting "hub.grammar" Button
+    t =    16.68s     Synthesize event
+    t =    16.98s     Wait for com.dari.DariApp to idle
+    t =    18.50s Waiting 5.0s for "grammar.start" Any to exist
+    t =    19.56s     Checking `Expect predicate `existsNoRetry == 1` for object "grammar.start" Any`
+    t =    19.56s         Checking existence of `"grammar.start" Any`
+    t =    20.01s Added attachment named '08-grammatik-auswahl'
+    t =    20.01s Tap "grammar.start" Any
+    t =    20.01s     Wait for com.dari.DariApp to idle
+    t =    20.02s     Find the "grammar.start" Any
+    t =    20.30s     Check for interrupting elements affecting "grammar.start" Button
+    t =    20.40s     Synthesize event
+    t =    20.73s     Wait for com.dari.DariApp to idle
+    t =    21.81s Waiting 8.0s for "Grammatik" NavigationBar to exist
+    t =    22.87s     Checking `Expect predicate `existsNoRetry == 1` for object "Grammatik" NavigationBar`
+    t =    22.88s         Checking existence of `"Grammatik" NavigationBar`
+    t =    23.25s Added attachment named '09-grammatik-frage'
+    t =    23.25s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testGrammarFlow]' passed (23.583 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' started.
-    t =     0.00s Start Test at 2026-10-08 19:36:00.165
-    t =     0.05s Set Up
-    t =     0.06s Open com.dari.DariApp
-    t =     0.06s     Launch com.dari.DariApp
-    t =     0.06s         Terminate com.dari.DariApp:12633
-2026-10-08 19:36:01.519 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:36:01.522 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.77s         Setting up automation session
-    t =     8.61s         Wait for com.dari.DariApp to idle
-    t =    12.46s Tap "Karten" Button
-    t =    12.46s     Wait for com.dari.DariApp to idle
-    t =    12.47s     Find the "Karten" Button
-    t =    12.69s     Check for interrupting elements affecting "Karten" Button
-    t =    12.87s     Synthesize event
-    t =    13.28s     Wait for com.dari.DariApp to idle
-    t =    15.29s Tap "Karte anlegen" Button
-    t =    15.29s     Wait for com.dari.DariApp to idle
-    t =    15.31s     Find the "Karte anlegen" Button
-    t =    16.88s     Check for interrupting elements affecting "Karte anlegen" Button
-    t =    18.84s     Synthesize event
-    t =    19.71s     Wait for com.dari.DariApp to idle
-    t =    20.86s Waiting 5.0s for "Neue Karte" NavigationBar to exist
-    t =    21.91s     Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
-    t =    21.91s         Checking existence of `"Neue Karte" NavigationBar`
-    t =    22.54s Added attachment named '05-karten-editor'
-    t =    22.54s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (22.823 seconds).
+    t =     0.00s Start Test at 2026-11-18 16:16:03.042
+    t =     0.07s Set Up
+    t =     0.07s Open com.dari.DariApp
+    t =     0.07s     Launch com.dari.DariApp
+    t =     0.07s         Terminate com.dari.DariApp:12709
+2026-11-18 16:16:04.150 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:16:04.150 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.04s         Setting up automation session
+    t =     3.93s         Wait for com.dari.DariApp to idle
+    t =     6.18s Tap "Karten" Button
+    t =     6.18s     Wait for com.dari.DariApp to idle
+    t =     6.18s     Find the "Karten" Button
+    t =     6.57s     Check for interrupting elements affecting "Karten" Button
+    t =     6.68s     Synthesize event
+    t =     7.04s     Wait for com.dari.DariApp to idle
+    t =     9.25s Tap "Karte anlegen" Button
+    t =     9.25s     Wait for com.dari.DariApp to idle
+    t =     9.26s     Find the "Karte anlegen" Button
+    t =     9.84s     Check for interrupting elements affecting "Karte anlegen" Button
+    t =     9.99s     Synthesize event
+    t =    10.32s     Wait for com.dari.DariApp to idle
+    t =    11.13s Waiting 5.0s for "Neue Karte" NavigationBar to exist
+    t =    12.19s     Checking `Expect predicate `existsNoRetry == 1` for object "Neue Karte" NavigationBar`
+    t =    12.19s         Checking existence of `"Neue Karte" NavigationBar`
+    t =    12.80s Added attachment named '05-karten-editor'
+    t =    12.80s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testOpenCardEditor]' passed (13.103 seconds).
 Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' started.
-    t =     0.00s Start Test at 2026-10-08 19:36:22.989
-    t =     0.04s Set Up
+    t =     0.00s Start Test at 2026-11-18 16:16:16.146
+    t =     0.03s Set Up
     t =     0.04s Open com.dari.DariApp
     t =     0.04s     Launch com.dari.DariApp
-    t =     0.04s         Terminate com.dari.DariApp:13666
-2026-10-08 19:36:24.094 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:36:24.094 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     5.25s         Setting up automation session
-    t =     5.30s         Wait for com.dari.DariApp to idle
-    t =     6.85s Tap "Karten" Button
-    t =     6.85s     Wait for com.dari.DariApp to idle
-    t =     6.86s     Find the "Karten" Button
-    t =     7.27s     Check for interrupting elements affecting "Karten" Button
-    t =     7.35s     Synthesize event
-    t =     7.70s     Wait for com.dari.DariApp to idle
-    t =     9.56s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    10.59s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    10.60s         Checking existence of `"Beispielkarten laden" Button`
-    t =    10.70s Tap "Beispielkarten laden" Button
-    t =    10.70s     Wait for com.dari.DariApp to idle
-    t =    10.70s     Find the "Beispielkarten laden" Button
-    t =    10.77s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    10.87s     Synthesize event
-    t =    11.20s     Wait for com.dari.DariApp to idle
-    t =    11.48s Waiting 8.0s for "card.row" Any to exist
-    t =    12.53s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    12.53s         Checking existence of `"card.row" Any`
-    t =    13.08s Tap "Üben" Button
-    t =    13.08s     Wait for com.dari.DariApp to idle
-    t =    13.09s     Find the "Üben" Button
-    t =    13.25s     Check for interrupting elements affecting "brain.head.profile" Button
-    t =    13.32s     Synthesize event
-    t =    13.62s     Wait for com.dari.DariApp to idle
-    t =    15.53s Waiting 5.0s for "Üben" NavigationBar to exist
-    t =    16.56s     Checking `Expect predicate `existsNoRetry == 1` for object "Üben" NavigationBar`
-    t =    16.57s         Checking existence of `"Üben" NavigationBar`
-    t =    16.92s Added attachment named '06-ueben'
-    t =    16.93s Waiting 5.0s for "hub.mix" Any to exist
-    t =    17.94s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.mix" Any`
-    t =    17.94s         Checking existence of `"hub.mix" Any`
-    t =    18.15s Tap "hub.mix" Any
-    t =    18.16s     Wait for com.dari.DariApp to idle
-    t =    18.16s     Find the "hub.mix" Any
-    t =    18.37s     Check for interrupting elements affecting "hub.mix" Button
-    t =    18.46s     Synthesize event
-    t =    18.78s     Wait for com.dari.DariApp to idle
-    t =    22.75s Waiting 8.0s for "5-Minuten-Spiel" NavigationBar to exist
-    t =    23.81s     Checking `Expect predicate `existsNoRetry == 1` for object "5-Minuten-Spiel" NavigationBar`
-    t =    23.81s         Checking existence of `"5-Minuten-Spiel" NavigationBar`
-    t =    24.25s Added attachment named '07-mix'
-    t =    24.25s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' passed (24.522 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' started.
-    t =     0.00s Start Test at 2026-10-08 19:36:47.512
-    t =     0.03s Set Up
-    t =     0.03s Open com.dari.DariApp
-    t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:14145
-2026-10-08 19:36:48.594 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:36:48.594 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     2.42s         Setting up automation session
-    t =     4.82s         Wait for com.dari.DariApp to idle
-    t =     7.60s Tap "Karten" Button
-    t =     7.60s     Wait for com.dari.DariApp to idle
-    t =     7.60s     Find the "Karten" Button
-    t =     7.97s     Check for interrupting elements affecting "Karten" Button
-    t =     8.02s     Synthesize event
-    t =     8.34s     Wait for com.dari.DariApp to idle
-    t =    10.30s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    11.35s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    11.35s         Checking existence of `"Beispielkarten laden" Button`
-    t =    11.43s Tap "Beispielkarten laden" Button
+    t =     0.04s         Terminate com.dari.DariApp:13412
+2026-11-18 16:16:17.218 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:16:17.219 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     3.61s         Setting up automation session
+    t =     5.14s         Wait for com.dari.DariApp to idle
+    t =     7.31s Tap "Karten" Button
+    t =     7.31s     Wait for com.dari.DariApp to idle
+    t =     7.32s     Find the "Karten" Button
+    t =     7.62s     Check for interrupting elements affecting "Karten" Button
+    t =     7.70s     Synthesize event
+    t =     8.01s     Wait for com.dari.DariApp to idle
+    t =     9.95s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    10.97s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    10.97s         Checking existence of `"Beispielkarten laden" Button`
+    t =    11.03s Tap "Beispielkarten laden" Button
+    t =    11.03s     Wait for com.dari.DariApp to idle
+    t =    11.03s     Find the "Beispielkarten laden" Button
+    t =    11.09s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    11.13s     Synthesize event
     t =    11.43s     Wait for com.dari.DariApp to idle
-    t =    11.44s     Find the "Beispielkarten laden" Button
-    t =    11.49s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    11.53s     Synthesize event
-    t =    11.85s     Wait for com.dari.DariApp to idle
-    t =    12.09s Waiting 8.0s for "card.row" Any to exist
-    t =    13.15s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    13.15s         Checking existence of `"card.row" Any`
-    t =    13.78s Added attachment named '02-karten'
-    t =    13.79s Tap "Heute" Button
-    t =    13.79s     Wait for com.dari.DariApp to idle
-    t =    13.81s     Find the "Heute" Button
-    t =    14.04s     Check for interrupting elements affecting "sun.max" Button
-    t =    14.20s     Synthesize event
-    t =    14.56s     Wait for com.dari.DariApp to idle
-    t =    16.32s Waiting 5.0s for "today.hero" Button to exist
-    t =    17.35s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
-    t =    17.36s         Checking existence of `"today.hero" Button`
-    t =    17.47s Find the "today.hero" Button
-    t =    17.76s Added attachment named '03-heute-mit-karten'
-    t =    17.77s Tap "today.hero" Button
-    t =    17.77s     Wait for com.dari.DariApp to idle
-    t =    17.77s     Find the "today.hero" Button
-    t =    17.84s     Check for interrupting elements affecting "today.hero" Button
-    t =    17.89s     Synthesize event
-    t =    18.19s     Wait for com.dari.DariApp to idle
-    t =    19.16s Waiting 8.0s for "Lernen" NavigationBar to exist
-    t =    20.20s     Checking `Expect predicate `existsNoRetry == 1` for object "Lernen" NavigationBar`
-    t =    20.21s         Checking existence of `"Lernen" NavigationBar`
-    t =    20.43s Added attachment named '04-lernen-sitzung'
-    t =    20.43s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' passed (20.689 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' started.
-    t =     0.00s Start Test at 2026-10-08 19:37:08.201
+    t =    11.54s Waiting 8.0s for "card.row" Any to exist
+    t =    12.59s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    12.59s         Checking existence of `"card.row" Any`
+    t =    13.01s Tap "Üben" Button
+    t =    13.01s     Wait for com.dari.DariApp to idle
+    t =    13.02s     Find the "Üben" Button
+    t =    13.10s     Check for interrupting elements affecting "brain.head.profile" Button
+    t =    13.18s     Synthesize event
+    t =    13.48s     Wait for com.dari.DariApp to idle
+    t =    15.35s Waiting 5.0s for "Üben" NavigationBar to exist
+    t =    16.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Üben" NavigationBar`
+    t =    16.41s         Checking existence of `"Üben" NavigationBar`
+    t =    16.67s Added attachment named '06-ueben'
+    t =    16.68s Waiting 5.0s for "hub.mix" Any to exist
+    t =    17.74s     Checking `Expect predicate `existsNoRetry == 1` for object "hub.mix" Any`
+    t =    17.74s         Checking existence of `"hub.mix" Any`
+    t =    17.99s Tap "hub.mix" Any
+    t =    17.99s     Wait for com.dari.DariApp to idle
+    t =    17.99s     Find the "hub.mix" Any
+    t =    18.20s     Check for interrupting elements affecting "hub.mix" Button
+    t =    18.32s     Synthesize event
+    t =    18.61s     Wait for com.dari.DariApp to idle
+    t =    19.68s Waiting 8.0s for "5-Minuten-Spiel" NavigationBar to exist
+    t =    20.71s     Checking `Expect predicate `existsNoRetry == 1` for object "5-Minuten-Spiel" NavigationBar`
+    t =    20.71s         Checking existence of `"5-Minuten-Spiel" NavigationBar`
+    t =    20.96s Added attachment named '07-mix'
+    t =    20.96s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testPracticeHubAndMix]' passed (21.216 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' started.
+    t =     0.00s Start Test at 2026-11-18 16:16:37.362
     t =     0.03s Set Up
     t =     0.03s Open com.dari.DariApp
     t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:14922
-2026-10-08 19:37:09.311 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:37:09.311 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.93s         Setting up automation session
-    t =     3.79s         Wait for com.dari.DariApp to idle
-    t =     6.21s Tap "Mehr" Button
-    t =     6.21s     Wait for com.dari.DariApp to idle
-    t =     6.21s     Find the "Mehr" Button
-    t =     6.73s     Check for interrupting elements affecting "Mehr" Button
-    t =     6.81s     Synthesize event
-    t =     7.13s     Wait for com.dari.DariApp to idle
-    t =     8.94s Waiting 5.0s for "Mehr" NavigationBar to exist
-    t =     9.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Mehr" NavigationBar`
-    t =     9.98s         Checking existence of `"Mehr" NavigationBar`
-    t =    10.26s Added attachment named '11-mehr'
-    t =    10.26s Waiting 5.0s for "settings.backup" Button to exist
-    t =    11.31s     Checking `Expect predicate `existsNoRetry == 1` for object "settings.backup" Button`
-    t =    11.31s         Checking existence of `"settings.backup" Button`
-    t =    11.39s Tap "settings.backup" Button
-    t =    11.39s     Wait for com.dari.DariApp to idle
-    t =    11.39s     Find the "settings.backup" Button
-    t =    11.46s     Check for interrupting elements affecting "settings.backup" Button
-    t =    11.53s     Synthesize event
-    t =    11.85s     Wait for com.dari.DariApp to idle
-    t =    12.86s Waiting 5.0s for "backup.export" Button to exist
-    t =    13.90s     Checking `Expect predicate `existsNoRetry == 1` for object "backup.export" Button`
-    t =    13.90s         Checking existence of `"backup.export" Button`
-    t =    14.01s Checking existence of `"backup.import" Button`
-    t =    14.28s Added attachment named '12-backup'
-    t =    14.28s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' passed (14.514 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testStatistics]' started.
-    t =     0.00s Start Test at 2026-10-08 19:37:22.716
-    t =     0.03s Set Up
-    t =     0.03s Open com.dari.DariApp
-    t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:15654
-2026-10-08 19:37:23.792 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:37:23.792 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     3.11s         Setting up automation session
-    t =     6.39s         Wait for com.dari.DariApp to idle
-    t =     8.84s Tap "Karten" Button
-    t =     8.84s     Wait for com.dari.DariApp to idle
-    t =     8.84s     Find the "Karten" Button
-    t =     9.20s     Check for interrupting elements affecting "Karten" Button
-    t =     9.27s     Synthesize event
-    t =     9.58s     Wait for com.dari.DariApp to idle
-    t =    11.33s Waiting 5.0s for "Beispielkarten laden" Button to exist
-    t =    12.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
-    t =    12.37s         Checking existence of `"Beispielkarten laden" Button`
-    t =    12.47s Tap "Beispielkarten laden" Button
-    t =    12.47s     Wait for com.dari.DariApp to idle
-    t =    12.47s     Find the "Beispielkarten laden" Button
-    t =    12.53s     Check for interrupting elements affecting "Beispielkarten laden" Button
-    t =    12.58s     Synthesize event
-    t =    12.89s     Wait for com.dari.DariApp to idle
-    t =    13.13s Waiting 8.0s for "card.row" Any to exist
-    t =    14.16s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
-    t =    14.16s         Checking existence of `"card.row" Any`
-    t =    14.62s Tap "Statistik" Button
-    t =    14.62s     Wait for com.dari.DariApp to idle
-    t =    14.63s     Find the "Statistik" Button
-    t =    14.71s     Check for interrupting elements affecting "chart.bar.xaxis" Button
+    t =     0.03s         Terminate com.dari.DariApp:13622
+2026-11-18 16:16:38.406 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:16:38.407 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.38s         Setting up automation session
+    t =     4.35s         Wait for com.dari.DariApp to idle
+    t =     6.56s Tap "Karten" Button
+    t =     6.56s     Wait for com.dari.DariApp to idle
+    t =     6.59s     Find the "Karten" Button
+    t =     7.08s     Check for interrupting elements affecting "Karten" Button
+    t =     7.19s     Synthesize event
+    t =     7.54s     Wait for com.dari.DariApp to idle
+    t =     9.43s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    10.43s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    10.44s         Checking existence of `"Beispielkarten laden" Button`
+    t =    10.65s Tap "Beispielkarten laden" Button
+    t =    10.65s     Wait for com.dari.DariApp to idle
+    t =    10.65s     Find the "Beispielkarten laden" Button
+    t =    10.79s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    11.19s     Synthesize event
+    t =    11.53s     Wait for com.dari.DariApp to idle
+    t =    11.88s Waiting 8.0s for "card.row" Any to exist
+    t =    12.91s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    12.91s         Checking existence of `"card.row" Any`
+    t =    14.58s Added attachment named '02-karten'
+    t =    14.58s Tap "Heute" Button
+    t =    14.58s     Wait for com.dari.DariApp to idle
+    t =    14.58s     Find the "Heute" Button
+    t =    14.69s     Check for interrupting elements affecting "sun.max" Button
     t =    14.78s     Synthesize event
-    t =    15.08s     Wait for com.dari.DariApp to idle
-    t =    17.79s Waiting 5.0s for "Statistik" NavigationBar to exist
-    t =    18.80s     Checking `Expect predicate `existsNoRetry == 1` for object "Statistik" NavigationBar`
-    t =    18.80s         Checking existence of `"Statistik" NavigationBar`
-    t =    19.01s Added attachment named '13-statistik'
-    t =    19.01s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testStatistics]' passed (19.266 seconds).
-Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' started.
-    t =     0.00s Start Test at 2026-10-08 19:37:41.983
+    t =    15.13s     Wait for com.dari.DariApp to idle
+    t =    16.70s Waiting 5.0s for "today.hero" Button to exist
+    t =    17.72s     Checking `Expect predicate `existsNoRetry == 1` for object "today.hero" Button`
+    t =    17.72s         Checking existence of `"today.hero" Button`
+    t =    17.79s Find the "today.hero" Button
+    t =    18.02s Added attachment named '03-heute-mit-karten'
+    t =    18.03s Tap "today.hero" Button
+    t =    18.03s     Wait for com.dari.DariApp to idle
+    t =    18.03s     Find the "today.hero" Button
+    t =    18.09s     Check for interrupting elements affecting "today.hero" Button
+    t =    18.19s     Synthesize event
+    t =    18.52s     Wait for com.dari.DariApp to idle
+    t =    19.42s Waiting 8.0s for "Lernen" NavigationBar to exist
+    t =    20.46s     Checking `Expect predicate `existsNoRetry == 1` for object "Lernen" NavigationBar`
+    t =    20.46s         Checking existence of `"Lernen" NavigationBar`
+    t =    20.69s Added attachment named '04-lernen-sitzung'
+    t =    20.69s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSampleCardsAndLearnToday]' passed (20.936 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' started.
+    t =     0.00s Start Test at 2026-11-18 16:16:58.299
     t =     0.03s Set Up
     t =     0.03s Open com.dari.DariApp
     t =     0.03s     Launch com.dari.DariApp
-    t =     0.03s         Terminate com.dari.DariApp:16291
-2026-10-08 19:37:43.032 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
-2026-10-08 19:37:43.032 xcodebuild[1933:9840] [MT] IDELaunchParametersSnapshot: no debugger version
-    t =     1.26s         Setting up automation session
-    t =     4.55s         Wait for com.dari.DariApp to idle
-    t =     9.50s Waiting 8.0s for "Heute" Button to exist
-    t =    10.53s     Checking `Expect predicate `existsNoRetry == 1` for object "Heute" Button`
-    t =    10.53s         Checking existence of `"Heute" Button`
-    t =    10.85s Checking existence of `"Üben" Button`
-    t =    10.93s Checking existence of `"Karten" Button`
-    t =    10.98s Checking existence of `"Statistik" Button`
-    t =    11.06s Checking existence of `"Mehr" Button`
-    t =    11.29s Added attachment named '01-heute-leer'
-    t =    11.30s Tear Down
-Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (11.517 seconds).
-Test Suite 'DariAppUITests' passed at 2026-10-08 19:37:53.500.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 395.690 (395.705) seconds
-Test Suite 'DariAppUITests.xctest' passed at 2026-10-08 19:37:53.501.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 395.690 (395.706) seconds
-Test Suite 'All tests' passed at 2026-10-08 19:37:53.502.
-	 Executed 12 tests, with 0 failures (0 unexpected) in 395.690 (395.708) seconds
-2026-10-08 19:37:55.456 xcodebuild[1933:9840] [MT] IDETestOperationsObserverDebug: 616.284 elapsed -- Testing started completed.
-2026-10-08 19:37:55.456 xcodebuild[1933:9840] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
-2026-10-08 19:37:55.456 xcodebuild[1933:9840] [MT] IDETestOperationsObserverDebug: 616.284 sec, +616.284 sec -- end
+    t =     0.03s         Terminate com.dari.DariApp:14553
+2026-11-18 16:16:59.340 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:16:59.340 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.63s         Setting up automation session
+    t =     4.06s         Wait for com.dari.DariApp to idle
+    t =     6.34s Tap "Mehr" Button
+    t =     6.34s     Wait for com.dari.DariApp to idle
+    t =     6.34s     Find the "Mehr" Button
+    t =     6.63s     Check for interrupting elements affecting "Mehr" Button
+    t =     6.69s     Synthesize event
+    t =     7.06s     Wait for com.dari.DariApp to idle
+    t =     8.93s Waiting 5.0s for "Mehr" NavigationBar to exist
+    t =     9.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Mehr" NavigationBar`
+    t =     9.96s         Checking existence of `"Mehr" NavigationBar`
+    t =    10.35s Added attachment named '11-mehr'
+    t =    10.35s Waiting 5.0s for "settings.backup" Button to exist
+    t =    11.41s     Checking `Expect predicate `existsNoRetry == 1` for object "settings.backup" Button`
+    t =    11.41s         Checking existence of `"settings.backup" Button`
+    t =    11.58s Tap "settings.backup" Button
+    t =    11.58s     Wait for com.dari.DariApp to idle
+    t =    11.59s     Find the "settings.backup" Button
+    t =    11.87s     Check for interrupting elements affecting "settings.backup" Button
+    t =    12.19s     Synthesize event
+    t =    12.61s     Wait for com.dari.DariApp to idle
+    t =    14.03s Waiting 5.0s for "backup.export" Button to exist
+    t =    15.06s     Checking `Expect predicate `existsNoRetry == 1` for object "backup.export" Button`
+    t =    15.07s         Checking existence of `"backup.export" Button`
+    t =    15.25s Checking existence of `"backup.import" Button`
+    t =    15.64s Added attachment named '12-backup'
+    t =    15.64s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testSettingsAndBackupScreen]' passed (15.913 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' started.
+    t =     0.00s Start Test at 2026-11-18 16:17:14.212
+    t =     0.09s Set Up
+    t =     0.10s Open com.dari.DariApp
+    t =     0.10s     Launch com.dari.DariApp
+    t =     0.10s         Terminate com.dari.DariApp:15260
+2026-11-18 16:17:15.387 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:17:15.387 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.89s         Setting up automation session
+    t =     4.56s         Wait for com.dari.DariApp to idle
+    t =     7.58s Tap "Karten" Button
+    t =     7.58s     Wait for com.dari.DariApp to idle
+    t =     7.59s     Find the "Karten" Button
+    t =     8.13s     Check for interrupting elements affecting "Karten" Button
+    t =     8.22s     Synthesize event
+    t =     8.53s     Wait for com.dari.DariApp to idle
+    t =    10.33s Waiting 5.0s for "Beispielkarten laden" Button to exist
+    t =    11.37s     Checking `Expect predicate `existsNoRetry == 1` for object "Beispielkarten laden" Button`
+    t =    11.37s         Checking existence of `"Beispielkarten laden" Button`
+    t =    11.45s Tap "Beispielkarten laden" Button
+    t =    11.45s     Wait for com.dari.DariApp to idle
+    t =    11.46s     Find the "Beispielkarten laden" Button
+    t =    11.56s     Check for interrupting elements affecting "Beispielkarten laden" Button
+    t =    11.64s     Synthesize event
+    t =    11.96s     Wait for com.dari.DariApp to idle
+    t =    12.17s Waiting 8.0s for "card.row" Any to exist
+    t =    13.20s     Checking `Expect predicate `existsNoRetry == 1` for object "card.row" Any`
+    t =    13.21s         Checking existence of `"card.row" Any`
+    t =    13.77s Tap "Statistik" Button
+    t =    13.77s     Wait for com.dari.DariApp to idle
+    t =    13.78s     Find the "Statistik" Button
+    t =    13.95s     Check for interrupting elements affecting "chart.bar.xaxis" Button
+    t =    14.05s     Synthesize event
+    t =    14.36s     Wait for com.dari.DariApp to idle
+    t =    16.35s Waiting 5.0s for "Statistik" NavigationBar to exist
+    t =    17.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Statistik" NavigationBar`
+    t =    17.41s         Checking existence of `"Statistik" NavigationBar`
+    t =    17.73s Added attachment named '13-statistik'
+    t =    17.74s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testStatistics]' passed (17.999 seconds).
+Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' started.
+    t =     0.00s Start Test at 2026-11-18 16:17:32.212
+    t =     0.04s Set Up
+    t =     0.05s Open com.dari.DariApp
+    t =     0.05s     Launch com.dari.DariApp
+    t =     0.05s         Terminate com.dari.DariApp:15485
+2026-11-18 16:17:33.322 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-11-18 16:17:33.322 xcodebuild[1191:6859] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.53s         Setting up automation session
+    t =     3.96s         Wait for com.dari.DariApp to idle
+    t =     6.37s Waiting 8.0s for "Heute" Button to exist
+    t =     7.41s     Checking `Expect predicate `existsNoRetry == 1` for object "Heute" Button`
+    t =     7.41s         Checking existence of `"Heute" Button`
+    t =     7.56s Checking existence of `"Üben" Button`
+    t =     7.66s Checking existence of `"Karten" Button`
+    t =     7.72s Checking existence of `"Statistik" Button`
+    t =     7.79s Checking existence of `"Mehr" Button`
+    t =     8.02s Added attachment named '01-heute-leer'
+    t =     8.02s Tear Down
+Test Case '-[DariAppUITests.DariAppUITests testTabBarShowsAllTabs]' passed (8.256 seconds).
+Test Suite 'DariAppUITests' passed at 2026-11-18 16:17:40.469.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 411.008 (411.025) seconds
+Test Suite 'DariAppUITests.xctest' passed at 2026-11-18 16:17:40.470.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 411.008 (411.027) seconds
+Test Suite 'All tests' passed at 2026-11-18 16:17:40.471.
+	 Executed 12 tests, with 0 failures (0 unexpected) in 411.008 (411.029) seconds
+2026-11-18 16:17:42.043 xcodebuild[1191:6859] [MT] IDETestOperationsObserverDebug: 558.323 elapsed -- Testing started completed.
+2026-11-18 16:17:42.044 xcodebuild[1191:6859] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-18 16:17:42.044 xcodebuild[1191:6859] [MT] IDETestOperationsObserverDebug: 558.323 sec, +558.323 sec -- end
 
 Test session results, code coverage, and logs:
 	/Users/runner/work/_temp/out/tests.xcresult
