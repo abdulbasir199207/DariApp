@@ -57,6 +57,7 @@ async function boot() {
         history.replaceState(null, '', location.pathname);      // Schlüssel nicht in der Adresszeile lassen
       }
     } catch (e) {}
+    try { MySent.init(ls); } catch (e) {}
     Store.onSaveError = () => { toast('Speichern fehlgeschlagen – bitte Backup sichern', 4000); };
     Speech.init();
     const info = Store.load();
@@ -81,7 +82,8 @@ async function boot() {
     if (Store.compactLogs()) Store.save();
     render();
     // Abgleich mit dem eigenen Server (NUC): Stand holen und zusammenführen, beim Verlassen sofort senden.
-    const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); }).catch(() => {});
+    const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); })
+      .then(() => { const before = MySent.count(); return MySent.fetch().then(r => { if (r && r.ok && r.n !== before && !App.session) render(); }); }).catch(() => {});
     syncPull();
     document.addEventListener('visibilitychange', () => { if (document.hidden) Sync.flush(); else syncPull(); });
     // Im Hintergrund: tägliche Sicherung, Aufräumen, dauerhaften Speicher anfragen.

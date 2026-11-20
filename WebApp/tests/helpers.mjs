@@ -35,7 +35,7 @@ const NAMES = ['APP_VERSION', 'DAY', 'now', 'uid', 'clamp', 'esc', 'shuffle', 's
   'DEFAULT_SETTINGS', 'Backup', 'Sync', 'AudioStore', 'xpForLog', 'isDue', 'weakScore', 'isWeak', 'weakCards', 'buildQueue', 'sentUpdate', 'pickItems',
   'Engine', 'levelInfo', 'shiftDay', 'computeStats', 'ACHIEVEMENTS', 'makeChoices', 'makeCardChoices', 'makeMatchRound', 'makeCloze', 'makeBuild',
   'checkBuild', 'makeTranslate', 'makeGrammar', 'makeListen', 'planVocab', 'planWeak', 'planMatch', 'planListen', 'planSentences',
-  'planGrammar', 'planSpeak', 'planMix', 'requeueStep', 'gameCandidates', 'resolveDir', 'libraryWords', 'isFaText', 'matchCase', 'renameTag'];
+  'planGrammar', 'planSpeak', 'planMix', 'requeueStep', 'gameCandidates', 'resolveDir', 'libraryWords', 'isFaText', 'matchCase', 'renameTag', 'MySent', 'planMySent'];
 
 /** Lädt alle Logik-Dateien (00–69) in einen frischen Kontext und gibt die Namen zurück. */
 export function loadApi({ time } = {}) {

@@ -102,6 +102,7 @@ Views.learn = () => {
     ${tile('startCloze', '▭', 'Lückentext', 'Fehlendes Wort einsetzen')}
     ${tile('startBuild', '⇆', 'Satzbildung', 'Wörter ordnen')}
     ${tile('startTranslate', '✎', 'Übersetzen', 'Kurze Sätze schreiben')}
+    ${tile('startMySent', '★', 'Meine Sätze', MySent.count() ? MySent.count() + ' Sätze aus deinen Wörtern' : 'Noch keine – kommen vom NUC', MySent.count() > 0)}
     ${tile('sub', '§', 'Grammatik', 'Persisch &amp; Deutsch', true, '', 'grammar')}
   </div>
   <div class="pill-note">Alle Übungen passen die Wiederholung an deine Fehler an.</div>

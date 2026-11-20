@@ -226,7 +226,7 @@ h2.sec{font-size:15px;font-weight:700;margin:20px 2px 10px;letter-spacing:.01em}
    ============================================================ */
 
 const APP_NAME = 'ZARA';
-const APP_VERSION = '3.3 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
+const APP_VERSION = '3.4 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
 const DAY = 86400000;
 
 const now = () => Date.now();
@@ -1357,6 +1357,68 @@ const Sync = {
   Store.save = function () { const ok = origSave.apply(this, arguments); if (ok) Sync.schedule(); return ok; };
 }
 
+/* ===== 48-mysent.js ===== */
+/* ============================================================
+   48-mysent: „Meine Sätze“ – Sätze aus den eigenen Wörtern,
+   die auf dem NUC gesammelt werden (Server: /api/saetze).
+   Die Liste wird lokal zwischengespeichert, damit sie auch offline da ist.
+   Als falsch gemeldete Sätze werden nicht mehr geübt (aber nie gelöscht).
+   ============================================================ */
+
+const MySent = {
+  KEY: 'zara.mysent',
+  ls: null,
+  raw: [],
+
+  /** Lokale Kopie laden und in die Satzbibliothek einhängen. */
+  init(ls) { this.ls = ls || null; try { this.raw = JSON.parse((this.ls && this.ls.getItem(this.KEY)) || '[]') || []; } catch (e) { this.raw = []; } this.install(); },
+  valid(x) { return x && x.id && x.de && x.fa && x.pd && x.pf && x.de.split(' ').length === x.pd.split(' ').length && x.fa.split(' ').length === x.pf.split(' ').length; },
+  install() {
+    for (let i = SENTENCES.length - 1; i >= 0; i--) if (SENTENCES[i].mine) SENTENCES.splice(i, 1);
+    for (const x of this.raw) {
+      if (x.falsch || !this.valid(x)) continue;
+      const de = x.de.replace(/[.?!]+$/, ''), fa = x.fa.replace(/[.؟?!]+$/, '');
+      const s = S(x.id, 'Meine Sätze', 1, de, fa, x.tr || '', x.pd, x.pf, { q: !!x.q });
+      s.mine = true; SENTENCES.push(s);
+    }
+  },
+  list() { return SENTENCES.filter(s => s.mine); },
+  count() { return this.list().length; },
+  isMine(id) { return typeof id === 'string' && id.startsWith('u_'); },
+
+  /** Neueste Liste vom NUC holen (nur wenn der Abgleich eingerichtet ist). */
+  async fetch() {
+    if (!Sync.ready()) return { ok: false, skipped: true };
+    try {
+      const res = await Sync.req('GET', '/api/saetze');
+      if (!res.ok) throw new Error('Server antwortet ' + res.status);
+      const list = JSON.parse(await res.text());
+      if (!Array.isArray(list)) throw new Error('ungültig');
+      this.raw = list; try { if (this.ls) this.ls.setItem(this.KEY, JSON.stringify(list)); } catch (e) {}
+      this.install();
+      return { ok: true, n: this.count() };
+    } catch (e) { return { ok: false, error: e.message || String(e) }; }
+  },
+  async flag(id) {
+    const x = this.raw.find(y => y.id === id); if (x) x.falsch = true;
+    try { if (this.ls) this.ls.setItem(this.KEY, JSON.stringify(this.raw)); } catch (e) {}
+    this.install();
+    if (Sync.ready()) { try { await Sync.req('POST', '/api/saetze/falsch', JSON.stringify({ id })); } catch (e) {} }
+  }
+};
+
+/** Übungsplan nur aus „Meinen Sätzen“: gemischt Satzbildung, Übersetzen, Lückentext. */
+function planMySent(sent, { count = 10, direction = 'mixed' } = {}, rng = Math.random) {
+  const pool = MySent.list();
+  const types = ['build', 'translate', 'cloze'];
+  return pickItems(pool, sent, count, rng).map((s, i) => {
+    const type = types[i % 3], dir = resolveDir(direction, rng);
+    const step = { type, sentId: s.id, dir };
+    if (type === 'cloze') step.lang = dir === 'g2p' ? 'fa' : 'de';
+    return step;
+  });
+}
+
 /* ===== 50-scheduler.js ===== */
 /* ============================================================
    50-scheduler: Fälligkeit, „schwierige Wörter", Warteschlangen.
@@ -2207,6 +2269,7 @@ Views.learn = () => {
     ${tile('startCloze', '▭', 'Lückentext', 'Fehlendes Wort einsetzen')}
     ${tile('startBuild', '⇆', 'Satzbildung', 'Wörter ordnen')}
     ${tile('startTranslate', '✎', 'Übersetzen', 'Kurze Sätze schreiben')}
+    ${tile('startMySent', '★', 'Meine Sätze', MySent.count() ? MySent.count() + ' Sätze aus deinen Wörtern' : 'Noch keine – kommen vom NUC', MySent.count() > 0)}
     ${tile('sub', '§', 'Grammatik', 'Persisch &amp; Deutsch', true, '', 'grammar')}
   </div>
   <div class="pill-note">Alle Übungen passen die Wiederholung an deine Fehler an.</div>
@@ -2659,7 +2722,11 @@ const Session = {
       <div class="progress"><div style="width:${s.i / s.steps.length * 100}%"></div></div>
       ${step && step.retry ? '<div class="langbadge">Noch einmal üben</div>' : ''}`;
   },
-  nextBtn(label = 'Weiter') { return `<div style="margin-top:14px"><button class="pillbtn" data-a="sNext">${label}</button></div>`; },
+  nextBtn(label = 'Weiter') {
+    const st = this.step && this.step(), mine = st && MySent.isMine(st.sentId);
+    return `<div style="margin-top:14px"><button class="pillbtn" data-a="sNext">${label}</button></div>`
+      + (mine ? `<div style="text-align:center;margin-top:8px"><button class="chip" data-a="flagSent" data-v="${esc(st.sentId)}">⚑ Satz ist falsch</button></div>` : '');
+  },
 
   view() {
     const s = this.s;
@@ -2918,9 +2985,12 @@ A.startListen = () => startPlan('Hören', () => planListen(activeCards(), Object
 A.startSpeak = () => startPlan('Aussprache', () => planSpeak(activeCards(), 8));
 A.startCloze = () => startPlan('Lückentext', () => planCloze(DB.data, { count: 10, direction: curDir() }));
 A.startBuild = () => startPlan('Satzbildung', () => planSentences('build', DB.data.sent, { count: 8, direction: curDir() }));
+A.startMySent = () => startPlan('Meine Sätze', () => planMySent(DB.data.sent, { count: 10, direction: curDir() }));
 A.startTranslate = () => startPlan('Übersetzen', () => planSentences('translate', DB.data.sent, { count: 8, direction: curDir() }));
 A.startGrammar = () => startPlan('Grammatik', () => planGrammar(DB.data.sent, { lang: LearnCfg.gLang, topic: LearnCfg.gTopic, count: 10 }));
 A.newCard = () => A.openEditor('');
+
+A.flagSent = async id => { await MySent.flag(id); toast('Danke – dieser Satz wird nicht mehr geübt'); A.sNext(); };
 
 /* ===== 83-ui-data.js ===== */
 /* ============================================================
@@ -3299,6 +3369,7 @@ async function boot() {
         history.replaceState(null, '', location.pathname);      // Schlüssel nicht in der Adresszeile lassen
       }
     } catch (e) {}
+    try { MySent.init(ls); } catch (e) {}
     Store.onSaveError = () => { toast('Speichern fehlgeschlagen – bitte Backup sichern', 4000); };
     Speech.init();
     const info = Store.load();
@@ -3323,7 +3394,8 @@ async function boot() {
     if (Store.compactLogs()) Store.save();
     render();
     // Abgleich mit dem eigenen Server (NUC): Stand holen und zusammenführen, beim Verlassen sofort senden.
-    const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); }).catch(() => {});
+    const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); })
+      .then(() => { const before = MySent.count(); return MySent.fetch().then(r => { if (r && r.ok && r.n !== before && !App.session) render(); }); }).catch(() => {});
     syncPull();
     document.addEventListener('visibilitychange', () => { if (document.hidden) Sync.flush(); else syncPull(); });
     // Im Hintergrund: tägliche Sicherung, Aufräumen, dauerhaften Speicher anfragen.

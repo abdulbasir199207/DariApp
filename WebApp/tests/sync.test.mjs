@@ -81,3 +81,33 @@ test('Sync: falscher Schlüssel wird abgewiesen und ändert nichts', { skip: !ex
     assert.deepEqual(words(d), ['Mutter']);
   } finally { srv.stop(); }
 });
+
+test('Meine Sätze: Server ergänzt nur, prüft Wortarten, Gerät übt sie, „falsch“ wird nur markiert', { skip: !existsSync(SERVER) }, async () => {
+  const srv = await startServer();
+  try {
+    const h = { Authorization: 'Bearer ' + srv.key, 'Content-Type': 'application/json' };
+    const post = body => fetch(srv.url + '/api/saetze', { method: 'POST', headers: h, body: JSON.stringify(body) }).then(r => r.json());
+    const r1 = await post({ saetze: [
+      { de: 'Ich esse Brot', fa: 'من نان می‌خورم', tr: 'man nân mi-khoram', pd: 'P V N', pf: 'P N V', woerter: ['Brot'] },
+      { de: 'Kaputt', fa: 'خراب', pd: 'A B', pf: 'A' },                                   // Wortarten passen nicht → abgelehnt
+    ] });
+    assert.equal(r1.neu, 1);
+    assert.equal((await post({ saetze: [{ de: 'Ich esse Brot', fa: 'من نان می‌خورم', pd: 'P V N', pf: 'P N V' }] })).neu, 0);   // kein Doppel
+    assert.equal((await fetch(srv.url + '/api/saetze')).status, 401);                    // ohne Schlüssel nichts
+
+    const d = device(srv, 'handy'); const { api } = d;
+    api.MySent.init(new FakeStorage());
+    assert.ok((await api.MySent.fetch()).ok);
+    assert.equal(api.MySent.count(), 1);
+    const steps = api.planMySent(api.Store.data.sent, { count: 3 }, () => 0.3);
+    assert.ok(steps.length >= 1 && steps.every(s => api.MySent.isMine(s.sentId)));
+    const s = api.SENTENCES.find(x => x.mine);
+    assert.ok(api.makeBuild(s, 'g2p').tokens.length === 3);
+    assert.ok(api.makeCloze(s, 'fa'));
+
+    await api.MySent.flag(s.id);
+    assert.equal(api.MySent.count(), 0);
+    const all = await fetch(srv.url + '/api/saetze', { headers: h }).then(r => r.json());
+    assert.equal(all.length, 1); assert.equal(all[0].falsch, true);                      // bleibt erhalten, nur markiert
+  } finally { srv.stop(); }
+});

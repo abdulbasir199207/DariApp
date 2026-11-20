@@ -197,7 +197,11 @@ const Session = {
       <div class="progress"><div style="width:${s.i / s.steps.length * 100}%"></div></div>
       ${step && step.retry ? '<div class="langbadge">Noch einmal üben</div>' : ''}`;
   },
-  nextBtn(label = 'Weiter') { return `<div style="margin-top:14px"><button class="pillbtn" data-a="sNext">${label}</button></div>`; },
+  nextBtn(label = 'Weiter') {
+    const st = this.step && this.step(), mine = st && MySent.isMine(st.sentId);
+    return `<div style="margin-top:14px"><button class="pillbtn" data-a="sNext">${label}</button></div>`
+      + (mine ? `<div style="text-align:center;margin-top:8px"><button class="chip" data-a="flagSent" data-v="${esc(st.sentId)}">⚑ Satz ist falsch</button></div>` : '');
+  },
 
   view() {
     const s = this.s;
@@ -456,6 +460,9 @@ A.startListen = () => startPlan('Hören', () => planListen(activeCards(), Object
 A.startSpeak = () => startPlan('Aussprache', () => planSpeak(activeCards(), 8));
 A.startCloze = () => startPlan('Lückentext', () => planCloze(DB.data, { count: 10, direction: curDir() }));
 A.startBuild = () => startPlan('Satzbildung', () => planSentences('build', DB.data.sent, { count: 8, direction: curDir() }));
+A.startMySent = () => startPlan('Meine Sätze', () => planMySent(DB.data.sent, { count: 10, direction: curDir() }));
 A.startTranslate = () => startPlan('Übersetzen', () => planSentences('translate', DB.data.sent, { count: 8, direction: curDir() }));
 A.startGrammar = () => startPlan('Grammatik', () => planGrammar(DB.data.sent, { lang: LearnCfg.gLang, topic: LearnCfg.gTopic, count: 10 }));
 A.newCard = () => A.openEditor('');
+
+A.flagSent = async id => { await MySent.flag(id); toast('Danke – dieser Satz wird nicht mehr geübt'); A.sNext(); };
