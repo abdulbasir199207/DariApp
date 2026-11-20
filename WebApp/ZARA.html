@@ -196,6 +196,17 @@ h2.sec{font-size:15px;font-weight:700;margin:20px 2px 10px;letter-spacing:.01em}
 .exwrap{background:var(--surface-2);border-radius:14px;padding:10px 12px;margin-top:10px}
 .exwrap .small{margin-bottom:4px}
 
+.swipe-wrap{position:relative;margin-bottom:12px;border-radius:18px;overflow:hidden}
+.swipe-wrap .swipe-row{position:relative;margin-bottom:0;touch-action:pan-y;z-index:1}
+.swipe-bg{position:absolute;inset:0;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-weight:600;color:#fff;border-radius:18px;opacity:0}
+.swipe-wrap.sw-r .swipe-bg{opacity:1;background:var(--sage)}
+.swipe-wrap.sw-l .swipe-bg{opacity:1;background:var(--terra)}
+.swipe-wrap.sw-r .swipe-bg span:last-child,.swipe-wrap.sw-l .swipe-bg span:first-child{visibility:hidden}
+.syncline{font-size:13px;padding:8px 12px;border-radius:12px;margin:0 0 10px;background:var(--surface)}
+.syncline.ok{color:var(--sage)}
+.syncline.warn{color:var(--terra)}
+.sync-pend{font-size:12px}
+
 </style>
 
 <div id="app">
@@ -215,7 +226,7 @@ h2.sec{font-size:15px;font-weight:700;margin:20px 2px 10px;letter-spacing:.01em}
    ============================================================ */
 
 const APP_NAME = 'ZARA';
-const APP_VERSION = '3.2 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
+const APP_VERSION = '3.3 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
 const DAY = 86400000;
 
 const now = () => Date.now();
@@ -1272,6 +1283,7 @@ const Sync = {
     this.saveCfg(c);
     return c.enabled;
   },
+  notify() { try { if (typeof onSyncChange === 'function') setTimeout(onSyncChange, 0); } catch (e) {} },
   disable() { const c = this.cfg(); c.enabled = false; this.saveCfg(c); },
 
   async req(method, path, body, { keepalive = false } = {}) {
@@ -1291,9 +1303,9 @@ const Sync = {
       const res = await this.req('PUT', '/api/backup', b.json, { keepalive });
       if (!res.ok) throw new Error('Server antwortet ' + res.status);
       const c = this.cfg(); c.lastPushAt = createdAt; c.lastOkAt = now(); this.saveCfg(c);
-      this.lastError = null;
+      this.lastError = null; this.notify();
       return { ok: true };
-    } catch (e) { this.lastError = e.message || String(e); return { ok: false, error: this.lastError }; }
+    } catch (e) { this.lastError = e.message || String(e); this.notify(); return { ok: false, error: this.lastError }; }
   },
 
   /** Neuesten Server-Stand holen und zusammenführen, falls er von einem anderen Gerät stammt. */
@@ -1330,6 +1342,7 @@ const Sync = {
     if (!this.ready() || this.applying) return;
     if (this.timer) clearTimeout(this.timer);
     this.timer = setTimeout(() => { this.timer = null; this.push(); }, this.DELAY);
+    this.notify();
   },
   /** App geht in den Hintergrund: sofort senden. */
   flush() {
@@ -2007,11 +2020,11 @@ A.closeDialog = () => closeDialog();
 A.dlgBack = (v, el, e) => { if (e.target === el) closeDialog(); };
 A.dlgOk = () => { const cb = Dlg.cb; closeDialog(); if (cb) cb(); };
 
-function confirmDialog({ icon = '⚠︎', iconColor = 'var(--warn)', title, body, ok = 'OK', danger = false, onOk }) {
+function confirmDialog({ icon = '⚠︎', iconColor = 'var(--warn)', title, body, ok = 'OK', cancel = 'Abbrechen', danger = false, onOk }) {
   Dlg.cb = onOk;
   openDialog(`<div class="dlg-ic" style="color:${iconColor}">${icon}</div><h3>${esc(title)}</h3><p>${body}</p>
     <div class="dlg-actions"><button class="pillbtn" ${danger ? 'style="background:var(--terra)"' : ''} data-a="dlgOk">${esc(ok)}</button>
-    <button class="pillbtn secondary" data-a="closeDialog">Abbrechen</button></div>`);
+    <button class="pillbtn secondary" data-a="closeDialog">${esc(cancel)}</button></div>`);
 }
 
 /* ---------- Fehler ---------- */
@@ -2060,6 +2073,34 @@ document.addEventListener('keydown', e => {
 })();
 window.addEventListener('error', e => { try { console.error(e.error || e.message); } catch (_) {} });
 window.addEventListener('unhandledrejection', e => { try { console.error(e.reason); } catch (_) {} });
+
+/* Wischen in der Kartenliste: nach links = löschen (mit Rückfrage), nach rechts = bearbeiten */
+(function () {
+  let row = null, x0 = 0, y0 = 0, dx = 0, mode = null, swiped = false;
+  const LIMIT = 90;
+  const reset = r => { if (!r) return; r.style.transition = 'transform .2s'; r.style.transform = ''; const w = r.parentElement; if (w) w.classList.remove('sw-l', 'sw-r'); };
+  document.addEventListener('touchstart', e => {
+    const r = e.target.closest('.swipe-row'); row = r; dx = 0; mode = null; swiped = false;
+    if (!r) return; const t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; r.style.transition = '';
+  }, { passive: true });
+  document.addEventListener('touchmove', e => {
+    if (!row) return; const t = e.touches[0], mx = t.clientX - x0, my = t.clientY - y0;
+    if (!mode) { if (Math.abs(mx) < 8 && Math.abs(my) < 8) return; mode = Math.abs(mx) > Math.abs(my) ? 'h' : 'v'; }
+    if (mode !== 'h') return;
+    if (e.cancelable) e.preventDefault();
+    dx = Math.max(-140, Math.min(140, mx));
+    row.style.transform = `translateX(${dx}px)`;
+    const w = row.parentElement; w.classList.toggle('sw-l', dx < 0); w.classList.toggle('sw-r', dx > 0);
+  }, { passive: false });
+  document.addEventListener('touchend', () => {
+    const r = row; row = null; if (!r || mode !== 'h') return;
+    swiped = true; setTimeout(() => { swiped = false; }, 400);
+    const id = r.dataset.v; reset(r);
+    if (dx <= -LIMIT) A.askDeleteCardById(id);
+    else if (dx >= LIMIT) A.openEditor(id);
+  });
+  document.addEventListener('click', e => { if (swiped && e.target.closest('.swipe-row')) { e.stopPropagation(); e.preventDefault(); } }, true);
+})();
 
 /* ===== 81-ui-views.js ===== */
 /* ============================================================
@@ -2275,7 +2316,8 @@ function filteredCards() {
 }
 function cardRowHTML(c) {
   const weak = isWeak(c);
-  return `<button class="card" style="width:100%;text-align:left" data-a="openEditor" data-v="${esc(c.id)}">
+  const unsaved = cardUnsynced(c);
+  return `<div class="swipe-wrap"><div class="swipe-bg"><span>✎ Bearbeiten</span><span>Löschen 🗑</span></div><button class="card swipe-row" style="width:100%;text-align:left" data-a="openEditor" data-v="${esc(c.id)}">
      <div class="row"><div>
         <div class="term-de">${esc(c.de.join(', '))}</div>
         <div class="term-fa persian" style="text-align:left">${esc(c.fa.join('، '))}</div>
@@ -2285,7 +2327,8 @@ function cardRowHTML(c) {
         ${weak ? '<span style="color:var(--terra)" title="schwierig">◎</span>' : ''}
         ${!c.active ? '<span class="muted">⏸</span>' : ''}
         ${c.audio ? '<span style="color:var(--sage)">♪</span>' : ''}
-      </div></div></button>`;
+        ${unsaved ? '<span class="sync-pend" title="noch nicht auf dem NUC">⏳</span>' : ''}
+      </div></div></button></div>`;
 }
 const NO_HITS = '<div class="muted small" style="text-align:center;padding:20px">Keine Treffer</div>';
 Views.cards = () => {
@@ -2296,8 +2339,28 @@ Views.cards = () => {
       <button class="pillbtn" style="max-width:220px;margin:0 auto" data-a="openEditor" data-v="">Karte anlegen</button></div>`;
   }
   return head + `<input class="field" placeholder="Suchen" value="${esc(CardSearch)}" data-i="cardSearch" enterkeyhint="search">
+    <div id="syncLine">${syncLineHTML()}</div>
+    <div class="hint" style="margin:-4px 2px 10px">Tipp: Wort nach rechts wischen = bearbeiten, nach links = löschen.</div>
     <div id="cardsList">${filteredCards().map(cardRowHTML).join('') || NO_HITS}</div>`;
 };
+/* Ist diese Karte schon auf dem NUC gesichert? (nur wenn der Abgleich eingerichtet ist) */
+function cardUnsynced(c) {
+  if (typeof Sync === 'undefined' || !Sync.ready()) return false;
+  return (c.updatedAt || 0) > (Sync.cfg().lastPushAt || 0);
+}
+function syncLineHTML() {
+  if (typeof Sync === 'undefined' || !Sync.ready())
+    return `<div class="syncline warn">⚠︎ Nur auf diesem Gerät gespeichert – Abgleich mit dem NUC ist nicht eingerichtet.</div>`;
+  const open = DB.data.cards.filter(cardUnsynced).length, c = Sync.cfg();
+  if (Sync.lastError) return `<div class="syncline warn">⚠︎ NUC nicht erreichbar – ${open} ${open === 1 ? 'Wort wartet' : 'Wörter warten'}. Wird automatisch nachgeholt.</div>`;
+  if (open || Sync.timer) return `<div class="syncline">⏳ ${open} ${open === 1 ? 'Wort wird' : 'Wörter werden'} gerade auf den NUC gesichert …</div>`;
+  return `<div class="syncline ok">✓ Alle ${DB.data.cards.length} Wörter sind auf dem NUC gesichert${c.lastOkAt ? ' · ' + esc(fmtDate(c.lastOkAt)) : ''}.</div>`;
+}
+function onSyncChange() {
+  const l = $('syncLine'); if (!l) return;
+  l.innerHTML = syncLineHTML();
+  const list = $('cardsList'); if (list) list.innerHTML = filteredCards().map(cardRowHTML).join('') || NO_HITS;
+}
 IN.cardSearch = v => { CardSearch = v; const el = $('cardsList'); if (el) el.innerHTML = filteredCards().map(cardRowHTML).join('') || NO_HITS; };
 
 /* ---------- Statistik ---------- */
@@ -2981,6 +3044,17 @@ A.saveEditor = async () => {
   if (!DB.save()) toast('Speichern fehlgeschlagen – bitte Backup sichern', 4000);
   else toast('Gespeichert');
   A.closeEditor(); render();
+};
+A.askDeleteCardById = id => {
+  const card = cardById(id); if (!card) return;
+  confirmDialog({ icon: '🗑', iconColor: 'var(--terra)', title: 'Wollen Sie das Wort wirklich löschen?', danger: true, ok: 'Ja', cancel: 'Nein',
+    body: `„<span class="dup-word">${esc(card.de.join(', '))}</span>${card.fa.length ? ` / <span class="dup-word persian">${esc(card.fa.join('، '))}</span>` : ''}" wird gelöscht. Vorher wird automatisch eine Sicherungskopie angelegt.`,
+    onOk: async () => {
+      await DB.snapshot('pre-delete', 10 * 60 * 1000);
+      const idx = DB.data.cards.findIndex(c => c.id === id);
+      if (idx >= 0) { const c = DB.data.cards[idx]; if (c.audio) DB.markOrphan(c.id); DB.data.cards.splice(idx, 1); DB.save(); }
+      render(); toast('Wort gelöscht');
+    } });
 };
 A.askDeleteCard = () => {
   const E = Editor; if (!E || !E.id) return;

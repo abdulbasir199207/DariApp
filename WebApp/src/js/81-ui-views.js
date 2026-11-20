@@ -211,7 +211,8 @@ function filteredCards() {
 }
 function cardRowHTML(c) {
   const weak = isWeak(c);
-  return `<button class="card" style="width:100%;text-align:left" data-a="openEditor" data-v="${esc(c.id)}">
+  const unsaved = cardUnsynced(c);
+  return `<div class="swipe-wrap"><div class="swipe-bg"><span>✎ Bearbeiten</span><span>Löschen 🗑</span></div><button class="card swipe-row" style="width:100%;text-align:left" data-a="openEditor" data-v="${esc(c.id)}">
      <div class="row"><div>
         <div class="term-de">${esc(c.de.join(', '))}</div>
         <div class="term-fa persian" style="text-align:left">${esc(c.fa.join('، '))}</div>
@@ -221,7 +222,8 @@ function cardRowHTML(c) {
         ${weak ? '<span style="color:var(--terra)" title="schwierig">◎</span>' : ''}
         ${!c.active ? '<span class="muted">⏸</span>' : ''}
         ${c.audio ? '<span style="color:var(--sage)">♪</span>' : ''}
-      </div></div></button>`;
+        ${unsaved ? '<span class="sync-pend" title="noch nicht auf dem NUC">⏳</span>' : ''}
+      </div></div></button></div>`;
 }
 const NO_HITS = '<div class="muted small" style="text-align:center;padding:20px">Keine Treffer</div>';
 Views.cards = () => {
@@ -232,8 +234,28 @@ Views.cards = () => {
       <button class="pillbtn" style="max-width:220px;margin:0 auto" data-a="openEditor" data-v="">Karte anlegen</button></div>`;
   }
   return head + `<input class="field" placeholder="Suchen" value="${esc(CardSearch)}" data-i="cardSearch" enterkeyhint="search">
+    <div id="syncLine">${syncLineHTML()}</div>
+    <div class="hint" style="margin:-4px 2px 10px">Tipp: Wort nach rechts wischen = bearbeiten, nach links = löschen.</div>
     <div id="cardsList">${filteredCards().map(cardRowHTML).join('') || NO_HITS}</div>`;
 };
+/* Ist diese Karte schon auf dem NUC gesichert? (nur wenn der Abgleich eingerichtet ist) */
+function cardUnsynced(c) {
+  if (typeof Sync === 'undefined' || !Sync.ready()) return false;
+  return (c.updatedAt || 0) > (Sync.cfg().lastPushAt || 0);
+}
+function syncLineHTML() {
+  if (typeof Sync === 'undefined' || !Sync.ready())
+    return `<div class="syncline warn">⚠︎ Nur auf diesem Gerät gespeichert – Abgleich mit dem NUC ist nicht eingerichtet.</div>`;
+  const open = DB.data.cards.filter(cardUnsynced).length, c = Sync.cfg();
+  if (Sync.lastError) return `<div class="syncline warn">⚠︎ NUC nicht erreichbar – ${open} ${open === 1 ? 'Wort wartet' : 'Wörter warten'}. Wird automatisch nachgeholt.</div>`;
+  if (open || Sync.timer) return `<div class="syncline">⏳ ${open} ${open === 1 ? 'Wort wird' : 'Wörter werden'} gerade auf den NUC gesichert …</div>`;
+  return `<div class="syncline ok">✓ Alle ${DB.data.cards.length} Wörter sind auf dem NUC gesichert${c.lastOkAt ? ' · ' + esc(fmtDate(c.lastOkAt)) : ''}.</div>`;
+}
+function onSyncChange() {
+  const l = $('syncLine'); if (!l) return;
+  l.innerHTML = syncLineHTML();
+  const list = $('cardsList'); if (list) list.innerHTML = filteredCards().map(cardRowHTML).join('') || NO_HITS;
+}
 IN.cardSearch = v => { CardSearch = v; const el = $('cardsList'); if (el) el.innerHTML = filteredCards().map(cardRowHTML).join('') || NO_HITS; };
 
 /* ---------- Statistik ---------- */

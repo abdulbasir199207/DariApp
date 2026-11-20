@@ -120,6 +120,17 @@ A.saveEditor = async () => {
   else toast('Gespeichert');
   A.closeEditor(); render();
 };
+A.askDeleteCardById = id => {
+  const card = cardById(id); if (!card) return;
+  confirmDialog({ icon: '🗑', iconColor: 'var(--terra)', title: 'Wollen Sie das Wort wirklich löschen?', danger: true, ok: 'Ja', cancel: 'Nein',
+    body: `„<span class="dup-word">${esc(card.de.join(', '))}</span>${card.fa.length ? ` / <span class="dup-word persian">${esc(card.fa.join('، '))}</span>` : ''}" wird gelöscht. Vorher wird automatisch eine Sicherungskopie angelegt.`,
+    onOk: async () => {
+      await DB.snapshot('pre-delete', 10 * 60 * 1000);
+      const idx = DB.data.cards.findIndex(c => c.id === id);
+      if (idx >= 0) { const c = DB.data.cards[idx]; if (c.audio) DB.markOrphan(c.id); DB.data.cards.splice(idx, 1); DB.save(); }
+      render(); toast('Wort gelöscht');
+    } });
+};
 A.askDeleteCard = () => {
   const E = Editor; if (!E || !E.id) return;
   const card = cardById(E.id); if (!card) return;

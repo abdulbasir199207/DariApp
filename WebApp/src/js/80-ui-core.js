@@ -82,11 +82,11 @@ A.closeDialog = () => closeDialog();
 A.dlgBack = (v, el, e) => { if (e.target === el) closeDialog(); };
 A.dlgOk = () => { const cb = Dlg.cb; closeDialog(); if (cb) cb(); };
 
-function confirmDialog({ icon = '⚠︎', iconColor = 'var(--warn)', title, body, ok = 'OK', danger = false, onOk }) {
+function confirmDialog({ icon = '⚠︎', iconColor = 'var(--warn)', title, body, ok = 'OK', cancel = 'Abbrechen', danger = false, onOk }) {
   Dlg.cb = onOk;
   openDialog(`<div class="dlg-ic" style="color:${iconColor}">${icon}</div><h3>${esc(title)}</h3><p>${body}</p>
     <div class="dlg-actions"><button class="pillbtn" ${danger ? 'style="background:var(--terra)"' : ''} data-a="dlgOk">${esc(ok)}</button>
-    <button class="pillbtn secondary" data-a="closeDialog">Abbrechen</button></div>`);
+    <button class="pillbtn secondary" data-a="closeDialog">${esc(cancel)}</button></div>`);
 }
 
 /* ---------- Fehler ---------- */
@@ -135,3 +135,31 @@ document.addEventListener('keydown', e => {
 })();
 window.addEventListener('error', e => { try { console.error(e.error || e.message); } catch (_) {} });
 window.addEventListener('unhandledrejection', e => { try { console.error(e.reason); } catch (_) {} });
+
+/* Wischen in der Kartenliste: nach links = löschen (mit Rückfrage), nach rechts = bearbeiten */
+(function () {
+  let row = null, x0 = 0, y0 = 0, dx = 0, mode = null, swiped = false;
+  const LIMIT = 90;
+  const reset = r => { if (!r) return; r.style.transition = 'transform .2s'; r.style.transform = ''; const w = r.parentElement; if (w) w.classList.remove('sw-l', 'sw-r'); };
+  document.addEventListener('touchstart', e => {
+    const r = e.target.closest('.swipe-row'); row = r; dx = 0; mode = null; swiped = false;
+    if (!r) return; const t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; r.style.transition = '';
+  }, { passive: true });
+  document.addEventListener('touchmove', e => {
+    if (!row) return; const t = e.touches[0], mx = t.clientX - x0, my = t.clientY - y0;
+    if (!mode) { if (Math.abs(mx) < 8 && Math.abs(my) < 8) return; mode = Math.abs(mx) > Math.abs(my) ? 'h' : 'v'; }
+    if (mode !== 'h') return;
+    if (e.cancelable) e.preventDefault();
+    dx = Math.max(-140, Math.min(140, mx));
+    row.style.transform = `translateX(${dx}px)`;
+    const w = row.parentElement; w.classList.toggle('sw-l', dx < 0); w.classList.toggle('sw-r', dx > 0);
+  }, { passive: false });
+  document.addEventListener('touchend', () => {
+    const r = row; row = null; if (!r || mode !== 'h') return;
+    swiped = true; setTimeout(() => { swiped = false; }, 400);
+    const id = r.dataset.v; reset(r);
+    if (dx <= -LIMIT) A.askDeleteCardById(id);
+    else if (dx >= LIMIT) A.openEditor(id);
+  });
+  document.addEventListener('click', e => { if (swiped && e.target.closest('.swipe-row')) { e.stopPropagation(); e.preventDefault(); } }, true);
+})();

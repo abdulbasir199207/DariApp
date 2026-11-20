@@ -39,6 +39,7 @@ const Sync = {
     this.saveCfg(c);
     return c.enabled;
   },
+  notify() { try { if (typeof onSyncChange === 'function') setTimeout(onSyncChange, 0); } catch (e) {} },
   disable() { const c = this.cfg(); c.enabled = false; this.saveCfg(c); },
 
   async req(method, path, body, { keepalive = false } = {}) {
@@ -58,9 +59,9 @@ const Sync = {
       const res = await this.req('PUT', '/api/backup', b.json, { keepalive });
       if (!res.ok) throw new Error('Server antwortet ' + res.status);
       const c = this.cfg(); c.lastPushAt = createdAt; c.lastOkAt = now(); this.saveCfg(c);
-      this.lastError = null;
+      this.lastError = null; this.notify();
       return { ok: true };
-    } catch (e) { this.lastError = e.message || String(e); return { ok: false, error: this.lastError }; }
+    } catch (e) { this.lastError = e.message || String(e); this.notify(); return { ok: false, error: this.lastError }; }
   },
 
   /** Neuesten Server-Stand holen und zusammenführen, falls er von einem anderen Gerät stammt. */
@@ -97,6 +98,7 @@ const Sync = {
     if (!this.ready() || this.applying) return;
     if (this.timer) clearTimeout(this.timer);
     this.timer = setTimeout(() => { this.timer = null; this.push(); }, this.DELAY);
+    this.notify();
   },
   /** App geht in den Hintergrund: sofort senden. */
   flush() {
