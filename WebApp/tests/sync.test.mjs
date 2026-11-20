@@ -11,10 +11,10 @@ import { loadApi, FakeStorage } from './helpers.mjs';
 const here = dirname(fileURLToPath(import.meta.url));
 const SERVER = process.env.ZARA_SYNC_SERVER || join(here, '..', '..', 'Server', 'zara-sync', 'server.mjs');
 
-async function startServer() {
+async function startServer(extraEnv = {}) {
   const dir = mkdtempSync(join(tmpdir(), 'zara-sync-'));
   const port = 20000 + Math.floor(Math.random() * 20000);
-  const p = spawn(process.execPath, [SERVER], { env: { ...process.env, ZARA_DATA: dir, PORT: String(port), ZARA_WEB: '/nicht/da' }, stdio: 'pipe' });
+  const p = spawn(process.execPath, [SERVER], { env: { ...process.env, ...extraEnv, ZARA_DATA: dir, PORT: String(port), ZARA_WEB: '/nicht/da' }, stdio: 'pipe' });
   for (let i = 0; i < 50; i++) {
     try { const r = await fetch(`http://127.0.0.1:${port}/api/health`); if (r.ok) break; } catch (e) {}
     await new Promise(r => setTimeout(r, 100));
@@ -110,4 +110,46 @@ test('Meine Sätze: Server ergänzt nur, prüft Wortarten, Gerät übt sie, „f
     const all = await fetch(srv.url + '/api/saetze', { headers: h }).then(r => r.json());
     assert.equal(all.length, 1); assert.equal(all[0].falsch, true);                      // bleibt erhalten, nur markiert
   } finally { srv.stop(); }
+});
+
+test('Sätze generieren: ohne Gemini-Schlüssel klare Meldung, Schlüssel wird nur gespeichert, nie zurückgegeben', { skip: !existsSync(SERVER) }, async () => {
+  const srv = await startServer();
+  try {
+    const d = device(srv, 'handy'); const { api } = d;
+    api.MySent.init(new FakeStorage());
+    addCard(d, 'Brot', 'نان');
+    const r0 = await api.MySent.generate();
+    assert.equal(r0.ok, false); assert.match(r0.error, /Gemini-Schlüssel/);
+    await assert.rejects(api.MySent.setGeminiKey('kurz'));
+    assert.equal(await api.MySent.setGeminiKey('AIzaTestTestTestTestTestTest123'), true);
+    const e = await fetch(srv.url + '/api/einstellungen', { headers: { Authorization: 'Bearer ' + srv.key } }).then(r => r.text());
+    assert.equal(e, '{"gemini":true}');
+    assert.equal((await fetch(srv.url + '/api/einstellungen/gemini', { method: 'POST', body: '{"key":"x"}' })).status, 401);
+  } finally { srv.stop(); }
+});
+
+test('Sätze generieren: Gemini-Antwort wird geprüft, gute Sätze landen in „Meine Sätze“', { skip: !existsSync(SERVER) }, async () => {
+  const http = await import('node:http');
+  let prompt = '';
+  const fake = http.createServer((req, res) => {
+    let b = ''; req.on('data', c => b += c); req.on('end', () => {
+      prompt = JSON.parse(b).contents[0].parts[0].text;
+      const arr = [{ de: 'Ich esse Brot', fa: 'من نان می‌خورم', tr: 'man nân mi-khoram', pd: 'P V N', pf: 'P N V', woerter: ['Brot'] },
+                   { de: 'Falsch gezählt', fa: 'غلط', pd: 'A', pf: 'A' }];
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ candidates: [{ content: { parts: [{ text: JSON.stringify(arr) }] } }] }));
+    });
+  }).listen(0);
+  const port = fake.address().port;
+  const srv = await startServer({ GEMINI_BASE: 'http://127.0.0.1:' + port });
+  try {
+    const d = device(srv, 'handy'); const { api } = d;
+    api.MySent.init(new FakeStorage());
+    addCard(d, 'Brot', 'نان');
+    await api.MySent.setGeminiKey('AIzaTestTestTestTestTestTest123');
+    const r = await api.MySent.generate();
+    assert.ok(r.ok, JSON.stringify(r)); assert.equal(r.neu, 1); assert.equal(r.nurNeue, true);
+    assert.match(prompt, /Brot/);
+    assert.equal(api.MySent.count(), 1);
+  } finally { srv.stop(); fake.close(); }
 });

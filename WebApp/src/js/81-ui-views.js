@@ -105,6 +105,7 @@ Views.learn = () => {
     ${tile('startMySent', '★', 'Meine Sätze', MySent.count() ? MySent.count() + ' Sätze aus deinen Wörtern' : 'Noch keine – kommen vom NUC', MySent.count() > 0)}
     ${tile('sub', '§', 'Grammatik', 'Persisch &amp; Deutsch', true, '', 'grammar')}
   </div>
+  ${Sync.ready() ? `<button class="pillbtn secondary" style="margin-top:4px" data-a="genSent" ${MySent.busy ? 'disabled' : ''}>${MySent.busy ? '⏳ Sätze werden gebildet …' : '✨ Sätze aus meinen Wörtern generieren'}</button>` : ''}
   <div class="pill-note">Alle Übungen passen die Wiederholung an deine Fehler an.</div>
   <div style="height:16px"></div>`;
 };
@@ -316,7 +317,7 @@ Views.more = () => {
    <button class="card row" style="width:100%;text-align:left" data-a="openBackup"><span>⭳ Backup sichern</span><span class="muted">›</span></button>
    <button class="card row" style="width:100%;text-align:left" data-a="openRestore"><span>⭱ Backup wiederherstellen</span><span class="muted">›</span></button>
    <button class="card row" style="width:100%;text-align:left" data-a="openSnapshots"><span>◷ Automatische Sicherungen</span><span class="muted">›</span></button>
-   ${syncCardHTML()}
+   ${syncCardHTML()}${geminiCardHTML()}
    <input type="file" id="importFile" accept="application/json,.json,text/plain" class="hidden" data-c="importFile">
    <div class="card"><div class="muted small">
      ${last ? 'Letztes Backup: <b>' + esc(fmtDate(last)) + '</b>' : '<b>Noch kein Backup.</b>'}<br>
@@ -346,6 +347,27 @@ function syncCardHTML() {
       <input id="syncKey" class="field" style="margin-top:8px" placeholder="Schlüssel" autocomplete="off">
       <button class="pillbtn" style="margin-top:10px" data-a="syncOn">Einschalten</button>`}</div>`;
 }
+function geminiCardHTML() {
+  if (!Sync.ready()) return '';
+  const g = MySent.gemini;
+  return `<div class="card"><div class="row"><span>✨ Sätze mit Gemini</span><span class="muted small">${g === null ? '…' : g ? 'Schlüssel hinterlegt' : 'kein Schlüssel'}</span></div>
+    <div class="muted small" style="margin-top:6px">Kostenloser Schlüssel von aistudio.google.com („Get API key“). Er wird nur auf dem NUC gespeichert.</div>
+    <input id="gemKey" class="field" style="margin-top:10px" placeholder="${g ? 'Neuen Schlüssel eintragen (ersetzt den alten)' : 'Gemini-API-Schlüssel'}" autocomplete="off">
+    <button class="pillbtn" style="margin-top:10px" data-a="gemSave">Speichern</button></div>`;
+}
+A.gemSave = async () => {
+  const k = ($('gemKey') || {}).value || '';
+  if (!k.trim()) { toast('Bitte Schlüssel eintragen'); return; }
+  try { await MySent.setGeminiKey(k); toast('Gemini-Schlüssel gespeichert'); } catch (e) { toast(e.message, 3000); }
+  render();
+};
+A.genSent = async () => {
+  render();
+  const p = MySent.generate(); render();
+  const r = await p; render();
+  if (!r.ok) { toast(r.error === 'Kein Gemini-Schlüssel hinterlegt' ? 'Bitte zuerst unter „Mehr“ den Gemini-Schlüssel eintragen' : r.error, 3500); return; }
+  toast(r.neu ? `${r.neu} neue Sätze – unter „Meine Sätze“` : 'Keine neuen Sätze entstanden – bitte nochmal versuchen', 3000);
+};
 A.syncOn = async () => {
   const url = ($('syncUrl') || {}).value, key = ($('syncKey') || {}).value;
   if (!Sync.configure(url, key)) { toast('Bitte Server und Schlüssel eintragen', 2500); return; }

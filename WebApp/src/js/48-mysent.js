@@ -39,6 +39,34 @@ const MySent = {
       return { ok: true, n: this.count() };
     } catch (e) { return { ok: false, error: e.message || String(e) }; }
   },
+  gemini: null,           // null = unbekannt, true/false = Schlüssel auf dem NUC hinterlegt?
+  busy: false,
+  async checkGemini() {
+    if (!Sync.ready()) return null;
+    try { const r = await Sync.req('GET', '/api/einstellungen'); if (r.ok) this.gemini = !!JSON.parse(await r.text()).gemini; } catch (e) {}
+    return this.gemini;
+  },
+  async setGeminiKey(key) {
+    const r = await Sync.req('POST', '/api/einstellungen/gemini', JSON.stringify({ key: String(key || '').trim() }));
+    const j = JSON.parse(await r.text() || '{}');
+    if (!r.ok) throw new Error(j.error || 'Server antwortet ' + r.status);
+    this.gemini = !!j.gemini; return this.gemini;
+  },
+  /** NUC bittet Gemini um neue Sätze aus den neuen Wörtern, danach Liste neu holen. */
+  async generate() {
+    if (!Sync.ready()) return { ok: false, error: 'Abgleich mit dem NUC ist nicht eingerichtet' };
+    if (this.busy) return { ok: false, error: 'läuft schon' };
+    this.busy = true;
+    try {
+      await Sync.push();                                   // neueste Wörter zuerst auf den NUC
+      const r = await Sync.req('POST', '/api/saetze/generieren', '{}');
+      const j = JSON.parse(await r.text() || '{}');
+      if (!r.ok) return { ok: false, error: j.error || 'Server antwortet ' + r.status };
+      await this.fetch();
+      return { ok: true, neu: j.neu || 0, nurNeue: !!j.nurNeue };
+    } catch (e) { return { ok: false, error: e.message || String(e) }; }
+    finally { this.busy = false; }
+  },
   async flag(id) {
     const x = this.raw.find(y => y.id === id); if (x) x.falsch = true;
     try { if (this.ls) this.ls.setItem(this.KEY, JSON.stringify(this.raw)); } catch (e) {}

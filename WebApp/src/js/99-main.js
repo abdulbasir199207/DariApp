@@ -83,7 +83,8 @@ async function boot() {
     render();
     // Abgleich mit dem eigenen Server (NUC): Stand holen und zusammenführen, beim Verlassen sofort senden.
     const syncPull = () => Sync.pull().then(r => { if (r && r.merged) render(); })
-      .then(() => { const before = MySent.count(); return MySent.fetch().then(r => { if (r && r.ok && r.n !== before && !App.session) render(); }); }).catch(() => {});
+      .then(() => { const before = MySent.count(); return MySent.fetch().then(r => { if (r && r.ok && r.n !== before && !App.session) render(); }); })
+      .then(() => MySent.gemini === null ? MySent.checkGemini() : null).catch(() => {});
     syncPull();
     document.addEventListener('visibilitychange', () => { if (document.hidden) Sync.flush(); else syncPull(); });
     // Im Hintergrund: tägliche Sicherung, Aufräumen, dauerhaften Speicher anfragen.
