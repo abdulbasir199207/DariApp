@@ -1,5 +1,5 @@
-	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
-	 Executed 12 tests, with 0 failures (0 unexpected) in 359.736 (359.752) seconds
-	 Executed 12 tests, with 0 failures (0 unexpected) in 359.736 (359.755) seconds
-	 Executed 12 tests, with 0 failures (0 unexpected) in 359.736 (359.757) seconds
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 438.569 (438.589) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 438.569 (438.591) seconds
+	 Executed 12 tests, with 0 failures (0 unexpected) in 438.569 (438.601) seconds
 ** TEST SUCCEEDED **
