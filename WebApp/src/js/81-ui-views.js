@@ -132,8 +132,8 @@ Views.vocab = () => {
   <label class="lbl">Tags</label>
   ${tags.length ? `<div style="display:flex;flex-wrap:wrap;gap:8px">
      <button class="chip ${LearnCfg.tags.size === 0 ? 'on' : ''}" data-a="toggleTag" data-v="">Alle</button>
-     ${tags.map(t => `<button class="chip ${LearnCfg.tags.has(t) ? 'on' : ''}" data-a="toggleTag" data-v="${esc(t)}" data-lp="askDeleteTag">${esc(t)}</button>`).join('')}
-   </div><div class="hint">Tipp: Tag lange gedrückt halten, um ihn zu löschen.</div>` : `<div class="muted small">Keine Tags – es werden alle Karten gelernt.</div>`}
+     ${tags.map(t => `<button class="chip ${LearnCfg.tags.has(t) ? 'on' : ''}" data-a="toggleTag" data-v="${esc(t)}" data-lp="tagMenu">${esc(t)}</button>`).join('')}
+   </div><div class="hint">Tipp: Tag lange gedrückt halten, um ihn zu bearbeiten oder zu löschen.</div>` : `<div class="muted small">Keine Tags – es werden alle Karten gelernt.</div>`}
   <div class="card row" style="margin-top:16px"><span class="muted small">ℹ︎ Auswahl: ${cands.length} Karten</span></div>
   <div style="margin-top:8px"><button class="pillbtn" ${cands.length ? '' : 'disabled'} data-a="startVocab">Lernen starten</button></div>
   <div style="height:20px"></div>`;
@@ -144,6 +144,26 @@ A.toggleTag = v => {
   else if (LearnCfg.tags.has(v)) LearnCfg.tags.delete(v); else LearnCfg.tags.add(v);
   render();
 };
+A.tagMenu = name => {
+  Dlg.tag = name;
+  openDialog(`<div class="dlg-ic" style="color:var(--accent)">#</div><h3>Tag „${esc(name)}"</h3>
+    <input class="field" id="tagRenameInput" value="${esc(name)}" maxlength="60" data-enter="tagRename" autocomplete="off" style="width:100%;margin:6px 0 12px">
+    <div class="dlg-actions"><button class="pillbtn" data-a="tagRename">Bearbeiten</button>
+    <button class="pillbtn" style="background:var(--terra)" data-a="tagDelete">Löschen</button>
+    <button class="pillbtn secondary" data-a="closeDialog">Abbrechen</button></div>`);
+};
+A.tagRename = async () => {
+  const from = Dlg.tag, inp = $('tagRenameInput');
+  const to = inp ? inp.value.trim() : '';
+  if (!from || !to || to === from) { closeDialog(); return; }
+  const merge = allTags().includes(to);
+  closeDialog();
+  await DB.snapshot('pre-delete', 10 * 60 * 1000);
+  const n = renameTag(DB.data.cards, from, to, now());
+  if (LearnCfg.tags.has(from)) { LearnCfg.tags.delete(from); LearnCfg.tags.add(to); }
+  DB.save(); render(); toast(merge ? `Mit „${to}" zusammengeführt (${n} Karten)` : `Tag geändert (${n} Karten)`);
+};
+A.tagDelete = () => { const name = Dlg.tag; closeDialog(); if (name) A.askDeleteTag(name); };
 A.askDeleteTag = name => {
   confirmDialog({ title: 'Tag löschen?', danger: true, ok: 'Löschen',
     body: `Der Tag „<span class="dup-word">${esc(name)}</span>" wird aus allen Karten entfernt. Die Karten selbst bleiben erhalten.`,

@@ -299,3 +299,19 @@ test('Sentence-Leitner: richtig steigt, falsch fällt zurück; fällige Items zu
   assert.ok(picked.some(p => p.id === 's03'));
   assert.ok(!picked.some(p => p.id === 's02'));
 });
+
+/* ---------- Tags umbenennen ---------- */
+test('renameTag: ändert den Tag in allen Karten, andere Tags bleiben', () => {
+  const cards = [{ tags: ['Essen', 'A1'], updatedAt: 1 }, { tags: ['Essen'], updatedAt: 1 }, { tags: ['A1'], updatedAt: 1 }];
+  assert.equal(api.renameTag(cards, 'Essen', ' Küche ', 99), 2);
+  assert.deepEqual(plain(cards.map(c => c.tags)), [['Küche', 'A1'], ['Küche'], ['A1']]);
+  assert.deepEqual(cards.map(c => c.updatedAt), [99, 99, 1]);
+});
+test('renameTag: Zusammenführen ohne Doppel, leerer/gleicher Name ändert nichts', () => {
+  const cards = [{ tags: ['a', 'b'], updatedAt: 1 }];
+  assert.equal(api.renameTag(cards, 'a', 'b', 5), 1);
+  assert.deepEqual(plain(cards[0].tags), ['b']);
+  assert.equal(api.renameTag(cards, 'b', '  ', 6), 0);
+  assert.equal(api.renameTag(cards, 'b', 'b', 6), 0);
+  assert.equal(cards[0].updatedAt, 5);
+});

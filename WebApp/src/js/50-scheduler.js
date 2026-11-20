@@ -65,3 +65,18 @@ function pickItems(items, sent, n, rng = Math.random, t = now()) {
   });
   return scored.sort((a, b) => b.p - a.p).slice(0, n).map(x => x.it);
 }
+
+/** Tag in allen Karten umbenennen. Existiert der neue Name schon, werden beide zusammengeführt (keine Doppel).
+    Gibt die Zahl der geänderten Karten zurück. */
+function renameTag(cards, oldName, newName, ts) {
+  const to = String(newName == null ? '' : newName).trim();
+  if (!to || to === oldName) return 0;
+  let n = 0;
+  cards.forEach(c => {
+    if (!Array.isArray(c.tags) || !c.tags.includes(oldName)) return;
+    const next = [];
+    c.tags.forEach(t => { const v = t === oldName ? to : t; if (!next.includes(v)) next.push(v); });
+    c.tags = next; c.updatedAt = ts; n++;
+  });
+  return n;
+}

@@ -4,7 +4,7 @@
    ============================================================ */
 
 const APP_NAME = 'ZARA';
-const APP_VERSION = '3.1 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
+const APP_VERSION = '3.2 · Nov 2026';   // zum Prüfen, ob die neueste Version geladen ist
 const DAY = 86400000;
 
 const now = () => Date.now();
